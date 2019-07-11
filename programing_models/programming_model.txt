@@ -1,0 +1,170 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int N = 8;
+		
+		/*
+		double[,] matrix = new double[8, 8]
+		{
+    	{100, 125, 200, 100, 50, 0, 0, 10},
+    	{90, 112, 255, 200, 75, 25, 0, 8},
+    	{80, 10, 30, 0, 0, 50, 100, 50},
+    	{15, 75, 50, 10, 100, 125, 175, 250},
+    	{55, 60, 50, 75, 125, 150, 180, 252},
+    	{55, 50, 70, 25, 30, 75, 100, 125},
+    	{15, 10, 0, 60, 75, 80, 105, 100},
+    	{10, 5, 20, 0, 0, 90, 10, 90}
+    	};
+			*/	
+		
+		double[,] matrix = new double[8, 8]
+		{
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+		{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	};		
+		//matrix = Shift(matrix);
+		var sum = SumArray(matrix);//works		
+		var dct_1stD = Dct_1d(matrix, N); 	
+		Print(dct_1stD);
+		var dct_1stD_T = Transpose(dct_1stD); //works	
+		//Print(dct_1stD_T);
+		
+		var dct_2ndD = Dct_1d(dct_1stD_T, N);
+		Print(dct_2ndD);
+		
+		var dct_2d = Dct_2d(matrix, N); //works
+		Print(dct_2d); 
+		
+		//Console.WriteLine(Validate(dct_1stD));
+		//Console.WriteLine(Validate(dct_2ndD));
+	}
+	
+	//DCT dimention by dimension
+	static double[,] Dct_1d(double[,] matrix, int N)
+	{
+    	double[,] result = new double[N,N];
+		
+		for(int i = 0; i < N; i++)
+    	{
+        	for(int k = 0; k < N; k++)
+        	{            
+            	double sum = 0;
+            	for(int n = 0; n < N; n++)
+            	{
+                	double arg_radian = ((2*n + 1) * k * Math.PI / (2*N));
+                	sum += matrix[i,n] * Math.Cos(arg_radian);
+            	}
+				if (k==0) result[i,k] = (int) (sum / Math.Sqrt(N)); else result[i,k] = (int) (Math.Sqrt(2/N) * sum);
+        	}
+    	}
+		return result;
+	}
+	
+	//DCT in 2 dimensions simultaneously
+	static double[,] Dct_2d(double[,] matrix, int N)
+	{
+		double[,] result = new double[N,N];
+		
+		for(int m = 0; m < N; m++)
+    	{
+        	for(int n = 0; n < N; n++)
+        	{
+            	double sum = 0;
+				
+				for(int x = 0; x < N; x++)
+				{
+            		for(int y = 0; y < N; y++)
+            		{
+                		double arg_m = (((2*x + 1) * m * Math.PI) / (2*N));
+						double arg_n = (((2*y + 1) * n * Math.PI) / (2*N));
+                		sum += matrix[m,n] * Math.Cos(arg_m) * Math.Cos(arg_n);
+            		}
+				}
+				double Cu, Cv;
+				if (m==0) Cu= 1/Math.Sqrt(2); else Cu=1;
+				if (n==0) Cv= 1/Math.Sqrt(2); else Cv=1;
+				
+            	result[m,n] = (int)((2 * sum * Cu * Cv) / N);
+        	}
+    	}
+		return result;
+	}
+	
+	//Transpose 2d sqare matrix
+	static public double[,] Transpose(double[,] matrix)
+	{
+    	int w = matrix.GetLength(0);
+    	int h = matrix.GetLength(1);
+
+    	double[,] result = new double[h, w];
+
+    	for (int i = 0; i < w; i++)
+    	{
+        	for (int j = 0; j < h; j++)
+        	{
+            	result[j, i] = matrix[i, j];
+        	}
+    	}
+
+    	return result;
+	}
+	
+	//Martix visualization
+	static void Print(double[,] matrix)
+	{
+    	Console.WriteLine();
+		for (int row = 0; row < matrix.GetLength(0); row++)
+		{
+    		for (int col = 0; col < matrix.GetLength(1); col++)               
+        		Console.Write(String.Format("{0}\t", matrix[row,col]));
+    		Console.WriteLine();
+		}
+	}
+	
+	//checks if final values are in range -1024:1023
+	static bool Validate(double[,] matrix)
+	{
+		for (int row = 0; row < matrix.GetLength(0); row++)
+		{
+    		for (int col = 0; col < matrix.GetLength(1); col++)         
+				if(matrix[row, col] > 1023 | matrix[row, col] < -1024)
+					return false;
+		}
+		return true;
+	}
+	
+	//Calculates the sum of elements in 2d matrix
+	public static double SumArray(double[,] array)
+	{
+    	double total = 0;
+    	for (int i = 0; i < array.GetLength(0); i++)
+        	for (int j = 0; j < array.GetLength(1); j++)
+            	total += array[i, j];
+    	return total;
+	}
+	
+	//Shift values from range 0:255 to -128:127
+	static double[,] Shift(double[,] matrix)
+	{
+		int row = matrix.GetLength(0);
+		int col = matrix.GetLength(1);
+		
+    	double[,] result = new double[row,col];
+		
+		for (int i = 0; i < row; i++)
+		{
+    		for (int j = 0; j < col; j++)               
+        		result[i, j] = matrix[i, j] - 128;
+		}
+		return result;
+	}
+}

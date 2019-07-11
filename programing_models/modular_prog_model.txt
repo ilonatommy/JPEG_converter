@@ -1,0 +1,78 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int N = 8;
+		
+		
+		double[,] matrix = new double[8, 8]
+		{
+    	{100, 125, 200, 100, 50, 0, 0, 10},
+    	{90, 112, 255, 200, 75, 25, 0, 8},
+    	{80, 10, 30, 0, 0, 50, 100, 50},
+    	{15, 75, 50, 10, 100, 125, 175, 250},
+    	{55, 60, 50, 75, 125, 150, 180, 252},
+    	{55, 50, 70, 25, 30, 75, 100, 125},
+    	{15, 10, 0, 60, 75, 80, 105, 100},
+    	{10, 5, 20, 0, 0, 90, 10, 90}
+    	};
+		/*
+		double[,] matrix = new double[8, 8]
+		{
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+		{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	{255, 255, 255, 255, 255, 255, 255, 255},
+    	};	
+		*/
+		
+		for(var tic = 0; tic < 7; tic++)
+		{
+			if(tic > 3)
+			{
+				double[] pixels_4 = imitate_fabricRAM(matrix, tic);
+				Print_RAM(pixels_4);
+				var mod1_out = mod1(pixels_4);
+				Print_mod1(mod1_out);
+			}
+		}
+	}
+	
+	static double[] imitate_fabricRAM(double[,] matrix, int tic)
+	{
+		//repair that indexes, tey are accurate but insafe
+		return new double[4] {matrix[tic/8, tic%8 - 4], matrix[tic/8, tic%8 - 3], matrix[tic/8, tic%8 - 2], matrix[tic/8, tic%8 - 1]}; 
+	}
+	
+	//module with RAM and a1, s1, r1, r2
+	static Tuple<double,double> mod1(double[] pixels_4)
+	{		
+		return new Tuple<double, double>(pixels_4[0] + pixels_4[3], pixels_4[0] - pixels_4[3]);
+	}	
+	
+	//Martix visualization
+	static void Print_RAM(double[] matrix)
+	{
+    	Console.WriteLine();
+		for (int row = 0; row < matrix.GetLength(0); row++)
+		{          
+			Console.Write(String.Format("{0}\t", matrix[row]));
+		}
+		Console.WriteLine();
+		Console.WriteLine();
+	}	
+	
+	static void Print_mod1(Tuple<double,double> mod1_out)
+	{
+		Console.WriteLine(mod1_out.Item1.ToString());
+		Console.WriteLine(mod1_out.Item2.ToString());
+		Console.WriteLine();
+	}
+	
+}
