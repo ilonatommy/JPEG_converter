@@ -27,20 +27,21 @@ module DCT_int(
     input rst,
     output [11:0] r10_out,
     output [12:0] r19_out,
-    output [13:0] r21_out
+    output [12:0] r21_out,
+    output [3:0] state  
     );    
     
-    localparam [2:0] IDLE = 4'd8;    
+    localparam [3:0] IDLE = 4'd8;    
     reg [3:0] STATE = IDLE;
     
     reg [7:0] ram [3:0]; //8-bit vector of depth of 4
-    reg [8:0] r1, r2, r3, r4, r16, r17;
-    reg [9:0] r5, r6, r7;
-    reg [10:0] r8, r9;
-    reg [24:0] r10; //multiplication result is u12c13f
-    reg [12:0] r18, r19;
-    reg [13:0] r20, r21; //s12c0f
-    reg [14:0] r22;
+    reg [8:0] r1, r2, r3, r4, r16, r17; //-256:254
+    reg [9:0] r5, r6, r7; //-512:508
+    reg [10:0] r8, r9; //-1024:1016
+    reg [23:0] r10; //multiplication result is u11c13f
+    reg [12:0] r18, r19; //-1593:1581
+    reg [12:0] r20, r21; //-1593:1581
+    reg [12:0] r22; //-3186:3162
     
     //7th tic: m3, m2, m1, m4, m1
     //m format: u1i0f
@@ -62,6 +63,7 @@ module DCT_int(
         end
         else
         if(STATE != IDLE)
+        //actions shared by each state except IDLE - could have been copied-pasted to every state as well
         begin
             //shift reg
             ram[3] <= ram[2];
@@ -88,7 +90,7 @@ module DCT_int(
             r8 <= r7 - r5;
             r9 <= r8;            
             
-            r19 <= r19;
+            r19 <= r18;
             r21 <= r20;
             
             r22 <= r21 + r20;
@@ -114,13 +116,12 @@ module DCT_int(
                 STATE <= 3'd2;
                 r10 <= r5 * m1;
                 r18 <= r10[24:13] + r4; // = mo1 + mo2
-                r20 <= r4 - r10[24:13]; // from mi6 = mo2 - mo1
+                r20 <= r4 - r10[23:13]; // from mi6 = mo2 - mo1
             end
             4'd2:
             begin
                 STATE <= 3'd3;
-                r10 <= r22 * m4; //uncomment when r22 is ready !!!! problem with width: r22 is 15b so mult should give 17b of integer, so I should enlarge r10. However, when I will do it in a result in enlarging r22 and so on. 
-                //I leav it just how it is (r10 od 12b) and if there are any problems then it is the first place to check
+                r10 <= r22 * m4;
             end
             4'd3:
             begin
@@ -150,7 +151,8 @@ module DCT_int(
         endcase
     end
     
-    assign r10_out = r10[24:13]; //select bits without fraction
-    assign r19_out = r19;
-    assign r21_out = r21;
+    assign r10_out = r10[24:13]; 
+    assign r19_out = r19; 
+    assign r21_out = r21; 
+    assign state = STATE;
 endmodule
