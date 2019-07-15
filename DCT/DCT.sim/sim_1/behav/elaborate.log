@@ -3,9 +3,6 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port r10_out [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:46]
-WARNING: [VRFC 10-597] element index 24 into r10 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:117]
-WARNING: [VRFC 10-597] element index 24 into r10 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:153]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

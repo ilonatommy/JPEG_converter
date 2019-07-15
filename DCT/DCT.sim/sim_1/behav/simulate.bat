@@ -1,6 +1,6 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2017.2\\bin
-call %xv_path%/xsim tb_DCT_int_behav -key {Behavioral:sim_1:Functional:tb_DCT_int} -tclbatch tb_DCT_int.tcl -log simulate.log
+call %xv_path%/xsim tb_DCT_int_behav -key {Behavioral:sim_1:Functional:tb_DCT_int} -tclbatch tb_DCT_int.tcl -view C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END
