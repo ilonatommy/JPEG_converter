@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="976870000fs"></ZoomStartTime>
-      <ZoomEndTime time="987830001fs"></ZoomEndTime>
-      <Cursor1Time time="904163000fs"></Cursor1Time>
+      <ZoomStartTime time="957866666fs"></ZoomStartTime>
+      <ZoomEndTime time="968826667fs"></ZoomEndTime>
+      <Cursor1Time time="967000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="104"></NameColumnWidth>
@@ -37,13 +37,10 @@
       <obj_property name="ObjectShortName">r2_test[8:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT_int/r10_test" type="array">
-      <obj_property name="ElementShortName">r10_test[25:0]</obj_property>
-      <obj_property name="ObjectShortName">r10_test[25:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject fp_name="/tb_DCT_int/r22_test" type="array">
+      <obj_property name="ElementShortName">r22_test[12:0]</obj_property>
+      <obj_property name="ObjectShortName">r22_test[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_int/r10" type="array">
       <obj_property name="ElementShortName">r10[11:0]</obj_property>
@@ -56,7 +53,7 @@
    <wvobject fp_name="/tb_DCT_int/r19" type="array">
       <obj_property name="ElementShortName">r19[12:0]</obj_property>
       <obj_property name="ObjectShortName">r19[12:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_int/r21" type="array">
       <obj_property name="ElementShortName">r21[12:0]</obj_property>
