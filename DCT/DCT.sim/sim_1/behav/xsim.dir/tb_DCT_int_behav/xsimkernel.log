@@ -2,3 +2,6 @@ Running: xsim.dir/tb_DCT_int_behav/xsimk.exe -simmode gui -wdb tb_DCT_int_behav.
 Design successfully loaded
 Design Loading Memory Usage: 5072 KB (Peak: 5072 KB)
 Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 5756 KB (Peak: 5756 KB)
+Simulation CPU Usage: 202 ms

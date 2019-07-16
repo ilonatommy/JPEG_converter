@@ -27,8 +27,11 @@ module tb_DCT_int();
     reg [1:0] cnt = 0;
     reg rst = 0;
     reg start = 0;
-    reg [7:0] pixel_in;//values from -128 to 127
     wire [3:0] STATE;
+        
+    reg signed [11:0] r10;
+    reg signed [12:0] r21;
+    reg signed [12:0] r19;
     
     always @(posedge(clk))
     begin
@@ -47,15 +50,37 @@ module tb_DCT_int();
         if(cnt == 2'd2)
             cnt <= 0;
         if(cnt == 2'd0)
-            pixel_in <= 8'd10;
+            r10 <= 12'd19; //19
+            r19 <= 13'd270;//270
+            r21 <= 13'b1111111001110; //-50
         if(cnt == 2'd1)
-            pixel_in <= 8'd100;
+           r10 <= 12'b111110011110; //-98
+           r19 <= 13'd500; //500
+           r21 <= 13'd0; //0
         if(cnt == 2'd2)
-            pixel_in <= 8'd150;
+           r10 <= 12'd147; //147
+           r19 <= 13'b1111111100001; //-31
+           r21 <= 13'b1111110111011; //-69
+        if(cnt == 2'd3)
+           r10 <= 12'd162; //162
+           r19 <= 13'b1111111100001; //-31
+           r21 <= 13'b1111110111011; //-69
+        if(cnt == 2'd4)
+           r10 <= 12'd162; //162
+           r19 <= 13'b1111111100001; //-31
+           r21 <= 13'b1111110111011; //-69
+        if(cnt == 2'd5)
+           r10 <= 12'd162; //162
+           r19 <= 13'b1111111100001; //-31
+           r21 <= 13'b1111111100001; //-31
+        if(cnt == 2'd6)
+           r10 <= 12'd162; //162
+           r19 <= 13'b1111111100001; //-31
+           r21 <= 13'b1111111100001; //-31
+        if(cnt == 2'd7)
+           r10 <= 12'b111110110101; //-75
+           r19 <= 13'b1111111100001; //-31//-31
+           r21 <= 13'b1111111100001; //-31
     end
-    
-    wire signed [11:0] r10;
-    wire signed [12:0] r21;
-    wire signed [12:0] r19;
-    DCT_int mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r10_out(r10), .r19_out(r19), .r21_out(r21), .state(STATE));
+    DCT_int mod1(.clk(clk), .rst(rst), .start(start), .r10_in(r10), .r19_in(r19), .r21_in(r21), .state(STATE));
 endmodule
