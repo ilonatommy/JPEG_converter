@@ -58,6 +58,5 @@ module tb_DCT_int();
     wire [12:0] r21;
     wire [12:0] r19;
     wire [8:0] r2_test;
-    wire [25:0] r10_test;
-    DCT_int mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r2_test(r2_test),  .r10_test(r10_test), .r10_out(r10), .r19_out(r19), .r21_out(r21), .state(STATE));
+    DCT_int mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r2_test(r2_test),  .r10_out(r10), .r19_out(r19), .r21_out(r21), .state(STATE));
 endmodule
