@@ -54,7 +54,7 @@ module tb_DCT_int();
             pixel_in <= 8'd150;
     end
     
-    wire [11:0] r10;
+    wire [11:0] r10; //tested: okay
     wire [12:0] r21;
     wire [12:0] r19;
     wire [8:0] r2_test;

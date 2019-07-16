@@ -45,7 +45,6 @@ module DCT_int(
     reg signed [12:0] r22; //-3186:3162
     
     assign r2_test = r2;
-    assign r10_test = r10;
     
     //7th tic: m3, m2, m1, m4, m1
     //m format: u1i0f
@@ -184,6 +183,7 @@ module DCT_int(
         endcase
     end
     
+    assign r10_out = r10[25:13];
     assign r19_out = r19; 
     assign r21_out = r21; 
     assign state = STATE;
