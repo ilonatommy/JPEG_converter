@@ -108,7 +108,7 @@ module DCT_fp(
             
             4'd0:
             begin
-                STATE <= 3'd1;
+                STATE <= 4'd1;
                 
                 //done on 0th tackt so that it could be present in r10 on 1st tackt
                 r10 <= r5 * m1; //s12c0f * s1i13f                
@@ -118,7 +118,7 @@ module DCT_fp(
             
             4'd1:
             begin
-                STATE <= 3'd2;
+                STATE <= 4'd2;
                 
                 //done on 1st tackt so that it could be present in r10 on 2nd tackt
                 r10 <= r22 * m4; //s12c0f * s1i13f 
@@ -126,7 +126,7 @@ module DCT_fp(
             
             4'd2:
             begin
-                STATE <= 3'd3;
+                STATE <= 4'd3;
                 
                 //done on 2nd tackt so that it could be present in r10 on 3rd tackt
                 r10 <= r9 * m1; //s12c0f * s1i13f
@@ -135,22 +135,22 @@ module DCT_fp(
             
             4'd3:
             begin
-                STATE <= 3'd4;
+                STATE <= 4'd4;
             end      
             
             4'd4: 
             begin 
-                STATE <= 3'd5;
+                STATE <= 4'd5;
             end   
             
             4'd5: 
             begin 
-                STATE <= 3'd6;
+                STATE <= 4'd6;
             end   
             
             4'd6: 
             begin 
-                STATE <= 3'd7;
+                STATE <= 4'd7;
                 
                 //done on 6th tackt so that it could be present in r10 on 7th tackt
                 r10 <= r5 * m3; //s12c0f * s1i13f                
@@ -160,7 +160,7 @@ module DCT_fp(
             
             4'd7: 
             begin 
-                STATE <= 3'd0;
+                STATE <= 4'd0;
                 
                  //done on 7th tackt so that it could be present in r10 on 0th tackt
                  r10 <= r5 * m2; //s12c0f * s1i13f 
