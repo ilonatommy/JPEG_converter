@@ -29,9 +29,7 @@ module DCT(
     );
     
      wire signed [11:0] r10;
-     wire signed [12:0] r21;
-     wire signed [12:0] r19;
-     wire signed [12:0] r18;
+     wire signed [12:0] r18, r19, r21;
        
     DCT_fp mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r10_out(r10), .r18_out(r18), .r19_out(r19), .r21_out(r21));    
     DCT_int mod2(.clk(clk), .rst(rst), .start(start), .r10_in(r10), .r18_in(r18), .r19_in(r19), .r21_in(r21), .pixel_out(pixel_out));

@@ -27,7 +27,7 @@ module tb_DCT( );
     reg rst = 0;
     reg start = 0;
     wire [3:0] STATE;    
-    reg signed [7:0] pixel_in;
+    reg signed [7:0] pixel_in = 8'b10000000;
     wire signed [13:0] pixel_out;
     
     DCT mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start),  .pixel_out(pixel_out)); 
@@ -48,11 +48,5 @@ module tb_DCT( );
                 rst <= 1'b0;
             if(cnt == 2'd2)
                 cnt <= 0;
-            if(cnt == 2'd0)
-                pixel_in <= 8'd10;
-            if(cnt == 2'd1)
-                pixel_in <= 8'd100;
-            if(cnt == 2'd2)
-                pixel_in <= 8'd150;
         end
 endmodule

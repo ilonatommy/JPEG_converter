@@ -27,7 +27,7 @@ module tb_DCT_fp();
     reg [1:0] cnt = 0;
     reg rst = 0;
     reg start = 0;
-    reg [7:0] pixel_in;//values from -128 to 127
+    reg [7:0] pixel_in = 8'b10000000;//values from -128 to 127
     
     always @(posedge(clk))
     begin
@@ -45,12 +45,6 @@ module tb_DCT_fp();
             rst <= 1'b0;
         if(cnt == 2'd2)
             cnt <= 0;
-        if(cnt == 2'd0)
-            pixel_in <= 8'd10;
-        if(cnt == 2'd1)
-            pixel_in <= 8'd100;
-        if(cnt == 2'd2)
-            pixel_in <= 8'd150;
     end
     
     wire signed [11:0] r10;
