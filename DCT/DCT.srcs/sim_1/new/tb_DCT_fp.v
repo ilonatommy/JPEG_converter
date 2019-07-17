@@ -28,7 +28,6 @@ module tb_DCT_fp();
     reg rst = 0;
     reg start = 0;
     reg [7:0] pixel_in;//values from -128 to 127
-    wire [3:0] STATE;
     
     always @(posedge(clk))
     begin
@@ -58,5 +57,5 @@ module tb_DCT_fp();
     wire signed [12:0] r21;
     wire signed [12:0] r19;
     wire signed [12:0] r18;
-    DCT_fp mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r10_out(r10), .r18_out(r18), .r19_out(r19), .r21_out(r21), .state(STATE));
+    DCT_fp mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start), .r10_out(r10), .r18_out(r18), .r19_out(r19), .r21_out(r21));
 endmodule

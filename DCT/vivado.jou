@@ -47,3 +47,36 @@ save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.w
 relaunch_sim
 relaunch_sim
 save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_DCT [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg
+set_property xsim.view {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg} [get_filesets sim_1]
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+relaunch_sim

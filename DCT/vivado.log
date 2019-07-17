@@ -1180,3 +1180,800 @@ INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 893.367 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 895.016 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+WARNING: [VRFC 10-2369] data object r25 is already declared [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:39]
+ERROR: [VRFC 10-1350] second declaration of r25 ignored [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:39]
+INFO: [VRFC 10-2458] undeclared symbol r23, assumed default net type wire [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:122]
+ERROR: [VRFC 10-1040] module tb_DCT_int ignored due to previous errors [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port r23_in on this module [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v:122]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_int' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_int_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_int_behav xil_defaultlib.tb_DCT_int xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.tb_DCT_int
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_int_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg}
+set_property top tb_DCT [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_fp
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jul 17 11:45:20 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 17 11:45:20 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 919.063 ; gain = 0.000
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg
+set_property xsim.view {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg} [get_filesets sim_1]
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_fp
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_fp
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/sources_1/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_int.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_int
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/imports/new/tb_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT_fp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_fp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sim_1/new/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4452bdac857f45c49b0b6db2118e3c55 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.DCT_fp
+Compiling module xil_defaultlib.DCT_int
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps

@@ -27,10 +27,10 @@ module tb_DCT( );
     reg rst = 0;
     reg start = 0;
     wire [3:0] STATE;    
-    reg [7:0] pixel_in;
-    wire [13:0] pixel_out;
+    reg signed [7:0] pixel_in;
+    wire signed [13:0] pixel_out;
     
-    DCT mod1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start),  .pixel_out(pixel_out)); 
+    DCT mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .start(start),  .pixel_out(pixel_out)); 
     
     always @(posedge(clk))
         begin

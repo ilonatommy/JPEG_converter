@@ -21,15 +21,14 @@
 
 
 module DCT_fp(
-    input [7:0] pixel_in,
+    input signed [7:0] pixel_in,
     input clk,
     input start,
     input rst,
     output signed [11:0] r10_out,
     output signed [12:0] r18_out,
     output signed [12:0] r19_out,
-    output signed [12:0] r21_out,
-    output [3:0] state  
+    output signed [12:0] r21_out
     );    
     
     localparam [3:0] IDLE = 4'd8;    
@@ -174,5 +173,4 @@ module DCT_fp(
     assign r18_out = r18; 
     assign r19_out = r19; 
     assign r21_out = r21; 
-    assign state = STATE;
 endmodule
