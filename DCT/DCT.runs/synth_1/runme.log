@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log full_adder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_adder.tcl
+    with args -log DCT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCT.tcl
 
 
 ****** Vivado v2017.2 (64-bit)
@@ -8,33 +8,103 @@
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source full_adder.tcl -notrace
-Command: synth_design -top full_adder -part xc7z010clg400-1
+source DCT.tcl -notrace
+Command: synth_design -top DCT -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6996 
+INFO: Helper process launched with PID 9064 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 310.387 ; gain = 77.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 310.492 ; gain = 77.867
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'full_adder' (1#1) [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/imports/new/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'DCT' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v:23]
+INFO: [Synth 8-638] synthesizing module 'DCT_fp' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:23]
+	Parameter IDLE bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:99]
+INFO: [Synth 8-256] done synthesizing module 'DCT_fp' (1#1) [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:23]
+INFO: [Synth 8-638] synthesizing module 'DCT_int' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:23]
+	Parameter IDLE bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:60]
+WARNING: [Synth 8-6014] Unused sequential element r24_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:57]
+INFO: [Synth 8-256] done synthesizing module 'DCT_int' (2#1) [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DCT' (3#1) [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 349.715 ; gain = 117.164
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.820 ; gain = 117.195
 ---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 349.715 ; gain = 117.164
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.820 ; gain = 117.195
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/constrs_2/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/constrs_2/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/constrs_2/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DCT_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DCT_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 650.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 650.906 ; gain = 418.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 349.715 ; gain = 117.164
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 650.906 ; gain = 418.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 349.715 ; gain = 117.164
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 650.906 ; gain = 418.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:93]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:94]
+WARNING: [Synth 8-6014] Unused sequential element r8_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:90]
+WARNING: [Synth 8-6014] Unused sequential element r9_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:91]
+WARNING: [Synth 8-6014] Unused sequential element r22_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:96]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:127]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:127]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:60]
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'DCT_int'
+INFO: [Synth 8-5544] ROM "r15" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r25" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:46]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:46]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             1000
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0011 |                             0010
+                 iSTATE2 |                             0100 |                             0011
+                 iSTATE3 |                             0101 |                             0100
+                 iSTATE4 |                             0110 |                             0101
+                 iSTATE5 |                             0111 |                             0110
+                 iSTATE6 |                             1000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'DCT_int'
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_int.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 650.906 ; gain = 418.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -42,14 +112,39 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 2     
-INFO: [Device 21-403] Loading part xc7z010clg400-1
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   9 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	  10 Input     13 Bit        Muxes := 2     
+	   9 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -57,10 +152,47 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module full_adder 
+Module DCT_fp 
 Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 2     
++---Adders : 
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               13 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     13 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module DCT_int 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     14 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   9 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -73,12 +205,99 @@ BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r4_reg[8:0]' into 'mod1/r4_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+INFO: [Synth 8-4471] merging register 'mod1/r4_reg[8:0]' into 'mod1/r4_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+INFO: [Synth 8-4471] merging register 'mod1/r4_reg[8:0]' into 'mod1/r4_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r2_reg[8:0]' into 'mod1/r2_reg[8:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+INFO: [Synth 8-4471] merging register 'mod1/r5_reg[9:0]' into 'mod1/r5_reg[9:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+INFO: [Synth 8-4471] merging register 'mod1/r5_reg[9:0]' into 'mod1/r5_reg[9:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+INFO: [Synth 8-4471] merging register 'mod1/r5_reg[9:0]' into 'mod1/r5_reg[9:0]' [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r4_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r4_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r4_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:79]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r2_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:76]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r5_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r5_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r5_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:85]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r22_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:96]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r8_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:90]
+WARNING: [Synth 8-6014] Unused sequential element mod1/r9_reg was removed.  [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/sources_1/new/DCT_fp.v:91]
+DSP Report: Generating DSP mod1/r100, operation Mode is: (D'+A'')*(B:0x16a0).
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r4_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r5_reg is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r50 is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r100 is absorbed into DSP mod1/r100.
+DSP Report: Generating DSP mod1/r100, operation Mode is: (A:0x29cf)*B2.
+DSP Report: register mod1/r22_reg is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r100 is absorbed into DSP mod1/r100.
+DSP Report: Generating DSP mod1/r100, operation Mode is: (A:0x16a0)*B''.
+DSP Report: register mod1/r8_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r9_reg is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r100 is absorbed into DSP mod1/r100.
+DSP Report: Generating DSP mod1/r100, operation Mode is: (D'+A'')*(B:0x1151).
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r4_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r5_reg is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r50 is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r100 is absorbed into DSP mod1/r100.
+DSP Report: Generating DSP mod1/r100, operation Mode is: (D'+A'')*(B:0xc3e).
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r4_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r2_reg is absorbed into DSP mod1/r100.
+DSP Report: register mod1/r5_reg is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r50 is absorbed into DSP mod1/r100.
+DSP Report: operator mod1/r100 is absorbed into DSP mod1/r100.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[26]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[12]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[11]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[10]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[9]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[8]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[7]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[6]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[5]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[4]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[3]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[2]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[1]) is unused and will be removed from module DCT.
+WARNING: [Synth 8-3332] Sequential element (mod1/r10_reg[0]) is unused and will be removed from module DCT.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 650.906 ; gain = 418.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DCT         | (D'+A'')*(B:0x16a0) | 9      | 14     | -      | 9      | 24     | 2    | 0    | -    | 1    | 1     | 0    | 0    | 
+|DCT_fp      | (A:0x29cf)*B2       | 13     | 15     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|DCT_fp      | (A:0x16a0)*B''      | 11     | 14     | -      | -      | 25     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|DCT         | (D'+A'')*(B:0x1151) | 9      | 14     | -      | 9      | 24     | 2    | 0    | -    | 1    | 1     | 0    | 0    | 
+|DCT         | (D'+A'')*(B:0xc3e)  | 9      | 13     | -      | 9      | 23     | 2    | 0    | -    | 1    | 1     | 0    | 0    | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -86,12 +305,17 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 671.230 ; gain = 438.605
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 671.230 ; gain = 438.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -103,7 +327,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,7 +351,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -140,7 +364,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -152,25 +376,39 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|DCT         | mod1/ram_reg[3][7] | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------+--------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -183,37 +421,50 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT3 |     2|
-|2     |IBUF |     3|
-|3     |OBUF |     2|
-+------+-----+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    36|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_3 |     3|
+|5     |LUT1      |     2|
+|6     |LUT2      |    58|
+|7     |LUT3      |    30|
+|8     |LUT4      |    38|
+|9     |LUT5      |    56|
+|10    |LUT6      |    92|
+|11    |SRL16E    |     8|
+|12    |FDRE      |   306|
+|13    |IBUF      |    11|
+|14    |OBUF      |    14|
++------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     7|
-+------+---------+-------+------+
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   657|
+|2     |  mod1   |DCT_fp  |   363|
+|3     |  mod2   |DCT_int |   230|
++------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
-Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 478.027 ; gain = 245.477
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 691.516 ; gain = 157.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 691.516 ; gain = 458.891
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 563.855 ; gain = 339.066
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/synth_1/full_adder.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 563.855 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 11 10:22:05 2019...
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 691.516 ; gain = 466.656
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/synth_1/DCT.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 691.516 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 15:18:35 2019...

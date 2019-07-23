@@ -28,7 +28,16 @@ module DCT_int(
     input signed [12:0] r18_in,
     input signed [12:0] r19_in,
     input signed [12:0] r21_in,
-    output signed [13:0] pixel_out 
+    output signed [13:0] pixel_out,
+    output signed [11:0] r11_test,
+    output signed [11:0] r12_test,
+    output signed [11:0] r13_test,
+    output signed [11:0] r14_test,
+    output signed [12:0] r15_test,
+    output signed [12:0] r23_test,
+    output signed [12:0] r24_test,
+    output signed [13:0] r25_test,
+    output [3:0] STATE_int
     );    
         
     localparam [3:0] IDLE = 4'd8;    
@@ -100,7 +109,7 @@ module DCT_int(
             begin 
                 STATE <= 4'd6;
                 //latch for the next tic (even)
-                r25 <= r23 - r15; 
+                r25 <= r24 - r15; 
                 r15 <= r14 + r12; 
             end   
             
@@ -113,7 +122,7 @@ module DCT_int(
             begin 
                 STATE <= 4'd0;
                 //latch for the next tic (even)
-                r25 <= r23 - r15;
+                r25 <= r24 - r15;
             end   
         endcase
     end
@@ -124,5 +133,16 @@ module DCT_int(
     //for tic == 1 => r18+r19
     //for tic == 3 => r23+r10
     //for tic == 5 | 7 => r23+r15
-    assign pixel_out = (STATE % 2 == 0) ? r25 : (STATE == 1) ? (r18_in + r19_in) : (STATE == 3) ? (r23 + r10_in) : (r23 + r15);
+    assign pixel_out = (STATE % 2 == 0) ? r25 : (STATE == 1) ? (r18_in + r19_in) : (STATE == 3) ? (r23 + r10_in) : (r24 + r15);
+    
+    assign r11_test = r11;
+    assign r12_test = r12;
+    assign r13_test = r13;
+    assign r14_test = r14;
+    assign r15_test = r15;
+    assign r23_test = r23;
+    assign r24_test = r24;
+    assign r25_test = r25;
+    assign STATE_int = STATE;
+    
 endmodule

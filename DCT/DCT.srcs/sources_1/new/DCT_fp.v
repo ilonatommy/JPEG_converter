@@ -28,7 +28,25 @@ module DCT_fp(
     output signed [11:0] r10_out,
     output signed [12:0] r18_out,
     output signed [12:0] r19_out,
-    output signed [12:0] r21_out
+    output signed [12:0] r21_out,
+    output signed [8:0] r1_test,
+    output signed [8:0] r2_test,
+    output signed [8:0] r3_test,
+    output signed [8:0] r4_test,
+    output signed [8:0] r16_test,
+    output signed [8:0] r17_test,
+    output signed [9:0] r5_test,
+    output signed [9:0] r6_test,
+    output signed [9:0] r7_test,
+    output signed [10:0] r8_test,
+    output signed [10:0] r9_test,
+    output signed [26:0] r10_test,
+    output signed [12:0] r18_test,
+    output signed [12:0] r19_test,
+    output signed [12:0] r20_test,
+    output signed [12:0] r21_test,
+    output signed [12:0] r22_test,
+    output [3:0] STATE_fp
     );    
     
     localparam [3:0] IDLE = 4'd8;    
@@ -169,8 +187,27 @@ module DCT_fp(
         endcase
     end
     
-    assign r10_out = r10[25:13];
+    assign r10_out = r10[25:13]; //r10[11:0];
     assign r18_out = r18; 
     assign r19_out = r19; 
     assign r21_out = r21; 
+    
+    assign r1_test = r1;
+    assign r2_test = r2;
+    assign r3_test = r3;
+    assign r4_test = r4;
+    assign r5_test = r5;
+    assign r6_test = r6;
+    assign r7_test = r7;
+    assign r8_test = r8;
+    assign r9_test = r9;
+    assign r10_test = r10;
+    assign r16_test = r16;
+    assign r17_test = r17;
+    assign r18_test = r18;
+    assign r19_test = r19;
+    assign r20_test = r20;
+    assign r21_test = r21;
+    assign r22_test = r22;
+    assign STATE_fp = STATE;
 endmodule

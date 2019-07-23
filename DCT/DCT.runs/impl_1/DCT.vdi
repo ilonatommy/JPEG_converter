@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jul 17 15:18:42 2019
+# Process ID: 8392
+# Current directory: C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/impl_1
+# Command line: vivado.exe -log DCT.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DCT.tcl -notrace
+# Log file: C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/impl_1/DCT.vdi
+# Journal file: C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DCT.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/constrs_2/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.srcs/constrs_2/new/constr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 489.949 ; gain = 256.766
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.470 . Memory (MB): peak = 501.598 ; gain = 11.648
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10a65bfa3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 10a65bfa3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.032 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1b827c53f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1b827c53f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.068 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1b827c53f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.069 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.820 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1b827c53f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 938.820 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 220c269b9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 938.820 ; gain = 0.000
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 938.820 ; gain = 448.871
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/impl_1/DCT_opt.dcp' has been generated.
+Command: report_drc -file DCT_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.runs/impl_1/DCT_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.820 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 146d78f86
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 938.820 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 938.820 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (6) is greater than number of available sites (0).
+The following Groups of I/O terminals have not sufficient capacity: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 0 sites available on device, but needs 6 sites.
+	Term: pixel_out[8]
+	Term: pixel_out[9]
+	Term: pixel_out[10]
+	Term: pixel_out[11]
+	Term: pixel_out[12]
+	Term: pixel_out[13]
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (6) is greater than number of available sites (0).
+The following Groups of I/O terminals have not sufficient capacity: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 0 sites available on device, but needs 6 sites.
+	Term: pixel_out[8]
+	Term: pixel_out[9]
+	Term: pixel_out[10]
+	Term: pixel_out[11]
+	Term: pixel_out[12]
+	Term: pixel_out[13]
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     8 | LVCMOS33(8)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |    10 | LVCMOS33(10)                                                           |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |    18 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | pixel_out[0]         | LVCMOS33        | IOB_X0Y42            | V12                  |                      |
+|        | pixel_out[1]         | LVCMOS33        | IOB_X0Y13            | W16                  |                      |
+|        | pixel_out[4]         | LVCMOS33        | IOB_X0Y43            | V13                  |                      |
+|        | pixel_out[5]         | LVCMOS33        | IOB_X0Y31            | U17                  |                      |
+|        | pixel_out[6]         | LVCMOS33        | IOB_X0Y10            | T17                  |                      |
+|        | pixel_out[7]         | LVCMOS33        | IOB_X0Y35            | Y17                  |                      |
+|        | rst                  | LVCMOS33        | IOB_X0Y9             | R18                  |                      |
+|        | start                | LVCMOS33        | IOB_X0Y1             | P16                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | pixel_in[0]          | LVCMOS33        | IOB_X0Y58            | N15                  |                      |
+|        | pixel_in[1]          | LVCMOS33        | IOB_X0Y56            | L14                  |                      |
+|        | pixel_in[2]          | LVCMOS33        | IOB_X0Y52            | K16                  |                      |
+|        | pixel_in[3]          | LVCMOS33        | IOB_X0Y60            | K14                  |                      |
+|        | pixel_in[4]          | LVCMOS33        | IOB_X0Y57            | N16                  |                      |
+|        | pixel_in[5]          | LVCMOS33        | IOB_X0Y55            | L15                  |                      |
+|        | pixel_in[6]          | LVCMOS33        | IOB_X0Y51            | J16                  |                      |
+|        | pixel_in[7]          | LVCMOS33        | IOB_X0Y59            | J14                  |                      |
+|        | pixel_out[2]         | LVCMOS33        | IOB_X0Y50            | J15                  |                      |
+|        | pixel_out[3]         | LVCMOS33        | IOB_X0Y62            | H15                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus pixel_out are not locked:  'pixel_out[13]'  'pixel_out[12]'  'pixel_out[11]'  'pixel_out[10]'  'pixel_out[9]'  'pixel_out[8]' 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13ba892f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.450 . Memory (MB): peak = 938.820 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 13ba892f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 938.820 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 13ba892f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.466 . Memory (MB): peak = 938.820 ; gain = 0.000
+36 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 15:19:12 2019...

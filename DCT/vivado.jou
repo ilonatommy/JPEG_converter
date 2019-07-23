@@ -2,45 +2,52 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Jul 17 13:04:32 2019
-# Process ID: 6464
+# Start of session at: Mon Jul 22 11:20:43 2019
+# Process ID: 3764
 # Current directory: C:/Users/lsneler/Desktop/Repository/DCT/DCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8908 C:\Users\lsneler\Desktop\Repository\DCT\DCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6872 C:\Users\lsneler\Desktop\Repository\DCT\DCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/DCT/DCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/DCT/DCT\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.xpr
 launch_simulation
-open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg
-open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg
-open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav2.wcfg
-open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg
-source tb_DCT_fp.tcl
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg
-set_property xsim.view {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav2.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg} [get_filesets sim_1]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_DCT [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode DisplayOnly [current_project]
-relaunch_sim
-launch_simulation
-open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg
 source tb_DCT.tcl
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
 close_sim
-launch_simulation
-source tb_DCT.tcl
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg
-set_property xsim.view {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav1.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_int_behav2.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_fp_behav.wcfg C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg} [get_filesets sim_1]
-current_sim simulation_1
-close_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
-relaunch_sim
-relaunch_sim
