@@ -31,7 +31,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="540"/>
+    <Option Name="WTXSimLaunchSim" Val="543"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -54,15 +54,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/new/full_adder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../sources_1/new/full_adder.v"/>
-          <Attr Name="ImportTime" Val="1562829892"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/DCT_int.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -102,15 +93,6 @@
       </File>
       <File Path="$PSRCDIR/sim_1/new/tb_DCT_int.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/new/tb_full_adder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../sim_1/new/tb_full_adder.v"/>
-          <Attr Name="ImportTime" Val="1562832624"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

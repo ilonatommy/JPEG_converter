@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jul 22 11:20:43 2019
+# Process ID: 3764
+# Current directory: C:/Users/lsneler/Desktop/Repository/DCT/DCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6872 C:\Users\lsneler\Desktop\Repository\DCT\DCT\DCT.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/DCT/DCT/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/DCT/DCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/DCT/DCT/DCT.xpr
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg
+source tb_DCT.tcl
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/DCT/tb_DCT_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
