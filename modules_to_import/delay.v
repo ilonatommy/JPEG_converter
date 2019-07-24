@@ -22,19 +22,28 @@
 
 module delay
 #(
-    parameter reg_width = 8,
+    parameter reg_width = 8
 )
 (
     input clk,
-    input[reg_width-1:0] idata,
-    output[reg_width-1:0] odata
+    input rst,
+    input ce,
+    input signed [reg_width-1:0] idata,
+    output signed [reg_width-1:0] odata
     );
     
 reg[reg_width-1:0] tmp;
 
 always @(posedge (clk))
 begin
-	tmp = idata;
-end;
+	if(rst == 1'b1)
+	   tmp = 0;
+	else
+	begin
+	if(ce == 1'b1)
+	   tmp = idata;
+	end
+end
+
 assign odata = tmp;
 endmodule

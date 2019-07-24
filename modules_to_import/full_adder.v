@@ -23,9 +23,9 @@
 module full_adder
 #(parameter WIDTH = 1)
 (
-    input [WIDTH-1 : 0] A,
-    input [WIDTH-1 : 0] B,
-    output [WIDTH : 0] S
+    input signed [WIDTH-1 : 0] A,
+    input signed [WIDTH-1 : 0] B,
+    output signed [WIDTH : 0] S
     );
     
     assign S = A + B;
