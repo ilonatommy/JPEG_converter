@@ -1,0 +1,48 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.delay(reg_width=8)
+Compiling module xil_defaultlib.register(WIDTH=8,DELAY=4)
+Compiling module xil_defaultlib.delay(reg_width=9)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=10)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=11)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=13)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=14)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=8)
+Compiling module xil_defaultlib.full_adder(WIDTH=9)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_adder(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=8)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=10)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav

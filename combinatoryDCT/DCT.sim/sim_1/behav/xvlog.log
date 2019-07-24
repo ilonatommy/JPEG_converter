@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
