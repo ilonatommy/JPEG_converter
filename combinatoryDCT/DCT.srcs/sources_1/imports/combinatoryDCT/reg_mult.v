@@ -32,9 +32,9 @@ module reg_mult(
     reg signed [14:0] m3 = 15'b001000101010001; //https://www.wolframalpha.com/input/?i=cos(pi%2F8)-cos(3pi%2F8)
     reg signed [14:0] m4 = 15'b010100111001111; //https://www.wolframalpha.com/input/?i=cos(pi%2F8)%2Bcos(3pi%2F8) 
     
-    wire signed [25:0] mult_result;
+    wire signed [27:0] mult_result;
     wire signed [14:0] m;
     assign m = code == 2'd0 ? m1 : code == 2'd1 ? m2 : code == 2'd2 ? m3 : code == 2'd3 ? m4 : 0;
-    assign mult_result = $signed(idata * m);
-    assign odata = mult_result[25:14];
+    assign mult_result = idata * m;
+    assign odata = {mult_result[27] , mult_result[23:13]};
 endmodule

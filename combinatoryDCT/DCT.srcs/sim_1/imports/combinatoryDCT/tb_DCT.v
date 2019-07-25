@@ -24,35 +24,56 @@ module tb_DCT();
 
     wire clk;
     clk_gen tic_gen(.clk(clk));
-    reg [1:0] cnt = 0;
+    reg [2:0] cnt = 0;
     reg rst = 0;
     reg start = 0;
     reg signed [7:0] pixel_in;//values from -128 to 127
     wire signed [13:0] pixel_out;
     
     always @(posedge(clk))
-    begin
-        if(rst == 1'b0 & start == 1'b0)
-        begin
-            rst <= 1'b1;
-            start <= 1'b1;
-            cnt <= 0;
-        end
-        else
-        begin
-            cnt <= cnt + 1;
-        end
-        if(rst == 1'b1)
-            rst <= 1'b0;
-        if(cnt == 2'd2)
-            cnt <= 0;
-        if(cnt == 2'd0)
-            pixel_in <= 8'b00001010; //10
-        if(cnt == 2'd1)
-            pixel_in <= 8'b01100100; //100
-        if(cnt == 2'd2)
-            pixel_in <= 8'b11001110; //-50
-    end
+            begin
+                if(rst == 1'b0 & start == 1'b0)
+                begin
+                    rst <= 1'b1;
+                    start <= 1'b1;
+                    cnt <= 3'd0;
+                end
+                else
+                begin
+                    cnt <= cnt + 1;
+                end
+                if(rst == 1'b1)
+                begin
+                    rst <= 1'b0;
+                    pixel_in <= 8'd0;
+                end
+                if(cnt == 3'd0)
+                    pixel_in <= 8'd10;//8'b00001010; //10
+                    
+                if(cnt == 3'd1)
+                    pixel_in <= 8'd10;//8'b01100100; //100
+                    
+                if(cnt == 3'd2)
+                    pixel_in <= 8'd10;//8'b01100100; //100
+                    
+                if(cnt == 3'd3)
+                    pixel_in <= 8'd10;//8'b01100100; //100
+                    
+                if(cnt == 3'd4)
+                    pixel_in <= 8'd10;//8'b01100100; //100
+                    
+                if(cnt == 3'd5)
+                    pixel_in <= 8'd10;//8'b01100100; //100    
+                    
+                if(cnt == 3'd6)
+                    pixel_in <= 8'd10;//8'b01100100; //100
+                   
+                if(cnt == 3'd7)
+                begin
+                    pixel_in <= 8'd10;//8'b11001110; //-50
+                    cnt <= 3'd0;
+                end
+            end
     
     wire [3:0] STATE;
     wire signed [7:0] oRAM; //8-bit vector

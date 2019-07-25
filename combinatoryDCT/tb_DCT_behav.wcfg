@@ -11,22 +11,22 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="956083333fs"></ZoomStartTime>
-      <ZoomEndTime time="1008783334fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomStartTime time="21430000fs"></ZoomStartTime>
+      <ZoomEndTime time="32010001fs"></ZoomEndTime>
+      <Cursor1Time time="24250000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="145"></NameColumnWidth>
-      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="43" />
+   <WVObjectSize size="42" />
    <wvobject fp_name="/tb_DCT/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/cnt" type="array">
-      <obj_property name="ElementShortName">cnt[1:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt[1:0]</obj_property>
+      <obj_property name="ElementShortName">cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[2:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/rst" type="logic">
@@ -116,6 +116,11 @@
       <obj_property name="ObjectShortName">o_mo1[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_DCT/o_mo3" type="array">
+      <obj_property name="ElementShortName">o_mo3[12:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo3[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_DCT/i_r8" type="array">
       <obj_property name="ElementShortName">i_r8[11:0]</obj_property>
       <obj_property name="ObjectShortName">i_r8[11:0]</obj_property>
@@ -141,11 +146,6 @@
       <obj_property name="ObjectShortName">o_mo4[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT/o_mo3" type="array">
-      <obj_property name="ElementShortName">o_mo3[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo3[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_DCT/o_r11" type="array">
       <obj_property name="ElementShortName">o_r11[12:0]</obj_property>
       <obj_property name="ObjectShortName">o_r11[12:0]</obj_property>
@@ -154,11 +154,6 @@
    <wvobject fp_name="/tb_DCT/i_mo5" type="array">
       <obj_property name="ElementShortName">i_mo5[12:0]</obj_property>
       <obj_property name="ObjectShortName">i_mo5[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_r13" type="array">
-      <obj_property name="ElementShortName">i_r13[12:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r13[12:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_r13" type="array">
