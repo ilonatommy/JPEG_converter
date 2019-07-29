@@ -18,13 +18,13 @@ Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
 Compiling module xil_defaultlib.delay(reg_width=11)
 Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
 Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
 Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
 Compiling module xil_defaultlib.delay(reg_width=13)
-Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
 Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
 Compiling module xil_defaultlib.delay(reg_width=14)
 Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
-Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
 Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
 Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
 Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
