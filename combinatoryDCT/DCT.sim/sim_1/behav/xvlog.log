@@ -20,6 +20,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository
 INFO: [VRFC 10-311] analyzing module reg_mult
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_DCT
-INFO: [VRFC 10-2458] undeclared symbol o_r21, assumed default net type wire [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v:91]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
