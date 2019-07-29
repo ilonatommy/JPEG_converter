@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Jul 29 10:42:08 2019
-# Process ID: 344
+# Start of session at: Mon Jul 29 10:10:19 2019
+# Process ID: 3708
 # Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8116 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5004 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT\vivado.jou
 #-----------------------------------------------------------
@@ -17,23 +17,5 @@ open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_b
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
 source tb_DCT.tcl
-relaunch_sim
-relaunch_sim
 save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
 relaunch_sim
-relaunch_sim
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-relaunch_sim
-relaunch_sim
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
-relaunch_sim
-relaunch_sim
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}

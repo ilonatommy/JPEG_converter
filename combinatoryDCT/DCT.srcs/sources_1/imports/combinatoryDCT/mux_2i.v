@@ -24,7 +24,8 @@ module mux_2i
 #(
     parameter WIDTH_I0 = 1,
     parameter WIDTH_I1 = 1,
-    parameter WIDTH_OUT = 1
+    parameter WIDTH_OUT = 1,
+    parameter DELAY = 0
 )
 (
     input [WIDTH_I0-1 : 0] i0,
@@ -32,6 +33,5 @@ module mux_2i
     input code, //0,1
     output [WIDTH_OUT-1 : 0] odata
     );
-    
     assign odata = code == 2'd0 ? i0 : code == 2'd1 ? i1: 0;
 endmodule

@@ -25,7 +25,8 @@ module mux_3i
     parameter WIDTH_I0 = 1,
     parameter WIDTH_I1 = 1,
     parameter WIDTH_I2 = 1,
-    parameter WIDTH_OUT = 1
+    parameter WIDTH_OUT = 1,
+    parameter DELAY = 0
 )
 (
     input signed [WIDTH_I0-1 : 0] i0,
@@ -34,6 +35,5 @@ module mux_3i
     input [1:0] code, //0,1,2
     output signed [WIDTH_OUT-1 : 0] odata
     );
-    
     assign odata = code == 2'd0 ? i0 : code == 2'd1 ? i1 : code == 2'd2 ? i2 : 0;
 endmodule
