@@ -22,7 +22,7 @@
 
 module DCT(
     input signed [7:0] pixel_in,
-    output signed [13:0] pixel_out,
+    output signed [11:0] pixel_out,
     input clk,
     input start,
     input rst
@@ -38,6 +38,7 @@ module DCT(
     wire signed [11:0] o_mo1, i_r8, o_r8, o_r9, o_r10, o_mo4, o_r23;
     wire signed [12:0] o_mo3, o_r11, i_mo5, o_r13, o_r22, o_r14, o_mo5, i_r11, o_r16, o_r19, o_r17, o_r18, o_mo6, o_mo7;
     wire signed [13:0] i_odd, i_r20, i_even, i_r19;
+    wire signed [13:0] pixel_out_unscaled;
         
     RAM #(.WIDTH(8)) fabric_RAM(.clk(clk), .rst(rst), .ce(start), .idata(pixel_in), .odata(oRAM), .cnt(STATE[2:0])); //output on 4th  
     register #(.WIDTH(9), .DELAY(2)) r1(.clk(clk), .rst(rst), .ce(start), .idata(i_r1), .odata(o_r1)); 
@@ -83,10 +84,11 @@ module DCT(
     mux_2i #(.WIDTH_I0(9), .WIDTH_I1(9), .WIDTH_OUT(9)) mo2 (.i0(o_r1), .i1(o_r21), .odata(o_mo2), .code(code_mo2));//first output at 7th
     mux_2i #(.WIDTH_I0(12), .WIDTH_I1(12), .WIDTH_OUT(12)) mo4(.i0(o_r8), .i1(o_r9), .odata(o_mo4), .code(code_mo4));
     mux_2i #(.WIDTH_I0(13), .WIDTH_I1(13), .WIDTH_OUT(13)) mo5_r15 (.i0(i_mo5), .i1(o_r22), .odata(o_mo5), .code(code_mo5)); //7th
-    mux_2i #(.WIDTH_I0(14), .WIDTH_I1(14), .WIDTH_OUT(14)) result_mux (.i0(i_odd), .i1(i_even), .odata(pixel_out), .code(code_even_odd));
+    mux_2i #(.WIDTH_I0(14), .WIDTH_I1(14), .WIDTH_OUT(14)) result_mux (.i0(i_odd), .i1(i_even), .odata(pixel_out_unscaled), .code(code_even_odd));
              
     localparam [3:0] IDLE = 4'd8;    
     reg [3:0] STATE = IDLE;
+    assign pixel_out = $signed(pixel_out_unscaled[11:0]);
     
     always @(posedge(clk))
     begin

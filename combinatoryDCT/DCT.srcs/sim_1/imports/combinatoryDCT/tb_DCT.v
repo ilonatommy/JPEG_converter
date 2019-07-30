@@ -28,7 +28,7 @@ module tb_DCT();
     reg rst = 0;
     reg start = 0;
     reg signed [7:0] pixel_in;//values from -128 to 127
-    wire signed [13:0] pixel_out;
+    wire signed [11:0] pixel_out;
     
     always @(posedge(clk))
             begin
@@ -48,29 +48,29 @@ module tb_DCT();
                     pixel_in <= 8'd0;
                 end
                 if(cnt == 3'd0)
-                    pixel_in <= 8'd10;//8'b00001010; //10
+                    pixel_in <= 8'd10;
                     
                 if(cnt == 3'd1)
-                    pixel_in <= 8'b11111111;//8'b01100100; //100
+                    pixel_in <= 8'b11111111;
                     
                 if(cnt == 3'd2)
-                    pixel_in <= 8'd2;//8'b01100100; //100
+                    pixel_in <= 8'd2;
                     
                 if(cnt == 3'd3)
-                    pixel_in <= 8'd60;//8'b01100100; //100
+                    pixel_in <= 8'd60;
                     
                 if(cnt == 3'd4)
-                    pixel_in <= 8'b11111100;//8'b01100100; //100
+                    pixel_in <= 8'b11111100;
                     
                 if(cnt == 3'd5)
-                    pixel_in <= 8'd5;//8'b01100100; //100    
+                    pixel_in <= 8'd5;  
                     
                 if(cnt == 3'd6)
-                    pixel_in <= 8'd60;//8'b01100100; //100
+                    pixel_in <= 8'd60;
                    
                 if(cnt == 3'd7)
                 begin
-                    pixel_in <= 8'b11111001;//8'b11001110; //-50
+                    pixel_in <= 8'b11111001;
                     cnt <= 3'd0;
                 end
             end

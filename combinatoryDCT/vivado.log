@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jul 30 10:28:37 2019
-# Process ID: 8348
+# Start of session at: Tue Jul 30 11:06:16 2019
+# Process ID: 6884
 # Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4228 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5636 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT\vivado.jou
 #-----------------------------------------------------------
@@ -16,9 +16,10 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 718.703 ; gain = 5.230
 update_compile_order -fileset sources_1
 launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/tb_DCT_behav.wdb
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
@@ -50,7 +51,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository
 INFO: [VRFC 10-311] analyzing module tb_DCT
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
 Vivado Simulator 2017.2
@@ -107,10 +108,9 @@ Built simulation snapshot tb_DCT_behav
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 30 10:35:26 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Jul 30 10:35:26 2019...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 778.906 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 30 11:07:09 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 30 11:07:09 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
@@ -164,13 +164,6 @@ WARNING: Simulation object /tb_DCT/o_mo1 was not found in the design.
 WARNING: Simulation object /tb_DCT/o_mo2 was not found in the design.
 WARNING: Simulation object /tb_DCT/o_r13 was not found in the design.
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
-WARNING: Simulation object /tb_DCT/oRAM was not found in the design.
-WARNING: Simulation object /tb_DCT/STATE was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r11 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo6 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r14 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo5 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r13 was not found in the design.
 source tb_DCT.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -184,5 +177,4 @@ source tb_DCT.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_DCT_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 800.617 ; gain = 21.711
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg}
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 859.055 ; gain = 51.664
