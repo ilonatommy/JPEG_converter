@@ -27,11 +27,6 @@ module RAM
  (
     input signed [WIDTH-1 : 0] idata,
     output signed [WIDTH-1 : 0] odata,
-    output [2:0] cnt_test,
-    output signed [WIDTH-1 : 0] data_test_0,
-    output signed [WIDTH-1 : 0] data_test_1,
-    output signed [WIDTH-1 : 0] data_test_2,
-    output signed [WIDTH-1 : 0] data_test_3,
     input clk,
     input rst,
     input ce,
@@ -67,9 +62,4 @@ module RAM
     end
     
     assign odata = (cnt == 3'd3 || cnt == 3'd4 || cnt == 3'd5 || cnt == 3'd6) ? data[cnt - 3] : 0;
-    
-    assign data_test_0 = data[0];
-    assign data_test_1 = data[1];
-    assign data_test_2 = data[2];
-    assign data_test_3 = data[3];
 endmodule

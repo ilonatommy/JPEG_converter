@@ -25,35 +25,21 @@ module DCT(
     output signed [13:0] pixel_out,
     input clk,
     input start,
-    input rst,
-    output [3:0] STATE_test,
-    output signed [7:0] oRAM,
-    output signed [8:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2, o_r21,
-    output signed [9:0] i_r5, o_r5, o_r6,
-    output signed [10:0] i_r7, o_r7,
-    output signed [11:0] o_mo1, i_r8, o_r8, o_r9, o_r10, o_mo4, o_r23, o_r24,
-    output signed [12:0] o_mo3, o_r11, i_mo5, o_r13, o_r22, o_r14, o_mo5, i_r11, o_r16, o_r19, o_r17, o_r18, o_mo6, o_mo7,
-    output signed [13:0] i_odd, i_r20, i_even, i_r19,
-    output signed [27:0] mult_result_test,
-    output signed [14:0] m_test,
-    output [2:0] cnt_test,
-    output [7:0] data_test_0, data_test_1, data_test_2, data_test_3
+    input rst
     );    
     
-    //wire signed [7:0] oRAM; //8-bit vector
-    //wire signed [8:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2, o_r21; //-256:254
-    //wire signed [9:0] i_r5, o_r5, o_r6; //-512:508
-    //wire signed [10:0] i_r7, o_r7; //-1024:1016
+    wire signed [7:0] oRAM; //8-bit vector
+    wire signed [8:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2, o_r21; //-256:254
+    wire signed [9:0] i_r5, o_r5, o_r6; //-512:508
+    wire signed [10:0] i_r7, o_r7; //-1024:1016
     reg [1:0] code_mo1, code_mo3, code_mo6, code_mo7;
     reg code_mo2, code_mo4, code_mo5, code_even_odd;
     reg [2:0] code_m_RAM;
-    //wire signed [11:0] o_mo1, o_r8, o_r9, o_r10, o_mo4, o_r23;
-    //wire signed [12:0] o_mo3, o_r11, i_mo5, o_r13, o_r22, o_r14, o_mo5, i_r11, o_r16, o_r19, o_r17, o_r18, o_mo6, o_mo7;
-    //wire signed [13:0] i_odd, i_r20, i_even, i_r19;
-    
+    wire signed [11:0] o_mo1, i_r8, o_r8, o_r9, o_r10, o_mo4, o_r23;
+    wire signed [12:0] o_mo3, o_r11, i_mo5, o_r13, o_r22, o_r14, o_mo5, i_r11, o_r16, o_r19, o_r17, o_r18, o_mo6, o_mo7;
+    wire signed [13:0] i_odd, i_r20, i_even, i_r19;
         
-    RAM #(.WIDTH(8)) fabric_RAM(.clk(clk), .rst(rst), .ce(start), .idata(pixel_in), .odata(oRAM), .cnt(STATE[2:0]),
-    .data_test_0(data_test_0), .data_test_1(data_test_1), .data_test_2(data_test_2), .data_test_3(data_test_3)); //output on 4th  
+    RAM #(.WIDTH(8)) fabric_RAM(.clk(clk), .rst(rst), .ce(start), .idata(pixel_in), .odata(oRAM), .cnt(STATE[2:0])); //output on 4th  
     register #(.WIDTH(9), .DELAY(2)) r1(.clk(clk), .rst(rst), .ce(start), .idata(i_r1), .odata(o_r1)); 
     register #(.WIDTH(9), .DELAY(1)) r2(.clk(clk), .rst(rst), .ce(start), .idata(i_r2), .odata(o_r2)); 
     register #(.WIDTH(9), .DELAY(1)) r3(.clk(clk), .rst(rst), .ce(start), .idata(o_r1), .odata(o_r3)); //first output on 5th but we take only 6th to mux
@@ -74,8 +60,6 @@ module DCT(
     register #(.WIDTH(14), .DELAY(1)) r20 (.clk(clk), .rst(rst), .ce(start), .idata(i_r20), .odata(i_even)); 
     register #(.WIDTH(9), .DELAY(1)) r21(.clk(clk), .rst(rst), .ce(start), .idata(o_r4), .odata(o_r21)); 
     register #(.WIDTH(13), .DELAY(1)) r22 (.clk(clk), .rst(rst), .ce(start), .idata(o_r14), .odata(o_r22)); 
-    //register #(.WIDTH(13), .DELAY(1)) r23 (.clk(clk), .rst(rst), .ce(start), .idata(o_r14), .odata(o_r23)); 
-    //register #(.WIDTH(12), .DELAY(1)) r24 (.clk(clk), .rst(rst), .ce(start), .idata(o_r8), .odata(o_r24)); 
     
     mux_3i #(.WIDTH_I0(9), .WIDTH_I1(9), .WIDTH_I2(12), .WIDTH_OUT(12)) mo1(.i0(o_r3), .i1(o_r12), .i2(o_r8), .odata(o_mo1), .code(code_mo1));
     mux_3i #(.WIDTH_I0(13), .WIDTH_I1(10), .WIDTH_I2(11), .WIDTH_OUT(13)) mo3(.i0(o_r19), .i1(o_r5), .i2(o_r7), .odata(o_mo3), .code(code_mo3));
@@ -103,8 +87,6 @@ module DCT(
              
     localparam [3:0] IDLE = 4'd8;    
     reg [3:0] STATE = IDLE;
-  
-    assign STATE_test = STATE;
     
     always @(posedge(clk))
     begin
