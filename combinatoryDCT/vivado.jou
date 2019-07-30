@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jul 30 12:17:16 2019
-# Process ID: 4580
+# Start of session at: Tue Jul 30 13:05:58 2019
+# Process ID: 4988
 # Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7852 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3760 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT\vivado.jou
 #-----------------------------------------------------------
@@ -17,7 +17,3 @@ open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_b
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
 source tb_DCT.tcl
-save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg}
-relaunch_sim
-relaunch_sim
-relaunch_sim
