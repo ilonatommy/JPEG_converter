@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="21430000fs"></ZoomStartTime>
-      <ZoomEndTime time="32010001fs"></ZoomEndTime>
-      <Cursor1Time time="24250000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="53300001fs"></ZoomEndTime>
+      <Cursor1Time time="15900000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="145"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="42" />
+   <WVObjectSize size="34" />
    <wvobject fp_name="/tb_DCT/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -43,42 +43,13 @@
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/pixel_out" type="array">
-      <obj_property name="ElementShortName">pixel_out[13:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_out[13:0]</obj_property>
+      <obj_property name="ElementShortName">pixel_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/STATE" type="array">
-      <obj_property name="ElementShortName">STATE[3:0]</obj_property>
-      <obj_property name="ObjectShortName">STATE[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/oRAM" type="array">
       <obj_property name="ElementShortName">oRAM[7:0]</obj_property>
       <obj_property name="ObjectShortName">oRAM[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r1" type="array">
-      <obj_property name="ElementShortName">o_r1[8:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r1[8:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r2" type="array">
-      <obj_property name="ElementShortName">o_r2[8:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r2[8:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r3" type="array">
-      <obj_property name="ElementShortName">o_r3[8:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r3[8:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r4" type="array">
-      <obj_property name="ElementShortName">o_r4[8:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r4[8:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r12" type="array">
-      <obj_property name="ElementShortName">o_r12[8:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r12[8:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_mo2" type="array">
@@ -86,9 +57,49 @@
       <obj_property name="ObjectShortName">o_mo2[8:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT/i_r5" type="array">
-      <obj_property name="ElementShortName">i_r5[9:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r5[9:0]</obj_property>
+   <wvobject fp_name="/tb_DCT/o_mo1" type="array">
+      <obj_property name="ElementShortName">o_mo1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo1[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/i_mo5" type="array">
+      <obj_property name="ElementShortName">i_mo5[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_mo5[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_mo5" type="array">
+      <obj_property name="ElementShortName">o_mo5[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo5[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r13" type="array">
+      <obj_property name="ElementShortName">o_r13[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r13[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r16" type="array">
+      <obj_property name="ElementShortName">o_r16[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r16[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r17" type="array">
+      <obj_property name="ElementShortName">o_r17[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r17[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r18" type="array">
+      <obj_property name="ElementShortName">o_r18[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r18[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_mo6" type="array">
+      <obj_property name="ElementShortName">o_mo6[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo6[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r22" type="array">
+      <obj_property name="ElementShortName">o_r22[9:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r22[9:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_r5" type="array">
@@ -96,134 +107,84 @@
       <obj_property name="ObjectShortName">o_r5[9:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r6" type="array">
-      <obj_property name="ElementShortName">o_r6[9:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r6[9:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_r7" type="array">
-      <obj_property name="ElementShortName">i_r7[10:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r7[10:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_DCT/o_r7" type="array">
       <obj_property name="ElementShortName">o_r7[10:0]</obj_property>
       <obj_property name="ObjectShortName">o_r7[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT/o_mo1" type="array">
-      <obj_property name="ElementShortName">o_mo1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo1[11:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_DCT/o_mo3" type="array">
-      <obj_property name="ElementShortName">o_mo3[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo3[12:0]</obj_property>
+      <obj_property name="ElementShortName">o_mo3[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo3[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/i_r8" type="array">
-      <obj_property name="ElementShortName">i_r8[11:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r8[11:0]</obj_property>
+      <obj_property name="ElementShortName">i_r8[10:0]</obj_property>
+      <obj_property name="ObjectShortName">i_r8[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_r8" type="array">
-      <obj_property name="ElementShortName">o_r8[11:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r8[11:0]</obj_property>
+      <obj_property name="ElementShortName">o_r8[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r8[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_r9" type="array">
-      <obj_property name="ElementShortName">o_r9[11:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r9[11:0]</obj_property>
+      <obj_property name="ElementShortName">o_r9[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r9[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_r10" type="array">
-      <obj_property name="ElementShortName">o_r10[11:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r10[11:0]</obj_property>
+      <obj_property name="ElementShortName">o_r10[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r10[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/o_mo4" type="array">
-      <obj_property name="ElementShortName">o_mo4[11:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo4[11:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r11" type="array">
-      <obj_property name="ElementShortName">o_r11[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r11[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_mo5" type="array">
-      <obj_property name="ElementShortName">i_mo5[12:0]</obj_property>
-      <obj_property name="ObjectShortName">i_mo5[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r13" type="array">
-      <obj_property name="ElementShortName">o_r13[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r13[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r14" type="array">
-      <obj_property name="ElementShortName">o_r14[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r14[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_mo5" type="array">
-      <obj_property name="ElementShortName">o_mo5[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo5[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_r11" type="array">
-      <obj_property name="ElementShortName">i_r11[12:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r11[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r16" type="array">
-      <obj_property name="ElementShortName">o_r16[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r16[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r19" type="array">
-      <obj_property name="ElementShortName">o_r19[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r19[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r17" type="array">
-      <obj_property name="ElementShortName">o_r17[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r17[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_r18" type="array">
-      <obj_property name="ElementShortName">o_r18[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_r18[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_mo6" type="array">
-      <obj_property name="ElementShortName">o_mo6[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo6[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/o_mo7" type="array">
-      <obj_property name="ElementShortName">o_mo7[12:0]</obj_property>
-      <obj_property name="ObjectShortName">o_mo7[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_odd" type="array">
-      <obj_property name="ElementShortName">i_odd[13:0]</obj_property>
-      <obj_property name="ObjectShortName">i_odd[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_r20" type="array">
-      <obj_property name="ElementShortName">i_r20[13:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r20[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT/i_even" type="array">
-      <obj_property name="ElementShortName">i_even[13:0]</obj_property>
-      <obj_property name="ObjectShortName">i_even[13:0]</obj_property>
+      <obj_property name="ElementShortName">o_mo4[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo4[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT/i_r19" type="array">
-      <obj_property name="ElementShortName">i_r19[13:0]</obj_property>
-      <obj_property name="ObjectShortName">i_r19[13:0]</obj_property>
+      <obj_property name="ElementShortName">i_r19[10:0]</obj_property>
+      <obj_property name="ObjectShortName">i_r19[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r19" type="array">
+      <obj_property name="ElementShortName">o_r19[10:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r19[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/i_r11" type="array">
+      <obj_property name="ElementShortName">i_r11[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_r11[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r11" type="array">
+      <obj_property name="ElementShortName">o_r11[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r11[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_r14" type="array">
+      <obj_property name="ElementShortName">o_r14[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_r14[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/o_mo7" type="array">
+      <obj_property name="ElementShortName">o_mo7[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_mo7[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/i_odd" type="array">
+      <obj_property name="ElementShortName">i_odd[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_odd[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/i_r20" type="array">
+      <obj_property name="ElementShortName">i_r20[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_r20[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT/i_even" type="array">
+      <obj_property name="ElementShortName">i_even[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_even[11:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

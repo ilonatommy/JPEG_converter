@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jul 30 11:06:16 2019
-# Process ID: 6884
+# Start of session at: Tue Jul 30 12:17:16 2019
+# Process ID: 4580
 # Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5636 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7852 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT\vivado.jou
 #-----------------------------------------------------------
@@ -59,6 +59,17 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port odata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:60]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:67]
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 13 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:70]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:76]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:82]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:84]
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 12 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:86]
+WARNING: [VRFC 10-597] element index 12 into i_r19 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -72,31 +83,27 @@ Compiling module xil_defaultlib.delay(reg_width=10)
 Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
 Compiling module xil_defaultlib.delay(reg_width=11)
 Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=1)
 Compiling module xil_defaultlib.delay(reg_width=12)
 Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
-Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
-Compiling module xil_defaultlib.delay(reg_width=13)
-Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
-Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
-Compiling module xil_defaultlib.delay(reg_width=14)
-Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=1)
 Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
 Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=11,W...
 Compiling module xil_defaultlib.full_adder(WIDTH=8)
 Compiling module xil_defaultlib.full_adder(WIDTH=9)
+Compiling module xil_defaultlib.full_adder(WIDTH=10)
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
 Compiling module xil_defaultlib.full_adder(WIDTH=12)
-Compiling module xil_defaultlib.full_adder(WIDTH=13)
 Compiling module xil_defaultlib.full_subtractor(WIDTH=8)
-Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
 Compiling module xil_defaultlib.full_subtractor(WIDTH=10)
-Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
 Compiling module xil_defaultlib.reg_mult
 Compiling module xil_defaultlib.mux_2i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=11,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=10,WIDTH_I1=10,W...
 Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
 Compiling module xil_defaultlib.DCT
 Compiling module xil_defaultlib.tb_DCT
 Compiling module xil_defaultlib.glbl
@@ -108,9 +115,9 @@ Built simulation snapshot tb_DCT_behav
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 30 11:07:09 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Tue Jul 30 11:07:09 2019...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 30 12:18:01 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 30 12:18:01 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
@@ -119,50 +126,8 @@ INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2017.2
 Time resolution is 1 ps
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg
-WARNING: Simulation object /tb_DCT/STATE was not found in the design.
-WARNING: Simulation object /tb_DCT/oRAM was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r1 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r2 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r3 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r4 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r12 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo2 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r5 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r5 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r6 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r7 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r7 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo1 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo3 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r8 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r8 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r9 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r10 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo4 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r11 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_mo5 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r13 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r14 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo5 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r11 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r16 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r19 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r17 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r18 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo6 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo7 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_odd was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r20 was not found in the design.
-WARNING: Simulation object /tb_DCT/i_even was not found in the design.
-WARNING: Simulation object /tb_DCT/i_r19 was not found in the design.
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
-WARNING: Simulation object /tb_DCT/i_r5 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r13 was not found in the design.
-WARNING: Simulation object /tb_DCT/oRAM was not found in the design.
 WARNING: Simulation object /tb_DCT/STATE was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo1 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_mo2 was not found in the design.
-WARNING: Simulation object /tb_DCT/o_r13 was not found in the design.
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
 source tb_DCT.tcl
 # set curr_wave [current_wave_config]
@@ -177,4 +142,274 @@ source tb_DCT.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_DCT_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 859.055 ; gain = 51.664
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 876.324 ; gain = 40.348
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg}
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port odata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:60]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:67]
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 13 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:70]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 10 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:76]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:82]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:84]
+WARNING: [VRFC 10-597] element index 12 into i_r19 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.RAM(WIDTH=8)
+Compiling module xil_defaultlib.delay(reg_width=9)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=10)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=11)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=8)
+Compiling module xil_defaultlib.full_adder(WIDTH=9)
+Compiling module xil_defaultlib.full_adder(WIDTH=10)
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=8)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=10)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=11,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 877.637 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 13 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:70]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:76]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:82]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:84]
+WARNING: [VRFC 10-597] element index 12 into i_r19 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.RAM(WIDTH=8)
+Compiling module xil_defaultlib.delay(reg_width=9)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=10)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=11)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=8)
+Compiling module xil_defaultlib.full_adder(WIDTH=9)
+Compiling module xil_defaultlib.full_adder(WIDTH=10)
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=8)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=10)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=11,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 877.637 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/tb_DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port idata [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+WARNING: [VRFC 10-278] actual bit length 11 differs from formal bit length 13 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:70]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:76]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 11 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:82]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 13 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:84]
+WARNING: [VRFC 10-597] element index 12 into i_r19 is out of bounds [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:64]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.RAM(WIDTH=8)
+Compiling module xil_defaultlib.delay(reg_width=9)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=9,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=10)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=11)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=11,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=10,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=10,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=8)
+Compiling module xil_defaultlib.full_adder(WIDTH=9)
+Compiling module xil_defaultlib.full_adder(WIDTH=10)
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=8)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=10)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=12)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=9,WIDTH_I1=9,WID...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=11,WIDTH_I1=11,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=10,WIDTH_I1=10,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.tb_DCT
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
