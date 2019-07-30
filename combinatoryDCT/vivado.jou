@@ -17,3 +17,4 @@ open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_b
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
 open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
 source tb_DCT.tcl
+relaunch_sim

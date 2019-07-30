@@ -3,11 +3,11 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_DCT_behav xil_defaultlib.tb_DCT xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:70]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:76]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:77]
 WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:82]
-WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:84]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
