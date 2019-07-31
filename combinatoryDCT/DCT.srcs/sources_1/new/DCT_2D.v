@@ -23,11 +23,21 @@
 module DCT_2D(
     input signed [7:0] pixel_in,
     output signed [13:0] pixel_out,
-    output signed [10:0] pixel_out_mod1, pixel_in_mod2,
+    output signed [13:0] pixel_out_mod1, 
+    output signed [10:0] pixel_in_mod2,
     output [5:0] cnt_test,
+    output [10:0] real_pixel_out_mod1,
     input clk,
     input ce,
-    input rst
+    input rst,
+    output signed [10:0] rc_00_, rc_01_, rc_02_, rc_03_, rc_04_, rc_05_, rc_06_, rc_07_,
+    output signed [10:0] rc_10_, rc_11_, rc_12_, rc_13_, rc_14_, rc_15_, rc_16_, rc_17_,
+    output signed [10:0] rc_20_, rc_21_, rc_22_, rc_23_, rc_24_, rc_25_, rc_26_, rc_27_,
+    output signed [10:0] rc_30_, rc_31_, rc_32_, rc_33_, rc_34_, rc_35_, rc_36_, rc_37_,
+    output signed [10:0] rc_40_, rc_41_, rc_42_, rc_43_, rc_44_, rc_45_, rc_46_, rc_47_,
+    output signed [10:0] rc_50_, rc_51_, rc_52_, rc_53_, rc_54_, rc_55_, rc_56_, rc_57_,
+    output signed [10:0] rc_60_, rc_61_, rc_62_, rc_63_, rc_64_, rc_65_, rc_66_, rc_67_,
+    output signed [10:0] rc_70_, rc_71_, rc_72_, rc_73_, rc_74_, rc_75_, rc_76_, rc_77_
     );
     
     //position of pixel: 0,6,2,5,1,4,3,7
@@ -43,9 +53,49 @@ module DCT_2D(
     reg [10:0] rc_50, rc_51, rc_52, rc_53, rc_54, rc_55, rc_56, rc_57;
     reg [10:0] rc_60, rc_61, rc_62, rc_63, rc_64, rc_65, rc_66, rc_67;
     reg [10:0] rc_70, rc_71, rc_72, rc_73, rc_74, rc_75, rc_76, rc_77;
-    //wire signed [10:0] pixel_in_mod2, pixel_out_mod1;
+    //wire signed [10:0] pixel_in_mod2;
+    //wire signed [13:0] pixel_out_mod1;
     
-    DCT mod_1(.pixel_in(pixel_in), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out_mod1));
+    assign cnt_test = cnt;
+    assign real_pixel_out_mod1 = pixel_out_mod1[10:0];
+    
+    assign rc_00_ = rc_00;
+    assign rc_01_ = rc_01;
+    assign rc_02_ = rc_02;
+    assign rc_03_ = rc_03;
+    assign rc_04_ = rc_04;
+    assign rc_05_ = rc_05;
+    assign rc_06_ = rc_06;
+    assign rc_07_ = rc_07;
+    
+    assign rc_10_ = rc_10;
+    assign rc_11_ = rc_11;
+    assign rc_12_ = rc_12;
+    assign rc_13_ = rc_13;
+    assign rc_14_ = rc_14;
+    assign rc_15_ = rc_15;
+    assign rc_16_ = rc_16;
+    assign rc_17_ = rc_17;     
+    
+    assign rc_20_ = rc_20;
+    assign rc_21_ = rc_21;
+    assign rc_22_ = rc_22;
+    assign rc_23_ = rc_23;
+    assign rc_24_ = rc_24;
+    assign rc_25_ = rc_25;
+    assign rc_26_ = rc_26;
+    assign rc_27_ = rc_27;
+    
+    assign rc_30_ = rc_30;
+    assign rc_31_ = rc_31;
+    assign rc_32_ = rc_32;
+    assign rc_33_ = rc_33;
+    assign rc_34_ = rc_34;
+    assign rc_35_ = rc_35;
+    assign rc_36_ = rc_36;
+    assign rc_37_ = rc_37;  
+         
+    DCT mod_1(.pixel_in({pixel_in[7], pixel_in[7], pixel_in[7], pixel_in}), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out_mod1));
     DCT mod_2(.pixel_in(pixel_in_mod2), .clk(clk), .rst(rst), .ce(ce_mod2), .pixel_out(pixel_out)); //a lot of warnings about reg width - check it
     
     always @(posedge(clk))
@@ -61,77 +111,77 @@ module DCT_2D(
             cnt <= cnt + 1;
             
             case(cnt)
-                6'd0: rc_00 <= pixel_out_mod1;
-                6'd1: rc_01 <= pixel_out_mod1;
-                6'd2: rc_02 <= pixel_out_mod1;
-                6'd3: rc_03 <= pixel_out_mod1;
-                6'd4: rc_04 <= pixel_out_mod1;
-                6'd5: rc_05 <= pixel_out_mod1;
-                6'd6: rc_06 <= pixel_out_mod1;
-                6'd7: rc_07 <= pixel_out_mod1;    
+                6'd0: rc_00 <= $signed(pixel_out_mod1[10:0]);
+                6'd1: rc_01 <= $signed(pixel_out_mod1[10:0]);
+                6'd2: rc_02 <= $signed(pixel_out_mod1[10:0]);
+                6'd3: rc_03 <= $signed(pixel_out_mod1[10:0]);
+                6'd4: rc_04 <= $signed(pixel_out_mod1[10:0]);
+                6'd5: rc_05 <= $signed(pixel_out_mod1[10:0]);
+                6'd6: rc_06 <= $signed(pixel_out_mod1[10:0]);
+                6'd7: rc_07 <= $signed(pixel_out_mod1[10:0]);    
                 
-                6'd8: rc_10 <= pixel_out_mod1;
-                6'd9: rc_11 <= pixel_out_mod1;
-                6'd10: rc_12 <= pixel_out_mod1;
-                6'd11: rc_13 <= pixel_out_mod1;
-                6'd12: rc_14 <= pixel_out_mod1;
-                6'd13: rc_15 <= pixel_out_mod1;
-                6'd14: rc_16 <= pixel_out_mod1;
-                6'd15: rc_17 <= pixel_out_mod1; 
+                6'd8: rc_10 <= $signed(pixel_out_mod1[10:0]);
+                6'd9: rc_11 <= $signed(pixel_out_mod1[10:0]);
+                6'd10: rc_12 <= $signed(pixel_out_mod1[10:0]);
+                6'd11: rc_13 <= $signed(pixel_out_mod1[10:0]);
+                6'd12: rc_14 <= $signed(pixel_out_mod1[10:0]);
+                6'd13: rc_15 <= $signed(pixel_out_mod1[10:0]);
+                6'd14: rc_16 <= $signed(pixel_out_mod1[10:0]);
+                6'd15: rc_17 <= $signed(pixel_out_mod1[10:0]); 
                 
-                6'd16: rc_20 <= pixel_out_mod1;
-                6'd17: rc_21 <= pixel_out_mod1;
-                6'd18: rc_22 <= pixel_out_mod1;
-                6'd19: rc_23 <= pixel_out_mod1;
-                6'd20: rc_24 <= pixel_out_mod1;
-                6'd21: rc_25 <= pixel_out_mod1;
-                6'd22: rc_26 <= pixel_out_mod1;
-                6'd23: rc_27 <= pixel_out_mod1; 
+                6'd16: rc_20 <= $signed(pixel_out_mod1[10:0]);
+                6'd17: rc_21 <= $signed(pixel_out_mod1[10:0]);
+                6'd18: rc_22 <= $signed(pixel_out_mod1[10:0]);
+                6'd19: rc_23 <= $signed(pixel_out_mod1[10:0]);
+                6'd20: rc_24 <= $signed(pixel_out_mod1[10:0]);
+                6'd21: rc_25 <= $signed(pixel_out_mod1[10:0]);
+                6'd22: rc_26 <= $signed(pixel_out_mod1[10:0]);
+                6'd23: rc_27 <= $signed(pixel_out_mod1[10:0]); 
                 
-                6'd24: rc_30 <= pixel_out_mod1;
-                6'd25: rc_31 <= pixel_out_mod1;
-                6'd26: rc_32 <= pixel_out_mod1;
-                6'd27: rc_33 <= pixel_out_mod1;
-                6'd28: rc_34 <= pixel_out_mod1;
-                6'd29: rc_35 <= pixel_out_mod1;
-                6'd30: rc_36 <= pixel_out_mod1;
-                6'd31: rc_37 <= pixel_out_mod1;
+                6'd24: rc_30 <= $signed(pixel_out_mod1[10:0]);
+                6'd25: rc_31 <= $signed(pixel_out_mod1[10:0]);
+                6'd26: rc_32 <= $signed(pixel_out_mod1[10:0]);
+                6'd27: rc_33 <= $signed(pixel_out_mod1[10:0]);
+                6'd28: rc_34 <= $signed(pixel_out_mod1[10:0]);
+                6'd29: rc_35 <= $signed(pixel_out_mod1[10:0]);
+                6'd30: rc_36 <= $signed(pixel_out_mod1[10:0]);
+                6'd31: rc_37 <= $signed(pixel_out_mod1[10:0]);
                 
-                6'd32: rc_40 <= pixel_out_mod1;
-                6'd33: rc_41 <= pixel_out_mod1;
-                6'd34: rc_42 <= pixel_out_mod1;
-                6'd35: rc_43 <= pixel_out_mod1;
-                6'd36: rc_44 <= pixel_out_mod1;
-                6'd37: rc_45 <= pixel_out_mod1;
-                6'd38: rc_46 <= pixel_out_mod1;
-                6'd39: rc_47 <= pixel_out_mod1;  
+                6'd32: rc_40 <= $signed(pixel_out_mod1[10:0]);
+                6'd33: rc_41 <= $signed(pixel_out_mod1[10:0]);
+                6'd34: rc_42 <= $signed(pixel_out_mod1[10:0]);
+                6'd35: rc_43 <= $signed(pixel_out_mod1[10:0]);
+                6'd36: rc_44 <= $signed(pixel_out_mod1[10:0]);
+                6'd37: rc_45 <= $signed(pixel_out_mod1[10:0]);
+                6'd38: rc_46 <= $signed(pixel_out_mod1[10:0]);
+                6'd39: rc_47 <= $signed(pixel_out_mod1[10:0]);  
                        
-                6'd40: rc_50 <= pixel_out_mod1;
-                6'd41: rc_51 <= pixel_out_mod1;
-                6'd42: rc_52 <= pixel_out_mod1;
-                6'd43: rc_53 <= pixel_out_mod1;
-                6'd44: rc_54 <= pixel_out_mod1;
-                6'd45: rc_55 <= pixel_out_mod1;
-                6'd46: rc_56 <= pixel_out_mod1;
-                6'd47: rc_57 <= pixel_out_mod1;     
+                6'd40: rc_50 <= $signed(pixel_out_mod1[10:0]);
+                6'd41: rc_51 <= $signed(pixel_out_mod1[10:0]);
+                6'd42: rc_52 <= $signed(pixel_out_mod1[10:0]);
+                6'd43: rc_53 <= $signed(pixel_out_mod1[10:0]);
+                6'd44: rc_54 <= $signed(pixel_out_mod1[10:0]);
+                6'd45: rc_55 <= $signed(pixel_out_mod1[10:0]);
+                6'd46: rc_56 <= $signed(pixel_out_mod1[10:0]);
+                6'd47: rc_57 <= $signed(pixel_out_mod1[10:0]);     
                 
-                6'd48: rc_60 <= pixel_out_mod1;
-                6'd49: rc_61 <= pixel_out_mod1;
-                6'd50: rc_62 <= pixel_out_mod1;
-                6'd51: rc_63 <= pixel_out_mod1;
-                6'd52: rc_64 <= pixel_out_mod1;
-                6'd53: rc_65 <= pixel_out_mod1;
-                6'd54: rc_66 <= pixel_out_mod1;
-                6'd55: rc_67 <= pixel_out_mod1;
+                6'd48: rc_60 <= $signed(pixel_out_mod1[10:0]);
+                6'd49: rc_61 <= $signed(pixel_out_mod1[10:0]);
+                6'd50: rc_62 <= $signed(pixel_out_mod1[10:0]);
+                6'd51: rc_63 <= $signed(pixel_out_mod1[10:0]);
+                6'd52: rc_64 <= $signed(pixel_out_mod1[10:0]);
+                6'd53: rc_65 <= $signed(pixel_out_mod1[10:0]);
+                6'd54: rc_66 <= $signed(pixel_out_mod1[10:0]);
+                6'd55: rc_67 <= $signed(pixel_out_mod1[10:0]);
                 
-                6'd56: rc_70 <= pixel_out_mod1;
-                6'd57: rc_71 <= pixel_out_mod1;
-                6'd58: rc_72 <= pixel_out_mod1;
-                6'd59: rc_73 <= pixel_out_mod1;
-                6'd60: rc_74 <= pixel_out_mod1;
-                6'd61: rc_75 <= pixel_out_mod1;
-                6'd62: rc_76 <= pixel_out_mod1;
-                6'd63: rc_77 <= pixel_out_mod1;
+                6'd56: rc_70 <= $signed(pixel_out_mod1[10:0]);
+                6'd57: rc_71 <= $signed(pixel_out_mod1[10:0]);
+                6'd58: rc_72 <= $signed(pixel_out_mod1[10:0]);
+                6'd59: rc_73 <= $signed(pixel_out_mod1[10:0]);
+                6'd60: rc_74 <= $signed(pixel_out_mod1[10:0]);
+                6'd61: rc_75 <= $signed(pixel_out_mod1[10:0]);
+                6'd62: rc_76 <= $signed(pixel_out_mod1[10:0]);
+                6'd63: rc_77 <= $signed(pixel_out_mod1[10:0]);
             endcase
         end
     end
