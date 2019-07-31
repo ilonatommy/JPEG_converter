@@ -24,7 +24,7 @@ module DCT(
     input signed [10:0] pixel_in,
     output signed [13:0] pixel_out,
     input clk,
-    input start,
+    input ce,
     input rst
     );    
     
@@ -39,27 +39,27 @@ module DCT(
     reg code_mo2, code_mo4, code_mo5, code_even_odd;
     reg [2:0] code_m_RAM;
         
-    RAM #(.WIDTH(11)) fabric_RAM(.clk(clk), .rst(rst), .ce(start), .idata(pixel_in), .odata(oRAM), .cnt(STATE[2:0])); //output on 4th  
-    register #(.WIDTH(12), .DELAY(2)) r1(.clk(clk), .rst(rst), .ce(start), .idata(i_r1), .odata(o_r1)); 
-    register #(.WIDTH(12), .DELAY(1)) r2(.clk(clk), .rst(rst), .ce(start), .idata(i_r2), .odata(o_r2)); 
-    register #(.WIDTH(12), .DELAY(1)) r3(.clk(clk), .rst(rst), .ce(start), .idata(o_r1), .odata(o_r3)); //first output on 5th but we take only 6th to mux
-    register #(.WIDTH(12), .DELAY(1)) r4(.clk(clk), .rst(rst), .ce(start), .idata(o_r2), .odata(o_r4)); //5th
-    register #(.WIDTH(13), .DELAY(2)) r5 (.clk(clk), .rst(rst), .ce(start), .idata(i_r5), .odata(o_r5));//6th
-    register #(.WIDTH(13), .DELAY(2)) r6 (.clk(clk), .rst(rst), .ce(start), .idata(o_r5), .odata(o_r6));//8th
-    register #(.WIDTH(14), .DELAY(2)) r7(.clk(clk), .ce(start), .rst(rst), .idata(i_r7), .odata(o_r7)); //10th
-    register #(.WIDTH(14), .DELAY(1)) r8(.clk(clk), .ce(start), .rst(rst), .idata(i_r8), .odata(o_r8)); //7th
-    register #(.WIDTH(14), .DELAY(2)) r9(.clk(clk), .rst(rst), .ce(start), .idata(o_r8), .odata(o_r9));//9th
-    register #(.WIDTH(14), .DELAY(2)) r10(.clk(clk), .rst(rst), .ce(start), .idata(o_r9), .odata(o_r10));//11th
-    register #(.WIDTH(15), .DELAY(1)) r11(.clk(clk), .rst(rst), .ce(start), .idata(i_r11), .odata(o_r11));
-    register #(.WIDTH(12), .DELAY(2)) r12(.clk(clk), .rst(rst), .ce(start), .idata(o_r3), .odata(o_r12)); //7th
-    register #(.WIDTH(13), .DELAY(1)) r14 (.clk(clk), .rst(rst), .ce(start), .idata(o_r13), .odata(o_r14)); //8th   
-    register #(.WIDTH(13), .DELAY(1)) r16 (.clk(clk), .rst(rst), .ce(start), .idata(o_mo5), .odata(o_r16)); //8th 
-    register #(.WIDTH(13), .DELAY(2)) r17 (.clk(clk), .rst(rst), .ce(start), .idata(o_r16), .odata(o_r17));//9th     
-    register #(.WIDTH(13), .DELAY(1)) r18 (.clk(clk), .rst(rst), .ce(start), .idata(o_r17), .odata(o_r18));//10th 
-    register #(.WIDTH(14), .DELAY(2)) r19 (.clk(clk), .rst(rst), .ce(start), .idata(i_r19), .odata(o_r19));//9th  
-    register #(.WIDTH(15), .DELAY(1)) r20 (.clk(clk), .rst(rst), .ce(start), .idata(i_r20), .odata(i_even)); 
-    register #(.WIDTH(12), .DELAY(1)) r21(.clk(clk), .rst(rst), .ce(start), .idata(o_r4), .odata(o_r21)); 
-    register #(.WIDTH(13), .DELAY(1)) r22 (.clk(clk), .rst(rst), .ce(start), .idata(o_r14), .odata(o_r22)); 
+    RAM #(.WIDTH(11)) fabric_RAM(.clk(clk), .rst(rst), .ce(ce), .idata(pixel_in), .odata(oRAM), .cnt(STATE[2:0])); //output on 4th  
+    register #(.WIDTH(12), .DELAY(2)) r1(.clk(clk), .rst(rst), .ce(ce), .idata(i_r1), .odata(o_r1)); 
+    register #(.WIDTH(12), .DELAY(1)) r2(.clk(clk), .rst(rst), .ce(ce), .idata(i_r2), .odata(o_r2)); 
+    register #(.WIDTH(12), .DELAY(1)) r3(.clk(clk), .rst(rst), .ce(ce), .idata(o_r1), .odata(o_r3)); //first output on 5th but we take only 6th to mux
+    register #(.WIDTH(12), .DELAY(1)) r4(.clk(clk), .rst(rst), .ce(ce), .idata(o_r2), .odata(o_r4)); //5th
+    register #(.WIDTH(13), .DELAY(2)) r5 (.clk(clk), .rst(rst), .ce(ce), .idata(i_r5), .odata(o_r5));//6th
+    register #(.WIDTH(13), .DELAY(2)) r6 (.clk(clk), .rst(rst), .ce(ce), .idata(o_r5), .odata(o_r6));//8th
+    register #(.WIDTH(14), .DELAY(2)) r7(.clk(clk), .ce(ce), .rst(rst), .idata(i_r7), .odata(o_r7)); //10th
+    register #(.WIDTH(14), .DELAY(1)) r8(.clk(clk), .ce(ce), .rst(rst), .idata(i_r8), .odata(o_r8)); //7th
+    register #(.WIDTH(14), .DELAY(2)) r9(.clk(clk), .rst(rst), .ce(ce), .idata(o_r8), .odata(o_r9));//9th
+    register #(.WIDTH(14), .DELAY(2)) r10(.clk(clk), .rst(rst), .ce(ce), .idata(o_r9), .odata(o_r10));//11th
+    register #(.WIDTH(15), .DELAY(1)) r11(.clk(clk), .rst(rst), .ce(ce), .idata(i_r11), .odata(o_r11));
+    register #(.WIDTH(12), .DELAY(2)) r12(.clk(clk), .rst(rst), .ce(ce), .idata(o_r3), .odata(o_r12)); //7th
+    register #(.WIDTH(13), .DELAY(1)) r14 (.clk(clk), .rst(rst), .ce(ce), .idata(o_r13), .odata(o_r14)); //8th   
+    register #(.WIDTH(13), .DELAY(1)) r16 (.clk(clk), .rst(rst), .ce(ce), .idata(o_mo5), .odata(o_r16)); //8th 
+    register #(.WIDTH(13), .DELAY(2)) r17 (.clk(clk), .rst(rst), .ce(ce), .idata(o_r16), .odata(o_r17));//9th     
+    register #(.WIDTH(13), .DELAY(1)) r18 (.clk(clk), .rst(rst), .ce(ce), .idata(o_r17), .odata(o_r18));//10th 
+    register #(.WIDTH(14), .DELAY(2)) r19 (.clk(clk), .rst(rst), .ce(ce), .idata(i_r19), .odata(o_r19));//9th  
+    register #(.WIDTH(15), .DELAY(1)) r20 (.clk(clk), .rst(rst), .ce(ce), .idata(i_r20), .odata(i_even)); 
+    register #(.WIDTH(12), .DELAY(1)) r21(.clk(clk), .rst(rst), .ce(ce), .idata(o_r4), .odata(o_r21)); 
+    register #(.WIDTH(13), .DELAY(1)) r22 (.clk(clk), .rst(rst), .ce(ce), .idata(o_r14), .odata(o_r22)); 
     
     mux_3i #(.WIDTH_I0(12), .WIDTH_I1(12), .WIDTH_I2(13), .WIDTH_OUT(13)) mo1(.i0(o_r3), .i1(o_r12), .i2(o_r8[12:0]), .odata(o_mo1), .code(code_mo1)); //r8 we need is always 13b width
     mux_3i #(.WIDTH_I0(16), .WIDTH_I1(13), .WIDTH_I2(14), .WIDTH_OUT(14)) mo3(.i0(o_r19), .i1(o_r5), .i2(o_r7), .odata(o_mo3), .code(code_mo3));
@@ -100,7 +100,7 @@ module DCT(
         case(STATE)  
             IDLE:
             begin
-            if(start == 1'b1) 
+            if(ce == 1'b1) 
                 begin
                      STATE <= 3'd0;
                 end

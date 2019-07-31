@@ -1,0 +1,1960 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 6804
+License: Customer
+
+Current time: 	7/31/19 9:29:43 AM CEST
+Time zone: 	Central European Time (Europe/Prague)
+
+OS: Windows 8.1
+OS Version: 6.3
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 74 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/Program Files/MIPS/Simulators/IASim/IASim_4_1_0/bin/Windows64;C:/ProgramData/Oracle/Java/javapath;C:/Python27/;C:/Windows/System32;C:/Windows;C:/Windows/System32/Wbem;C:/Tcl/bin;D:/Xilinx/14.7/ISE_DS/ISE/bin/nt;D:/Xilinx/14.7/ISE_DS/ISE/lib/nt;D:/Xilinx/14.7/ISE_DS;C:/questasim64_10.4d/win64;C:/Xilinx/Vivado/2017.2;d:/questasim64_10.6a/win64;C:/Imperas/bin/Windows32;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	lsneler
+User home directory: C:/Users/lsneler
+User working directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/.Xil/Vivado-6804-rtrkos034
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 500 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+54564kb) [00:00:14]
+// [Engine Memory]: 471 MB (+342039kb) [00:00:14]
+// Opening Vivado Project: C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 501 MB (+7394kb) [00:00:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 36 MB. Current time: 7/31/19 9:29:45 AM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 65 MB (+8112kb) [00:00:25]
+// [Engine Memory]: 528 MB (+1931kb) [00:00:25]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Project name: DCT; location: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT; part: xc7z010clg400-1
+// [Engine Memory]: 579 MB (+25414kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 720.789 ; gain = 17.664 
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (DCT_2D.v) elapsed time: 0.2s
+// Elapsed time: 177 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DCT_2D (DCT_2D.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DCT_2D (DCT_2D.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("DCT_2D.v", 181, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 74 MB (+5945kb) [00:03:43]
+// Elapsed time: 40 seconds
+selectCodeEditor("DCT_2D.v", 78, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 78 MB (+194kb) [00:04:29]
+// Elapsed time: 35 seconds
+selectCodeEditor("DCT_2D.v", 72, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 162, 165); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 197, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 83 MB (+1757kb) [00:04:58]
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 228, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 141, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 141, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 138, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 142, 222); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 142, 243); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 144, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 147, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 190, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 197, 272); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 89 MB (+1142kb) [00:06:02]
+// Elapsed time: 181 seconds
+selectCodeEditor("DCT_2D.v", 368, 225); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 377, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectCodeEditor("DCT_2D.v", 193, 223); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 119, 71); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 53, 90); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 103); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 88); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 43 MB. Current time: 7/31/19 9:38:16 AM CEST
+selectCodeEditor("DCT_2D.v", 538, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("DCT_2D.v", 128, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 311, 226); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 103, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 55 seconds
+selectCodeEditor("DCT_2D.v", 119, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 192, 482); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 197, 438); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 196, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 254, 452); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 196, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 251, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 196, 487); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 199, 488); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 486); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 202, 498); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 253, 499); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 279, 505); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 197, 506); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 505); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 286, 504); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 296, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("DCT_2D.v", 250, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 352, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("DCT_2D.v", 101, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 94, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 130, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 133, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 96 MB (+2605kb) [00:11:37]
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 167, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 292, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 257, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 257, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 258, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 259, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 256, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 258, 445); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 154, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 472); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 382, 288); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 130, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 201, 462); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 204, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 223, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 210, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 191, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 304); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 113 seconds
+selectCodeEditor("DCT_2D.v", 790, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 232 seconds
+selectCodeEditor("DCT_2D.v", 246, 34); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 47); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("DCT_2D.v", 210, 194); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("DCT_2D.v", 386, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 109, 68); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 115, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 111, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 115, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 116, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 124, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 115, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 155, 60); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 123, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 175, 61); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 163, 61); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 210, 58); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 258, 60); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 315, 61); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 366, 60); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 412, 63); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 462, 65); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 500, 59); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 55, 75); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("DCT_2D.v", 135, 82); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 82); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 80); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 285, 81); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 336, 81); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 384, 81); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 427, 78); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 483, 77); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 92); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 94); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 95); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 285, 93); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 332, 94); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 377, 96); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 433, 94); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 483, 97); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 503, 44); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 62 seconds
+selectCodeEditor("DCT_2D.v", 141, 131); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 188, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 190, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 236, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 286, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 337, 132); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 387, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 375, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 437, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 480, 129); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 511, 126); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 132, 150); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 174); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 149); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 288, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 334, 145); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 385, 143); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 435, 146); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 477, 146); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 188, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 280, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 330, 159); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 382, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 434, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 480, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 188, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 284, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 333, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 383, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 429, 176); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 484, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 191, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 286, 194); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 330, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 100 MB (+149kb) [00:22:35]
+selectCodeEditor("DCT_2D.v", 380, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 436, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 478, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 516, 81); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 463, 58); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 546, 190); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 537, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("DCT_2D.v", 93, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 93, 367, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 179, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 337 seconds
+selectCodeEditor("DCT_2D.v", 627, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 130, 288); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 130, 288, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 129, 293); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 129, 293, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 175, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 160, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 178, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 160, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 159, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 200, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 160, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 69, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 113, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 113, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 115, 308); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 112, 339); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 114, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 113, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 114, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 111, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 254, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 399, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 381, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 367, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("DCT_2D.v", 133, 165); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 133, 165, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 142, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 142, 415, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 134, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 134, 399, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 132, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("DCT_2D.v", 263, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 64 seconds
+selectCodeEditor("DCT_2D.v", 204, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("DCT_2D.v", 537, 166); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("DCT_2D.v", 150, 420); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 190, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 162, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 68 seconds
+selectCodeEditor("DCT_2D.v", 187, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 197, 215); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 154, 210); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 172, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 211, 212); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 254, 293); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 78, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("DCT_2D.v", 40, 24); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 40, 24, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 32, 22); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 32, 22, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 45, 46); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 45, 46, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 55); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 55, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 83); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 83, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 97); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 39, 97, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 115); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 115, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 46, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 46, 128, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 45, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 45, 142, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 46, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 46, 160, false, true, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Control Key - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 43, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 162, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("DCT_2D.v", 210, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// x:q (cg:JFrame): Invalid Top Module: addNotify
+dismissDialog("Invalid Top Module"); // x:q (cg:JFrame)
+selectCodeEditor("DCT_2D.v", 213, 469); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 190, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+// [Engine Memory]: 610 MB (+2564kb) [00:35:50]
+selectCodeEditor("DCT_2D.v", 50, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 53, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 45 seconds
+selectCodeEditor("DCT_2D.v", 266, 263); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 266, 263, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 538, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 341, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("DCT_2D.v", 130, 76); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 130, 76, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 310, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 587, 46); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 587, 46, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 225, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 352, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 380, 255); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 74); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 42, 29); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 42, 29, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 72); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 43, 72, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 88); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 88, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 114); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 114, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 129); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 41, 129, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 38, 149); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 38, 149, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 36, 156); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 36, 156, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 42, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 42, 180, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 42, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 44, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 44, 195, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 204, 286); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 333, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 276, 162); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 276, 162, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 160, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 160, 230, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 69, 462); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 165, 231); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 165, 231, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 169, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 278, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// x:q (cg:JFrame): Invalid Top Module: addNotify
+// Elapsed time: 43 seconds
+dismissDialog("Invalid Top Module"); // x:q (cg:JFrame)
+selectCodeEditor("DCT_2D.v", 531, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("DCT_2D.v", 172, 96); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 172, 96, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 350, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 330, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 610 MB. GUI used memory: 44 MB. Current time: 7/31/19 10:08:16 AM CEST
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 216, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 230, 366); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 228, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 231, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 234, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 232, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 230, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 354, 452); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// x:q (cg:JFrame): Invalid Top Module: addNotify
+dismissDialog("Invalid Top Module"); // x:q (cg:JFrame)
+selectCodeEditor("DCT_2D.v", 358, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 292, 377); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 200, 469); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 226, 35); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 226, 35, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 182, 461); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 461, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 264, 40); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 264, 40, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 174, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 174, 384, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 404); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 404, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 415, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 427); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 427, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 426); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 450, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 348, 451); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 324, 452); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 353, 448); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 222, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 223, 420); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+selectCodeEditor("DCT_2D.v", 370, 239); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 132, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 134, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 359); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 134, 395); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 133, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 187, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 333, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 224, 453); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 221, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+selectCodeEditor("DCT_2D.v", 138, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 140, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 409); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 445); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 336, 456); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 221, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 222, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+selectCodeEditor("DCT_2D.v", 298, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 135, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 137, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 138, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 132, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 138, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 332, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 222, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 224, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+selectCodeEditor("DCT_2D.v", 161, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 340); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 132, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 134, 333, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 138, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 353); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 351, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 142, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 140, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 346, 421); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 189, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 187, 376); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 443); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 190, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 497); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 448); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 189, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 395); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 187, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 180, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 456); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 340, 458); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 348, 475); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 336, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 226, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 224, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 133, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 134, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 377); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 187, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 313, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 188, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 188, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 187, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 327); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 183, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 395); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 184, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 348, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 348, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 134, 362); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 109, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 221, 481); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 127, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 223, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+// Elapsed time: 18 seconds
+selectCodeEditor("DCT_2D.v", 224, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 232, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 179, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 179, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 176, 289); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 176, 310); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 181, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 174, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 179, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 138, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 347, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 221, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 223, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 111, 304); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 111, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 156, 308); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 131, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 137, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 136, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 135, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 140, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 140, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 188, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 190, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 185, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 182, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 186, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 343, 424); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("DCT_2D.v", 221, 140); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 221, 140, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 145, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 213, 506); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("DCT_2D.v", 173, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 173, 144, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 214, 469); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 189, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 262, 483); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 355, 462); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 270, 488); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("DCT_2D.v", 237, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 442); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 245, 461); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 329, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 243, 484); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 334, 485); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 289, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("DCT_2D.v", 301, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 296, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 296, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+// x:q (cg:JFrame): Invalid Top Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:q)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // x:q (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 300, 423); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 300, 406); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 295, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 437); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("DCT_2D.v", 297, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 342, 472); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 189, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 379, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 378, 471); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 308, 322); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 240, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 244, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 248, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 248, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 249, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 295, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 296, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 295, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 377); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 308, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 309, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 212); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 245); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 250, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 245, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 248, 393); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 446); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 236, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 341, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 462); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 340, 471); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 329, 461); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 338, 469); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 375, 471); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 375, 471); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 240, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 248, 372); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 246, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 251, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 248, 422); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 296, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 401); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 432); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 343, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 379, 472); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 377, 469); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 45 MB. Current time: 7/31/19 10:19:42 AM CEST
+selectCodeEditor("DCT_2D.v", 244, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 426); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 249, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 428); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 353, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 380, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 381, 471); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 236, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 239, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 246, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 448); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 236, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 308, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 474); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 326, 474); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 376, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 378, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 245, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 437); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 330, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 377, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 379, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 234, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 243, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 239, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 389); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 309, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 448); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 336, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 379, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): TRUE
+selectCodeEditor("DCT_2D.v", 379, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u:JideToggleButton (f:CommandBar, cg:JFrame): FALSE
+selectCodeEditor("DCT_2D.v", 242, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 244, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 244, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 241, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 242, 418); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 238, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 240, 444); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 237, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 342); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 374); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 362); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 380); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("DCT_2D.v", 305, 412); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 430); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 466); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 355, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 340, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 266, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 257, 463); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 1034, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("DCT_2D.v", 867, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 194, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 846, 483); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("DCT_2D.v", 578, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot tb_DCT_2D_behav 
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jul 31 10:24:19 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Wed Jul 31 10:24:19 2019... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 799.590 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_DCT_2D_behav -key {Behavioral:sim_1:Functional:tb_DCT_2D} -tclbatch {tb_DCT_2D.tcl} -view {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg} -view {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg} -view {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [Engine Memory]: 652 MB (+11452kb) [00:54:55]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 48 MB. Current time: 7/31/19 10:24:22 AM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg 
+// Tcl Message: open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg 
+// Tcl Message: open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg 
+// Tcl Message: source tb_DCT_2D.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_DCT_2D_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 826.254 ; gain = 26.664 
+// 'd' command handler elapsed time: 10 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Objects", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 50 MB. Current time: 7/31/19 10:24:26 AM CEST
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_in[10:0] ; 780 ; Array", 4, "pixel_in[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_out[13:0] ; XXXX ; Array", 5, "pixel_out[13:0]", 0, true, false, true, false, false, false); // n:af (JViewport:JComponent, cg:JFrame) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_in[10:0] ; 780 ; Array", 4, "pixel_in[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b:bs (cg:JFrame):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 833.504 ; gain = 0.000 
+// 'a' command handler elapsed time: 6 seconds
+dismissDialog("Relaunch Simulation"); // b:bs (cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 50 MB. Current time: 7/31/19 10:24:42 AM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 55 MB. Current time: 7/31/19 10:24:43 AM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "cnt[2:0] ; 3 ; Array", 1, "cnt[2:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 282, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Scope", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// [GUI Memory]: 106 MB (+538kb) [00:55:33]
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_DCT_2D (tb_DCT_2D.v)]", 7, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_DCT_2D (tb_DCT_2D.v)]", 7, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("tb_DCT_2D.v", 295, 236); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav2.wcfg*", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg} 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 165, 186); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: FILE_SET_CHANGE
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 130, 69); // n:a (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 52 MB. Current time: 7/31/19 10:25:18 AM CEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav2.wcfg", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, pixel_in[10:0]]", 0, true, false, false, false, true, false); // a:i (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Name"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Waveform Style"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Signal Color"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu((HResource) null, "Radix"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem((HResource) null, "Signed Decimal"); // Q:JCheckBoxMenuItem (JPopupMenu:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav2.wcfg", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav.wcfg", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 119 MB (+7848kb) [00:56:24]
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "tb_DCT_behav.wcfg"); // w:aJ
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "tb_DCT_behav1.wcfg"); // w:aJ
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// [GUI Memory]: 128 MB (+3505kb) [00:56:30]
+// Elapsed time: 15 seconds
+selectCodeEditor("DCT_2D.v", 249, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 288, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 705 MB (+21484kb) [00:57:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 52 MB. Current time: 7/31/19 10:26:32 AM CEST
+// Elapsed time: 18 seconds
+selectCodeEditor("DCT_2D.v", 293, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 296, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 419); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 451); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 297, 502); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 454); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 487); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 500); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 521); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 536); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 552); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 565); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 263); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 345); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 437); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 480); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 496); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 515); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 531); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("DCT_2D.v", 341, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 292, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 294, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 327); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 515); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 401); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 416); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 434); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 445); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 464); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 482); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 498); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 515); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 361); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 396); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 299, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 452); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 307, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 470); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 306, 478); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 298, 494); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 513); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 528); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 302, 549); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 562); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 359); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 300, 384); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 394); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 303, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 305, 427); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 301, 446); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectCodeEditor("DCT_2D.v", 270, 129); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 194, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 194, 130, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 238, 128); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 605, 344); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 605, 344, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 284, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 62, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 556, 402); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 556, 402, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 285, 357); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 304, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("DCT_2D.v", 25, 483); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 481); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 252, 481, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 283, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("DCT_2D.v", 499, 209); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("DCT_2D.v", 542, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("DCT_2D.v", 408, 178); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 201, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 175, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 204, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 204, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 209, 188); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 209, 188, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 214, 179); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 214, 179, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 130, 69); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav2.wcfg", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 130, 69); // n:a (JViewport:JComponent, cg:JFrame)Waveform: addNotify
+selectCodeEditor("tb_DCT_2D.v", 616, 521); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 317, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 317, 182, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 321, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 321, 182, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 319, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 319, 175, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 859, 514); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 128, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 257, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 246, 306); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 248, 296); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_DCT_2D.v", 275, 298); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 189, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 112, 303); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 112, 303, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 111, 561); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 110, 556); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 110, 556, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 110, 556); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 110, 556); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 110, 556); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 106, 550); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 106, 550, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 239, 531); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 254, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 104, 346); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 104, 347, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("DCT_2D.v", 400, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("DCT_2D.v", 27, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 139, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_2D.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 576, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 1063, 519); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_DCT_2D.v", 1163, 515); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 1163, 515, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 253, 355); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("tb_DCT_2D.v", 356, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "tb_DCT_2D.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("DCT_2D.v", 190, 304); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b:bs (cg:JFrame):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// 'a' command handler elapsed time: 4 seconds
+dismissDialog("Relaunch Simulation"); // b:bs (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_DCT_behav2.wcfg", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Objects", 2); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_out[13:0] ; XXXX ; Array", 5, "pixel_out[13:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_out_mod1[10:0] ; XXX ; Array", 6, "pixel_out_mod1[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_in_mod2[10:0] ; XXX ; Array", 7, "pixel_in_mod2[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_out_mod1[10:0] ; XXX ; Array", 6, "pixel_out_mod1[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "pixel_out_mod1[10:0] ; XXX ; Array", 6, "pixel_out_mod1[10:0]", 0, true); // n:af (JViewport:JComponent, cg:JFrame) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, pixel_out_mod1[10:0]]", 2); // a:i (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 59 MB. Current time: 7/31/19 10:34:09 AM CEST
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, pixel_out_mod1[10:0]]", 2); // a:i (JViewport:JComponent, cg:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b:bs (cg:JFrame):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, b:bs)
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.sim/sim_1/behav' 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_DELETE_ALL_BREAKPOINTS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 705 MB. GUI used memory: 52 MB. Current time: 7/31/19 10:34:15 AM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+dismissDialog("Relaunch Simulation"); // b:bs (cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "DCT_2D.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 340, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 367, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 192, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 192, 294, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 432, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 432, 297, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 571, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 571, 300, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("DCT_2D.v", 505, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 505, 300, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectCodeEditor("DCT_2D.v", 244, 264); // bI:J (JPanel:JComponent, cg:JFrame)
