@@ -59,32 +59,32 @@ module tb_DCT_2D();
                 if(rst == 1'b1)
                 begin
                     rst <= 1'b0;
-                    pixel_in <= 8'd0;//8'b10000000;
+                    pixel_in <= 8'd0; //8'b10000000;
                 end
                 if(cnt == 3'd0)
-                    pixel_in <= 8'd125;//8'b10000000;
+                    pixel_in <= 8'd1;//8'b10000000;
                     
                 if(cnt == 3'd1)
-                    pixel_in <= 8'd0; //8'b10000000;
+                    pixel_in <= 8'd2; //8'b10000000;
                     
                 if(cnt == 3'd2)
-                    pixel_in <= 8'd10; //8'b10000000;
+                    pixel_in <= 8'd3; //8'b10000000;
                     
                 if(cnt == 3'd3)
-                    pixel_in <= 8'd50; //8'b10000000;
+                    pixel_in <= 8'd4; //8'b10000000;
                     
                 if(cnt == 3'd4)
-                    pixel_in <= 8'd0; //8'b10000000;
+                    pixel_in <= 8'd5; //8'b10000000;
                     
                 if(cnt == 3'd5)
-                    pixel_in <= 8'd70; //8'b10000000;  
+                    pixel_in <= 8'd6; //8'b10000000;  
                     
                 if(cnt == 3'd6)
-                    pixel_in <= 8'd127; //8'b10000000;
+                    pixel_in <= 8'd7; //8'b10000000;
                    
                 if(cnt == 3'd7)
                 begin
-                    pixel_in <= 8'd1;//8'b10000000;
+                    pixel_in <= 8'd8; //8'b10000000;
                     cnt <= 3'd0;
                 end
             end

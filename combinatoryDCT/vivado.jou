@@ -33,3 +33,30 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_DCT_2D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg
+source tb_DCT_2D.tcl
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim

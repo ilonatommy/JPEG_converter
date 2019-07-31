@@ -44,7 +44,5 @@ module tb_DCT_BRAM();
             end
     
     blk_mem_gen_0 BRAM(.clka(clk), .addra(addr), .douta(pixel_in));
-    wire [10:0] tmp_pixel;
-    assign tmp_pixel = {pixel_in[7], pixel_in[7], pixel_in[7], pixel_in};
-    DCT mod(.pixel_in(tmp_pixel), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
+    DCT mod(.pixel_in({pixel_in[7], pixel_in[7], pixel_in[7], pixel_in}), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
 endmodule

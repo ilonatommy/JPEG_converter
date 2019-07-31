@@ -111,150 +111,150 @@ module DCT_2D(
             cnt <= cnt + 1;
             
             case(cnt)
-                6'd0: rc_00 <= $signed(pixel_out_mod1[10:0]);
-                6'd1: rc_01 <= $signed(pixel_out_mod1[10:0]);
-                6'd2: rc_02 <= $signed(pixel_out_mod1[10:0]);
-                6'd3: rc_03 <= $signed(pixel_out_mod1[10:0]);
-                6'd4: rc_04 <= $signed(pixel_out_mod1[10:0]);
-                6'd5: rc_05 <= $signed(pixel_out_mod1[10:0]);
-                6'd6: rc_06 <= $signed(pixel_out_mod1[10:0]);
-                6'd7: rc_07 <= $signed(pixel_out_mod1[10:0]);    
+                6'd11: rc_00 <= $signed(pixel_out_mod1[10:0]);
+                6'd12: rc_01 <= $signed(pixel_out_mod1[10:0]);
+                6'd13: rc_02 <= $signed(pixel_out_mod1[10:0]);
+                6'd14: rc_03 <= $signed(pixel_out_mod1[10:0]);
+                6'd15: rc_04 <= $signed(pixel_out_mod1[10:0]);
+                6'd16: rc_05 <= $signed(pixel_out_mod1[10:0]);
+                6'd17: rc_06 <= $signed(pixel_out_mod1[10:0]);
+                6'd18: rc_07 <= $signed(pixel_out_mod1[10:0]);    
                 
-                6'd8: rc_10 <= $signed(pixel_out_mod1[10:0]);
-                6'd9: rc_11 <= $signed(pixel_out_mod1[10:0]);
-                6'd10: rc_12 <= $signed(pixel_out_mod1[10:0]);
-                6'd11: rc_13 <= $signed(pixel_out_mod1[10:0]);
-                6'd12: rc_14 <= $signed(pixel_out_mod1[10:0]);
-                6'd13: rc_15 <= $signed(pixel_out_mod1[10:0]);
-                6'd14: rc_16 <= $signed(pixel_out_mod1[10:0]);
-                6'd15: rc_17 <= $signed(pixel_out_mod1[10:0]); 
+                6'd19: rc_10 <= $signed(pixel_out_mod1[10:0]);
+                6'd20: rc_11 <= $signed(pixel_out_mod1[10:0]);
+                6'd21: rc_12 <= $signed(pixel_out_mod1[10:0]);
+                6'd22: rc_13 <= $signed(pixel_out_mod1[10:0]);
+                6'd23: rc_14 <= $signed(pixel_out_mod1[10:0]);
+                6'd24: rc_15 <= $signed(pixel_out_mod1[10:0]);
+                6'd25: rc_16 <= $signed(pixel_out_mod1[10:0]);
+                6'd26: rc_17 <= $signed(pixel_out_mod1[10:0]); 
+                    
+                6'd27: rc_20 <= $signed(pixel_out_mod1[10:0]);
+                6'd28: rc_21 <= $signed(pixel_out_mod1[10:0]);
+                6'd29: rc_22 <= $signed(pixel_out_mod1[10:0]);
+                6'd30: rc_23 <= $signed(pixel_out_mod1[10:0]);
+                6'd31: rc_24 <= $signed(pixel_out_mod1[10:0]);
+                6'd32: rc_25 <= $signed(pixel_out_mod1[10:0]);
+                6'd33: rc_26 <= $signed(pixel_out_mod1[10:0]);
+                6'd34: rc_27 <= $signed(pixel_out_mod1[10:0]); 
                 
-                6'd16: rc_20 <= $signed(pixel_out_mod1[10:0]);
-                6'd17: rc_21 <= $signed(pixel_out_mod1[10:0]);
-                6'd18: rc_22 <= $signed(pixel_out_mod1[10:0]);
-                6'd19: rc_23 <= $signed(pixel_out_mod1[10:0]);
-                6'd20: rc_24 <= $signed(pixel_out_mod1[10:0]);
-                6'd21: rc_25 <= $signed(pixel_out_mod1[10:0]);
-                6'd22: rc_26 <= $signed(pixel_out_mod1[10:0]);
-                6'd23: rc_27 <= $signed(pixel_out_mod1[10:0]); 
+                6'd35: rc_30 <= $signed(pixel_out_mod1[10:0]);
+                6'd36: rc_31 <= $signed(pixel_out_mod1[10:0]);
+                6'd37: rc_32 <= $signed(pixel_out_mod1[10:0]);
+                6'd38: rc_33 <= $signed(pixel_out_mod1[10:0]);
+                6'd39: rc_34 <= $signed(pixel_out_mod1[10:0]);
+                6'd40: rc_35 <= $signed(pixel_out_mod1[10:0]);
+                6'd41: rc_36 <= $signed(pixel_out_mod1[10:0]);
+                6'd42: rc_37 <= $signed(pixel_out_mod1[10:0]);
                 
-                6'd24: rc_30 <= $signed(pixel_out_mod1[10:0]);
-                6'd25: rc_31 <= $signed(pixel_out_mod1[10:0]);
-                6'd26: rc_32 <= $signed(pixel_out_mod1[10:0]);
-                6'd27: rc_33 <= $signed(pixel_out_mod1[10:0]);
-                6'd28: rc_34 <= $signed(pixel_out_mod1[10:0]);
-                6'd29: rc_35 <= $signed(pixel_out_mod1[10:0]);
-                6'd30: rc_36 <= $signed(pixel_out_mod1[10:0]);
-                6'd31: rc_37 <= $signed(pixel_out_mod1[10:0]);
-                
-                6'd32: rc_40 <= $signed(pixel_out_mod1[10:0]);
-                6'd33: rc_41 <= $signed(pixel_out_mod1[10:0]);
-                6'd34: rc_42 <= $signed(pixel_out_mod1[10:0]);
-                6'd35: rc_43 <= $signed(pixel_out_mod1[10:0]);
-                6'd36: rc_44 <= $signed(pixel_out_mod1[10:0]);
-                6'd37: rc_45 <= $signed(pixel_out_mod1[10:0]);
-                6'd38: rc_46 <= $signed(pixel_out_mod1[10:0]);
-                6'd39: rc_47 <= $signed(pixel_out_mod1[10:0]);  
+                6'd43: rc_40 <= $signed(pixel_out_mod1[10:0]);
+                6'd44: rc_41 <= $signed(pixel_out_mod1[10:0]);
+                6'd45: rc_42 <= $signed(pixel_out_mod1[10:0]);
+                6'd46: rc_43 <= $signed(pixel_out_mod1[10:0]);
+                6'd47: rc_44 <= $signed(pixel_out_mod1[10:0]);
+                6'd48: rc_45 <= $signed(pixel_out_mod1[10:0]);
+                6'd49: rc_46 <= $signed(pixel_out_mod1[10:0]);
+                6'd50: rc_47 <= $signed(pixel_out_mod1[10:0]);  
                        
-                6'd40: rc_50 <= $signed(pixel_out_mod1[10:0]);
-                6'd41: rc_51 <= $signed(pixel_out_mod1[10:0]);
-                6'd42: rc_52 <= $signed(pixel_out_mod1[10:0]);
-                6'd43: rc_53 <= $signed(pixel_out_mod1[10:0]);
-                6'd44: rc_54 <= $signed(pixel_out_mod1[10:0]);
-                6'd45: rc_55 <= $signed(pixel_out_mod1[10:0]);
-                6'd46: rc_56 <= $signed(pixel_out_mod1[10:0]);
-                6'd47: rc_57 <= $signed(pixel_out_mod1[10:0]);     
+                6'd51: rc_50 <= $signed(pixel_out_mod1[10:0]);
+                6'd52: rc_51 <= $signed(pixel_out_mod1[10:0]);
+                6'd53: rc_52 <= $signed(pixel_out_mod1[10:0]);
+                6'd54: rc_53 <= $signed(pixel_out_mod1[10:0]);
+                6'd55: rc_54 <= $signed(pixel_out_mod1[10:0]);
+                6'd56: rc_55 <= $signed(pixel_out_mod1[10:0]);
+                6'd57: rc_56 <= $signed(pixel_out_mod1[10:0]);
+                6'd58: rc_57 <= $signed(pixel_out_mod1[10:0]);     
                 
-                6'd48: rc_60 <= $signed(pixel_out_mod1[10:0]);
-                6'd49: rc_61 <= $signed(pixel_out_mod1[10:0]);
-                6'd50: rc_62 <= $signed(pixel_out_mod1[10:0]);
-                6'd51: rc_63 <= $signed(pixel_out_mod1[10:0]);
-                6'd52: rc_64 <= $signed(pixel_out_mod1[10:0]);
-                6'd53: rc_65 <= $signed(pixel_out_mod1[10:0]);
-                6'd54: rc_66 <= $signed(pixel_out_mod1[10:0]);
-                6'd55: rc_67 <= $signed(pixel_out_mod1[10:0]);
+                6'd59: rc_60 <= $signed(pixel_out_mod1[10:0]);
+                6'd60: rc_61 <= $signed(pixel_out_mod1[10:0]);
+                6'd61: rc_62 <= $signed(pixel_out_mod1[10:0]);
+                6'd62: rc_63 <= $signed(pixel_out_mod1[10:0]);
+                6'd63: rc_64 <= $signed(pixel_out_mod1[10:0]);
+                6'd0: rc_65 <= $signed(pixel_out_mod1[10:0]);
+                6'd1: rc_66 <= $signed(pixel_out_mod1[10:0]);
+                6'd2: rc_67 <= $signed(pixel_out_mod1[10:0]);
                 
-                6'd56: rc_70 <= $signed(pixel_out_mod1[10:0]);
-                6'd57: rc_71 <= $signed(pixel_out_mod1[10:0]);
-                6'd58: rc_72 <= $signed(pixel_out_mod1[10:0]);
-                6'd59: rc_73 <= $signed(pixel_out_mod1[10:0]);
-                6'd60: rc_74 <= $signed(pixel_out_mod1[10:0]);
-                6'd61: rc_75 <= $signed(pixel_out_mod1[10:0]);
-                6'd62: rc_76 <= $signed(pixel_out_mod1[10:0]);
-                6'd63: rc_77 <= $signed(pixel_out_mod1[10:0]);
+                6'd3: rc_70 <= $signed(pixel_out_mod1[10:0]);
+                6'd4: rc_71 <= $signed(pixel_out_mod1[10:0]);
+                6'd5: rc_72 <= $signed(pixel_out_mod1[10:0]);
+                6'd6: rc_73 <= $signed(pixel_out_mod1[10:0]);
+                6'd7: rc_74 <= $signed(pixel_out_mod1[10:0]);
+                6'd8: rc_75 <= $signed(pixel_out_mod1[10:0]);
+                6'd9: rc_76 <= $signed(pixel_out_mod1[10:0]);
+                6'd10: rc_77 <= $signed(pixel_out_mod1[10:0]);
             endcase
         end
     end
     
-    assign pixel_in_mod2 = cnt == 0 ? rc_00 :
-                           cnt == 1 ? rc_10 :
-                           cnt == 2 ? rc_20 :
-                           cnt == 3 ? rc_30 :
-                           cnt == 4 ? rc_40 :
-                           cnt == 5 ? rc_50 :
-                           cnt == 6 ? rc_60 :
-                           cnt == 7 ? rc_70 :
+    assign pixel_in_mod2 = cnt == 11 ? rc_00 :
+                           cnt == 12 ? rc_10 :
+                           cnt == 13 ? rc_20 :
+                           cnt == 14 ? rc_30 :
+                           cnt == 15 ? rc_40 :
+                           cnt == 16 ? rc_50 :
+                           cnt == 17 ? rc_60 :
+                           cnt == 18 ? rc_70 :
                            
-                           cnt == 8 ? rc_04 :
-                           cnt == 9 ? rc_14 :
-                           cnt == 10 ? rc_24 :
-                           cnt == 11 ? rc_34 :
-                           cnt == 12 ? rc_44 :
-                           cnt == 13 ? rc_54 :
-                           cnt == 14 ? rc_64 :
-                           cnt == 15 ? rc_74 :
+                           cnt == 19 ? rc_04 :
+                           cnt == 20 ? rc_14 :
+                           cnt == 21 ? rc_24 :
+                           cnt == 22 ? rc_34 :
+                           cnt == 23 ? rc_44 :
+                           cnt == 24 ? rc_54 :
+                           cnt == 25 ? rc_64 :
+                           cnt == 26 ? rc_74 :
                            
-                           cnt == 16 ? rc_02 :
-                           cnt == 17 ? rc_12 :
-                           cnt == 18 ? rc_22 :
-                           cnt == 19 ? rc_32 :
-                           cnt == 20 ? rc_42 :
-                           cnt == 21 ? rc_52 :
-                           cnt == 22 ? rc_62 :
-                           cnt == 23 ? rc_72 :
+                           cnt == 27 ? rc_02 :
+                           cnt == 28 ? rc_12 :
+                           cnt == 29 ? rc_22 :
+                           cnt == 30 ? rc_32 :
+                           cnt == 31 ? rc_42 :
+                           cnt == 32 ? rc_52 :
+                           cnt == 33 ? rc_62 :
+                           cnt == 34 ? rc_72 :
                            
-                           cnt == 24 ? rc_06 :
-                           cnt == 25 ? rc_16 :
-                           cnt == 26 ? rc_26 :
-                           cnt == 27 ? rc_36 :
-                           cnt == 28 ? rc_46 :
-                           cnt == 29 ? rc_56 :
-                           cnt == 30 ? rc_66 :
-                           cnt == 31 ? rc_76 :
+                           cnt == 35 ? rc_06 :
+                           cnt == 36 ? rc_16 :
+                           cnt == 37 ? rc_26 :
+                           cnt == 38 ? rc_36 :
+                           cnt == 39 ? rc_46 :
+                           cnt == 40 ? rc_56 :
+                           cnt == 41 ? rc_66 :
+                           cnt == 42 ? rc_76 :
                            
-                           cnt == 32 ? rc_05 :
-                           cnt == 33 ? rc_15 :
-                           cnt == 34 ? rc_25 :
-                           cnt == 35 ? rc_35 :
-                           cnt == 36 ? rc_45 :
-                           cnt == 37 ? rc_55 :
-                           cnt == 38 ? rc_65 :
-                           cnt == 39 ? rc_75 :
+                           cnt == 43 ? rc_05 :
+                           cnt == 44 ? rc_15 :
+                           cnt == 45 ? rc_25 :
+                           cnt == 46 ? rc_35 :
+                           cnt == 47 ? rc_45 :
+                           cnt == 48 ? rc_55 :
+                           cnt == 49 ? rc_65 :
+                           cnt == 50 ? rc_75 :
                            
-                           cnt == 40 ? rc_03 :
-                           cnt == 41 ? rc_13 :
-                           cnt == 42 ? rc_23 :
-                           cnt == 43 ? rc_33 :
-                           cnt == 44 ? rc_43 :
-                           cnt == 45 ? rc_53 :
-                           cnt == 46 ? rc_63 :
-                           cnt == 47 ? rc_73 :
+                           cnt == 51 ? rc_03 :
+                           cnt == 52 ? rc_13 :
+                           cnt == 53 ? rc_23 :
+                           cnt == 54 ? rc_33 :
+                           cnt == 55 ? rc_43 :
+                           cnt == 56 ? rc_53 :
+                           cnt == 57 ? rc_63 :
+                           cnt == 58 ? rc_73 :
                            
-                           cnt == 48 ? rc_01 :
-                           cnt == 49 ? rc_11 :
-                           cnt == 50 ? rc_21 :
-                           cnt == 51 ? rc_31 :
-                           cnt == 52 ? rc_41 :
-                           cnt == 53 ? rc_51 :
-                           cnt == 54 ? rc_61 :
-                           cnt == 55 ? rc_71 :
+                           cnt == 59 ? rc_01 :
+                           cnt == 60 ? rc_11 :
+                           cnt == 61 ? rc_21 :
+                           cnt == 62 ? rc_31 :
+                           cnt == 63 ? rc_41 :
+                           cnt == 0 ? rc_51 :
+                           cnt == 1 ? rc_61 :
+                           cnt == 2 ? rc_71 :
                            
-                           cnt == 56 ? rc_07 :
-                           cnt == 57 ? rc_17 :
-                           cnt == 58 ? rc_27 :
-                           cnt == 59 ? rc_37 :
-                           cnt == 60 ? rc_47 :
-                           cnt == 61 ? rc_57 :
-                           cnt == 62 ? rc_67 :
+                           cnt == 3 ? rc_07 :
+                           cnt == 4 ? rc_17 :
+                           cnt == 5 ? rc_27 :
+                           cnt == 6 ? rc_37 :
+                           cnt == 7 ? rc_47 :
+                           cnt == 8 ? rc_57 :
+                           cnt == 9 ? rc_67 :
                            rc_77;
 endmodule
