@@ -186,75 +186,75 @@ module DCT_2D(
         end
     end
     
-    assign pixel_in_mod2 = cnt == 11 ? rc_00 :
-                           cnt == 12 ? rc_10 :
-                           cnt == 13 ? rc_20 :
-                           cnt == 14 ? rc_30 :
-                           cnt == 15 ? rc_40 :
-                           cnt == 16 ? rc_50 :
-                           cnt == 17 ? rc_60 :
-                           cnt == 18 ? rc_70 :
+    assign pixel_in_mod2 = cnt == 8 ? rc_00 :
+                           cnt == 9 ? rc_10 :
+                           cnt == 10 ? rc_20 :
+                           cnt == 11 ? rc_30 :
+                           cnt == 12 ? rc_40 :
+                           cnt == 13 ? rc_50 :
+                           cnt == 14 ? rc_60 :
+                           cnt == 15 ? rc_70 :
                            
-                           cnt == 19 ? rc_04 :
-                           cnt == 20 ? rc_14 :
-                           cnt == 21 ? rc_24 :
-                           cnt == 22 ? rc_34 :
-                           cnt == 23 ? rc_44 :
-                           cnt == 24 ? rc_54 :
-                           cnt == 25 ? rc_64 :
-                           cnt == 26 ? rc_74 :
+                           cnt == 16 ? rc_04 :
+                           cnt == 17 ? rc_14 :
+                           cnt == 18 ? rc_24 :
+                           cnt == 19 ? rc_34 :
+                           cnt == 20 ? rc_44 :
+                           cnt == 21 ? rc_54 :
+                           cnt == 22 ? rc_64 :
+                           cnt == 23 ? rc_74 :
                            
-                           cnt == 27 ? rc_02 :
-                           cnt == 28 ? rc_12 :
-                           cnt == 29 ? rc_22 :
-                           cnt == 30 ? rc_32 :
-                           cnt == 31 ? rc_42 :
-                           cnt == 32 ? rc_52 :
-                           cnt == 33 ? rc_62 :
-                           cnt == 34 ? rc_72 :
+                           cnt == 24 ? rc_02 :
+                           cnt == 25 ? rc_12 :
+                           cnt == 26 ? rc_22 :
+                           cnt == 27 ? rc_32 :
+                           cnt == 28 ? rc_42 :
+                           cnt == 29 ? rc_52 :
+                           cnt == 30 ? rc_62 :
+                           cnt == 31 ? rc_72 :
                            
-                           cnt == 35 ? rc_06 :
-                           cnt == 36 ? rc_16 :
-                           cnt == 37 ? rc_26 :
-                           cnt == 38 ? rc_36 :
-                           cnt == 39 ? rc_46 :
-                           cnt == 40 ? rc_56 :
-                           cnt == 41 ? rc_66 :
-                           cnt == 42 ? rc_76 :
+                           cnt == 32 ? rc_06 :
+                           cnt == 33 ? rc_16 :
+                           cnt == 34 ? rc_26 :
+                           cnt == 35 ? rc_36 :
+                           cnt == 36 ? rc_46 :
+                           cnt == 37 ? rc_56 :
+                           cnt == 38 ? rc_66 :
+                           cnt == 39 ? rc_76 :
                            
-                           cnt == 43 ? rc_05 :
-                           cnt == 44 ? rc_15 :
-                           cnt == 45 ? rc_25 :
-                           cnt == 46 ? rc_35 :
-                           cnt == 47 ? rc_45 :
-                           cnt == 48 ? rc_55 :
-                           cnt == 49 ? rc_65 :
-                           cnt == 50 ? rc_75 :
+                           cnt == 40 ? rc_05 :
+                           cnt == 41 ? rc_15 :
+                           cnt == 42 ? rc_25 :
+                           cnt == 43 ? rc_35 :
+                           cnt == 44 ? rc_45 :
+                           cnt == 45 ? rc_55 :
+                           cnt == 46 ? rc_65 :
+                           cnt == 47 ? rc_75 :
                            
-                           cnt == 51 ? rc_03 :
-                           cnt == 52 ? rc_13 :
-                           cnt == 53 ? rc_23 :
-                           cnt == 54 ? rc_33 :
-                           cnt == 55 ? rc_43 :
-                           cnt == 56 ? rc_53 :
-                           cnt == 57 ? rc_63 :
-                           cnt == 58 ? rc_73 :
+                           cnt == 48 ? rc_03 :
+                           cnt == 49 ? rc_13 :
+                           cnt == 50 ? rc_23 :
+                           cnt == 51 ? rc_33 :
+                           cnt == 52 ? rc_43 :
+                           cnt == 53 ? rc_53 :
+                           cnt == 54 ? rc_63 :
+                           cnt == 55 ? rc_73 :
                            
-                           cnt == 59 ? rc_01 :
-                           cnt == 60 ? rc_11 :
-                           cnt == 61 ? rc_21 :
-                           cnt == 62 ? rc_31 :
-                           cnt == 63 ? rc_41 :
-                           cnt == 0 ? rc_51 :
-                           cnt == 1 ? rc_61 :
-                           cnt == 2 ? rc_71 :
+                           cnt == 56 ? rc_01 :
+                           cnt == 57 ? rc_11 :
+                           cnt == 58 ? rc_21 :
+                           cnt == 59 ? rc_31 :
+                           cnt == 60 ? rc_41 :
+                           cnt == 61 ? rc_51 :
+                           cnt == 62 ? rc_61 :
+                           cnt == 63 ? rc_71 :
                            
-                           cnt == 3 ? rc_07 :
-                           cnt == 4 ? rc_17 :
-                           cnt == 5 ? rc_27 :
-                           cnt == 6 ? rc_37 :
-                           cnt == 7 ? rc_47 :
-                           cnt == 8 ? rc_57 :
-                           cnt == 9 ? rc_67 :
+                           cnt == 0 ? rc_07 :
+                           cnt == 1 ? rc_17 :
+                           cnt == 2 ? rc_27 :
+                           cnt == 3 ? rc_37 :
+                           cnt == 4 ? rc_47 :
+                           cnt == 5 ? rc_57 :
+                           cnt == 6 ? rc_67 :
                            rc_77;
 endmodule
