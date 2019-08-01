@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_DCT_2D_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_DCT_2D" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50300000fs"></ZoomStartTime>
+      <ZoomEndTime time="72740001fs"></ZoomEndTime>
+      <Cursor1Time time="69000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="195"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_DCT_2D/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[2:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/pixel_in" type="array">
+      <obj_property name="ElementShortName">pixel_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/pixel_out" type="array">
+      <obj_property name="ElementShortName">pixel_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/pixel_out_mod1" type="array">
+      <obj_property name="ElementShortName">pixel_out_mod1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_out_mod1[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/pixel_in_mod2" type="array">
+      <obj_property name="ElementShortName">pixel_in_mod2[10:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in_mod2[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/cnt_test" type="array">
+      <obj_property name="ElementShortName">cnt_test[5:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_test[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/real_pixel_out_mod1" type="array">
+      <obj_property name="ElementShortName">real_pixel_out_mod1[10:0]</obj_property>
+      <obj_property name="ObjectShortName">real_pixel_out_mod1[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D/real_pixel_out_mod2" type="array">
+      <obj_property name="ElementShortName">real_pixel_out_mod2[10:0]</obj_property>
+      <obj_property name="ObjectShortName">real_pixel_out_mod2[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

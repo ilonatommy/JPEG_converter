@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jul 31 13:45:41 2019
+# Process ID: 4692
+# Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2412 C:\Users\lsneler\Desktop\Repository\DCT\combinatoryDCT\DCT.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg
+source tb_DCT_BRAM.tcl
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_DCT_2D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav1.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav2.wcfg
+open_wave_config C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg
+source tb_DCT_2D.tcl
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/tb_DCT_behav3.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
