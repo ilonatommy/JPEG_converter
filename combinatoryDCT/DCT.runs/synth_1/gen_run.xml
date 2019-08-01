@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1564484982">
-  <File Type="PA-TCL" Name="DCT.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="DCT_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="DCT.vds"/>
-  <File Type="RDS-UTIL" Name="DCT_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="DCT_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="DCT.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="DCT_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="DCT_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1564651791">
+  <File Type="RDS-PROPCONSTRS" Name="DCT_2D_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="DCT_2D.tcl"/>
+  <File Type="RDS-RDS" Name="DCT_2D.vds"/>
+  <File Type="RDS-UTIL" Name="DCT_2D_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DCT_2D_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DCT_2D.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DCT_2D_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DCT_2D_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/combinatoryDCT/DCT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/DCT.v"/>
+        <Attr Name="ImportTime" Val="1563969726"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/RAM.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -78,18 +87,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/combinatoryDCT/DCT.v">
+    <File Path="$PSRCDIR/sources_1/new/DCT_2D.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/DCT.v"/>
-        <Attr Name="ImportTime" Val="1563969726"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PIPUSERFILESDIR/inputData.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="DCT"/>
+      <Option Name="TopModule" Val="DCT_2D"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

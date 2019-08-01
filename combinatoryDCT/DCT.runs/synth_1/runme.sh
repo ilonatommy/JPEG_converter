@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.runs/synth_1'
+HD_PWD='C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log DCT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCT.tcl
+EAStep vivado -log DCT_2D.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCT_2D.tcl

@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Jul 30 13:09:43 2019
-# Process ID: 5568
-# Current directory: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.runs/synth_1
-# Command line: vivado.exe -log DCT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCT.tcl
-# Log file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.runs/synth_1/DCT.vds
-# Journal file: C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.runs/synth_1\vivado.jou
+# Start of session at: Thu Aug  1 11:29:52 2019
+# Process ID: 8484
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.runs/synth_1
+# Command line: vivado.exe -log DCT_2D.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCT_2D.tcl
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.runs/synth_1/DCT_2D.vds
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source DCT.tcl -notrace
+source DCT_2D.tcl -notrace

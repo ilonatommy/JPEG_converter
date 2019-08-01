@@ -30,11 +30,6 @@ module tb_DCT_2D();
     reg signed [7:0] pixel_in;//values from -128 to 127
     wire signed [13:0] pixel_out;
     
-    wire signed [13:0] pixel_out_mod1;
-    wire signed [10:0] pixel_in_mod2;
-    wire [5:0] cnt_test;
-    wire [10:0] real_pixel_out_mod1, real_pixel_out_mod2;
-    
     always @(posedge(clk))
             begin
                 if(rst == 1'b0 & ce == 1'b0)
