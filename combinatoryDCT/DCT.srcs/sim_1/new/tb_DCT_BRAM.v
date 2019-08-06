@@ -72,7 +72,6 @@ module tb_DCT_BRAM();
         end
     end
     
-    wire [3:0] STATE_test;
     blk_mem_gen_0 BRAM(.clka(clk), .addra(addr), .douta(pixel_in), .ena(ce_BRAM));
     DCT mod(.pixel_in({pixel_in[7], pixel_in[7], pixel_in[7], pixel_in}), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
 endmodule

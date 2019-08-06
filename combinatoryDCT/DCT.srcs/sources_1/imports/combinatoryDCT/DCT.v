@@ -23,22 +23,16 @@
 module DCT(
     input signed [10:0] pixel_in,
     output signed [13:0] pixel_out,
-    output [3:0] STATE_test,
     input clk,
     input ce,
-    input rst,
-       output signed [10:0] oRAM, //8-bit vector
-       output signed [11:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2, //-256:254
-       output signed [12:0] i_r5, o_r5, o_r6, o_mo1, i_mo5, o_mo5, o_r13, o_r14, o_r16, o_r17, o_r18, o_mo6, o_r22, //-512:508
-       output signed [13:0] i_r7, o_r7, o_mo3, i_r8, o_r8, o_r9, o_r10, o_mo4, i_r19, o_r19, o_r21, //-1024:1016
-       output signed [14:0] i_r11, o_r11, o_mo7, i_odd, i_r20, i_even
+    input rst
     );    
     
-//    wire signed [10:0] oRAM; //8-bit vector
-//    wire signed [11:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2, o_r21; //-256:254
-//    wire signed [12:0] i_r5, o_r5, o_r6, o_mo1, i_mo5, o_mo5, o_r13, o_r14, o_r16, o_r17, o_r18, o_mo6, o_r22; //-512:508
-//    wire signed [13:0] i_r7, o_r7, o_mo3, i_r8, o_r8, o_r9, o_r10, o_mo4, i_r19, o_r19; //-1024:1016
-//    wire signed [14:0] i_r11, o_r11, o_mo7, i_odd, i_r20, i_even;
+    wire signed [10:0] oRAM; //8-bit vector
+    wire signed [11:0] i_r1, o_r1, i_r2, o_r2, o_r3, o_r4, o_r12, o_mo2; //-256:254
+    wire signed [12:0] i_r5, o_r5, o_r6, o_mo1, i_mo5, o_mo5, o_r13, o_r14, o_r16, o_r17, o_r18, o_mo6, o_r22; //-512:508
+    wire signed [13:0] i_r7, o_r7, o_mo3, i_r8, o_r8, o_r9, o_r10, o_mo4, i_r19, o_r19, o_r21; //-1024:1016
+    wire signed [14:0] i_r11, o_r11, o_mo7, i_odd, i_r20, i_even;
     wire signed [14:0] pixel_out_unscaled;
     
     reg [1:0] code_mo1, code_mo3, code_mo6, code_mo7;
@@ -94,8 +88,6 @@ module DCT(
     localparam [3:0] IDLE = 4'd8;    
     reg [3:0] STATE = IDLE;
     assign pixel_out = $signed(pixel_out_unscaled[13:0]);
-    
-    assign STATE_test = STATE;
     
     always @(posedge(clk))
     begin

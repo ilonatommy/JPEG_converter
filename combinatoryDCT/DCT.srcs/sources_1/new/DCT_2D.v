@@ -23,7 +23,6 @@
 module DCT_2D(
     input signed [7:0] pixel_in,
     output signed [13:0] pixel_out,
-    output [5:0] cnt_test,
     input clk,
     input ce,
     input rst
@@ -32,7 +31,6 @@ module DCT_2D(
     //position of pixels: 0,6,2,5,1,4,3,7
     reg [5:0] cnt = 0;
     reg rst_mod2 = 0;
-    assign cnt_test = cnt;
     
     //element indexes: row_column
     reg signed [10:0] rc_00, rc_01, rc_02, rc_03, rc_04, rc_05, rc_06, rc_07;

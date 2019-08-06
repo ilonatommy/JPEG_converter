@@ -66,46 +66,11 @@ module tb_DCT_2D_BRAM();
         
         if(rst == 1'b1)
         begin
-            addr <= 0;
+            addr_in <= 0;
         end
     end
-                
-    //PROBLEM:
-    //reset signal does not result in reseting pixel_output to 0, but oscilates between 0 and X value
-//    always @(posedge(clk))
-//    begin
-//        //swich on rst
-//        if(rst_trigger == 3'd1)
-//        begin
-//            rst <= 1'b1;
-//        end
-        
-//        //swich off rst
-//        if(rst_trigger == 3'd2)
-//        begin
-//            rst <= 1'b0;
-//        end
-//        else rst_trigger <= rst_trigger + 1;        
-        
-//        //swich on ce
-//        if(ce_trigger == 3'd1)
-//        begin
-//            ce <= 1'b1;
-//        end
-//        else ce_trigger <= ce_trigger + 1;
-        
-//        if(rst == 1'b1)
-//        begin
-//            addr_in <= 0;
-//        end
-        
-//        if(ce == 1'b1)// && rst == 1'b0)
-//            addr_in <= addr_in + 1;
-//    end
  
-                
-    wire [5:0] cnt_test;
     blk_mem_gen_0 BRAM_in(.clka(clk), .addra(addr_in), .douta(pixel_in), .ena(ce_BRAM));
-    DCT_2D mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out), .cnt_test(cnt_test));
+    DCT_2D mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
     //blk_mem_gen_1 BRAM_out(.clka(clk), .addra(addr_out), .dina(pixel_out));
 endmodule
