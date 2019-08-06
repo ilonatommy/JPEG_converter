@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lsneler/Desktop/Repository/DCT/combinatoryDCT/DCT.runs/blk_mem_gen_0_synth_1'
+HD_PWD='C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.runs/blk_mem_gen_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

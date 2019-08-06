@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Aug  2 13:29:50 2019
+# Process ID: 6196
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5472 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\combinatoryDCT\DCT.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg
+source tb_DCT_BRAM.tcl
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg}
+save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg}
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg}
+relaunch_sim
+close_sim

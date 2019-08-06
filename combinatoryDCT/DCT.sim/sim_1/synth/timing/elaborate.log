@@ -1,0 +1,8 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_DCT_2D_BRAM_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_DCT_2D_BRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_0> not found while processing module instance <BRAM_in> [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:69]
+ERROR: [VRFC 10-2063] Module <DCT_2D> not found while processing module instance <mod> [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:70]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
