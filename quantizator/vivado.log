@@ -2680,3 +2680,34 @@ Block Memory Generator module tb_quant.qunatisator.cbcr.inst.native_mem_module.b
 Block Memory Generator module tb_quant.qunatisator.y.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
 relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1067.148 ; gain = 0.000
 save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/tb_quant_behav.wcfg}
+ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/QUANT -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-4963] div_gen_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zybo:part0:1.0'
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+ipx::unload_core c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/QUANT/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/QUANT c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/QUANT/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1226.016 ; gain = 158.867
+update_compile_order -fileset sources_1
+set_property display_name quant [ipx::current_core]
+set_property description quant [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  7 12:41:59 2019...

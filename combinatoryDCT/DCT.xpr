@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="860"/>
+    <Option Name="WTXSimLaunchSim" Val="924"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -143,9 +143,6 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../../../../../users/lsneler/desktop/repository/jpeg_conversion/combinatorydct/component.xml">
-        <FileInfo SFType="IPXACT"/>
       </File>
       <File Path="$PPRDIR/../quantizator/quantizator.ip_user_files/DCT_out_quant_in.coe">
         <FileInfo>

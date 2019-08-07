@@ -1,0 +1,5 @@
+Unable to capture context for thread 5700 in process 6016, can not generate back trace
+Unable to capture context for thread 5360 in process 6016, can not generate back trace
+Exception at PC 0x00007FFBECEEBB93
+Printing stacktrace...
+

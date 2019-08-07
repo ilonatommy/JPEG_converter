@@ -43,23 +43,22 @@ module RAM
             data[3] <= 0;
             data[2] <= 0;
             data[1] <= 0;
-            data[0] <= 0;  
+            data[0] <= 0;
         end
         else
         begin
+            if(ce == 1'b1)
             begin
-                if(cnt < 3'd3 || cnt == 3'd7)
-                begin
-                    data[3] <= data[2];
-                    data[2] <= data[1];
-                    data[1] <= data[0];
-                    data[0] <= idata;
-                end
-                else
-                    data[cnt - 3] <= idata;
-                end
+                if(cnt == 3'd1) data[0] <= idata;
+                if(cnt == 3'd2) data[1] <= idata;
+                if(cnt == 3'd3) data[2] <= idata;
+                if(cnt == 3'd4) data[3] <= idata;                
+            end
         end
     end
     
-    assign odata = (cnt == 3'd3 || cnt == 3'd4 || cnt == 3'd5 || cnt == 3'd6) ? data[cnt - 3] : 0;
+    assign odata = cnt == 3'd5 ? data[3] : 
+                   cnt == 3'd6 ? data[2] :
+                   cnt == 3'd7 ? data[1] :
+                   cnt == 3'd0 ? data[0] : 0;
 endmodule

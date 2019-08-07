@@ -47,7 +47,7 @@ module tb_DCT_2D_BRAM();
         end
         else rst_trigger <= rst_trigger + 1;
         
-        if(ce_BRAM_trigger == 3'd1)
+        if(ce_BRAM_trigger == 3'd2)
         begin
              ce_BRAM <= 1'b1;
         end 
@@ -69,8 +69,8 @@ module tb_DCT_2D_BRAM();
             addr_in <= 0;
         end
     end
- 
+    
     blk_mem_gen_0 BRAM_in(.clka(clk), .addra(addr_in), .douta(pixel_in), .ena(ce_BRAM));
     DCT_2D mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
-    //blk_mem_gen_1 BRAM_out(.clka(clk), .addra(addr_out), .dina(pixel_out));
+    blk_mem_gen_1 BRAM_out(.clka(clk), .addra(addr_out), .dina(pixel_out));
 endmodule

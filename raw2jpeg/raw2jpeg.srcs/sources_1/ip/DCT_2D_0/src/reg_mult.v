@@ -36,5 +36,5 @@ module reg_mult(
     wire signed [14:0] m;
     assign m = code == 2'd0 ? m1 : code == 2'd1 ? m2 : code == 2'd2 ? m3 : code == 2'd3 ? m4 : 0;
     assign mult_result = idata * m;
-    assign odata = {mult_result[28] , mult_result[23:13]};
+    assign odata = $signed({mult_result[28] , mult_result[23:13]});
 endmodule

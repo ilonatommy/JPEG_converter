@@ -163,7 +163,7 @@
       </spirit:port>
     </spirit:ports>
   </spirit:model>
-  <spirit:description>DCT_2D</spirit:description>
+  <spirit:description>DCT_2D_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -172,7 +172,7 @@
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>DCT_2D</xilinx:displayName>
+      <xilinx:displayName>DCT_2D_v1_0</xilinx:displayName>
       <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="domain.local:user:DCT_2D:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT</xilinx:tag>
@@ -181,7 +181,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c75a2138"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="583cdbaf"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d6d2ad9d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ca2722bc"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="03bdd93c"/>
     </xilinx:packagingInfo>
