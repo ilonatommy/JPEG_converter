@@ -1,0 +1,23 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.sim/sim_1/behav/glbl.v,1497407496,verilog,,,,glbl,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sim_1/imports/combinatoryDCT/clk_gen.v,1562235364,verilog,,,,clk_gen,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sim_1/new/tb_quant.v,1565173675,verilog,,,,tb_quant,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v,1565167646,verilog,,,,DCT_2D_0,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/DCT.v,1565167646,verilog,,,,DCT,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v,1565167646,verilog,,,,DCT_2D,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/RAM.v,1565167646,verilog,,,,RAM,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/delay.v,1565167646,verilog,,,,delay,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v,1565167646,verilog,,,,full_adder,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v,1565167646,verilog,,,,full_subtractor,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v,1565167646,verilog,,,,mux_2i,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v,1565167646,verilog,,,,mux_3i,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/reg.v,1565167646,verilog,,,,register,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v,1565167646,verilog,,,,reg_mult,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1565167608,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/chrominance_quant/sim/chrominance_quant.v,1564731171,verilog,,,,chrominance_quant,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/div_gen_0/sim/div_gen_0.vhd,1565173350,vhdl,,,,div_gen_0,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/ip/luminance_quant/sim/luminance_quant.v,1564731144,verilog,,,,luminance_quant,,,,,,,,
+C:/Users/lsneler/Desktop/Repository/JPEG_conversion/quantizator/quantizator.srcs/sources_1/new/quant.v,1565173470,verilog,,,,quant,,,,,,,,
