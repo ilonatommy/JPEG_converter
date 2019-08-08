@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_raw2jpeg_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_raw2jpeg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="530125000fs"></ZoomStartTime>
+      <ZoomEndTime time="583975001fs"></ZoomEndTime>
+      <Cursor1Time time="575000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_raw2jpeg/in_dct" type="array">
+      <obj_property name="ElementShortName">in_dct[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_dct[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/out_quant" type="array">
+      <obj_property name="ElementShortName">out_quant[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_quant[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/out_dct_in_quant" type="array">
+      <obj_property name="ElementShortName">out_dct_in_quant[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out_dct_in_quant[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_input" type="array">
+      <obj_property name="ElementShortName">addr_input[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_input[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_quant" type="array">
+      <obj_property name="ElementShortName">addr_quant[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_quant[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+</wave_config>

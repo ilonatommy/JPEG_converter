@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 // Date        : Wed Aug  7 12:46:45 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top DCT_2D_0 -prefix
+//               DCT_2D_0_ DCT_2D_0_sim_netlist.v
 // Design      : DCT_2D_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,35 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "DCT_2D_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
-(* NotValidForBitStream *)
-module DCT_2D_0
-   (pixel_in,
-    pixel_out,
-    clk,
-    ce,
-    rst);
-  input [7:0]pixel_in;
-  output [13:0]pixel_out;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
-  input ce;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
-
-  wire ce;
-  wire clk;
-  wire [7:0]pixel_in;
-  wire [13:0]pixel_out;
-  wire rst;
-
-  DCT_2D_0_DCT_2D inst
-       (.ce(ce),
-        .clk(clk),
-        .pixel_in(pixel_in),
-        .pixel_out(pixel_out),
-        .rst(rst));
-endmodule
-
-(* ORIG_REF_NAME = "DCT" *) 
 module DCT_2D_0_DCT
    (D,
     clk,
@@ -2819,7 +2790,6 @@ module DCT_2D_0_DCT_0
         .\tmp_reg[7]_0 ({r21_n_16,r21_n_17,r21_n_18,r21_n_19}));
 endmodule
 
-(* ORIG_REF_NAME = "DCT_2D" *) 
 module DCT_2D_0_DCT_2D
    (pixel_out,
     rst,
@@ -9087,7 +9057,34 @@ module DCT_2D_0_DCT_2D
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "RAM" *) 
+(* CHECK_LICENSE_TYPE = "DCT_2D_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
+(* NotValidForBitStream *)
+module DCT_2D_0
+   (pixel_in,
+    pixel_out,
+    clk,
+    ce,
+    rst);
+  input [7:0]pixel_in;
+  output [13:0]pixel_out;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
+  input ce;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
+
+  wire ce;
+  wire clk;
+  wire [7:0]pixel_in;
+  wire [13:0]pixel_out;
+  wire rst;
+
+  DCT_2D_0_DCT_2D inst
+       (.ce(ce),
+        .clk(clk),
+        .pixel_in(pixel_in),
+        .pixel_out(pixel_out),
+        .rst(rst));
+endmodule
+
 module DCT_2D_0_RAM
    (S,
     p_0_out,
@@ -13768,7 +13765,6 @@ module DCT_2D_0_RAM_38
         .O(D));
 endmodule
 
-(* ORIG_REF_NAME = "delay" *) 
 module DCT_2D_0_delay
    (\tmp_reg[11]_0 ,
     Q,
@@ -21413,7 +21409,6 @@ module DCT_2D_0_delay__parameterized2_83
         .R(rst));
 endmodule
 
-(* ORIG_REF_NAME = "full_adder" *) 
 module DCT_2D_0_full_adder
    (O,
     \tmp_reg[7] ,
@@ -22517,7 +22512,6 @@ module DCT_2D_0_full_adder__parameterized3_37
         .S({1'b0,\tmp_reg[10] }));
 endmodule
 
-(* ORIG_REF_NAME = "full_subtractor" *) 
 module DCT_2D_0_full_subtractor
    (D,
     CO,
@@ -23619,7 +23613,6 @@ module DCT_2D_0_mux_3i__parameterized0_40
         .O(B[5]));
 endmodule
 
-(* ORIG_REF_NAME = "reg_mult" *) 
 module DCT_2D_0_reg_mult
    (P,
     \tmp_reg[13] ,
