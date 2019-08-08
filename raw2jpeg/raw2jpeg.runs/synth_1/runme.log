@@ -1,0 +1,314 @@
+
+*** Running vivado
+    with args -log converter_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source converter_wrapper.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source converter_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+Command: synth_design -top converter_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6092 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 325.855 ; gain = 76.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'converter_wrapper' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v:18]
+INFO: [Synth 8-638] synthesizing module 'converter' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:13]
+INFO: [Synth 8-638] synthesizing module 'converter_AXILiteToBRAMIntf_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_AXILiteToBRAMIntf_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_AXILiteToBRAMIntf_0_0' (1#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_AXILiteToBRAMIntf_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'AXILiteToBRAMIntf_0' of module 'converter_AXILiteToBRAMIntf_0_0' requires 25 connections, but only 17 given [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:32]
+INFO: [Synth 8-638] synthesizing module 'converter_DCT_2D_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_DCT_2D_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_DCT_2D_0_0' (2#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_DCT_2D_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'converter_blk_mem_gen_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_blk_mem_gen_0_0' (3#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:62]
+INFO: [Synth 8-638] synthesizing module 'converter_blk_mem_gen_1_1' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_blk_mem_gen_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_blk_mem_gen_1_1' (4#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_blk_mem_gen_1_1_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'dina' does not match port width (32) of module 'converter_blk_mem_gen_1_1' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:65]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_1' of module 'converter_blk_mem_gen_1_1' requires 5 connections, but only 4 given [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:62]
+INFO: [Synth 8-638] synthesizing module 'converter_clk_wiz_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'converter_clk_wiz_0_0' (5#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'converter_clk_wiz_0_0' requires 4 connections, but only 3 given [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:67]
+INFO: [Synth 8-638] synthesizing module 'converter_controller_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_controller_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_controller_0_0' (6#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_controller_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'converter_quant_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_quant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_quant_0_0' (7#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_quant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'converter_xlconstant_0_0' [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter_xlconstant_0_0' (8#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/realtime/converter_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'converter' (9#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v:13]
+INFO: [Synth 8-256] done synthesizing module 'converter_wrapper' (10#1) [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 366.184 ; gain = 116.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 366.184 ; gain = 116.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp17/converter_blk_mem_gen_0_0_in_context.xdc] for cell 'converter_i/blk_mem_gen_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp17/converter_blk_mem_gen_0_0_in_context.xdc] for cell 'converter_i/blk_mem_gen_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp19/converter_DCT_2D_0_0_in_context.xdc] for cell 'converter_i/DCT_2D_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp19/converter_DCT_2D_0_0_in_context.xdc] for cell 'converter_i/DCT_2D_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp21/converter_clk_wiz_0_0_in_context.xdc] for cell 'converter_i/clk_wiz_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp21/converter_clk_wiz_0_0_in_context.xdc] for cell 'converter_i/clk_wiz_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp23/converter_xlconstant_0_0_in_context.xdc] for cell 'converter_i/xlconstant_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp23/converter_xlconstant_0_0_in_context.xdc] for cell 'converter_i/xlconstant_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp25/converter_quant_0_0_in_context.xdc] for cell 'converter_i/quant_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp25/converter_quant_0_0_in_context.xdc] for cell 'converter_i/quant_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp27/converter_controller_0_0_in_context.xdc] for cell 'converter_i/controller_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp27/converter_controller_0_0_in_context.xdc] for cell 'converter_i/controller_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp29/converter_AXILiteToBRAMIntf_0_0_in_context.xdc] for cell 'converter_i/AXILiteToBRAMIntf_0'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp29/converter_AXILiteToBRAMIntf_0_0_in_context.xdc] for cell 'converter_i/AXILiteToBRAMIntf_0'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp31/converter_blk_mem_gen_1_1_in_context.xdc] for cell 'converter_i/blk_mem_gen_1'
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp31/converter_blk_mem_gen_1_1_in_context.xdc] for cell 'converter_i/blk_mem_gen_1'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 611.789 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'converter_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'converter_i/blk_mem_gen_1' at clock pin 'clka' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 611.789 ; gain = 362.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 611.789 ; gain = 362.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp21/converter_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/.Xil/Vivado-4024-rtrkos034/dcp21/converter_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for converter_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/AXILiteToBRAMIntf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/DCT_2D_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/blk_mem_gen_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/controller_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/quant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for converter_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 611.789 ; gain = 362.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 611.789 ; gain = 362.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 611.789 ; gain = 362.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'converter_i/clk_wiz_0/clk_out1' to pin 'converter_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 620.559 ; gain = 370.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 620.559 ; gain = 370.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |converter_AXILiteToBRAMIntf_0_0 |         1|
+|2     |converter_DCT_2D_0_0            |         1|
+|3     |converter_blk_mem_gen_0_0       |         1|
+|4     |converter_blk_mem_gen_1_1       |         1|
+|5     |converter_clk_wiz_0_0           |         1|
+|6     |converter_controller_0_0        |         1|
+|7     |converter_quant_0_0             |         1|
+|8     |converter_xlconstant_0_0        |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |converter_AXILiteToBRAMIntf_0_0 |     1|
+|2     |converter_DCT_2D_0_0            |     1|
+|3     |converter_blk_mem_gen_0_0       |     1|
+|4     |converter_blk_mem_gen_1_1       |     1|
+|5     |converter_clk_wiz_0_0           |     1|
+|6     |converter_controller_0_0        |     1|
+|7     |converter_quant_0_0             |     1|
+|8     |converter_xlconstant_0_0        |     1|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+--------------+----------+------+
+|      |Instance      |Module    |Cells |
++------+--------------+----------+------+
+|1     |top           |          |   137|
+|2     |  converter_i |converter |   137|
++------+--------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 630.703 ; gain = 381.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 630.703 ; gain = 135.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 630.703 ; gain = 381.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+33 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 648.301 ; gain = 410.145
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/converter_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 648.301 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  8 13:39:34 2019...

@@ -1,4 +1,0 @@
-Running: xsim.dir/tb_raw2jpeg_behav/xsimk.exe -simmode gui -wdb tb_raw2jpeg_behav.wdb -simrunnum 0 -socket 55243
-Design successfully loaded
-Design Loading Memory Usage: 6596 KB (Peak: 6596 KB)
-Design Loading CPU Usage: 15 ms

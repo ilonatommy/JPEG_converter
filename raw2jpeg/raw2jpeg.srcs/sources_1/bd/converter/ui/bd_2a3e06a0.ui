@@ -1,23 +1,39 @@
 {
    guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port clk_in1 -pg 1 -y 150 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 320 -defaultsOSRD
-preplace inst quant_0 -pg 1 -lvl 5 -y 130 -defaultsOSRD -resize 202 170
-preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 140 -defaultsOSRD
-preplace inst controller_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
-preplace inst DCT_2D_0 -pg 1 -lvl 4 -y 80 -defaultsOSRD
-preplace netloc clk_in1_1 1 0 2 NJ 150 NJ
-preplace netloc controller_0_addr_input 1 3 2 540 290 NJ
-preplace netloc xlconstant_0_dout 1 1 1 160J
-preplace netloc clk_wiz_0_clk_out1 1 2 3 340 210 550 300 840
-preplace netloc blk_mem_gen_0_douta 1 3 2 580 330 NJ
-preplace netloc Net1 1 3 2 570 350 830
-preplace netloc Net 1 3 2 560 340 850
-preplace netloc DCT_2D_0_pixel_out 1 4 1 N
-preplace netloc controller_0_addr_quant 1 3 2 NJ 160 820
-levelinfo -pg 1 0 90 250 440 700 980 1110 -top 0 -bot 420
+preplace port DDR -pg 1 -y 410 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 450 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -y 730 -defaultsOSRD
+preplace inst AXILiteToBRAMIntf_0 -pg 1 -lvl 4 -y 580 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace inst quant_0 -pg 1 -lvl 3 -y 310 -defaultsOSRD -resize 202 170
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 570 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 1 -y 250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y 490 -defaultsOSRD
+preplace inst DCT_2D_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 4 690J 420 1040J 410 NJ 410 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 690
+preplace netloc quant_0_pixel_out 1 3 1 1070
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 250 640 690
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 2 1 710
+preplace netloc controller_0_addr_input 1 1 2 220 70 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 430 NJ 430 NJ 430 1580J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 1 730
+preplace netloc clk_wiz_0_clk_out1 1 0 5 20 330 230 120 700 450 1040 500 1380J
+preplace netloc AXILiteToBRAMIntf_0_BRAMWea 1 4 1 N
+preplace netloc blk_mem_gen_0_douta 1 1 2 250 110 NJ
+preplace netloc Net1 1 1 3 250 300 730 200 1050
+preplace netloc Net 1 1 2 240 290 720
+preplace netloc DCT_2D_0_pixel_out 1 2 1 710
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1060
+preplace netloc AXILiteToBRAMIntf_0_BRAMAddress 1 4 1 1370
+preplace netloc AXILiteToBRAMIntf_0_BRAMDataOut 1 4 1 1380
+preplace netloc controller_0_addr_quant 1 1 2 NJ 280 N
+levelinfo -pg 1 0 120 470 890 1220 1480 1610 -top 0 -bot 820
 ",
 }
-0
+{
+   da_axi4_cnt: "1",
+   da_ps7_cnt: "2",
+}

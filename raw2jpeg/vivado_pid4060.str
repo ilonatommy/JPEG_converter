@@ -1,0 +1,899 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 4060
+License: Customer
+
+Current time: 	8/8/19 1:30:15 PM CEST
+Time zone: 	Central European Time (Europe/Prague)
+
+OS: Windows 8.1
+OS Version: 6.3
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 73 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/Program Files/MIPS/Simulators/IASim/IASim_4_1_0/bin/Windows64;C:/ProgramData/Oracle/Java/javapath;C:/Python27/;C:/Windows/System32;C:/Windows;C:/Windows/System32/Wbem;C:/Tcl/bin;D:/Xilinx/14.7/ISE_DS/ISE/bin/nt;D:/Xilinx/14.7/ISE_DS/ISE/lib/nt;D:/Xilinx/14.7/ISE_DS;C:/questasim64_10.4d/win64;C:/Xilinx/Vivado/2017.2;d:/questasim64_10.6a/win64;C:/Imperas/bin/Windows32;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	lsneler
+User home directory: C:/Users/lsneler
+User working directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/lsneler/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/.Xil/Vivado-4060-rtrkos034
+
+GUI allocated memory:	251 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 644 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\lsneler\Desktop\Repository\JPEG_conversion\raw2jpeg\raw2jpeg.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 61 MB (+61733kb) [00:00:04]
+// [Engine Memory]: 500 MB (+373189kb) [00:00:04]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+27358kb) [00:00:06]
+// [Engine Memory]: 543 MB (+18243kb) [00:00:06]
+// [Engine Memory]: 636 MB (+69233kb) [00:00:07]
+// Tcl Message: open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 45 MB. Current time: 8/8/19 1:30:16 PM CEST
+// Project name: raw2jpeg; location: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs:g (cg:JFrame):  IP Catalog : addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs:g (cg:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bs:g (cg:JFrame)
+dismissDialog("IP Catalog"); // bs:g (cg:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 2); // O:af (JViewport:JComponent, cg:JFrame)
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 2); // O:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // O:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2, "AXILiteToBRAMIntf_v1.0", 0, false); // O:af (JViewport:JComponent, cg:JFrame)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2); // O:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2, "AXILiteToBRAMIntf_v1.0", 0, false); // O:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2, "AXILiteToBRAMIntf_v1.0", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, cg:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// p:g (cg:JFrame): Customize IP: addNotify
+// [Engine Memory]: 669 MB (+1506kb) [00:00:24]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // p:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name AXILiteToBRAMIntf -vendor xilinx.com -library user -version 1.0 -module_name AXILiteToBRAMIntf_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0/AXILiteToBRAMIntf_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'AXILiteToBRAMIntf_0'... 
+// au:p (cg:JFrame): Generate Output Products: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 709 MB (+7021kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 714 MB. GUI used memory: 49 MB. Current time: 8/8/19 1:30:36 PM CEST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a:JButton (JPanel:JComponent, au:p)
+dismissDialog("Generate Output Products"); // au:p (cg:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2, "AXILiteToBRAMIntf_v1.0", 0, false); // O:af (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:AXILiteToBRAMIntf:1.0", 2, "AXILiteToBRAMIntf_v1.0", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, cg:JFrame) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// p:g (cg:JFrame): Customize IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+dismissDialog("Customize IP"); // p:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name AXILiteToBRAMIntf -vendor xilinx.com -library user -version 1.0 -module_name AXILiteToBRAMIntf_1 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'AXILiteToBRAMIntf_1'... 
+// au:p (cg:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, au:p)
+// bs:g (cg:JFrame):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXILiteToBRAMIntf_1'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'AXILiteToBRAMIntf_1'... INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'AXILiteToBRAMIntf_1'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all AXILiteToBRAMIntf_1] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs -jobs 4 AXILiteToBRAMIntf_1_synth_1 
+// Tcl Message: [Thu Aug  8 13:30:43 2019] Launched AXILiteToBRAMIntf_1_synth_1... Run output will be captured here: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/AXILiteToBRAMIntf_1_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, converter_wrapper (converter_wrapper.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, converter_wrapper (converter_wrapper.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "converter_wrapper.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, converter_wrapper (converter_wrapper.v), converter_i : converter (converter.bd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, converter_wrapper (converter_wrapper.v), converter_i : converter (converter.bd)]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// bs:g (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0 Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding cell -- domain.local:user:DCT_2D:1.0 - DCT_2D_0 Adding cell -- domain.local:user:quant:1.0 - quant_0 Adding cell -- domain.local:user:controller:1.0 - controller_0 Successfully read diagram <converter> from BD file <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 763 MB (+19328kb) [00:00:52]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+dismissDialog("Open Block Design"); // bs:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 55 MB. Current time: 8/8/19 1:31:00 PM CEST
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// [Engine Memory]: 815 MB (+14460kb) [00:00:53]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AXILiteToBRAMIntf_0 (AXILiteToBRAMIntf_0.xci)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AXILiteToBRAMIntf_1 (AXILiteToBRAMIntf_1.xci)]", 4, false, false, true, false, false, false); // B:i (D:JPanel, cg:JFrame) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AXILiteToBRAMIntf_1 (AXILiteToBRAMIntf_1.xci)]", 4, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as:g (cg:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete  project local files/directories from disk", true); // g:JCheckBox (JPanel:JComponent, as:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, as:g)
+// TclEventType: RUN_MODIFY
+dismissDialog("Remove Sources"); // as:g (cg:JFrame)
+// TclEventType: RUN_RESET
+// as:g (cg:JFrame): Remove Sources: addNotify
+// bs:g (as:g):  Remove Sources : addNotify
+// Tcl Message: remove_files  -fileset AXILiteToBRAMIntf_1 c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [Project 1-386] Moving file 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci' from fileset 'AXILiteToBRAMIntf_1' to fileset 'sources_1'. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// [GUI Memory]: 99 MB (+3781kb) [00:01:01]
+// Tcl Message: file delete -force c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1 
+// Tcl Message: file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ip/AXILiteToBRAMIntf_1 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts/AXILiteToBRAMIntf_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0/AXILiteToBRAMIntf_0.xci 
+// Tcl Message: file delete -force c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0 
+dismissDialog("Remove Sources"); // bs:g (as:g)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axil"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axili"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0", 0, "AXILiteToBRAMIntf_v1.0", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0", 0); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXILiteToBRAMIntf_v1.0", 0, "AXILiteToBRAMIntf_v1.0", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:AXILiteToBRAMIntf:1.0 AXILiteToBRAMIntf_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Command: 'set_property location {5 851 407} [get_bd_cells AXILiteToBRAMIntf_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5 851 407} [get_bd_cells AXILiteToBRAMIntf_0] 
+// Tcl Command: 'set_property location {4 943 428} [get_bd_cells AXILiteToBRAMIntf_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 943 428} [get_bd_cells AXILiteToBRAMIntf_0] 
+// Tcl Command: 'set_property location {2 520 389} [get_bd_cells AXILiteToBRAMIntf_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 520 389} [get_bd_cells AXILiteToBRAMIntf_0] 
+// Elapsed time: 69 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// bs:g (cg:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 853 MB. GUI used memory: 58 MB. Current time: 8/8/19 1:32:35 PM CEST
+// [Engine Memory]: 888 MB (+33005kb) [00:02:29]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// [Engine Memory]: 950 MB (+19325kb) [00:02:30]
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// p:g (cg:JFrame): Customize Pin: addNotify
+// Elapsed time: 14 seconds
+dismissDialog("Customize Pin"); // p:g (cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 205, 63, 1208, 587, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells blk_mem_gen_1] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// bs:g (cg:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Command: 'set_property location {4 717 342} [get_bd_cells blk_mem_gen_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 717 342} [get_bd_cells blk_mem_gen_1] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 973 MB. GUI used memory: 67 MB. Current time: 8/8/19 1:33:15 PM CEST
+selectComboBox("Mode (use_bram_block)", "Stand Alone", 1); // y:e (C:JPanel, p:g)
+selectComboBox("Memory Type (Memory_Type)", "Single Port RAM", 0); // y:e (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aU:i (C:JPanel, p:g)
+setText("Defines the PortA Write Width(DINA)", "8"); // z:X (aV:y, p:g)
+// Elapsed time: 12 seconds
+setText("Write Depth", "64"); // z:X (aV:y, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aU:i (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aU:i (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aU:i (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aU:i (C:JPanel, p:g)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // y:e (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aU:i (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]'
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1] 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {2 411 338} [get_bd_cells AXILiteToBRAMIntf_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 411 338} [get_bd_cells AXILiteToBRAMIntf_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/BRAMWea] [get_bd_pins blk_mem_gen_1/wea] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// [GUI Memory]: 112 MB (+8668kb) [00:04:46]
+// Elapsed time: 56 seconds
+selectComboBox("Mode (use_bram_block)", "BRAM Controller", 0); // y:e (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.use_bram_block {BRAM_Controller} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true}] [get_bd_cells blk_mem_gen_1]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.use_bram_block {BRAM_Controller} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true}] [get_bd_cells blk_mem_gen_1] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+selectComboBox("Mode (use_bram_block)", "Stand Alone", 1); // y:e (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1] 
+// Tcl Command: 'set_property location {3 775 339} [get_bd_cells blk_mem_gen_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 775 339} [get_bd_cells blk_mem_gen_1] 
+// Tcl Command: 'set_property location {2 355 343} [get_bd_cells AXILiteToBRAMIntf_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 355 343} [get_bd_cells AXILiteToBRAMIntf_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 993 MB. GUI used memory: 76 MB. Current time: 8/8/19 1:35:35 PM CEST
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins AXILiteToBRAMIntf_0/BRAMAddress] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut] [get_bd_pins blk_mem_gen_1/dina] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_pins quant_0/pixel_out] [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataIn] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aresetn] [get_bd_pins controller_0/rst] 
+// Elapsed time: 65 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd>  Wrote  : <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui>  
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, e:bs)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'ipx::open_core' was cancelled INFO: [Vivado 12-5357] 'setup' step aborted INFO: [Common 17-344] 'launch_simulation' was cancelled 
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 998 MB (+310kb) [00:07:27]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd>  
+// Tcl Message: Verilog Output written to : C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v Verilog Output written to : C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block quant_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block AXILiteToBRAMIntf_0 . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// [GUI Memory]: 119 MB (+1869kb) [00:07:27]
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 . 
+// Tcl Message: Exporting to file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl Generated Hardware Definition File C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Aug  8 13:37:36 2019] Launched converter_AXILiteToBRAMIntf_0_0_synth_1, converter_blk_mem_gen_1_1_synth_1... Run output will be captured here: converter_AXILiteToBRAMIntf_0_0_synth_1: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_AXILiteToBRAMIntf_0_0_synth_1/runme.log converter_blk_mem_gen_1_1_synth_1: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1/runme.log [Thu Aug  8 13:37:36 2019] Launched synth_1... Run output will be captured here: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/synth_1/runme.log 
+// aj:a (cg:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,021 MB. GUI used memory: 78 MB. Current time: 8/8/19 1:37:41 PM CEST
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, aj:a)
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Launch Run Critical Messages"); // aj:a (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,042 MB. GUI used memory: 86 MB. Current time: 8/8/19 1:38:26 PM CEST
+// [GUI Memory]: 127 MB (+1829kb) [00:08:44]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 134 MB (+739kb) [00:08:49]
+// [GUI Memory]: 148 MB (+7921kb) [00:09:20]
+// [GUI Memory]: 157 MB (+1402kb) [00:09:22]
+// TclEventType: RUN_COMPLETED
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 117 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ah:x)
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,042 MB. GUI used memory: 86 MB. Current time: 8/8/19 2:08:26 PM CEST
+// Elapsed time: 2378 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Elapsed time: 18 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "processing s"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zy"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zyn"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0, "ZYNQ7 Processing System", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0, "ZYNQ7 Processing System", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// bs:g (cg:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// [Engine Memory]: 1,065 MB (+17913kb) [00:49:40]
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,065 MB. GUI used memory: 86 MB. Current time: 8/8/19 2:19:51 PM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// cm:p (p:g): Configuration Presets: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,097 MB. GUI used memory: 90 MB. Current time: 8/8/19 2:20:37 PM CEST
+// Elapsed time: 81 seconds
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("Quad SPI Flash", "Quad SPI Flash"); // aH:a (bq:bv, p:g)
+// Elapsed time: 13 seconds
+selectButton((HResource) null, "IP Catalog_groupView"); // u:JideToggleButton (f:CommandBar, p:g): TRUE
+selectButton((HResource) null, "IP Catalog_groupView"); // u:JideToggleButton (f:CommandBar, p:g): FALSE
+// [GUI Memory]: 172 MB (+7582kb) [00:51:42]
+// Elapsed time: 15 seconds
+selectComboBox(PAResourceItoN.MIOTablePagePanel_MIO_TABLE_PARAMETER, "LVCMOS 1.8V", 0); // y:e (Box:JComponent, p:g)
+selectButton("MIO Configuration", "MIO Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aX:cv (JViewport:JComponent, p:g)
+// [Engine Memory]: 1,127 MB (+8345kb) [00:52:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,145 MB. GUI used memory: 138 MB. Current time: 8/8/19 2:22:11 PM CEST
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "UART 1 ;  ;  ;  ;  ;  ;  ; ", 9, "UART 1", 0, true); // aX:cv (JViewport:JComponent, p:g) - Node
+// Elapsed time: 13 seconds
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit", 2); // aX:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit", 2); // aX:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug", 3); // aX:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug", 3); // aX:cv (JViewport:JComponent, p:g)
+selectButton("Clock Configuration", "Clock Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "CPU ; ARM PLL ; 666.666666 ; 666.666687 ; 50.0 : 667.0 ; Processor/Memory Clocks", 1, "666.666666", 2, false); // A:cv (JViewport:JComponent, p:g)
+setText("PCW APU PERIPHERAL FREQMHZ", "650"); // z:X (aV:y)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "CPU ; ARM PLL ; 666.666666 ; 666.666687 ; 50.0 : 667.0 ; Processor/Memory Clocks", 1, "666.666687", 3, false); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 533.333333 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333333", 2, false); // A:cv (JViewport:JComponent, p:g)
+setText("PCW UIPARAM DDR FREQ MHZ", "525"); // z:X (aV:y)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 533.333333 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "CPU ; ARM PLL ; 650 ; 650.000000 ; 50.0 : 667.0 ; Processor/Memory Clocks", 1, "650.000000", 3, false); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false); // A:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false, false, false, false, false, true); // A:cv (JViewport:JComponent, p:g) - Double Click
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false, false, false, false, false, true); // A:cv (JViewport:JComponent, p:g) - Double Click
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "533.333374", 3, false); // A:cv (JViewport:JComponent, p:g)
+selectTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "DDR ; DDR PLL ; 525 ; 533.333374 ; 200.000000 : 534.000000 ; Processor/Memory Clocks", 2, "525", 2, false); // A:cv (JViewport:JComponent, p:g)
+setText("PCW CRYSTAL PERIPHERAL FREQMHZ", "50"); // z:X (aV:y, p:g)
+selectTab(PAResourceAtoD.ClkConfigMainPanel_TABBED_PANE, PAResourceAtoD.ClkConfigMainPanel_ADVANCED_CLOCKING, "Advanced Clocking", 1); // i:JideTabbedPane (p:cd, p:g)
+// Elapsed time: 18 seconds
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 3); // e:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks ; Processor/Memory Clocks", 0); // e:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 2); // e:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks ; System Debug Clocks", 3); // e:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "Timers ; Timers ; Timers ; Timers ; Timers ; Timers ; Timers", 4); // e:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "Timers ; Timers ; Timers ; Timers ; Timers ; Timers ; Timers", 4); // e:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.AdvClkConfigTreeTablePanel_TREE_TABLE, "Timers ; Timers ; Timers ; Timers ; Timers ; Timers ; Timers", 4); // e:cv (JViewport:JComponent, p:g)
+selectButton("DDR Configuration", "DDR Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+// Elapsed time: 14 seconds
+selectButton("SMC Timing Calculation", "SMC Timing Calculation"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("DDR Configuration", "DDR Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+// [GUI Memory]: 184 MB (+3543kb) [00:54:43]
+// Elapsed time: 101 seconds
+selectTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0, "DDR Controller Configuration", 0, true); // P:cv (JViewport:JComponent, p:g) - Node
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Memory Part Configuration ; Memory Part Configuration ; Memory Part Configuration", 1); // P:cv (JViewport:JComponent, p:g)
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "tFAW (ns) ; 30.0 ; Determines the number of activates that can be performed within a certain window of time.", 14, "30.0", 1, false); // P:cv (JViewport:JComponent, p:g)
+setText("PCW UIPARAM DDR T FAW", "30.0"); // z:X (aV:y)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Memory Part Configuration ; Memory Part Configuration ; Memory Part Configuration", 1); // P:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DDR Controller Configuration ; DDR Controller Configuration ; DDR Controller Configuration", 0); // P:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, " Training/Board Details ; User Input ; ", 2); // P:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, " Training/Board Details ; User Input ; ", 2); // P:cv (JViewport:JComponent, p:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Enable Advanced options ; 0 ;  Enable Advanced DDR QoS settings", 4); // P:cv (JViewport:JComponent, p:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Enable Advanced options ; 0 ;  Enable Advanced DDR QoS settings", 4); // P:cv (JViewport:JComponent, p:g)
+selectButton("SMC Timing Calculation", "SMC Timing Calculation"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("Interrupts", "Interrupts"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("Zynq Block Design", "Zynq Block Design"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k:JideButton (ci:ButtonPanel, p:g)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k:JideButton (ci:ButtonPanel, p:g)
+// Elapsed time: 15 seconds
+selectMenuItem(RDIResource.HTableUtils_ENABLE_COLUMN_FILTERING, "Enable Column Filtering"); // Q:JCheckBoxMenuItem (JidePopupMenu:JPopupMenu, Popup:JWindow)
+selectButton("Quad SPI Flash", "Quad SPI Flash"); // aH:a (bq:bv, p:g)
+selectButton("Quad SPI Flash", "Quad SPI Flash"); // aH:a (bq:bv, p:g)
+selectTreeTable(PAResourceItoN.MIOTablePagePanel_MIO_TABLE, " ; Quad SPI Flash ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Quad SPI Flash", 0, (String) null, 8, true); // bq:bv (JViewport:JComponent, p:g) - Node
+// [GUI Memory]: 205 MB (+11766kb) [00:57:33]
+selectButton("UART1", "UART1"); // aH:a (bq:bv, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 152 MB. Current time: 8/8/19 2:27:41 PM CEST
+selectButton("UART1", "UART1"); // aH:a (bq:bv, p:g)
+selectButton("8", "8"); // aH:a (bq:bv, p:g)
+selectButton("8", "8"); // aH:a (bq:bv, p:g)
+selectButton("8", "8"); // aH:a (bq:bv, p:g)
+selectButton("8", "8"); // aH:a (bq:bv, p:g)
+selectButton("8", "8"); // aH:a (bq:bv, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ {525} CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {50} CONFIG.PCW_APU_PERIPHERAL_FREQMHZ {650} CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 8 .. 9}] [get_bd_cells processing_system7_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ {525} CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {50} CONFIG.PCW_APU_PERIPHERAL_FREQMHZ {650} CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 8 .. 9}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clk_in1_1] [get_bd_ports clk_in1] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells clk_wiz_0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins controller_0/clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins DCT_2D_0/clk] 
+// Elapsed time: 49 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 324, 114, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 262, 105, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// aP:p (cg:JFrame): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "DDR"); // X:JTextField (JPanel:JComponent, aP:p)
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e:JComboBox (JPanel:JComponent, aP:p)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aP:p)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // aP:p (cg:JFrame)
+// Tcl Message: create_bd_port -dir O DDR 
+// Tcl Command: 'set_property location {-30 131} [get_bd_ports DDR]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-30 131} [get_bd_ports DDR] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports DDR] 
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 88, 209, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// aP:p (cg:JFrame): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "DDR"); // X:JTextField (JPanel:JComponent, aP:p)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aP:p)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // aP:p (cg:JFrame)
+// Tcl Message: create_bd_port -dir I DDR 
+// Elapsed time: 23 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 114, 211, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports DDR] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 136, 210, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// aP:p (cg:JFrame): Create Port: addNotify
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g:JCheckBox (JPanel:JComponent, aP:p): TRUE
+setSpinner(PAResourceAtoD.CreateRSBPortDialog_FROM, "7"); // P:d (JPanel:JComponent, aP:p)
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "DDR"); // X:JTextField (JPanel:JComponent, aP:p)
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e:JComboBox (JPanel:JComponent, aP:p)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aP:p)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // aP:p (cg:JFrame)
+// Tcl Message: create_bd_port -dir O -from 7 -to 0 DDR 
+// Tcl Command: 'set_property location {-201 161} [get_bd_ports DDR]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {-201 161} [get_bd_ports DDR] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports DDR] 
+// Elapsed time: 17 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 215, 244, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// aP:p (cg:JFrame): Create Port: addNotify
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "DDR"); // X:JTextField (JPanel:JComponent, aP:p)
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Input", 0); // e:JComboBox (JPanel:JComponent, aP:p)
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g:JCheckBox (JPanel:JComponent, aP:p): TRUE
+setSpinner(PAResourceAtoD.CreateRSBPortDialog_FROM, "7"); // P:d (JPanel:JComponent, aP:p)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aP:p)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // aP:p (cg:JFrame)
+// Tcl Message: create_bd_port -dir I -from 7 -to 0 DDR 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports DDR] 
+// Elapsed time: 115 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B:JideButton (f:CommandBar, cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "processor"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 5, "Processor System Reset", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 5, "Processor System Reset", 0, false); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 5); // O:af (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Processor System Reset", 5, "Processor System Reset", 0, false, false, false, false, false, true); // O:af (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: endgroup 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cg:JFrame): Re-customize IP: addNotify
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Elapsed time: 19 seconds
+selectButton(PAResourceTtoZ.XPG_ComboBox_VALUE_OF_SPECIFIED_PARAMETER, "Aux Reset Logic Level (C_AUX_RESET_HIGH)"); // u:JideToggleButton (C:JPanel, p:g): TRUE
+selectButton(PAResourceTtoZ.XPG_ComboBox_VALUE_OF_SPECIFIED_PARAMETER_MANUAL, "Aux Reset Logic Level (C_AUX_RESET_HIGH)"); // u:JideToggleButton (C:JPanel, p:g): FALSE
+selectButton(PAResourceTtoZ.XPG_ComboBox_VALUE_OF_SPECIFIED_PARAMETER, "Aux Reset Logic Level (C_AUX_RESET_HIGH)"); // u:JideToggleButton (C:JPanel, p:g): TRUE
+dismissDialog("Re-customize IP"); // p:g (cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells proc_sys_reset_0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 546, 235, 1208, 694, false, false, false, true, false); // fe:aJ (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_RUN_BLOCK_AUTOMATION, "Run Block Automation..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// w:p (cg:JFrame): Run Block Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, w:p)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Block Automation"); // w:p (cg:JFrame)
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0] 
+// bs:g (cg:JFrame):  Run Block Automation : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Block Automation"); // bs:g (cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]' 
+// bs:g (cg:JFrame):  Undo : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Undo"); // bs:g (cg:JFrame)
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:k (JPanel:JComponent, cg:JFrame)
+// w:p (cg:JFrame): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, w:p)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Connection Automation"); // w:p (cg:JFrame)
+// bs:g (cg:JFrame):  Run Connection Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "New AXI Interconnect" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins AXILiteToBRAMIntf_0/S00_AXI] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,184 MB (+927kb) [01:04:02]
+// Tcl Message: INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI 
+// Tcl Message: </AXILiteToBRAMIntf_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]> 
+dismissDialog("Run Connection Automation"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // h:k (JPanel:JComponent, cg:JFrame)
+// w:p (cg:JFrame): Run Block Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, w:p)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Block Automation"); // w:p (cg:JFrame)
+// bs:g (cg:JFrame):  Run Block Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0] 
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Block Automation"); // bs:g (cg:JFrame)
+// Tcl Command: 'set_property location {1583 413} [get_bd_intf_ports DDR]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1583 413} [get_bd_intf_ports DDR] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd>  Wrote  : <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui>  
+// [GUI Memory]: 217 MB (+2756kb) [01:04:42]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,202 MB. GUI used memory: 141 MB. Current time: 8/8/19 2:34:56 PM CEST

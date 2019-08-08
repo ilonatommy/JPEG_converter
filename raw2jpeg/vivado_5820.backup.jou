@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Aug  8 10:14:27 2019
+# Process ID: 5820
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3192 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\raw2jpeg\raw2jpeg.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+remove_files  -fileset DCT_2D_0 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci
+file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0
+file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ip/DCT_2D_0 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts/DCT_2D_0
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+create_ip -name controller -vendor domain.local -library user -version 1.0 -module_name controller_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
+generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
+catch { config_ip_cache -export [get_ips -all controller_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
+launch_runs -jobs 4 controller_0_synth_1
+export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name DCT_2D -vendor domain.local -library user -version 1.0 -module_name DCT_2D_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
+generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
+catch { config_ip_cache -export [get_ips -all DCT_2D_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
+export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+create_ip -name quant -vendor domain.local -library user -version 1.0 -module_name quant_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
+generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
+catch { config_ip_cache -export [get_ips -all quant_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
+launch_runs -jobs 4 quant_0_synth_1
+export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name blk_mem_gen_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/inputData.coe} CONFIG.Use_RSTA_Pin {true} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source tb_raw2jpeg.tcl
+save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg
+set_property xsim.view C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg [get_filesets sim_1]
+make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -top
+add_files -norecurse C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+close_sim
+launch_simulation
+open_wave_config C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg
+source tb_raw2jpeg.tcl
+close_sim

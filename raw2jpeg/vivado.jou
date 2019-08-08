@@ -2,59 +2,105 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Thu Aug  8 10:14:27 2019
-# Process ID: 5820
+# Start of session at: Thu Aug  8 13:30:03 2019
+# Process ID: 4060
 # Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3192 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\raw2jpeg\raw2jpeg.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5660 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\raw2jpeg\raw2jpeg.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.xpr
 update_compile_order -fileset sources_1
-open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
-remove_files  -fileset DCT_2D_0 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci
-file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0
-file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ip/DCT_2D_0 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts/DCT_2D_0
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-import_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-create_ip -name controller -vendor domain.local -library user -version 1.0 -module_name controller_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
-generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
-generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
-catch { config_ip_cache -export [get_ips -all controller_0] }
-export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
-launch_runs -jobs 4 controller_0_synth_1
-export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-create_ip -name DCT_2D -vendor domain.local -library user -version 1.0 -module_name DCT_2D_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
-generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
-generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
-catch { config_ip_cache -export [get_ips -all DCT_2D_0] }
-export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci]
-export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name AXILiteToBRAMIntf -vendor xilinx.com -library user -version 1.0 -module_name AXILiteToBRAMIntf_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0/AXILiteToBRAMIntf_0.xci]
 update_compile_order -fileset sources_1
-create_ip -name quant -vendor domain.local -library user -version 1.0 -module_name quant_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
-generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
-generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
-catch { config_ip_cache -export [get_ips -all quant_0] }
-export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci]
-launch_runs -jobs 4 quant_0_synth_1
-export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.3 -module_name blk_mem_gen_0 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
-set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/inputData.coe} CONFIG.Use_RSTA_Pin {true} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
-generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
-export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
-launch_runs -jobs 4 blk_mem_gen_0_synth_1
-export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name AXILiteToBRAMIntf -vendor xilinx.com -library user -version 1.0 -module_name AXILiteToBRAMIntf_1 -dir c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci]
+generate_target all [get_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci]
+catch { config_ip_cache -export [get_ips -all AXILiteToBRAMIntf_1] }
+export_ip_user_files -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci]
+launch_runs -jobs 4 AXILiteToBRAMIntf_1_synth_1
+export_simulation -of_objects [get_files c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci] -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+remove_files  -fileset AXILiteToBRAMIntf_1 c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1/AXILiteToBRAMIntf_1.xci
+file delete -force c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_1
+file delete -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/ip/AXILiteToBRAMIntf_1 C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts/AXILiteToBRAMIntf_1
+remove_files  c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0/AXILiteToBRAMIntf_0.xci
+file delete -force c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/AXILiteToBRAMIntf_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXILiteToBRAMIntf:1.0 AXILiteToBRAMIntf_0
+endgroup
+set_property location {5 851 407} [get_bd_cells AXILiteToBRAMIntf_0]
+set_property location {4 943 428} [get_bd_cells AXILiteToBRAMIntf_0]
+set_property location {2 520 389} [get_bd_cells AXILiteToBRAMIntf_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+endgroup
+delete_bd_objs [get_bd_cells blk_mem_gen_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+endgroup
+set_property location {4 717 342} [get_bd_cells blk_mem_gen_1]
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property location {2 411 338} [get_bd_cells AXILiteToBRAMIntf_0]
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/BRAMWea] [get_bd_pins blk_mem_gen_1/wea]
+startgroup
+set_property -dict [list CONFIG.use_bram_block {BRAM_Controller} CONFIG.Enable_32bit_Address {true} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {true}] [get_bd_cells blk_mem_gen_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]
+endgroup
+connect_bd_net [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1]
+set_property location {3 775 339} [get_bd_cells blk_mem_gen_1]
+set_property location {2 355 343} [get_bd_cells AXILiteToBRAMIntf_0]
+connect_bd_net [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins AXILiteToBRAMIntf_0/BRAMAddress]
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut] [get_bd_pins blk_mem_gen_1/dina]
+startgroup
+connect_bd_net [get_bd_pins quant_0/pixel_out] [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataIn]
+endgroup
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aresetn] [get_bd_pins controller_0/rst]
+regenerate_bd_layout
+save_bd_design
 launch_simulation
-source tb_raw2jpeg.tcl
-save_wave_config {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg
-set_property xsim.view C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/tb_raw2jpeg_behav.wcfg [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ {525} CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ {50} CONFIG.PCW_APU_PERIPHERAL_FREQMHZ {650} CONFIG.PCW_PRESET_BANK1_VOLTAGE {LVCMOS 1.8V} CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART1_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 8 .. 9}] [get_bd_cells processing_system7_0]
+endgroup
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0]
+delete_bd_objs [get_bd_nets clk_in1_1] [get_bd_ports clk_in1]
+delete_bd_objs [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins controller_0/clk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins DCT_2D_0/clk]
+regenerate_bd_layout
+create_bd_port -dir O DDR
+set_property location {-30 131} [get_bd_ports DDR]
+delete_bd_objs [get_bd_ports DDR]
+create_bd_port -dir I DDR
+delete_bd_objs [get_bd_ports DDR]
+create_bd_port -dir O -from 7 -to 0 DDR
+set_property location {-201 161} [get_bd_ports DDR]
+delete_bd_objs [get_bd_ports DDR]
+create_bd_port -dir I -from 7 -to 0 DDR
+delete_bd_objs [get_bd_ports DDR]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+delete_bd_objs [get_bd_cells proc_sys_reset_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "New AXI Interconnect" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins AXILiteToBRAMIntf_0/S00_AXI]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+set_property location {1583 413} [get_bd_intf_ports DDR]
+save_bd_design
+regenerate_bd_layout
