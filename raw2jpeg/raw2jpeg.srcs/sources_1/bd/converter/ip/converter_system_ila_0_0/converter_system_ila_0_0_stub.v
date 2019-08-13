@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Mon Aug 12 14:09:58 2019
+// Date        : Tue Aug 13 12:51:20 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0_stub.v
@@ -14,21 +14,18 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "bd_61a3,Vivado 2017.2" *)
-module converter_system_ila_0_0(clk, probe0, probe1, probe2, probe3, probe4, probe5, 
-  probe6, SLOT_0_AXI_awaddr, SLOT_0_AXI_awprot, SLOT_0_AXI_awvalid, SLOT_0_AXI_awready, 
+module converter_system_ila_0_0(clk, probe0, probe1, probe2, probe3, 
+  SLOT_0_AXI_awaddr, SLOT_0_AXI_awprot, SLOT_0_AXI_awvalid, SLOT_0_AXI_awready, 
   SLOT_0_AXI_wdata, SLOT_0_AXI_wstrb, SLOT_0_AXI_wvalid, SLOT_0_AXI_wready, 
   SLOT_0_AXI_bresp, SLOT_0_AXI_bvalid, SLOT_0_AXI_bready, SLOT_0_AXI_araddr, 
   SLOT_0_AXI_arprot, SLOT_0_AXI_arvalid, SLOT_0_AXI_arready, SLOT_0_AXI_rdata, 
   SLOT_0_AXI_rresp, SLOT_0_AXI_rvalid, SLOT_0_AXI_rready, resetn)
-/* synthesis syn_black_box black_box_pad_pin="clk,probe0[7:0],probe1[5:0],probe2[7:0],probe3[0:0],probe4[0:0],probe5[7:0],probe6[13:0],SLOT_0_AXI_awaddr[3:0],SLOT_0_AXI_awprot[2:0],SLOT_0_AXI_awvalid,SLOT_0_AXI_awready,SLOT_0_AXI_wdata[31:0],SLOT_0_AXI_wstrb[3:0],SLOT_0_AXI_wvalid,SLOT_0_AXI_wready,SLOT_0_AXI_bresp[1:0],SLOT_0_AXI_bvalid,SLOT_0_AXI_bready,SLOT_0_AXI_araddr[3:0],SLOT_0_AXI_arprot[2:0],SLOT_0_AXI_arvalid,SLOT_0_AXI_arready,SLOT_0_AXI_rdata[31:0],SLOT_0_AXI_rresp[1:0],SLOT_0_AXI_rvalid,SLOT_0_AXI_rready,resetn" */;
+/* synthesis syn_black_box black_box_pad_pin="clk,probe0[7:0],probe1[7:0],probe2[7:0],probe3[0:0],SLOT_0_AXI_awaddr[3:0],SLOT_0_AXI_awprot[2:0],SLOT_0_AXI_awvalid,SLOT_0_AXI_awready,SLOT_0_AXI_wdata[31:0],SLOT_0_AXI_wstrb[3:0],SLOT_0_AXI_wvalid,SLOT_0_AXI_wready,SLOT_0_AXI_bresp[1:0],SLOT_0_AXI_bvalid,SLOT_0_AXI_bready,SLOT_0_AXI_araddr[3:0],SLOT_0_AXI_arprot[2:0],SLOT_0_AXI_arvalid,SLOT_0_AXI_arready,SLOT_0_AXI_rdata[31:0],SLOT_0_AXI_rresp[1:0],SLOT_0_AXI_rvalid,SLOT_0_AXI_rready,resetn" */;
   input clk;
   input [7:0]probe0;
-  input [5:0]probe1;
+  input [7:0]probe1;
   input [7:0]probe2;
   input [0:0]probe3;
-  input [0:0]probe4;
-  input [7:0]probe5;
-  input [13:0]probe6;
   input [3:0]SLOT_0_AXI_awaddr;
   input [2:0]SLOT_0_AXI_awprot;
   input SLOT_0_AXI_awvalid;

@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Tue Aug 13 12:16:23 2019
+//Date        : Tue Aug 13 12:48:50 2019
 //Host        : rtrkos034 running 64-bit major release  (build 9200)
 //Command     : generate_target bd_61a3_wrapper.bd
 //Design      : bd_61a3_wrapper
@@ -34,9 +34,6 @@ module bd_61a3_wrapper
     probe1,
     probe2,
     probe3,
-    probe4,
-    probe5,
-    probe6,
     resetn);
   input [3:0]SLOT_0_AXI_araddr;
   input [2:0]SLOT_0_AXI_arprot;
@@ -59,12 +56,9 @@ module bd_61a3_wrapper
   input SLOT_0_AXI_wvalid;
   input clk;
   input [7:0]probe0;
-  input [5:0]probe1;
+  input [7:0]probe1;
   input [7:0]probe2;
   input [0:0]probe3;
-  input [0:0]probe4;
-  input [7:0]probe5;
-  input [13:0]probe6;
   input resetn;
 
   wire [3:0]SLOT_0_AXI_araddr;
@@ -88,12 +82,9 @@ module bd_61a3_wrapper
   wire SLOT_0_AXI_wvalid;
   wire clk;
   wire [7:0]probe0;
-  wire [5:0]probe1;
+  wire [7:0]probe1;
   wire [7:0]probe2;
   wire [0:0]probe3;
-  wire [0:0]probe4;
-  wire [7:0]probe5;
-  wire [13:0]probe6;
   wire resetn;
 
   bd_61a3 bd_61a3_i
@@ -121,8 +112,5 @@ module bd_61a3_wrapper
         .probe1(probe1),
         .probe2(probe2),
         .probe3(probe3),
-        .probe4(probe4),
-        .probe5(probe5),
-        .probe6(probe6),
         .resetn(resetn));
 endmodule

@@ -42,7 +42,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe7[1:0]"/>
+        <Option Id="MAP" value="probe4[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AR_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -60,7 +60,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe23[1:0]"/>
+        <Option Id="MAP" value="probe20[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -78,7 +78,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe8[3:0]"/>
+        <Option Id="MAP" value="probe5[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : ARADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -98,7 +98,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe9[2:0]"/>
+        <Option Id="MAP" value="probe6[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : ARPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -125,7 +125,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe23[1]"/>
+        <Option Id="MAP" value="probe20[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : ARREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -142,7 +142,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe23[0]"/>
+        <Option Id="MAP" value="probe20[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : ARVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -159,7 +159,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe10[1:0]"/>
+        <Option Id="MAP" value="probe7[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AW_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -177,7 +177,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe20[1:0]"/>
+        <Option Id="MAP" value="probe17[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -195,7 +195,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe11[3:0]"/>
+        <Option Id="MAP" value="probe8[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AWADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -215,7 +215,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe12[2:0]"/>
+        <Option Id="MAP" value="probe9[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AWPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -242,7 +242,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe20[1]"/>
+        <Option Id="MAP" value="probe17[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AWREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -259,7 +259,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe20[0]"/>
+        <Option Id="MAP" value="probe17[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : AWVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -276,7 +276,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe13[1:0]"/>
+        <Option Id="MAP" value="probe10[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : B_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -294,7 +294,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe22[1:0]"/>
+        <Option Id="MAP" value="probe19[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -312,7 +312,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe22[1]"/>
+        <Option Id="MAP" value="probe19[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : BREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -329,7 +329,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe14[1:0]"/>
+        <Option Id="MAP" value="probe11[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : BRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -351,7 +351,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe22[0]"/>
+        <Option Id="MAP" value="probe19[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : BVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -368,7 +368,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe15[1:0]"/>
+        <Option Id="MAP" value="probe12[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : R_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -386,7 +386,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe24[1:0]"/>
+        <Option Id="MAP" value="probe21[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -404,7 +404,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe16[31:0]"/>
+        <Option Id="MAP" value="probe13[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : RDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -452,7 +452,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe24[1]"/>
+        <Option Id="MAP" value="probe21[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : RREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -469,7 +469,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe17[1:0]"/>
+        <Option Id="MAP" value="probe14[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : RRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -491,7 +491,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe24[0]"/>
+        <Option Id="MAP" value="probe21[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : RVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -508,7 +508,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe21[1:0]"/>
+        <Option Id="MAP" value="probe18[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -526,7 +526,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe18[31:0]"/>
+        <Option Id="MAP" value="probe15[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : WDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -574,7 +574,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe21[1]"/>
+        <Option Id="MAP" value="probe18[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : WREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -591,7 +591,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe19[3:0]"/>
+        <Option Id="MAP" value="probe16[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : WSTRB"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -611,7 +611,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="MAP" value="probe21[0]"/>
+        <Option Id="MAP" value="probe18[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : ps7_0_axi_periph_M00_AXI : WVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -629,7 +629,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="MAP" value="probe0[7:0]"/>
-        <Option Id="NAME.CUSTOM" value="blk_mem_gen_0_douta"/>
+        <Option Id="NAME.CUSTOM" value="quant_0_pixel_out"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
@@ -674,8 +674,32 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[7:0]"/>
+        <Option Id="NAME.CUSTOM" value="AXILiteToBRAMIntf_0_BRAMDataOut"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+      </probeOptions>
+      <nets>
+        <net name="converter_i/system_ila_0/inst/probe1_1[7]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[6]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[5]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[4]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[3]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[2]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[1]"/>
+        <net name="converter_i/system_ila_0/inst/probe1_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="MAP" value="probe2[7:0]"/>
-        <Option Id="NAME.CUSTOM" value="quant_0_pixel_out"/>
+        <Option Id="NAME.CUSTOM" value="AXILiteToBRAMIntf_0_BRAMAddress"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
@@ -699,7 +723,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="MAP" value="probe3[0]"/>
-        <Option Id="NAME.CUSTOM" value="Net"/>
+        <Option Id="NAME.CUSTOM" value="AXILiteToBRAMIntf_0_BRAMWea"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>

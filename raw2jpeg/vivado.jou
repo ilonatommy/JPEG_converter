@@ -151,3 +151,72 @@ display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+delete_bd_objs [get_bd_nets DCT_2D_0_pixel_out]
+connect_bd_net [get_bd_pins quant_0/pixel_in] [get_bd_pins DCT_2D_0/pixel_out]
+delete_bd_objs [get_bd_nets Net1]
+connect_bd_net [get_bd_pins quant_0/rst] [get_bd_pins DCT_2D_0/rst]
+connect_bd_net [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst]
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aresetn] [get_bd_pins controller_0/rst]
+save_bd_design
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets Net]
+connect_bd_net [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst]
+connect_bd_net [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins DCT_2D_0/ce]
+connect_bd_net [get_bd_pins controller_0/ce] [get_bd_pins blk_mem_gen_0/ena]
+connect_bd_net [get_bd_pins quant_0/ce] [get_bd_pins controller_0/ce]
+save_bd_design
+delete_bd_objs [get_bd_nets controller_0_addr_input]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
+save_bd_design
+delete_bd_objs [get_bd_nets blk_mem_gen_0_douta]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins DCT_2D_0/pixel_in]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {4} CONFIG.C_BRAM_CNT {8.5} CONFIG.C_PROBE6_WIDTH {1} CONFIG.C_PROBE5_WIDTH {1}] [get_bd_cells system_ila_0]
+endgroup
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut]
+undo
+delete_bd_objs [get_bd_nets quant_0_pixel_out]
+connect_bd_net [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataIn] [get_bd_pins quant_0/pixel_out]
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins quant_0/pixel_out]
+connect_bd_net [get_bd_pins system_ila_0/probe1] [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut]
+connect_bd_net [get_bd_pins system_ila_0/probe2] [get_bd_pins AXILiteToBRAMIntf_0/BRAMAddress]
+connect_bd_net [get_bd_pins system_ila_0/probe3] [get_bd_pins AXILiteToBRAMIntf_0/BRAMWea]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {8} CONFIG.C_BRAM_CNT {13.5}] [get_bd_cells system_ila_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run converter_system_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper.sysdef C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+file mkdir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk
+file copy -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper.sysdef C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.sdk/converter_wrapper.hdf
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"converter_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AXILiteToBRAMIntf:1.0 AXILiteToBRAMIntf_1
+endgroup
+delete_bd_objs [get_bd_cells AXILiteToBRAMIntf_1]
+report_ip_status -name ip_status 

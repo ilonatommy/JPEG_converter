@@ -360,17 +360,17 @@ CONFIG.NUM_MI {1} \
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila_0 ]
   set_property -dict [ list \
-CONFIG.C_BRAM_CNT {9.5} \
+CONFIG.C_BRAM_CNT {13.5} \
 CONFIG.C_DATA_DEPTH {2048} \
 CONFIG.C_MON_TYPE {MIX} \
-CONFIG.C_NUM_OF_PROBES {7} \
+CONFIG.C_NUM_OF_PROBES {4} \
 CONFIG.C_PROBE0_WIDTH {8} \
-CONFIG.C_PROBE1_WIDTH {6} \
+CONFIG.C_PROBE1_WIDTH {8} \
 CONFIG.C_PROBE2_WIDTH {8} \
 CONFIG.C_PROBE3_WIDTH {1} \
 CONFIG.C_PROBE4_WIDTH {1} \
-CONFIG.C_PROBE5_WIDTH {8} \
-CONFIG.C_PROBE6_WIDTH {14} \
+CONFIG.C_PROBE5_WIDTH {1} \
+CONFIG.C_PROBE6_WIDTH {1} \
 CONFIG.C_PROBE_WIDTH_PROPAGATION {MANUAL} \
  ] $system_ila_0
 
@@ -382,18 +382,18 @@ CONFIG.C_PROBE_WIDTH_PROPAGATION {MANUAL} \
 connect_bd_intf_net -intf_net [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI] [get_bd_intf_pins system_ila_0/SLOT_0_AXI]
 
   # Create port connections
-  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMAddress [get_bd_pins AXILiteToBRAMIntf_0/BRAMAddress] [get_bd_pins blk_mem_gen_1/addra]
-  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMDataOut [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut] [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins system_ila_0/probe5]
-  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMWea [get_bd_pins AXILiteToBRAMIntf_0/BRAMWea] [get_bd_pins blk_mem_gen_1/wea]
-  connect_bd_net -net DCT_2D_0_pixel_out [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in] [get_bd_pins system_ila_0/probe6]
-  connect_bd_net -net Net [get_bd_pins DCT_2D_0/ce] [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins controller_0/ce] [get_bd_pins quant_0/ce] [get_bd_pins system_ila_0/probe3]
-  connect_bd_net -net Net1 [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aresetn] [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins system_ila_0/probe4]
-  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins system_ila_0/probe0]
+  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMAddress [get_bd_pins AXILiteToBRAMIntf_0/BRAMAddress] [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins system_ila_0/probe2]
+  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMDataOut [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataOut] [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins system_ila_0/probe1]
+  connect_bd_net -net AXILiteToBRAMIntf_0_BRAMWea [get_bd_pins AXILiteToBRAMIntf_0/BRAMWea] [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins system_ila_0/probe3]
+  connect_bd_net -net DCT_2D_0_pixel_out [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in]
+  connect_bd_net -net Net [get_bd_pins DCT_2D_0/ce] [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins controller_0/ce] [get_bd_pins quant_0/ce]
+  connect_bd_net -net Net1 [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aresetn] [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst]
+  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins AXILiteToBRAMIntf_0/s00_axi_aclk] [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins controller_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins quant_0/clk] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk] [get_bd_pins system_ila_0/clk]
-  connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input] [get_bd_pins system_ila_0/probe1]
+  connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
   connect_bd_net -net controller_0_addr_quant [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
-  connect_bd_net -net quant_0_pixel_out [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataIn] [get_bd_pins quant_0/pixel_out] [get_bd_pins system_ila_0/probe2]
+  connect_bd_net -net quant_0_pixel_out [get_bd_pins AXILiteToBRAMIntf_0/BRAMDataIn] [get_bd_pins quant_0/pixel_out] [get_bd_pins system_ila_0/probe0]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn] [get_bd_pins system_ila_0/resetn]
 

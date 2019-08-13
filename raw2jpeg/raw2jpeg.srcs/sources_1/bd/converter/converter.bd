@@ -281,15 +281,15 @@
         <spirit:componentRef spirit:library="ip" spirit:name="system_ila" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_system_ila_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE6_WIDTH">14</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE5_WIDTH">8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE6_WIDTH">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE5_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE4_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE3_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE2_WIDTH">8</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE1_WIDTH">6</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PROBE1_WIDTH">8</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE0_WIDTH">8</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DATA_DEPTH">2048</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">7</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_MON_TYPE">MIX</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_PROBE_WIDTH_PROPAGATION">MANUAL</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -328,41 +328,6 @@
     </spirit:interconnections>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
-        <spirit:name>blk_mem_gen_0_douta</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="douta"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe0"/>
-        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="pixel_in"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>DCT_2D_0_pixel_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="pixel_out"/>
-        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="pixel_in"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe6"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="ce"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="ena"/>
-        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="ce"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe3"/>
-        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="ce"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Net1</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="rst"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="rsta"/>
-        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="rst"/>
-        <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="s00_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe4"/>
-        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="rst"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>controller_0_addr_input</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="addr_input"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addra"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>controller_0_addr_quant</spirit:name>
         <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="addr_quant"/>
         <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="addr"/>
@@ -371,13 +336,7 @@
         <spirit:name>AXILiteToBRAMIntf_0_BRAMDataOut</spirit:name>
         <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="BRAMDataOut"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="dina"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe5"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>quant_0_pixel_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="pixel_out"/>
-        <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="BRAMDataIn"/>
-        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe2"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
@@ -416,11 +375,49 @@
         <spirit:name>AXILiteToBRAMIntf_0_BRAMAddress</spirit:name>
         <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="BRAMAddress"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addra"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe2"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>AXILiteToBRAMIntf_0_BRAMWea</spirit:name>
         <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="BRAMWea"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="wea"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DCT_2D_0_pixel_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="pixel_out"/>
+        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="pixel_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="s00_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="rsta"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Net</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="ce"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="ena"/>
+        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="ce"/>
+        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="ce"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_addr_input</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="addr_input"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addra"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>blk_mem_gen_0_douta</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="douta"/>
+        <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="pixel_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>quant_0_pixel_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="pixel_out"/>
+        <spirit:internalPortReference spirit:componentRef="AXILiteToBRAMIntf_0" spirit:portRef="BRAMDataIn"/>
+        <spirit:internalPortReference spirit:componentRef="system_ila_0" spirit:portRef="probe0"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

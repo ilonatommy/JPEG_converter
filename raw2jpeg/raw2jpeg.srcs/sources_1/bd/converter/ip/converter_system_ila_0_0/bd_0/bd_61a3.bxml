@@ -2,17 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="bd_61a3" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1565691387"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1565691387"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1565691387"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1565693334"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1565693334"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1565693334"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="hdl\bd_61a3.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\ip_0\bd_61a3_ila_lib_0.xci" Type="IP">
         <Instance HierarchyPath="ila_lib"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -64,6 +57,13 @@
       <File Name="ip\ip_6\bd_61a3_slot_0_r_0.xci" Type="IP">
         <Instance HierarchyPath="slot_0_r"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hdl\bd_61a3.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

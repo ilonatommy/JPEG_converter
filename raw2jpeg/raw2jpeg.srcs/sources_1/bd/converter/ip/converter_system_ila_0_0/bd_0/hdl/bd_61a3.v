@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Tue Aug 13 12:16:23 2019
+//Date        : Tue Aug 13 12:48:50 2019
 //Host        : rtrkos034 running 64-bit major release  (build 9200)
 //Command     : generate_target bd_61a3.bd
 //Design      : bd_61a3
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_61a3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_61a3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "converter_system_ila_0_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_61a3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_61a3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "converter_system_ila_0_0.hwdef" *) 
 module bd_61a3
    (SLOT_0_AXI_araddr,
     SLOT_0_AXI_arprot,
@@ -35,9 +35,6 @@ module bd_61a3
     probe1,
     probe2,
     probe3,
-    probe4,
-    probe5,
-    probe6,
     resetn);
   input [3:0]SLOT_0_AXI_araddr;
   input [2:0]SLOT_0_AXI_arprot;
@@ -60,12 +57,9 @@ module bd_61a3
   input SLOT_0_AXI_wvalid;
   input clk;
   input [7:0]probe0;
-  input [5:0]probe1;
+  input [7:0]probe1;
   input [7:0]probe2;
   input [0:0]probe3;
-  input [0:0]probe4;
-  input [7:0]probe5;
-  input [13:0]probe6;
   input resetn;
 
   wire [3:0]Conn_ARADDR;
@@ -117,12 +111,9 @@ module bd_61a3
   wire [3:0]net_slot_0_axi_wstrb;
   wire net_slot_0_axi_wvalid;
   wire [7:0]probe0_1;
-  wire [5:0]probe1_1;
+  wire [7:0]probe1_1;
   wire [7:0]probe2_1;
   wire [0:0]probe3_1;
-  wire [0:0]probe4_1;
-  wire [7:0]probe5_1;
-  wire [13:0]probe6_1;
   wire resetn_1;
 
   assign Conn_ARADDR = SLOT_0_AXI_araddr[3:0];
@@ -146,12 +137,9 @@ module bd_61a3
   assign Conn_WVALID = SLOT_0_AXI_wvalid;
   assign clk_1 = clk;
   assign probe0_1 = probe0[7:0];
-  assign probe1_1 = probe1[5:0];
+  assign probe1_1 = probe1[7:0];
   assign probe2_1 = probe2[7:0];
   assign probe3_1 = probe3[0];
-  assign probe4_1 = probe4[0];
-  assign probe5_1 = probe5[7:0];
-  assign probe6_1 = probe6[13:0];
   assign resetn_1 = resetn;
   bd_61a3_g_inst_0 g_inst
        (.aclk(clk_1),
@@ -202,29 +190,26 @@ module bd_61a3
        (.clk(clk_1),
         .probe0(probe0_1),
         .probe1(probe1_1),
-        .probe10(net_slot_0_axi_aw_cnt),
-        .probe11(net_slot_0_axi_awaddr),
-        .probe12(net_slot_0_axi_awprot),
-        .probe13(net_slot_0_axi_b_cnt),
-        .probe14(net_slot_0_axi_bresp),
-        .probe15(net_slot_0_axi_r_cnt),
-        .probe16(net_slot_0_axi_rdata),
-        .probe17(net_slot_0_axi_rresp),
-        .probe18(net_slot_0_axi_wdata),
-        .probe19(net_slot_0_axi_wstrb),
+        .probe10(net_slot_0_axi_b_cnt),
+        .probe11(net_slot_0_axi_bresp),
+        .probe12(net_slot_0_axi_r_cnt),
+        .probe13(net_slot_0_axi_rdata),
+        .probe14(net_slot_0_axi_rresp),
+        .probe15(net_slot_0_axi_wdata),
+        .probe16(net_slot_0_axi_wstrb),
+        .probe17(net_slot_0_axi_aw_ctrl),
+        .probe18(net_slot_0_axi_w_ctrl),
+        .probe19(net_slot_0_axi_b_ctrl),
         .probe2(probe2_1),
-        .probe20(net_slot_0_axi_aw_ctrl),
-        .probe21(net_slot_0_axi_w_ctrl),
-        .probe22(net_slot_0_axi_b_ctrl),
-        .probe23(net_slot_0_axi_ar_ctrl),
-        .probe24(net_slot_0_axi_r_ctrl),
+        .probe20(net_slot_0_axi_ar_ctrl),
+        .probe21(net_slot_0_axi_r_ctrl),
         .probe3(probe3_1),
-        .probe4(probe4_1),
-        .probe5(probe5_1),
-        .probe6(probe6_1),
-        .probe7(net_slot_0_axi_ar_cnt),
-        .probe8(net_slot_0_axi_araddr),
-        .probe9(net_slot_0_axi_arprot));
+        .probe4(net_slot_0_axi_ar_cnt),
+        .probe5(net_slot_0_axi_araddr),
+        .probe6(net_slot_0_axi_arprot),
+        .probe7(net_slot_0_axi_aw_cnt),
+        .probe8(net_slot_0_axi_awaddr),
+        .probe9(net_slot_0_axi_awprot));
   bd_61a3_slot_0_ar_0 slot_0_ar
        (.In0(net_slot_0_axi_arvalid),
         .In1(net_slot_0_axi_arready),

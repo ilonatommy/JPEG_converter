@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Tue Aug 13 12:16:22 2019
+//Date        : Tue Aug 13 12:48:50 2019
 //Host        : rtrkos034 running 64-bit major release  (build 9200)
 //Command     : generate_target converter.bd
 //Design      : converter
@@ -359,13 +359,10 @@ module converter
         .SLOT_0_AXI_wstrb(ps7_0_axi_periph_M00_AXI_WSTRB),
         .SLOT_0_AXI_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .clk(clk_wiz_0_clk_out1),
-        .probe0(blk_mem_gen_0_douta),
-        .probe1(controller_0_addr_input),
-        .probe2(quant_0_pixel_out),
-        .probe3(Net),
-        .probe4(Net1),
-        .probe5(AXILiteToBRAMIntf_0_BRAMDataOut),
-        .probe6(DCT_2D_0_pixel_out),
+        .probe0(quant_0_pixel_out),
+        .probe1(AXILiteToBRAMIntf_0_BRAMDataOut),
+        .probe2(AXILiteToBRAMIntf_0_BRAMAddress),
+        .probe3(AXILiteToBRAMIntf_0_BRAMWea),
         .resetn(rst_ps7_0_50M_peripheral_aresetn));
 endmodule
 
