@@ -49,13 +49,13 @@ module tb_DCT_BRAM();
         end
         else rst_trigger <= rst_trigger + 1;
         
-        if(ce_BRAM_trigger == 3'd3)
+        if(ce_BRAM_trigger == 3'd5)
         begin
              ce_BRAM <= 1'b1;
         end 
         else ce_BRAM_trigger <= ce_BRAM_trigger + 1;
         
-        if(ce_trigger == 3'd3)
+        if(ce_trigger == 3'd5)
         begin
              ce <= 1'b1;
         end

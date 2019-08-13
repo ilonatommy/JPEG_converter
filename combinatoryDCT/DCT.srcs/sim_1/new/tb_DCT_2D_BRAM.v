@@ -36,24 +36,24 @@ module tb_DCT_2D_BRAM();
     
     always @(posedge(clk))
     begin
-        if(rst_trigger == 3'd1)
+        if(rst_trigger == 3'd0)
         begin
             rst <= 1'b1;
         end
         
-        if(rst_trigger == 3'd2)
+        if(rst_trigger == 3'd1)
         begin
             rst <= 1'b0;
         end
         else rst_trigger <= rst_trigger + 1;
         
-        if(ce_BRAM_trigger == 3'd2)
+        if(ce_BRAM_trigger == 3'd4)
         begin
              ce_BRAM <= 1'b1;
         end 
         else ce_BRAM_trigger <= ce_BRAM_trigger + 1;
         
-        if(ce_trigger == 3'd2)
+        if(ce_trigger == 3'd4)
         begin
              ce <= 1'b1;
         end

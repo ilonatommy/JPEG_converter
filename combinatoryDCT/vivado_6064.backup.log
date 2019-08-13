@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug  7 11:58:24 2019
+# Process ID: 6064
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5184 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\combinatoryDCT\DCT.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/users/lsneler/desktop/repository/dct/combinatorydct'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/users/lsneler/desktop/repository/dct/combinatorydct'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  7 12:04:00 2019...

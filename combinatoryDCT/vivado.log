@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Aug  7 11:58:24 2019
-# Process ID: 6064
+# Start of session at: Tue Aug 13 12:05:37 2019
+# Process ID: 4808
 # Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5184 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\combinatoryDCT\DCT.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4624 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\combinatoryDCT\DCT.xpr
 # Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT\vivado.jou
 #-----------------------------------------------------------
@@ -20,8 +20,313 @@ WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/users/lsneler/d
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/tb_DCT_2D_BRAM_behav.wdb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D_BRAM' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_2D_BRAM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_2D_BRAM
+INFO: [VRFC 10-2458] undeclared symbol addr_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:75]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DCT_2D_BRAM_behav xil_defaultlib.tb_DCT_2D_BRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:77]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port addra [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:75]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.RAM(WIDTH=11)
+Compiling module xil_defaultlib.register(WIDTH=12)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=13)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=14)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=14)
+Compiling module xil_defaultlib.delay(reg_width=15)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=16,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_adder(WIDTH=13)
+Compiling module xil_defaultlib.full_adder(WIDTH=14)
+Compiling module xil_defaultlib.full_adder(WIDTH=15)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=11)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=15)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=15,WIDTH_I1=15,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.DCT_2D
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.tb_DCT_2D_BRAM
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_2D_BRAM_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Aug 13 12:06:35 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Aug 13 12:06:35 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 787.688 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_DCT_2D_BRAM_behav -key {Behavioral:sim_1:Functional:tb_DCT_2D_BRAM} -tclbatch {tb_DCT_2D_BRAM.tcl} -view {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/tb_DCT_2D_behav.wcfg
+source tb_DCT_2D_BRAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_DCT_2D_BRAM.BRAM_in.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_DCT_2D_BRAM.BRAM_out.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_DCT_2D_BRAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 788.910 ; gain = 1.223
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_DCT_2D_BRAM' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/blk_mem_gen_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_DCT_2D_BRAM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/modules_to_import/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_DCT_2D_BRAM
+INFO: [VRFC 10-2458] undeclared symbol addr_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:75]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DCT_2D_BRAM_behav xil_defaultlib.tb_DCT_2D_BRAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:77]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port addra [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:75]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_gen
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.RAM(WIDTH=11)
+Compiling module xil_defaultlib.register(WIDTH=12)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=13)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=14)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=14)
+Compiling module xil_defaultlib.delay(reg_width=15)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=16,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_adder(WIDTH=13)
+Compiling module xil_defaultlib.full_adder(WIDTH=14)
+Compiling module xil_defaultlib.full_adder(WIDTH=15)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=11)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=15)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=15,WIDTH_I1=15,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.DCT_2D
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.tb_DCT_2D_BRAM
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_DCT_2D_BRAM_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_DCT_2D_BRAM.BRAM_in.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_DCT_2D_BRAM.BRAM_out.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 841.059 ; gain = 0.000
+ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+ipx::unload_core c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/users/lsneler/desktop/repository/dct/combinatorydct'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+set_property description DCT_2D [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  7 12:04:00 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 12:08:29 2019...
