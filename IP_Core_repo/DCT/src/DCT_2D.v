@@ -60,16 +60,16 @@ module DCT_2D(
         end
         else rst_mod2 = 0;
         
-        //one tick before the correct input appears in mod1 output (to give 1 tic time for setting ce to 1)
-        if(trigger_mod2_ce == 7'd75)
-        begin
-            ce_mod2 = 1'b1; 
-        end
-        else trigger_mod2_ce <= trigger_mod2_ce + 1;
-        
         if(ce == 1'b1)
         begin          
             cnt <= cnt + 1;
+            
+            //one tick before the correct input appears in mod1 output (to give 1 tic time for setting ce to 1)
+            if(trigger_mod2_ce == 7'd72)
+            begin
+                ce_mod2 = 1'b1; 
+            end
+            else trigger_mod2_ce <= trigger_mod2_ce + 1;
             
             case(cnt)
                 6'd10: rc_00 <= $signed(pixel_out_mod1[10:0]);

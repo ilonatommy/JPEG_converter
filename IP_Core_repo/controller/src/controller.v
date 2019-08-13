@@ -28,7 +28,8 @@ module controller(
     output [5:0] addr_quant
     );
     
-    reg _rst, _ce;
+    reg _rst = 0;
+    reg _ce = 0;
     reg [5:0] addr_in = 0;
     reg [5:0] addr_qu = 6'd47;
     
@@ -49,7 +50,7 @@ module controller(
         end
         else rst_trigger <= rst_trigger + 1;
         
-        if(ce_trigger == 3'd2)
+        if(ce_trigger == 3'd4)
         begin
              _ce <= 1'b1;
         end

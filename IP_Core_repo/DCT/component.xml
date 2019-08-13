@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b4f1870f</spirit:value>
+            <spirit:value>5376bac0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b4f1870f</spirit:value>
+            <spirit:value>5376bac0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -89,7 +89,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e69bbd1c</spirit:value>
+            <spirit:value>64bc1057</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -245,7 +245,7 @@
       <spirit:file>
         <spirit:name>src/DCT_2D.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5c7fbee9</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_2b77a1f1</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -340,7 +340,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>DCT_2D_v1_0</spirit:description>
+  <spirit:description>DCT_2D</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -358,7 +358,7 @@
       <xilinx:displayName>DCT_2D_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-07T08:34:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-13T10:08:20Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="domain.local:user:DCT_2D:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/DCT</xilinx:tag>
       </xilinx:tags>
@@ -366,7 +366,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c75a2138"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d6d2ad9d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2f001ad0"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ca2722bc"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="03bdd93c"/>
     </xilinx:packagingInfo>

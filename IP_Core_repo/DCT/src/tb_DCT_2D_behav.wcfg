@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="55000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="48950001fs"></ZoomEndTime>
+      <Cursor1Time time="2540000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="186"></NameColumnWidth>
-      <ValueColumnWidth column_width="64"></ValueColumnWidth>
+      <NameColumnWidth column_width="180"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
    <wvobject fp_name="/tb_DCT_2D_BRAM/clk" type="logic">
@@ -27,7 +27,6 @@
    <wvobject fp_name="/tb_DCT_2D_BRAM/addr_in" type="array">
       <obj_property name="ElementShortName">addr_in[5:0]</obj_property>
       <obj_property name="ObjectShortName">addr_in[5:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_2D_BRAM/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
@@ -44,31 +43,27 @@
    <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_in" type="array">
       <obj_property name="ElementShortName">pixel_in[7:0]</obj_property>
       <obj_property name="ObjectShortName">pixel_in[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_out" type="array">
       <obj_property name="ElementShortName">pixel_out[13:0]</obj_property>
       <obj_property name="ObjectShortName">pixel_out[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT_2D_BRAM/cnt_test" type="array">
-      <obj_property name="ElementShortName">cnt_test[5:0]</obj_property>
-      <obj_property name="ObjectShortName">cnt_test[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_DCT_2D_BRAM/rst_trigger" type="array">
+      <obj_property name="ElementShortName">rst_trigger[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rst_trigger[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_in_mod2" type="array">
-      <obj_property name="ElementShortName">pixel_in_mod2[10:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_in_mod2[10:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_DCT_2D_BRAM/ce_BRAM_trigger" type="array">
+      <obj_property name="ElementShortName">ce_BRAM_trigger[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ce_BRAM_trigger[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_out_mod1" type="array">
-      <obj_property name="ElementShortName">pixel_out_mod1[13:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_out_mod1[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_DCT_2D_BRAM/ce_trigger" type="array">
+      <obj_property name="ElementShortName">ce_trigger[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ce_trigger[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_DCT_2D_BRAM/rc_00_" type="array">
-      <obj_property name="ElementShortName">rc_00_[10:0]</obj_property>
-      <obj_property name="ObjectShortName">rc_00_[10:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_DCT_2D_BRAM/addr_out" type="logic">
+      <obj_property name="ElementShortName">addr_out</obj_property>
+      <obj_property name="ObjectShortName">addr_out</obj_property>
    </wvobject>
 </wave_config>
