@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Aug  8 13:39:34 2019
+| Date         : Tue Aug 13 12:18:22 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file converter_wrapper_utilization_synth.rpt -pb converter_wrapper_utilization_synth.pb
 | Design       : converter_wrapper
@@ -170,18 +170,20 @@ Table of Contents
 9. Black Boxes
 --------------
 
-+---------------------------------+------+
-|             Ref Name            | Used |
-+---------------------------------+------+
-| converter_xlconstant_0_0        |    1 |
-| converter_quant_0_0             |    1 |
-| converter_controller_0_0        |    1 |
-| converter_clk_wiz_0_0           |    1 |
-| converter_blk_mem_gen_1_1       |    1 |
-| converter_blk_mem_gen_0_0       |    1 |
-| converter_DCT_2D_0_0            |    1 |
-| converter_AXILiteToBRAMIntf_0_0 |    1 |
-+---------------------------------+------+
++----------------------------------+------+
+|             Ref Name             | Used |
++----------------------------------+------+
+| converter_system_ila_0_0         |    1 |
+| converter_rst_ps7_0_50M_0        |    1 |
+| converter_quant_0_0              |    1 |
+| converter_processing_system7_0_0 |    1 |
+| converter_controller_0_0         |    1 |
+| converter_blk_mem_gen_1_1        |    1 |
+| converter_blk_mem_gen_0_0        |    1 |
+| converter_auto_pc_0              |    1 |
+| converter_DCT_2D_0_0             |    1 |
+| converter_AXILiteToBRAMIntf_0_0  |    1 |
++----------------------------------+------+
 
 
 10. Instantiated Netlists

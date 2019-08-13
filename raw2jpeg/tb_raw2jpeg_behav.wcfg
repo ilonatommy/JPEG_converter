@@ -11,19 +11,24 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="530125000fs"></ZoomStartTime>
-      <ZoomEndTime time="583975001fs"></ZoomEndTime>
-      <Cursor1Time time="575000000fs"></Cursor1Time>
+      <ZoomStartTime time="402166666fs"></ZoomStartTime>
+      <ZoomEndTime time="436766667fs"></ZoomEndTime>
+      <Cursor1Time time="431000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="186"></NameColumnWidth>
-      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+      <NameColumnWidth column_width="184"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wvobject fp_name="/tb_raw2jpeg/in_dct" type="array">
       <obj_property name="ElementShortName">in_dct[7:0]</obj_property>
       <obj_property name="ObjectShortName">in_dct[7:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_input" type="array">
+      <obj_property name="ElementShortName">addr_input[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_input[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_raw2jpeg/out_quant" type="array">
       <obj_property name="ElementShortName">out_quant[7:0]</obj_property>
@@ -35,15 +40,10 @@
       <obj_property name="ObjectShortName">out_dct_in_quant[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/addr_input" type="array">
-      <obj_property name="ElementShortName">addr_input[5:0]</obj_property>
-      <obj_property name="ObjectShortName">addr_input[5:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_raw2jpeg/addr_quant" type="array">
       <obj_property name="ElementShortName">addr_quant[5:0]</obj_property>
       <obj_property name="ObjectShortName">addr_quant[5:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_raw2jpeg/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>

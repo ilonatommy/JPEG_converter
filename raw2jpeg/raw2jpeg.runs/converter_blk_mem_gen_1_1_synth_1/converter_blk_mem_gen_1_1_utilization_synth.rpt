@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Aug  8 13:38:53 2019
+| Date         : Fri Aug  9 10:44:12 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file converter_blk_mem_gen_1_1_utilization_synth.rpt -pb converter_blk_mem_gen_1_1_utilization_synth.pb
 | Design       : converter_blk_mem_gen_1_1

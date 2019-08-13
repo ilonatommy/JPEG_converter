@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Wed Aug  7 12:46:45 2019
+// Date        : Tue Aug 13 12:11:18 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top DCT_2D_0 -prefix
-//               DCT_2D_0_ DCT_2D_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0_sim_netlist.v
 // Design      : DCT_2D_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,6 +12,35 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+(* CHECK_LICENSE_TYPE = "DCT_2D_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
+(* NotValidForBitStream *)
+module DCT_2D_0
+   (pixel_in,
+    pixel_out,
+    clk,
+    ce,
+    rst);
+  input [7:0]pixel_in;
+  output [13:0]pixel_out;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
+  input ce;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
+
+  wire ce;
+  wire clk;
+  wire [7:0]pixel_in;
+  wire [13:0]pixel_out;
+  wire rst;
+
+  DCT_2D_0_DCT_2D inst
+       (.ce(ce),
+        .clk(clk),
+        .pixel_in(pixel_in),
+        .pixel_out(pixel_out),
+        .rst(rst));
+endmodule
+
+(* ORIG_REF_NAME = "DCT" *) 
 module DCT_2D_0_DCT
    (D,
     clk,
@@ -726,7 +755,7 @@ module DCT_2D_0_DCT
         .\code_mo3_reg[1]_0 ({s2_n_22,s2_n_23,s2_n_24,s2_n_25}),
         .\code_mo3_reg[1]_1 (s2_n_13));
   DCT_2D_0_full_adder__parameterized2_36 a5
-       (.O96({a5_n_0,a5_n_1,a5_n_2,a5_n_3,a5_n_4,a5_n_5,a5_n_6,a5_n_7,a5_n_8,a5_n_9,a5_n_10}),
+       (.O99({a5_n_0,a5_n_1,a5_n_2,a5_n_3,a5_n_4,a5_n_5,a5_n_6,a5_n_7,a5_n_8,a5_n_9,a5_n_10}),
         .Q({r10_n_1,r10_n_2,r10_n_3,r10_n_4,r10_n_5,r10_n_6,r10_n_7,r10_n_8,r10_n_9,r10_n_10}),
         .S({m_n_12,m_n_13,m_n_14,m_n_15}),
         .code_mo4_reg({m_n_16,m_n_17,m_n_18,m_n_19}),
@@ -1152,7 +1181,7 @@ module DCT_2D_0_DCT
         .\tmp_reg[7]_2 ({r12_n_8,r12_n_9,r12_n_10,r12_n_11}));
   DCT_2D_0_full_subtractor__parameterized0_60 s3
        (.D({s3_n_0,s3_n_1,s3_n_2,s3_n_3,s3_n_4,s3_n_5,s3_n_6,s3_n_7,s3_n_8,s3_n_9,s3_n_10,s3_n_11,s3_n_12,s3_n_13}),
-        .I127({r6_n_5,r6_n_6,r6_n_7,r6_n_8,r6_n_9,r6_n_10,r6_n_11,r6_n_12,r6_n_13,r6_n_14,r6_n_15,r6_n_16}),
+        .I129({r6_n_5,r6_n_6,r6_n_7,r6_n_8,r6_n_9,r6_n_10,r6_n_11,r6_n_12,r6_n_13,r6_n_14,r6_n_15,r6_n_16}),
         .Q(r5_n_0),
         .S(r6_n_0),
         .\tmp_reg[11] ({r6_n_21,r6_n_22,r6_n_23,r6_n_24}),
@@ -2164,7 +2193,7 @@ module DCT_2D_0_DCT_0
         .\code_mo3_reg[1]_0 ({s2_n_22,s2_n_23,s2_n_24,s2_n_25}),
         .\code_mo3_reg[1]_1 (s2_n_13));
   DCT_2D_0_full_adder__parameterized2 a5
-       (.O100({a5_n_0,a5_n_1,a5_n_2,a5_n_3,a5_n_4,a5_n_5,a5_n_6,a5_n_7,a5_n_8,a5_n_9,a5_n_10,a5_n_11,a5_n_12,a5_n_13}),
+       (.O103({a5_n_0,a5_n_1,a5_n_2,a5_n_3,a5_n_4,a5_n_5,a5_n_6,a5_n_7,a5_n_8,a5_n_9,a5_n_10,a5_n_11,a5_n_12,a5_n_13}),
         .Q({r10_n_0,r10_n_1,r10_n_2,r10_n_3,r10_n_4,r10_n_5,r10_n_6,r10_n_7,r10_n_8,r10_n_9,r10_n_10,r10_n_11}),
         .S({m_n_18,m_n_19,m_n_20,m_n_21}),
         .code_mo4_reg({m_n_22,m_n_23,m_n_24,m_n_25}),
@@ -2772,7 +2801,7 @@ module DCT_2D_0_DCT_0
         .\tmp_reg[8] (r12_n_24));
   DCT_2D_0_full_subtractor__parameterized0_11 s3
        (.D({s3_n_0,s3_n_1,s3_n_2,s3_n_3,s3_n_4,s3_n_5,s3_n_6,s3_n_7,s3_n_8,s3_n_9,s3_n_10,s3_n_11,s3_n_12,s3_n_13}),
-        .I138({r6_n_5,r6_n_6,r6_n_7,r6_n_8,r6_n_9,r6_n_10,r6_n_11,r6_n_12,r6_n_13,r6_n_14,r6_n_15,r6_n_16}),
+        .I140({r6_n_5,r6_n_6,r6_n_7,r6_n_8,r6_n_9,r6_n_10,r6_n_11,r6_n_12,r6_n_13,r6_n_14,r6_n_15,r6_n_16}),
         .Q(r5_n_0),
         .S(r6_n_0),
         .\tmp_reg[11] ({r6_n_21,r6_n_22,r6_n_23,r6_n_24}),
@@ -2790,6 +2819,7 @@ module DCT_2D_0_DCT_0
         .\tmp_reg[7]_0 ({r21_n_16,r21_n_17,r21_n_18,r21_n_19}));
 endmodule
 
+(* ORIG_REF_NAME = "DCT_2D" *) 
 module DCT_2D_0_DCT_2D
    (pixel_out,
     rst,
@@ -2805,6 +2835,7 @@ module DCT_2D_0_DCT_2D
   wire ce;
   wire ce_mod2_i_1_n_0;
   wire ce_mod2_i_2_n_0;
+  wire ce_mod2_i_3_n_0;
   wire ce_mod2_reg_n_0;
   wire clk;
   wire \cnt[0]_rep_i_1_n_0 ;
@@ -3603,47 +3634,43 @@ module DCT_2D_0_DCT_2D
   wire \rc_77_reg_n_0_[9] ;
   wire rst;
   wire rst_mod2;
-  wire trigger_mod2_ce;
-  wire \trigger_mod2_ce[0]_i_1_n_0 ;
-  wire \trigger_mod2_ce[1]_i_1_n_0 ;
-  wire \trigger_mod2_ce[2]_i_1_n_0 ;
-  wire \trigger_mod2_ce[3]_i_1_n_0 ;
-  wire \trigger_mod2_ce[4]_i_1_n_0 ;
-  wire \trigger_mod2_ce[5]_i_1_n_0 ;
+  wire [6:0]trigger_mod2_ce;
+  wire \trigger_mod2_ce[6]_i_10_n_0 ;
+  wire \trigger_mod2_ce[6]_i_1_n_0 ;
   wire \trigger_mod2_ce[6]_i_2_n_0 ;
-  wire \trigger_mod2_ce[6]_i_3_n_0 ;
   wire \trigger_mod2_ce[6]_i_4_n_0 ;
   wire \trigger_mod2_ce[6]_i_5_n_0 ;
   wire \trigger_mod2_ce[6]_i_6_n_0 ;
   wire \trigger_mod2_ce[6]_i_7_n_0 ;
-  wire \trigger_mod2_ce[6]_i_9_n_0 ;
-  wire \trigger_mod2_ce_reg_n_0_[0] ;
-  wire \trigger_mod2_ce_reg_n_0_[1] ;
-  wire \trigger_mod2_ce_reg_n_0_[2] ;
-  wire \trigger_mod2_ce_reg_n_0_[3] ;
-  wire \trigger_mod2_ce_reg_n_0_[4] ;
-  wire \trigger_mod2_ce_reg_n_0_[5] ;
-  wire \trigger_mod2_ce_reg_n_0_[6] ;
+  wire \trigger_mod2_ce[6]_i_8_n_0 ;
+  wire [6:0]trigger_mod2_ce__7;
 
-  LUT6 #(
-    .INIT(64'h444444444444444F)) 
+  LUT5 #(
+    .INIT(32'h444F4444)) 
     ce_mod2_i_1
        (.I0(rst),
         .I1(ce_mod2_reg_n_0),
         .I2(ce_mod2_i_2_n_0),
-        .I3(\trigger_mod2_ce_reg_n_0_[5] ),
-        .I4(\trigger_mod2_ce_reg_n_0_[4] ),
-        .I5(\trigger_mod2_ce_reg_n_0_[2] ),
+        .I3(ce_mod2_i_3_n_0),
+        .I4(ce),
         .O(ce_mod2_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
-  LUT4 #(
-    .INIT(16'h7FFF)) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  LUT3 #(
+    .INIT(8'hFD)) 
     ce_mod2_i_2
-       (.I0(\trigger_mod2_ce_reg_n_0_[3] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[6] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I3(\trigger_mod2_ce_reg_n_0_[1] ),
+       (.I0(trigger_mod2_ce[3]),
+        .I1(trigger_mod2_ce[1]),
+        .I2(trigger_mod2_ce[5]),
         .O(ce_mod2_i_2_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  LUT4 #(
+    .INIT(16'hFEFF)) 
+    ce_mod2_i_3
+       (.I0(trigger_mod2_ce[0]),
+        .I1(trigger_mod2_ce[4]),
+        .I2(trigger_mod2_ce[2]),
+        .I3(trigger_mod2_ce[6]),
+        .O(ce_mod2_i_3_n_0));
   FDRE #(
     .INIT(1'b0)) 
     ce_mod2_reg
@@ -3652,7 +3679,7 @@ module DCT_2D_0_DCT_2D
         .D(ce_mod2_i_1_n_0),
         .Q(ce_mod2_reg_n_0),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \cnt[0]_i_1 
@@ -3663,7 +3690,7 @@ module DCT_2D_0_DCT_2D
     \cnt[0]_rep_i_1 
        (.I0(cnt_reg__0[0]),
         .O(\cnt[0]_rep_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \cnt[1]_i_1 
@@ -3891,7 +3918,6 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[3]),
         .I5(\rc_00[10]_i_3_n_0 ),
         .O(rc_00));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \rc_00[10]_i_3 
@@ -4506,7 +4532,6 @@ module DCT_2D_0_DCT_2D
         .I4(\cnt_reg[0]_rep_n_0 ),
         .I5(cnt_reg__0[5]),
         .O(rc_10));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \rc_10[10]_i_2 
@@ -4900,7 +4925,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[3]),
         .I5(cnt_reg__0[5]),
         .O(rc_15));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \rc_15[10]_i_2 
@@ -4983,7 +5008,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[4]),
         .I5(\rc_16[10]_i_2_n_0 ),
         .O(rc_16));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \rc_16[10]_i_2 
@@ -5066,7 +5091,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[2]),
         .I5(cnt_reg__0[5]),
         .O(rc_17));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \rc_17[10]_i_2 
@@ -6068,7 +6093,7 @@ module DCT_2D_0_DCT_2D
         .I4(\cnt_reg[1]_rep_n_0 ),
         .I5(\rc_34[10]_i_2_n_0 ),
         .O(rc_34));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \rc_34[10]_i_2 
@@ -6994,7 +7019,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[2]),
         .I5(\cnt_reg[0]_rep_n_0 ),
         .O(rc_50));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \rc_50[10]_i_2 
@@ -7457,7 +7482,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[2]),
         .I5(\cnt_reg[0]_rep_n_0 ),
         .O(rc_56));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \rc_56[10]_i_2 
@@ -7616,7 +7641,7 @@ module DCT_2D_0_DCT_2D
         .I4(cnt_reg__0[2]),
         .I5(cnt_reg__0[0]),
         .O(rc_60));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \rc_60[10]_i_2 
@@ -8844,247 +8869,231 @@ module DCT_2D_0_DCT_2D
         .D(rst),
         .Q(rst_mod2),
         .R(1'b0));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT6 #(
+    .INIT(64'h00000000FEFFFFFF)) 
     \trigger_mod2_ce[0]_i_1 
-       (.I0(\trigger_mod2_ce_reg_n_0_[0] ),
-        .O(\trigger_mod2_ce[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+       (.I0(\trigger_mod2_ce[6]_i_5_n_0 ),
+        .I1(trigger_mod2_ce[1]),
+        .I2(trigger_mod2_ce[2]),
+        .I3(\trigger_mod2_ce[6]_i_8_n_0 ),
+        .I4(trigger_mod2_ce[6]),
+        .I5(trigger_mod2_ce[0]),
+        .O(trigger_mod2_ce__7[0]));
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \trigger_mod2_ce[1]_i_1 
-       (.I0(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[1] ),
-        .O(\trigger_mod2_ce[1]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h00FFFFFFBF000000)) 
+       (.I0(trigger_mod2_ce[0]),
+        .I1(trigger_mod2_ce[1]),
+        .O(trigger_mod2_ce__7[1]));
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
     \trigger_mod2_ce[2]_i_1 
-       (.I0(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I1(\trigger_mod2_ce[6]_i_7_n_0 ),
-        .I2(\trigger_mod2_ce_reg_n_0_[6] ),
-        .I3(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I4(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I5(\trigger_mod2_ce_reg_n_0_[2] ),
-        .O(\trigger_mod2_ce[2]_i_1_n_0 ));
+       (.I0(trigger_mod2_ce[0]),
+        .I1(trigger_mod2_ce[1]),
+        .I2(trigger_mod2_ce[2]),
+        .O(trigger_mod2_ce__7[2]));
   LUT6 #(
-    .INIT(64'hEFFFFFFF00000000)) 
+    .INIT(64'hFEFFFFFF00000000)) 
     \trigger_mod2_ce[3]_i_1 
-       (.I0(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I1(\trigger_mod2_ce[6]_i_5_n_0 ),
-        .I2(\trigger_mod2_ce[6]_i_6_n_0 ),
-        .I3(\trigger_mod2_ce[6]_i_7_n_0 ),
-        .I4(\trigger_mod2_ce_reg_n_0_[6] ),
+       (.I0(\trigger_mod2_ce[6]_i_5_n_0 ),
+        .I1(\trigger_mod2_ce[6]_i_6_n_0 ),
+        .I2(\trigger_mod2_ce[6]_i_7_n_0 ),
+        .I3(\trigger_mod2_ce[6]_i_8_n_0 ),
+        .I4(trigger_mod2_ce[6]),
         .I5(data0[3]),
-        .O(\trigger_mod2_ce[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+        .O(trigger_mod2_ce__7[3]));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \trigger_mod2_ce[3]_i_2 
-       (.I0(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I3(\trigger_mod2_ce_reg_n_0_[3] ),
+       (.I0(trigger_mod2_ce[1]),
+        .I1(trigger_mod2_ce[0]),
+        .I2(trigger_mod2_ce[2]),
+        .I3(trigger_mod2_ce[3]),
         .O(data0[3]));
   LUT6 #(
-    .INIT(64'hEFFFFFFF00000000)) 
+    .INIT(64'hFEFFFFFF00000000)) 
     \trigger_mod2_ce[4]_i_1 
-       (.I0(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I1(\trigger_mod2_ce[6]_i_5_n_0 ),
-        .I2(\trigger_mod2_ce[6]_i_6_n_0 ),
-        .I3(\trigger_mod2_ce[6]_i_7_n_0 ),
-        .I4(\trigger_mod2_ce_reg_n_0_[6] ),
+       (.I0(\trigger_mod2_ce[6]_i_5_n_0 ),
+        .I1(\trigger_mod2_ce[6]_i_6_n_0 ),
+        .I2(\trigger_mod2_ce[6]_i_7_n_0 ),
+        .I3(\trigger_mod2_ce[6]_i_8_n_0 ),
+        .I4(trigger_mod2_ce[6]),
         .I5(data0[4]),
-        .O(\trigger_mod2_ce[4]_i_1_n_0 ));
+        .O(trigger_mod2_ce__7[4]));
   (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
     .INIT(32'h7FFF8000)) 
     \trigger_mod2_ce[4]_i_2 
-       (.I0(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I3(\trigger_mod2_ce_reg_n_0_[3] ),
-        .I4(\trigger_mod2_ce_reg_n_0_[4] ),
+       (.I0(trigger_mod2_ce[2]),
+        .I1(trigger_mod2_ce[0]),
+        .I2(trigger_mod2_ce[1]),
+        .I3(trigger_mod2_ce[3]),
+        .I4(trigger_mod2_ce[4]),
         .O(data0[4]));
   LUT6 #(
-    .INIT(64'hEFFFFFFF00000000)) 
+    .INIT(64'hFEFFFFFF00000000)) 
     \trigger_mod2_ce[5]_i_1 
-       (.I0(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I1(\trigger_mod2_ce[6]_i_5_n_0 ),
-        .I2(\trigger_mod2_ce[6]_i_6_n_0 ),
-        .I3(\trigger_mod2_ce[6]_i_7_n_0 ),
-        .I4(\trigger_mod2_ce_reg_n_0_[6] ),
+       (.I0(\trigger_mod2_ce[6]_i_5_n_0 ),
+        .I1(\trigger_mod2_ce[6]_i_6_n_0 ),
+        .I2(\trigger_mod2_ce[6]_i_7_n_0 ),
+        .I3(\trigger_mod2_ce[6]_i_8_n_0 ),
+        .I4(trigger_mod2_ce[6]),
         .I5(data0[5]),
-        .O(\trigger_mod2_ce[5]_i_1_n_0 ));
+        .O(trigger_mod2_ce__7[5]));
   LUT6 #(
     .INIT(64'h7FFFFFFF80000000)) 
     \trigger_mod2_ce[5]_i_2 
-       (.I0(\trigger_mod2_ce_reg_n_0_[3] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I3(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I4(\trigger_mod2_ce_reg_n_0_[4] ),
-        .I5(\trigger_mod2_ce_reg_n_0_[5] ),
+       (.I0(trigger_mod2_ce[3]),
+        .I1(trigger_mod2_ce[1]),
+        .I2(trigger_mod2_ce[0]),
+        .I3(trigger_mod2_ce[2]),
+        .I4(trigger_mod2_ce[4]),
+        .I5(trigger_mod2_ce[5]),
         .O(data0[5]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFF7)) 
-    \trigger_mod2_ce[6]_i_1 
-       (.I0(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I2(\trigger_mod2_ce[6]_i_3_n_0 ),
-        .I3(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I4(rst),
-        .I5(\trigger_mod2_ce_reg_n_0_[2] ),
-        .O(trigger_mod2_ce));
-  LUT6 #(
-    .INIT(64'hEFFFFFFF00000000)) 
-    \trigger_mod2_ce[6]_i_2 
-       (.I0(\trigger_mod2_ce[6]_i_4_n_0 ),
-        .I1(\trigger_mod2_ce[6]_i_5_n_0 ),
-        .I2(\trigger_mod2_ce[6]_i_6_n_0 ),
-        .I3(\trigger_mod2_ce[6]_i_7_n_0 ),
-        .I4(\trigger_mod2_ce_reg_n_0_[6] ),
-        .I5(data0[6]),
-        .O(\trigger_mod2_ce[6]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'h4)) 
+    \trigger_mod2_ce[6]_i_1 
+       (.I0(ce),
+        .I1(rst),
+        .O(\trigger_mod2_ce[6]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \trigger_mod2_ce[6]_i_10 
+       (.I0(trigger_mod2_ce[4]),
+        .I1(trigger_mod2_ce[2]),
+        .I2(trigger_mod2_ce[0]),
+        .I3(trigger_mod2_ce[1]),
+        .I4(trigger_mod2_ce[3]),
+        .O(\trigger_mod2_ce[6]_i_10_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFBF0000)) 
+    \trigger_mod2_ce[6]_i_2 
+       (.I0(trigger_mod2_ce[4]),
+        .I1(trigger_mod2_ce[6]),
+        .I2(trigger_mod2_ce[3]),
+        .I3(\trigger_mod2_ce[6]_i_4_n_0 ),
+        .I4(ce),
+        .I5(rst),
+        .O(\trigger_mod2_ce[6]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hFEFFFFFF00000000)) 
     \trigger_mod2_ce[6]_i_3 
-       (.I0(\trigger_mod2_ce_reg_n_0_[6] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[3] ),
-        .O(\trigger_mod2_ce[6]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+       (.I0(\trigger_mod2_ce[6]_i_5_n_0 ),
+        .I1(\trigger_mod2_ce[6]_i_6_n_0 ),
+        .I2(\trigger_mod2_ce[6]_i_7_n_0 ),
+        .I3(\trigger_mod2_ce[6]_i_8_n_0 ),
+        .I4(trigger_mod2_ce[6]),
+        .I5(data0[6]),
+        .O(trigger_mod2_ce__7[6]));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \trigger_mod2_ce[6]_i_4 
+       (.I0(trigger_mod2_ce[2]),
+        .I1(trigger_mod2_ce[5]),
+        .I2(trigger_mod2_ce[0]),
+        .I3(trigger_mod2_ce[1]),
+        .O(\trigger_mod2_ce[6]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT2 #(
     .INIT(4'hE)) 
-    \trigger_mod2_ce[6]_i_4 
-       (.I0(\trigger_mod2_ce_reg_n_0_[4] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[5] ),
-        .O(\trigger_mod2_ce[6]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
-  LUT2 #(
-    .INIT(4'hB)) 
     \trigger_mod2_ce[6]_i_5 
-       (.I0(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[1] ),
+       (.I0(trigger_mod2_ce[4]),
+        .I1(trigger_mod2_ce[5]),
         .O(\trigger_mod2_ce[6]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
-  LUT3 #(
-    .INIT(8'hEA)) 
+  LUT2 #(
+    .INIT(4'hE)) 
     \trigger_mod2_ce[6]_i_6 
-       (.I0(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[0] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[1] ),
+       (.I0(trigger_mod2_ce[1]),
+        .I1(trigger_mod2_ce[2]),
         .O(\trigger_mod2_ce[6]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hBA)) 
     \trigger_mod2_ce[6]_i_7 
-       (.I0(\trigger_mod2_ce_reg_n_0_[5] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[4] ),
-        .I2(\trigger_mod2_ce_reg_n_0_[3] ),
+       (.I0(trigger_mod2_ce[2]),
+        .I1(trigger_mod2_ce[1]),
+        .I2(trigger_mod2_ce[0]),
         .O(\trigger_mod2_ce[6]_i_7_n_0 ));
-  LUT6 #(
-    .INIT(64'hF7FFFFFF08000000)) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  LUT3 #(
+    .INIT(8'hBA)) 
     \trigger_mod2_ce[6]_i_8 
-       (.I0(\trigger_mod2_ce_reg_n_0_[4] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[2] ),
-        .I2(\trigger_mod2_ce[6]_i_9_n_0 ),
-        .I3(\trigger_mod2_ce_reg_n_0_[3] ),
-        .I4(\trigger_mod2_ce_reg_n_0_[5] ),
-        .I5(\trigger_mod2_ce_reg_n_0_[6] ),
-        .O(data0[6]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
-  LUT2 #(
-    .INIT(4'h7)) 
+       (.I0(trigger_mod2_ce[5]),
+        .I1(trigger_mod2_ce[4]),
+        .I2(trigger_mod2_ce[3]),
+        .O(\trigger_mod2_ce[6]_i_8_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
     \trigger_mod2_ce[6]_i_9 
-       (.I0(\trigger_mod2_ce_reg_n_0_[1] ),
-        .I1(\trigger_mod2_ce_reg_n_0_[0] ),
-        .O(\trigger_mod2_ce[6]_i_9_n_0 ));
+       (.I0(\trigger_mod2_ce[6]_i_10_n_0 ),
+        .I1(trigger_mod2_ce[5]),
+        .I2(trigger_mod2_ce[6]),
+        .O(data0[6]));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[0] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[0]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[0] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[0]),
+        .Q(trigger_mod2_ce[0]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[1] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[1]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[1] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[1]),
+        .Q(trigger_mod2_ce[1]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[2] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[2]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[2] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[2]),
+        .Q(trigger_mod2_ce[2]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[3] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[3]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[3] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[3]),
+        .Q(trigger_mod2_ce[3]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[4] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[4]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[4] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[4]),
+        .Q(trigger_mod2_ce[4]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[5] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[5]_i_1_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[5] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[5]),
+        .Q(trigger_mod2_ce[5]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \trigger_mod2_ce_reg[6] 
        (.C(clk),
-        .CE(trigger_mod2_ce),
-        .D(\trigger_mod2_ce[6]_i_2_n_0 ),
-        .Q(\trigger_mod2_ce_reg_n_0_[6] ),
-        .R(1'b0));
+        .CE(\trigger_mod2_ce[6]_i_2_n_0 ),
+        .D(trigger_mod2_ce__7[6]),
+        .Q(trigger_mod2_ce[6]),
+        .R(\trigger_mod2_ce[6]_i_1_n_0 ));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "DCT_2D_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
-(* NotValidForBitStream *)
-module DCT_2D_0
-   (pixel_in,
-    pixel_out,
-    clk,
-    ce,
-    rst);
-  input [7:0]pixel_in;
-  output [13:0]pixel_out;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
-  input ce;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
-
-  wire ce;
-  wire clk;
-  wire [7:0]pixel_in;
-  wire [13:0]pixel_out;
-  wire rst;
-
-  DCT_2D_0_DCT_2D inst
-       (.ce(ce),
-        .clk(clk),
-        .pixel_in(pixel_in),
-        .pixel_out(pixel_out),
-        .rst(rst));
-endmodule
-
+(* ORIG_REF_NAME = "RAM" *) 
 module DCT_2D_0_RAM
    (S,
     p_0_out,
@@ -13765,6 +13774,7 @@ module DCT_2D_0_RAM_38
         .O(D));
 endmodule
 
+(* ORIG_REF_NAME = "delay" *) 
 module DCT_2D_0_delay
    (\tmp_reg[11]_0 ,
     Q,
@@ -21409,6 +21419,7 @@ module DCT_2D_0_delay__parameterized2_83
         .R(rst));
 endmodule
 
+(* ORIG_REF_NAME = "full_adder" *) 
 module DCT_2D_0_full_adder
    (O,
     \tmp_reg[7] ,
@@ -22257,20 +22268,20 @@ endmodule
 
 (* ORIG_REF_NAME = "full_adder" *) 
 module DCT_2D_0_full_adder__parameterized2
-   (O100,
+   (O103,
     Q,
     S,
     code_mo4_reg,
     code_mo4_reg_0,
     code_mo4_reg_1);
-  output [13:0]O100;
+  output [13:0]O103;
   input [11:0]Q;
   input [3:0]S;
   input [3:0]code_mo4_reg;
   input [3:0]code_mo4_reg_0;
   input [1:0]code_mo4_reg_1;
 
-  wire [13:0]O100;
+  wire [13:0]O103;
   wire [11:0]Q;
   wire [3:0]S;
   wire S_carry__0_n_0;
@@ -22297,45 +22308,45 @@ module DCT_2D_0_full_adder__parameterized2
         .CO({S_carry_n_0,S_carry_n_1,S_carry_n_2,S_carry_n_3}),
         .CYINIT(1'b0),
         .DI(Q[3:0]),
-        .O(O100[3:0]),
+        .O(O103[3:0]),
         .S(S));
   CARRY4 S_carry__0
        (.CI(S_carry_n_0),
         .CO({S_carry__0_n_0,S_carry__0_n_1,S_carry__0_n_2,S_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI(Q[7:4]),
-        .O(O100[7:4]),
+        .O(O103[7:4]),
         .S(code_mo4_reg));
   CARRY4 S_carry__1
        (.CI(S_carry__0_n_0),
         .CO({S_carry__1_n_0,S_carry__1_n_1,S_carry__1_n_2,S_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI(Q[11:8]),
-        .O(O100[11:8]),
+        .O(O103[11:8]),
         .S(code_mo4_reg_0));
   CARRY4 S_carry__2
        (.CI(S_carry__1_n_0),
         .CO({NLW_S_carry__2_CO_UNCONNECTED[3:1],S_carry__2_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_S_carry__2_O_UNCONNECTED[3:2],O100[13:12]}),
+        .O({NLW_S_carry__2_O_UNCONNECTED[3:2],O103[13:12]}),
         .S({1'b0,1'b0,code_mo4_reg_1}));
 endmodule
 
 (* ORIG_REF_NAME = "full_adder" *) 
 module DCT_2D_0_full_adder__parameterized2_36
-   (O96,
+   (O99,
     Q,
     S,
     code_mo4_reg,
     code_mo4_reg_0);
-  output [10:0]O96;
+  output [10:0]O99;
   input [9:0]Q;
   input [3:0]S;
   input [3:0]code_mo4_reg;
   input [2:0]code_mo4_reg_0;
 
-  wire [10:0]O96;
+  wire [10:0]O99;
   wire [9:0]Q;
   wire [3:0]S;
   wire S_carry__0_n_0;
@@ -22358,21 +22369,21 @@ module DCT_2D_0_full_adder__parameterized2_36
         .CO({S_carry_n_0,S_carry_n_1,S_carry_n_2,S_carry_n_3}),
         .CYINIT(1'b0),
         .DI(Q[3:0]),
-        .O(O96[3:0]),
+        .O(O99[3:0]),
         .S(S));
   CARRY4 S_carry__0
        (.CI(S_carry_n_0),
         .CO({S_carry__0_n_0,S_carry__0_n_1,S_carry__0_n_2,S_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI(Q[7:4]),
-        .O(O96[7:4]),
+        .O(O99[7:4]),
         .S(code_mo4_reg));
   CARRY4 S_carry__1
        (.CI(S_carry__0_n_0),
         .CO({NLW_S_carry__1_CO_UNCONNECTED[3:2],S_carry__1_n_2,S_carry__1_n_3}),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,Q[9:8]}),
-        .O({NLW_S_carry__1_O_UNCONNECTED[3],O96[10:8]}),
+        .O({NLW_S_carry__1_O_UNCONNECTED[3],O99[10:8]}),
         .S({1'b0,code_mo4_reg_0}));
 endmodule
 
@@ -22512,6 +22523,7 @@ module DCT_2D_0_full_adder__parameterized3_37
         .S({1'b0,\tmp_reg[10] }));
 endmodule
 
+(* ORIG_REF_NAME = "full_subtractor" *) 
 module DCT_2D_0_full_subtractor
    (D,
     CO,
@@ -22840,14 +22852,14 @@ endmodule
 (* ORIG_REF_NAME = "full_subtractor" *) 
 module DCT_2D_0_full_subtractor__parameterized0_11
    (D,
-    I138,
+    I140,
     \tmp_reg[3] ,
     \tmp_reg[7] ,
     \tmp_reg[11] ,
     Q,
     S);
   output [13:0]D;
-  input [11:0]I138;
+  input [11:0]I140;
   input [3:0]\tmp_reg[3] ;
   input [3:0]\tmp_reg[7] ;
   input [3:0]\tmp_reg[11] ;
@@ -22855,7 +22867,7 @@ module DCT_2D_0_full_subtractor__parameterized0_11
   input [0:0]S;
 
   wire [13:0]D;
-  wire [11:0]I138;
+  wire [11:0]I140;
   wire [0:0]Q;
   wire [0:0]S;
   wire S_carry__0_n_0;
@@ -22881,21 +22893,21 @@ module DCT_2D_0_full_subtractor__parameterized0_11
        (.CI(1'b0),
         .CO({S_carry_n_0,S_carry_n_1,S_carry_n_2,S_carry_n_3}),
         .CYINIT(1'b1),
-        .DI(I138[3:0]),
+        .DI(I140[3:0]),
         .O(D[3:0]),
         .S(\tmp_reg[3] ));
   CARRY4 S_carry__0
        (.CI(S_carry_n_0),
         .CO({S_carry__0_n_0,S_carry__0_n_1,S_carry__0_n_2,S_carry__0_n_3}),
         .CYINIT(1'b0),
-        .DI(I138[7:4]),
+        .DI(I140[7:4]),
         .O(D[7:4]),
         .S(\tmp_reg[7] ));
   CARRY4 S_carry__1
        (.CI(S_carry__0_n_0),
         .CO({S_carry__1_n_0,S_carry__1_n_1,S_carry__1_n_2,S_carry__1_n_3}),
         .CYINIT(1'b0),
-        .DI(I138[11:8]),
+        .DI(I140[11:8]),
         .O(D[11:8]),
         .S(\tmp_reg[11] ));
   CARRY4 S_carry__2
@@ -23116,14 +23128,14 @@ endmodule
 (* ORIG_REF_NAME = "full_subtractor" *) 
 module DCT_2D_0_full_subtractor__parameterized0_60
    (D,
-    I127,
+    I129,
     \tmp_reg[3] ,
     \tmp_reg[7] ,
     \tmp_reg[11] ,
     Q,
     S);
   output [13:0]D;
-  input [11:0]I127;
+  input [11:0]I129;
   input [3:0]\tmp_reg[3] ;
   input [3:0]\tmp_reg[7] ;
   input [3:0]\tmp_reg[11] ;
@@ -23131,7 +23143,7 @@ module DCT_2D_0_full_subtractor__parameterized0_60
   input [0:0]S;
 
   wire [13:0]D;
-  wire [11:0]I127;
+  wire [11:0]I129;
   wire [0:0]Q;
   wire [0:0]S;
   wire S_carry__0_n_0;
@@ -23157,21 +23169,21 @@ module DCT_2D_0_full_subtractor__parameterized0_60
        (.CI(1'b0),
         .CO({S_carry_n_0,S_carry_n_1,S_carry_n_2,S_carry_n_3}),
         .CYINIT(1'b1),
-        .DI(I127[3:0]),
+        .DI(I129[3:0]),
         .O(D[3:0]),
         .S(\tmp_reg[3] ));
   CARRY4 S_carry__0
        (.CI(S_carry_n_0),
         .CO({S_carry__0_n_0,S_carry__0_n_1,S_carry__0_n_2,S_carry__0_n_3}),
         .CYINIT(1'b0),
-        .DI(I127[7:4]),
+        .DI(I129[7:4]),
         .O(D[7:4]),
         .S(\tmp_reg[7] ));
   CARRY4 S_carry__1
        (.CI(S_carry__0_n_0),
         .CO({S_carry__1_n_0,S_carry__1_n_1,S_carry__1_n_2,S_carry__1_n_3}),
         .CYINIT(1'b0),
-        .DI(I127[11:8]),
+        .DI(I129[11:8]),
         .O(D[11:8]),
         .S(\tmp_reg[11] ));
   CARRY4 S_carry__2
@@ -23613,6 +23625,7 @@ module DCT_2D_0_mux_3i__parameterized0_40
         .O(B[5]));
 endmodule
 
+(* ORIG_REF_NAME = "reg_mult" *) 
 module DCT_2D_0_reg_mult
    (P,
     \tmp_reg[13] ,

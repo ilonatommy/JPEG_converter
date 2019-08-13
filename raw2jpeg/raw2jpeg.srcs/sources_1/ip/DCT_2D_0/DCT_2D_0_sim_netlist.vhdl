@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Wed Aug  7 12:46:45 2019
+-- Date        : Tue Aug 13 12:11:18 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top DCT_2D_0 -prefix
---               DCT_2D_0_ DCT_2D_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0_sim_netlist.vhdl
 -- Design      : DCT_2D_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -159,6 +159,8 @@ entity DCT_2D_0_RAM is
     rst_mod2 : in STD_LOGIC;
     clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_RAM : entity is "RAM";
 end DCT_2D_0_RAM;
 
 architecture STRUCTURE of DCT_2D_0_RAM is
@@ -5773,6 +5775,8 @@ entity DCT_2D_0_delay is
     ce_mod2_reg : in STD_LOGIC;
     clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_delay : entity is "delay";
 end DCT_2D_0_delay;
 
 architecture STRUCTURE of DCT_2D_0_delay is
@@ -15040,6 +15044,8 @@ entity DCT_2D_0_full_adder is
     \tmp_reg[10]\ : in STD_LOGIC;
     \tmp_reg[11]_1\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_full_adder : entity is "full_adder";
 end DCT_2D_0_full_adder;
 
 architecture STRUCTURE of DCT_2D_0_full_adder is
@@ -15979,7 +15985,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \DCT_2D_0_full_adder__parameterized2\ is
   port (
-    O100 : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    O103 : out STD_LOGIC_VECTOR ( 13 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 11 downto 0 );
     S : in STD_LOGIC_VECTOR ( 3 downto 0 );
     code_mo4_reg : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -16016,7 +16022,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(0) => S_carry_n_3,
       CYINIT => '0',
       DI(3 downto 0) => Q(3 downto 0),
-      O(3 downto 0) => O100(3 downto 0),
+      O(3 downto 0) => O103(3 downto 0),
       S(3 downto 0) => S(3 downto 0)
     );
 \S_carry__0\: unisim.vcomponents.CARRY4
@@ -16028,7 +16034,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(0) => \S_carry__0_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => Q(7 downto 4),
-      O(3 downto 0) => O100(7 downto 4),
+      O(3 downto 0) => O103(7 downto 4),
       S(3 downto 0) => code_mo4_reg(3 downto 0)
     );
 \S_carry__1\: unisim.vcomponents.CARRY4
@@ -16040,7 +16046,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(0) => \S_carry__1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => Q(11 downto 8),
-      O(3 downto 0) => O100(11 downto 8),
+      O(3 downto 0) => O103(11 downto 8),
       S(3 downto 0) => code_mo4_reg_0(3 downto 0)
     );
 \S_carry__2\: unisim.vcomponents.CARRY4
@@ -16052,7 +16058,7 @@ S_carry: unisim.vcomponents.CARRY4
       DI(3 downto 1) => B"000",
       DI(0) => Q(11),
       O(3 downto 2) => \NLW_S_carry__2_O_UNCONNECTED\(3 downto 2),
-      O(1 downto 0) => O100(13 downto 12),
+      O(1 downto 0) => O103(13 downto 12),
       S(3 downto 2) => B"00",
       S(1 downto 0) => code_mo4_reg_1(1 downto 0)
     );
@@ -16063,7 +16069,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity \DCT_2D_0_full_adder__parameterized2_36\ is
   port (
-    O96 : out STD_LOGIC_VECTOR ( 10 downto 0 );
+    O99 : out STD_LOGIC_VECTOR ( 10 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 9 downto 0 );
     S : in STD_LOGIC_VECTOR ( 3 downto 0 );
     code_mo4_reg : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -16096,7 +16102,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(0) => S_carry_n_3,
       CYINIT => '0',
       DI(3 downto 0) => Q(3 downto 0),
-      O(3 downto 0) => O96(3 downto 0),
+      O(3 downto 0) => O99(3 downto 0),
       S(3 downto 0) => S(3 downto 0)
     );
 \S_carry__0\: unisim.vcomponents.CARRY4
@@ -16108,7 +16114,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(0) => \S_carry__0_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => Q(7 downto 4),
-      O(3 downto 0) => O96(7 downto 4),
+      O(3 downto 0) => O99(7 downto 4),
       S(3 downto 0) => code_mo4_reg(3 downto 0)
     );
 \S_carry__1\: unisim.vcomponents.CARRY4
@@ -16121,7 +16127,7 @@ S_carry: unisim.vcomponents.CARRY4
       DI(3 downto 2) => B"00",
       DI(1 downto 0) => Q(9 downto 8),
       O(3) => \NLW_S_carry__1_O_UNCONNECTED\(3),
-      O(2 downto 0) => O96(10 downto 8),
+      O(2 downto 0) => O99(10 downto 8),
       S(3) => '0',
       S(2 downto 0) => code_mo4_reg_0(2 downto 0)
     );
@@ -16298,6 +16304,8 @@ entity DCT_2D_0_full_subtractor is
     DI : in STD_LOGIC_VECTOR ( 0 to 0 );
     \cnt_reg[4]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_full_subtractor : entity is "full_subtractor";
 end DCT_2D_0_full_subtractor;
 
 architecture STRUCTURE of DCT_2D_0_full_subtractor is
@@ -16680,7 +16688,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \DCT_2D_0_full_subtractor__parameterized0_11\ is
   port (
     D : out STD_LOGIC_VECTOR ( 13 downto 0 );
-    I138 : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    I140 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \tmp_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \tmp_reg[7]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \tmp_reg[11]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -16716,7 +16724,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => S_carry_n_2,
       CO(0) => S_carry_n_3,
       CYINIT => '1',
-      DI(3 downto 0) => I138(3 downto 0),
+      DI(3 downto 0) => I140(3 downto 0),
       O(3 downto 0) => D(3 downto 0),
       S(3 downto 0) => \tmp_reg[3]\(3 downto 0)
     );
@@ -16728,7 +16736,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => \S_carry__0_n_2\,
       CO(0) => \S_carry__0_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => I138(7 downto 4),
+      DI(3 downto 0) => I140(7 downto 4),
       O(3 downto 0) => D(7 downto 4),
       S(3 downto 0) => \tmp_reg[7]\(3 downto 0)
     );
@@ -16740,7 +16748,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => \S_carry__1_n_2\,
       CO(0) => \S_carry__1_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => I138(11 downto 8),
+      DI(3 downto 0) => I140(11 downto 8),
       O(3 downto 0) => D(11 downto 8),
       S(3 downto 0) => \tmp_reg[11]\(3 downto 0)
     );
@@ -17009,7 +17017,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity \DCT_2D_0_full_subtractor__parameterized0_60\ is
   port (
     D : out STD_LOGIC_VECTOR ( 13 downto 0 );
-    I127 : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    I129 : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \tmp_reg[3]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \tmp_reg[7]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \tmp_reg[11]\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -17045,7 +17053,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => S_carry_n_2,
       CO(0) => S_carry_n_3,
       CYINIT => '1',
-      DI(3 downto 0) => I127(3 downto 0),
+      DI(3 downto 0) => I129(3 downto 0),
       O(3 downto 0) => D(3 downto 0),
       S(3 downto 0) => \tmp_reg[3]\(3 downto 0)
     );
@@ -17057,7 +17065,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => \S_carry__0_n_2\,
       CO(0) => \S_carry__0_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => I127(7 downto 4),
+      DI(3 downto 0) => I129(7 downto 4),
       O(3 downto 0) => D(7 downto 4),
       S(3 downto 0) => \tmp_reg[7]\(3 downto 0)
     );
@@ -17069,7 +17077,7 @@ S_carry: unisim.vcomponents.CARRY4
       CO(1) => \S_carry__1_n_2\,
       CO(0) => \S_carry__1_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => I127(11 downto 8),
+      DI(3 downto 0) => I129(11 downto 8),
       O(3 downto 0) => D(11 downto 8),
       S(3 downto 0) => \tmp_reg[11]\(3 downto 0)
     );
@@ -17636,6 +17644,8 @@ entity DCT_2D_0_reg_mult is
     \tmp_reg[13]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \tmp_reg[13]_1\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_reg_mult : entity is "reg_mult";
 end DCT_2D_0_reg_mult;
 
 architecture STRUCTURE of DCT_2D_0_reg_mult is
@@ -20341,6 +20351,8 @@ entity DCT_2D_0_DCT is
     rst : in STD_LOGIC;
     ce : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_DCT : entity is "DCT";
 end DCT_2D_0_DCT;
 
 architecture STRUCTURE of DCT_2D_0_DCT is
@@ -21211,17 +21223,17 @@ a4: entity work.\DCT_2D_0_full_adder__parameterized1_35\
     );
 a5: entity work.\DCT_2D_0_full_adder__parameterized2_36\
      port map (
-      O96(10) => a5_n_0,
-      O96(9) => a5_n_1,
-      O96(8) => a5_n_2,
-      O96(7) => a5_n_3,
-      O96(6) => a5_n_4,
-      O96(5) => a5_n_5,
-      O96(4) => a5_n_6,
-      O96(3) => a5_n_7,
-      O96(2) => a5_n_8,
-      O96(1) => a5_n_9,
-      O96(0) => a5_n_10,
+      O99(10) => a5_n_0,
+      O99(9) => a5_n_1,
+      O99(8) => a5_n_2,
+      O99(7) => a5_n_3,
+      O99(6) => a5_n_4,
+      O99(5) => a5_n_5,
+      O99(4) => a5_n_6,
+      O99(3) => a5_n_7,
+      O99(2) => a5_n_8,
+      O99(1) => a5_n_9,
+      O99(0) => a5_n_10,
       Q(9) => r10_n_1,
       Q(8) => r10_n_2,
       Q(7) => r10_n_3,
@@ -22510,18 +22522,18 @@ s3: entity work.\DCT_2D_0_full_subtractor__parameterized0_60\
       D(2) => s3_n_11,
       D(1) => s3_n_12,
       D(0) => s3_n_13,
-      I127(11) => r6_n_5,
-      I127(10) => r6_n_6,
-      I127(9) => r6_n_7,
-      I127(8) => r6_n_8,
-      I127(7) => r6_n_9,
-      I127(6) => r6_n_10,
-      I127(5) => r6_n_11,
-      I127(4) => r6_n_12,
-      I127(3) => r6_n_13,
-      I127(2) => r6_n_14,
-      I127(1) => r6_n_15,
-      I127(0) => r6_n_16,
+      I129(11) => r6_n_5,
+      I129(10) => r6_n_6,
+      I129(9) => r6_n_7,
+      I129(8) => r6_n_8,
+      I129(7) => r6_n_9,
+      I129(6) => r6_n_10,
+      I129(5) => r6_n_11,
+      I129(4) => r6_n_12,
+      I129(3) => r6_n_13,
+      I129(2) => r6_n_14,
+      I129(1) => r6_n_15,
+      I129(0) => r6_n_16,
       Q(0) => r5_n_0,
       S(0) => r6_n_0,
       \tmp_reg[11]\(3) => r6_n_21,
@@ -23604,20 +23616,20 @@ a4: entity work.\DCT_2D_0_full_adder__parameterized1_1\
     );
 a5: entity work.\DCT_2D_0_full_adder__parameterized2\
      port map (
-      O100(13) => a5_n_0,
-      O100(12) => a5_n_1,
-      O100(11) => a5_n_2,
-      O100(10) => a5_n_3,
-      O100(9) => a5_n_4,
-      O100(8) => a5_n_5,
-      O100(7) => a5_n_6,
-      O100(6) => a5_n_7,
-      O100(5) => a5_n_8,
-      O100(4) => a5_n_9,
-      O100(3) => a5_n_10,
-      O100(2) => a5_n_11,
-      O100(1) => a5_n_12,
-      O100(0) => a5_n_13,
+      O103(13) => a5_n_0,
+      O103(12) => a5_n_1,
+      O103(11) => a5_n_2,
+      O103(10) => a5_n_3,
+      O103(9) => a5_n_4,
+      O103(8) => a5_n_5,
+      O103(7) => a5_n_6,
+      O103(6) => a5_n_7,
+      O103(5) => a5_n_8,
+      O103(4) => a5_n_9,
+      O103(3) => a5_n_10,
+      O103(2) => a5_n_11,
+      O103(1) => a5_n_12,
+      O103(0) => a5_n_13,
       Q(11) => r10_n_0,
       Q(10) => r10_n_1,
       Q(9) => r10_n_2,
@@ -25148,18 +25160,18 @@ s3: entity work.\DCT_2D_0_full_subtractor__parameterized0_11\
       D(2) => s3_n_11,
       D(1) => s3_n_12,
       D(0) => s3_n_13,
-      I138(11) => r6_n_5,
-      I138(10) => r6_n_6,
-      I138(9) => r6_n_7,
-      I138(8) => r6_n_8,
-      I138(7) => r6_n_9,
-      I138(6) => r6_n_10,
-      I138(5) => r6_n_11,
-      I138(4) => r6_n_12,
-      I138(3) => r6_n_13,
-      I138(2) => r6_n_14,
-      I138(1) => r6_n_15,
-      I138(0) => r6_n_16,
+      I140(11) => r6_n_5,
+      I140(10) => r6_n_6,
+      I140(9) => r6_n_7,
+      I140(8) => r6_n_8,
+      I140(7) => r6_n_9,
+      I140(6) => r6_n_10,
+      I140(5) => r6_n_11,
+      I140(4) => r6_n_12,
+      I140(3) => r6_n_13,
+      I140(2) => r6_n_14,
+      I140(1) => r6_n_15,
+      I140(0) => r6_n_16,
       Q(0) => r5_n_0,
       S(0) => r6_n_0,
       \tmp_reg[11]\(3) => r6_n_21,
@@ -25232,11 +25244,14 @@ entity DCT_2D_0_DCT_2D is
     ce : in STD_LOGIC;
     clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of DCT_2D_0_DCT_2D : entity is "DCT_2D";
 end DCT_2D_0_DCT_2D;
 
 architecture STRUCTURE of DCT_2D_0_DCT_2D is
   signal ce_mod2_i_1_n_0 : STD_LOGIC;
   signal ce_mod2_i_2_n_0 : STD_LOGIC;
+  signal ce_mod2_i_3_n_0 : STD_LOGIC;
   signal ce_mod2_reg_n_0 : STD_LOGIC;
   signal \cnt[0]_rep_i_1_n_0\ : STD_LOGIC;
   signal \cnt[1]_rep_i_1__0_n_0\ : STD_LOGIC;
@@ -26031,31 +26046,21 @@ architecture STRUCTURE of DCT_2D_0_DCT_2D is
   signal \rc_77_reg_n_0_[8]\ : STD_LOGIC;
   signal \rc_77_reg_n_0_[9]\ : STD_LOGIC;
   signal rst_mod2 : STD_LOGIC;
-  signal trigger_mod2_ce : STD_LOGIC;
-  signal \trigger_mod2_ce[0]_i_1_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[1]_i_1_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[2]_i_1_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[3]_i_1_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[4]_i_1_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[5]_i_1_n_0\ : STD_LOGIC;
+  signal trigger_mod2_ce : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \trigger_mod2_ce[6]_i_10_n_0\ : STD_LOGIC;
+  signal \trigger_mod2_ce[6]_i_1_n_0\ : STD_LOGIC;
   signal \trigger_mod2_ce[6]_i_2_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[6]_i_3_n_0\ : STD_LOGIC;
   signal \trigger_mod2_ce[6]_i_4_n_0\ : STD_LOGIC;
   signal \trigger_mod2_ce[6]_i_5_n_0\ : STD_LOGIC;
   signal \trigger_mod2_ce[6]_i_6_n_0\ : STD_LOGIC;
   signal \trigger_mod2_ce[6]_i_7_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce[6]_i_9_n_0\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[0]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[1]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[2]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[3]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[4]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[5]\ : STD_LOGIC;
-  signal \trigger_mod2_ce_reg_n_0_[6]\ : STD_LOGIC;
+  signal \trigger_mod2_ce[6]_i_8_n_0\ : STD_LOGIC;
+  signal \trigger_mod2_ce__7\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of ce_mod2_i_2 : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of ce_mod2_i_2 : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of ce_mod2_i_3 : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair39";
   attribute SOFT_HLUTNM of \cnt[2]_i_1\ : label is "soft_lutpair30";
   attribute SOFT_HLUTNM of \cnt[3]_i_1\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \cnt[4]_i_1\ : label is "soft_lutpair27";
@@ -26065,52 +26070,60 @@ architecture STRUCTURE of DCT_2D_0_DCT_2D is
   attribute ORIG_CELL_NAME of \cnt_reg[1]\ : label is "cnt_reg[1]";
   attribute ORIG_CELL_NAME of \cnt_reg[1]_rep\ : label is "cnt_reg[1]";
   attribute ORIG_CELL_NAME of \cnt_reg[1]_rep__0\ : label is "cnt_reg[1]";
-  attribute SOFT_HLUTNM of \rc_00[10]_i_3\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \rc_10[10]_i_2\ : label is "soft_lutpair37";
   attribute SOFT_HLUTNM of \rc_12[10]_i_2\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \rc_15[10]_i_2\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \rc_16[10]_i_2\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \rc_17[10]_i_2\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \rc_15[10]_i_2\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \rc_16[10]_i_2\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \rc_17[10]_i_2\ : label is "soft_lutpair34";
   attribute SOFT_HLUTNM of \rc_20[10]_i_2\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \rc_34[10]_i_2\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \rc_34[10]_i_2\ : label is "soft_lutpair38";
   attribute SOFT_HLUTNM of \rc_36[10]_i_2\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \rc_50[10]_i_2\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \rc_56[10]_i_2\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \rc_60[10]_i_2\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \rc_50[10]_i_2\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \rc_56[10]_i_2\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \rc_60[10]_i_2\ : label is "soft_lutpair37";
   attribute SOFT_HLUTNM of \rc_63[10]_i_2\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[1]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[3]_i_2\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[1]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[2]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[3]_i_2\ : label is "soft_lutpair28";
   attribute SOFT_HLUTNM of \trigger_mod2_ce[4]_i_2\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_3\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_4\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_5\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_6\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_7\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_9\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_10\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_4\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_5\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_7\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_8\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \trigger_mod2_ce[6]_i_9\ : label is "soft_lutpair33";
 begin
-ce_mod2_i_1: unisim.vcomponents.LUT6
+ce_mod2_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"444444444444444F"
+      INIT => X"444F4444"
     )
         port map (
       I0 => rst,
       I1 => ce_mod2_reg_n_0,
       I2 => ce_mod2_i_2_n_0,
-      I3 => \trigger_mod2_ce_reg_n_0_[5]\,
-      I4 => \trigger_mod2_ce_reg_n_0_[4]\,
-      I5 => \trigger_mod2_ce_reg_n_0_[2]\,
+      I3 => ce_mod2_i_3_n_0,
+      I4 => ce,
       O => ce_mod2_i_1_n_0
     );
-ce_mod2_i_2: unisim.vcomponents.LUT4
+ce_mod2_i_2: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"7FFF"
+      INIT => X"FD"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[3]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[6]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I3 => \trigger_mod2_ce_reg_n_0_[1]\,
+      I0 => trigger_mod2_ce(3),
+      I1 => trigger_mod2_ce(1),
+      I2 => trigger_mod2_ce(5),
       O => ce_mod2_i_2_n_0
+    );
+ce_mod2_i_3: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FEFF"
+    )
+        port map (
+      I0 => trigger_mod2_ce(0),
+      I1 => trigger_mod2_ce(4),
+      I2 => trigger_mod2_ce(2),
+      I3 => trigger_mod2_ce(6),
+      O => ce_mod2_i_3_n_0
     );
 ce_mod2_reg: unisim.vcomponents.FDRE
     generic map(
@@ -33635,172 +33648,187 @@ rst_mod2_reg: unisim.vcomponents.FDRE
       Q => rst_mod2,
       R => '0'
     );
-\trigger_mod2_ce[0]_i_1\: unisim.vcomponents.LUT1
+\trigger_mod2_ce[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"1"
+      INIT => X"00000000FEFFFFFF"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[0]\,
-      O => \trigger_mod2_ce[0]_i_1_n_0\
+      I0 => \trigger_mod2_ce[6]_i_5_n_0\,
+      I1 => trigger_mod2_ce(1),
+      I2 => trigger_mod2_ce(2),
+      I3 => \trigger_mod2_ce[6]_i_8_n_0\,
+      I4 => trigger_mod2_ce(6),
+      I5 => trigger_mod2_ce(0),
+      O => \trigger_mod2_ce__7\(0)
     );
 \trigger_mod2_ce[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[1]\,
-      O => \trigger_mod2_ce[1]_i_1_n_0\
+      I0 => trigger_mod2_ce(0),
+      I1 => trigger_mod2_ce(1),
+      O => \trigger_mod2_ce__7\(1)
     );
-\trigger_mod2_ce[2]_i_1\: unisim.vcomponents.LUT6
+\trigger_mod2_ce[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"00FFFFFFBF000000"
+      INIT => X"78"
     )
         port map (
-      I0 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I1 => \trigger_mod2_ce[6]_i_7_n_0\,
-      I2 => \trigger_mod2_ce_reg_n_0_[6]\,
-      I3 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I4 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I5 => \trigger_mod2_ce_reg_n_0_[2]\,
-      O => \trigger_mod2_ce[2]_i_1_n_0\
+      I0 => trigger_mod2_ce(0),
+      I1 => trigger_mod2_ce(1),
+      I2 => trigger_mod2_ce(2),
+      O => \trigger_mod2_ce__7\(2)
     );
 \trigger_mod2_ce[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EFFFFFFF00000000"
+      INIT => X"FEFFFFFF00000000"
     )
         port map (
-      I0 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I1 => \trigger_mod2_ce[6]_i_5_n_0\,
-      I2 => \trigger_mod2_ce[6]_i_6_n_0\,
-      I3 => \trigger_mod2_ce[6]_i_7_n_0\,
-      I4 => \trigger_mod2_ce_reg_n_0_[6]\,
+      I0 => \trigger_mod2_ce[6]_i_5_n_0\,
+      I1 => \trigger_mod2_ce[6]_i_6_n_0\,
+      I2 => \trigger_mod2_ce[6]_i_7_n_0\,
+      I3 => \trigger_mod2_ce[6]_i_8_n_0\,
+      I4 => trigger_mod2_ce(6),
       I5 => data0(3),
-      O => \trigger_mod2_ce[3]_i_1_n_0\
+      O => \trigger_mod2_ce__7\(3)
     );
 \trigger_mod2_ce[3]_i_2\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"7F80"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I3 => \trigger_mod2_ce_reg_n_0_[3]\,
+      I0 => trigger_mod2_ce(1),
+      I1 => trigger_mod2_ce(0),
+      I2 => trigger_mod2_ce(2),
+      I3 => trigger_mod2_ce(3),
       O => data0(3)
     );
 \trigger_mod2_ce[4]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EFFFFFFF00000000"
+      INIT => X"FEFFFFFF00000000"
     )
         port map (
-      I0 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I1 => \trigger_mod2_ce[6]_i_5_n_0\,
-      I2 => \trigger_mod2_ce[6]_i_6_n_0\,
-      I3 => \trigger_mod2_ce[6]_i_7_n_0\,
-      I4 => \trigger_mod2_ce_reg_n_0_[6]\,
+      I0 => \trigger_mod2_ce[6]_i_5_n_0\,
+      I1 => \trigger_mod2_ce[6]_i_6_n_0\,
+      I2 => \trigger_mod2_ce[6]_i_7_n_0\,
+      I3 => \trigger_mod2_ce[6]_i_8_n_0\,
+      I4 => trigger_mod2_ce(6),
       I5 => data0(4),
-      O => \trigger_mod2_ce[4]_i_1_n_0\
+      O => \trigger_mod2_ce__7\(4)
     );
 \trigger_mod2_ce[4]_i_2\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"7FFF8000"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I3 => \trigger_mod2_ce_reg_n_0_[3]\,
-      I4 => \trigger_mod2_ce_reg_n_0_[4]\,
+      I0 => trigger_mod2_ce(2),
+      I1 => trigger_mod2_ce(0),
+      I2 => trigger_mod2_ce(1),
+      I3 => trigger_mod2_ce(3),
+      I4 => trigger_mod2_ce(4),
       O => data0(4)
     );
 \trigger_mod2_ce[5]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EFFFFFFF00000000"
+      INIT => X"FEFFFFFF00000000"
     )
         port map (
-      I0 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I1 => \trigger_mod2_ce[6]_i_5_n_0\,
-      I2 => \trigger_mod2_ce[6]_i_6_n_0\,
-      I3 => \trigger_mod2_ce[6]_i_7_n_0\,
-      I4 => \trigger_mod2_ce_reg_n_0_[6]\,
+      I0 => \trigger_mod2_ce[6]_i_5_n_0\,
+      I1 => \trigger_mod2_ce[6]_i_6_n_0\,
+      I2 => \trigger_mod2_ce[6]_i_7_n_0\,
+      I3 => \trigger_mod2_ce[6]_i_8_n_0\,
+      I4 => trigger_mod2_ce(6),
       I5 => data0(5),
-      O => \trigger_mod2_ce[5]_i_1_n_0\
+      O => \trigger_mod2_ce__7\(5)
     );
 \trigger_mod2_ce[5]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"7FFFFFFF80000000"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[3]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I3 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I4 => \trigger_mod2_ce_reg_n_0_[4]\,
-      I5 => \trigger_mod2_ce_reg_n_0_[5]\,
+      I0 => trigger_mod2_ce(3),
+      I1 => trigger_mod2_ce(1),
+      I2 => trigger_mod2_ce(0),
+      I3 => trigger_mod2_ce(2),
+      I4 => trigger_mod2_ce(4),
+      I5 => trigger_mod2_ce(5),
       O => data0(5)
     );
-\trigger_mod2_ce[6]_i_1\: unisim.vcomponents.LUT6
+\trigger_mod2_ce[6]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"FFFFFFFFFFFFFFF7"
+      INIT => X"4"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I2 => \trigger_mod2_ce[6]_i_3_n_0\,
-      I3 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I4 => rst,
-      I5 => \trigger_mod2_ce_reg_n_0_[2]\,
-      O => trigger_mod2_ce
+      I0 => ce,
+      I1 => rst,
+      O => \trigger_mod2_ce[6]_i_1_n_0\
+    );
+\trigger_mod2_ce[6]_i_10\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"80000000"
+    )
+        port map (
+      I0 => trigger_mod2_ce(4),
+      I1 => trigger_mod2_ce(2),
+      I2 => trigger_mod2_ce(0),
+      I3 => trigger_mod2_ce(1),
+      I4 => trigger_mod2_ce(3),
+      O => \trigger_mod2_ce[6]_i_10_n_0\
     );
 \trigger_mod2_ce[6]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"EFFFFFFF00000000"
+      INIT => X"FFFFFFFFFFBF0000"
     )
         port map (
-      I0 => \trigger_mod2_ce[6]_i_4_n_0\,
-      I1 => \trigger_mod2_ce[6]_i_5_n_0\,
-      I2 => \trigger_mod2_ce[6]_i_6_n_0\,
-      I3 => \trigger_mod2_ce[6]_i_7_n_0\,
-      I4 => \trigger_mod2_ce_reg_n_0_[6]\,
-      I5 => data0(6),
+      I0 => trigger_mod2_ce(4),
+      I1 => trigger_mod2_ce(6),
+      I2 => trigger_mod2_ce(3),
+      I3 => \trigger_mod2_ce[6]_i_4_n_0\,
+      I4 => ce,
+      I5 => rst,
       O => \trigger_mod2_ce[6]_i_2_n_0\
     );
-\trigger_mod2_ce[6]_i_3\: unisim.vcomponents.LUT2
+\trigger_mod2_ce[6]_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"7"
+      INIT => X"FEFFFFFF00000000"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[6]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[3]\,
-      O => \trigger_mod2_ce[6]_i_3_n_0\
+      I0 => \trigger_mod2_ce[6]_i_5_n_0\,
+      I1 => \trigger_mod2_ce[6]_i_6_n_0\,
+      I2 => \trigger_mod2_ce[6]_i_7_n_0\,
+      I3 => \trigger_mod2_ce[6]_i_8_n_0\,
+      I4 => trigger_mod2_ce(6),
+      I5 => data0(6),
+      O => \trigger_mod2_ce__7\(6)
     );
-\trigger_mod2_ce[6]_i_4\: unisim.vcomponents.LUT2
+\trigger_mod2_ce[6]_i_4\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"E"
+      INIT => X"FFFE"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[4]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[5]\,
+      I0 => trigger_mod2_ce(2),
+      I1 => trigger_mod2_ce(5),
+      I2 => trigger_mod2_ce(0),
+      I3 => trigger_mod2_ce(1),
       O => \trigger_mod2_ce[6]_i_4_n_0\
     );
 \trigger_mod2_ce[6]_i_5\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"B"
+      INIT => X"E"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[1]\,
+      I0 => trigger_mod2_ce(4),
+      I1 => trigger_mod2_ce(5),
       O => \trigger_mod2_ce[6]_i_5_n_0\
     );
-\trigger_mod2_ce[6]_i_6\: unisim.vcomponents.LUT3
+\trigger_mod2_ce[6]_i_6\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"EA"
+      INIT => X"E"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[0]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[1]\,
+      I0 => trigger_mod2_ce(1),
+      I1 => trigger_mod2_ce(2),
       O => \trigger_mod2_ce[6]_i_6_n_0\
     );
 \trigger_mod2_ce[6]_i_7\: unisim.vcomponents.LUT3
@@ -33808,32 +33836,30 @@ rst_mod2_reg: unisim.vcomponents.FDRE
       INIT => X"BA"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[5]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[4]\,
-      I2 => \trigger_mod2_ce_reg_n_0_[3]\,
+      I0 => trigger_mod2_ce(2),
+      I1 => trigger_mod2_ce(1),
+      I2 => trigger_mod2_ce(0),
       O => \trigger_mod2_ce[6]_i_7_n_0\
     );
-\trigger_mod2_ce[6]_i_8\: unisim.vcomponents.LUT6
+\trigger_mod2_ce[6]_i_8\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"F7FFFFFF08000000"
+      INIT => X"BA"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[4]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[2]\,
-      I2 => \trigger_mod2_ce[6]_i_9_n_0\,
-      I3 => \trigger_mod2_ce_reg_n_0_[3]\,
-      I4 => \trigger_mod2_ce_reg_n_0_[5]\,
-      I5 => \trigger_mod2_ce_reg_n_0_[6]\,
-      O => data0(6)
+      I0 => trigger_mod2_ce(5),
+      I1 => trigger_mod2_ce(4),
+      I2 => trigger_mod2_ce(3),
+      O => \trigger_mod2_ce[6]_i_8_n_0\
     );
-\trigger_mod2_ce[6]_i_9\: unisim.vcomponents.LUT2
+\trigger_mod2_ce[6]_i_9\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"7"
+      INIT => X"78"
     )
         port map (
-      I0 => \trigger_mod2_ce_reg_n_0_[1]\,
-      I1 => \trigger_mod2_ce_reg_n_0_[0]\,
-      O => \trigger_mod2_ce[6]_i_9_n_0\
+      I0 => \trigger_mod2_ce[6]_i_10_n_0\,
+      I1 => trigger_mod2_ce(5),
+      I2 => trigger_mod2_ce(6),
+      O => data0(6)
     );
 \trigger_mod2_ce_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -33841,10 +33867,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[0]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[0]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(0),
+      Q => trigger_mod2_ce(0),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -33852,10 +33878,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[1]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[1]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(1),
+      Q => trigger_mod2_ce(1),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -33863,10 +33889,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[2]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[2]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(2),
+      Q => trigger_mod2_ce(2),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -33874,10 +33900,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[3]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[3]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(3),
+      Q => trigger_mod2_ce(3),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -33885,10 +33911,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[4]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[4]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(4),
+      Q => trigger_mod2_ce(4),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -33896,10 +33922,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[5]_i_1_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[5]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(5),
+      Q => trigger_mod2_ce(5),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 \trigger_mod2_ce_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -33907,10 +33933,10 @@ rst_mod2_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => clk,
-      CE => trigger_mod2_ce,
-      D => \trigger_mod2_ce[6]_i_2_n_0\,
-      Q => \trigger_mod2_ce_reg_n_0_[6]\,
-      R => '0'
+      CE => \trigger_mod2_ce[6]_i_2_n_0\,
+      D => \trigger_mod2_ce__7\(6),
+      Q => trigger_mod2_ce(6),
+      R => \trigger_mod2_ce[6]_i_1_n_0\
     );
 end STRUCTURE;
 library IEEE;

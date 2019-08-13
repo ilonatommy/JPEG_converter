@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Thu Aug  8 12:12:42 2019
+// Date        : Tue Aug 13 12:17:11 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0_sim_netlist.v
@@ -26,18 +26,16 @@ module converter_controller_0_0
   output [5:0]addr_input;
   output [5:0]addr_quant;
 
-  wire \<const1> ;
   wire [5:0]addr_input;
   wire [5:0]addr_quant;
+  wire ce;
   wire clk;
   wire rst;
 
-  assign ce = \<const1> ;
-  VCC VCC
-       (.P(\<const1> ));
   converter_controller_0_0_controller inst
        (.addr_input(addr_input),
         .addr_quant(addr_quant),
+        .ce(ce),
         .clk(clk),
         .rst(rst));
 endmodule
@@ -46,16 +44,24 @@ endmodule
 module converter_controller_0_0_controller
    (addr_input,
     rst,
+    ce,
     addr_quant,
     clk);
   output [5:0]addr_input;
   output rst;
+  output ce;
   output [5:0]addr_quant;
   input clk;
 
+  wire _ce_i_1_n_0;
   wire _rst_i_1_n_0;
   wire [5:0]addr_input;
   wire [5:0]addr_quant;
+  wire ce;
+  wire [2:0]ce_trigger;
+  wire \ce_trigger[0]_i_1_n_0 ;
+  wire \ce_trigger[1]_i_1_n_0 ;
+  wire \ce_trigger[2]_i_1_n_0 ;
   wire clk;
   wire [5:0]p_0_in;
   wire [5:0]p_0_in__0;
@@ -65,6 +71,23 @@ module converter_controller_0_0_controller
   wire \rst_trigger[1]_i_1_n_0 ;
   wire \rst_trigger[2]_i_1_n_0 ;
 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT4 #(
+    .INIT(16'hABAA)) 
+    _ce_i_1
+       (.I0(ce),
+        .I1(ce_trigger[1]),
+        .I2(ce_trigger[0]),
+        .I3(ce_trigger[2]),
+        .O(_ce_i_1_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    _ce_reg
+       (.C(clk),
+        .CE(1'b1),
+        .D(_ce_i_1_n_0),
+        .Q(ce),
+        .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'hA8AE)) 
@@ -74,7 +97,9 @@ module converter_controller_0_0_controller
         .I2(rst_trigger[2]),
         .I3(rst_trigger[1]),
         .O(_rst_i_1_n_0));
-  FDRE _rst_reg
+  FDRE #(
+    .INIT(1'b0)) 
+    _rst_reg
        (.C(clk),
         .CE(1'b1),
         .D(_rst_i_1_n_0),
@@ -85,14 +110,14 @@ module converter_controller_0_0_controller
     \addr_in[0]_i_1 
        (.I0(addr_input[0]),
         .O(p_0_in[0]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \addr_in[1]_i_1 
        (.I0(addr_input[0]),
         .I1(addr_input[1]),
         .O(p_0_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \addr_in[2]_i_1 
@@ -133,7 +158,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[0] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[0]),
         .Q(addr_input[0]),
         .R(rst));
@@ -141,7 +166,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[1] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[1]),
         .Q(addr_input[1]),
         .R(rst));
@@ -149,7 +174,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[2] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[2]),
         .Q(addr_input[2]),
         .R(rst));
@@ -157,7 +182,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[3] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[3]),
         .Q(addr_input[3]),
         .R(rst));
@@ -165,7 +190,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[4] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[4]),
         .Q(addr_input[4]),
         .R(rst));
@@ -173,24 +198,24 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_in_reg[5] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in[5]),
         .Q(addr_input[5]),
         .R(rst));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \addr_qu[0]_i_1 
        (.I0(addr_quant[0]),
         .O(p_0_in__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \addr_qu[1]_i_1 
        (.I0(addr_quant[0]),
         .I1(addr_quant[1]),
         .O(p_0_in__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'h78)) 
     \addr_qu[2]_i_1 
@@ -198,7 +223,7 @@ module converter_controller_0_0_controller
         .I1(addr_quant[1]),
         .I2(addr_quant[2]),
         .O(p_0_in__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \addr_qu[3]_i_1 
@@ -230,7 +255,7 @@ module converter_controller_0_0_controller
     .INIT(1'b1)) 
     \addr_qu_reg[0] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[0]),
         .Q(addr_quant[0]),
         .S(rst));
@@ -238,7 +263,7 @@ module converter_controller_0_0_controller
     .INIT(1'b1)) 
     \addr_qu_reg[1] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[1]),
         .Q(addr_quant[1]),
         .S(rst));
@@ -246,7 +271,7 @@ module converter_controller_0_0_controller
     .INIT(1'b1)) 
     \addr_qu_reg[2] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[2]),
         .Q(addr_quant[2]),
         .S(rst));
@@ -254,7 +279,7 @@ module converter_controller_0_0_controller
     .INIT(1'b1)) 
     \addr_qu_reg[3] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[3]),
         .Q(addr_quant[3]),
         .S(rst));
@@ -262,7 +287,7 @@ module converter_controller_0_0_controller
     .INIT(1'b0)) 
     \addr_qu_reg[4] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[4]),
         .Q(addr_quant[4]),
         .R(rst));
@@ -270,11 +295,58 @@ module converter_controller_0_0_controller
     .INIT(1'b1)) 
     \addr_qu_reg[5] 
        (.C(clk),
-        .CE(1'b1),
+        .CE(ce),
         .D(p_0_in__0[5]),
         .Q(addr_quant[5]),
         .S(rst));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'h0D)) 
+    \ce_trigger[0]_i_1 
+       (.I0(ce_trigger[2]),
+        .I1(ce_trigger[1]),
+        .I2(ce_trigger[0]),
+        .O(\ce_trigger[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \ce_trigger[1]_i_1 
+       (.I0(ce_trigger[1]),
+        .I1(ce_trigger[0]),
+        .O(\ce_trigger[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \ce_trigger[2]_i_1 
+       (.I0(ce_trigger[1]),
+        .I1(ce_trigger[0]),
+        .I2(ce_trigger[2]),
+        .O(\ce_trigger[2]_i_1_n_0 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ce_trigger_reg[0] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\ce_trigger[0]_i_1_n_0 ),
+        .Q(ce_trigger[0]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ce_trigger_reg[1] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\ce_trigger[1]_i_1_n_0 ),
+        .Q(ce_trigger[1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ce_trigger_reg[2] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\ce_trigger[2]_i_1_n_0 ),
+        .Q(ce_trigger[2]),
+        .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'h0B)) 
     \rst_trigger[0]_i_1 
@@ -282,7 +354,7 @@ module converter_controller_0_0_controller
         .I1(rst_trigger[1]),
         .I2(rst_trigger[0]),
         .O(\rst_trigger[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \rst_trigger[1]_i_1 

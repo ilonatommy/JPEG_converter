@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Aug  8 12:12:15 2019
+| Date         : Tue Aug 13 12:17:27 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file converter_DCT_2D_0_0_utilization_synth.rpt -pb converter_DCT_2D_0_0_utilization_synth.pb
 | Design       : converter_DCT_2D_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  741 |     0 |     17600 |  4.21 |
-|   LUT as Logic          |  741 |     0 |     17600 |  4.21 |
+| Slice LUTs*             |  743 |     0 |     17600 |  4.22 |
+|   LUT as Logic          |  743 |     0 |     17600 |  4.22 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
 | Slice Registers         | 1440 |     0 |     35200 |  4.09 |
 |   Register as Flip Flop | 1440 |     0 |     35200 |  4.09 |
@@ -148,15 +148,15 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 1438 |        Flop & Latch |
-| LUT6     |  397 |                 LUT |
-| LUT4     |  124 |                 LUT |
-| LUT3     |  112 |                 LUT |
-| LUT5     |  105 |                 LUT |
+| LUT6     |  395 |                 LUT |
+| LUT4     |  125 |                 LUT |
+| LUT3     |  115 |                 LUT |
+| LUT5     |  107 |                 LUT |
 | MUXF7    |   88 |               MuxFx |
-| LUT2     |   84 |                 LUT |
+| LUT2     |   83 |                 LUT |
 | CARRY4   |   73 |          CarryLogic |
 | MUXF8    |   44 |               MuxFx |
-| LUT1     |    9 |                 LUT |
+| LUT1     |    8 |                 LUT |
 | FDSE     |    2 |        Flop & Latch |
 | DSP48E1  |    2 |    Block Arithmetic |
 +----------+------+---------------------+
