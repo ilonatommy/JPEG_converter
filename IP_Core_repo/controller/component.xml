@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8578c9d8</spirit:value>
+            <spirit:value>913d6862</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8578c9d8</spirit:value>
+            <spirit:value>913d6862</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -134,6 +134,19 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
+        <spirit:name>ce_zig_zag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>addr_input</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
@@ -175,7 +188,7 @@
       <spirit:file>
         <spirit:name>src/controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8578c9d8</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_913d6862</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -197,7 +210,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>controller_v1_0</spirit:description>
+  <spirit:description>controller</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -225,16 +238,16 @@
       <xilinx:displayName>controller</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-13T10:14:02Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-14T13:16:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="domain.local:user:controller:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/controller</xilinx:tag>
+        <xilinx:tag xilinx:name="domain.local:user:controller:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8b15223a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cd41df6c"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="984aadd1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="70229638"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="e63fafd7"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="aeb8473a"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
