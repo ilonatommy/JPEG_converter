@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Aug  1 14:14:03 2019
+# Process ID: 6196
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5364 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\example_of_memory_usage\memory\memory.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory/memory.xpr
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory/memory.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/example_of_memory_usage/memory/memory.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_2
+delete_bd_objs [get_bd_cells blk_mem_gen_2]

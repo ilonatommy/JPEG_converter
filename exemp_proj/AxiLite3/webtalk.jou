@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Aug  9 15:00:05 2019
+# Process ID: 2940
+# Current directory: c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo
+# Command line: wbtcv.exe -mode batch -source c:/users/lsneler/desktop/repository/jpeg_conversion/exemplary_projects/axilitezynqbramdemo3/axilitezynqbramdemo/axilitezynqbramdemo.tmp/axilitetobramintf_v1_0_project/AXILiteToBRAMIntf_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/webtalk.log
+# Journal file: c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/lsneler/desktop/repository/jpeg_conversion/exemplary_projects/axilitezynqbramdemo3/axilitezynqbramdemo/axilitezynqbramdemo.tmp/axilitetobramintf_v1_0_project/AXILiteToBRAMIntf_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

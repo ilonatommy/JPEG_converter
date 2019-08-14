@@ -1,0 +1,16 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VivadoProjects/Memory/memory/memory.sim/sim_1/impl/func/TB_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_PC_0_1_PC
+INFO: [VRFC 10-307] analyzing entity design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-307] analyzing entity design_1_PC_0_1
+INFO: [VRFC 10-307] analyzing entity design_1_clk_wiz_0_0
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VivadoProjects/Memory/memory/memory.srcs/sim_1/imports/Memory/TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB

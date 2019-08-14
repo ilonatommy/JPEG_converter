@@ -1,0 +1,491 @@
+Value on A000000 is: DF 
+Value on A000001 is: C5 
+Value on A000002 is: F4 
+Value on A000003 is: 17 
+Value on A000004 is: D7 
+Value on A000005 is: 4C 
+Value on A000006 is: DF 
+Value on A000007 is: 3D 
+Value on A000008 is: F5 
+Value on A000009 is: FD 
+Value on A00000A is: 5E 
+Value on A00000B is: 7E 
+Value on A00000C is: FD 
+Value on A00000D is: FF 
+Value on A00000E is: AD 
+Value on A00000F is: B3 
+Value on A000010 is: BA 
+Value on A000011 is: FD 
+Value on A000012 is: 7F 
+Value on A000013 is: EB 
+Value on A000014 is: 5F 
+Value on A000015 is: FF 
+Value on A000016 is: 7F 
+Value on A000017 is: 21 
+Value on A000018 is: 94 
+Value on A000019 is: 9C 
+Value on A00001A is: EB 
+Value on A00001B is: 2C 
+Value on A00001C is: FE 
+Value on A00001D is: B5 
+Value on A00001E is: B7 
+Value on A00001F is: FB 
+Value on A000020 is: EF 
+Value on A000021 is: 6B 
+Value on A000022 is: B7 
+Value on A000023 is: FA 
+Value on A000024 is: 9B 
+Value on A000025 is: 6D 
+Value on A000026 is: 7B 
+Value on A000027 is: 87 
+Value on A000028 is: 3D 
+Value on A000029 is: E6 
+Value on A00002A is: 1F 
+Value on A00002B is: F4 
+Value on A00002C is: AC 
+Value on A00002D is: FA 
+Value on A00002E is: 17 
+Value on A00002F is: CF 
+Value on A000030 is: 74 
+Value on A000031 is: 94 
+Value on A000032 is: 27 
+Value on A000033 is: 3C 
+Value on A000034 is: 3B 
+Value on A000035 is: 66 
+Value on A000036 is: AF 
+Value on A000037 is: C2 
+Value on A000038 is: F7 
+Value on A000039 is: D4 
+Value on A00003A is: 8 
+Value on A00003B is: ED 
+Value on A00003C is: A2 
+Value on A00003D is: FB 
+Value on A00003E is: D7 
+Value on A00003F is: CF 
+Value on A000040 is: FF 
+Value on A000041 is: 97 
+Value on A000042 is: DC 
+Value on A000043 is: 66 
+Value on A000044 is: 8B 
+Value on A000045 is: DB 
+Value on A000046 is: BF 
+Value on A000047 is: CD 
+Value on A000048 is: F7 
+Value on A000049 is: 2D 
+Value on A00004A is: FB 
+Value on A00004B is: 8F 
+Value on A00004C is: AD 
+Value on A00004D is: 3F 
+Value on A00004E is: 9D 
+Value on A00004F is: 25 
+Value on A000050 is: AD 
+Value on A000051 is: 3D 
+Value on A000052 is: 97 
+Value on A000053 is: 5E 
+Value on A000054 is: 7F 
+Value on A000055 is: FB 
+Value on A000056 is: 99 
+Value on A000057 is: FF 
+Value on A000058 is: EB 
+Value on A000059 is: 7F 
+Value on A00005A is: 6D 
+Value on A00005B is: 2F 
+Value on A00005C is: ED 
+Value on A00005D is: FC 
+Value on A00005E is: E9 
+Value on A00005F is: 8B 
+Value on A000060 is: B6 
+Value on A000061 is: 63 
+Value on A000062 is: 6B 
+Value on A000063 is: AE 
+Value on A000064 is: FB 
+Value on A000065 is: AF 
+Value on A000066 is: CB 
+Value on A000067 is: CD 
+Value on A000068 is: BD 
+Value on A000069 is: B7 
+Value on A00006A is: F5 
+Value on A00006B is: 69 
+Value on A00006C is: D1 
+Value on A00006D is: 87 
+Value on A00006E is: 7F 
+Value on A00006F is: A6 
+Value on A000070 is: FC 
+Value on A000071 is: FF 
+Value on A000072 is: 83 
+Value on A000073 is: EE 
+Value on A000074 is: EB 
+Value on A000075 is: E7 
+Value on A000076 is: 83 
+Value on A000077 is: D7 
+Value on A000078 is: 1E 
+Value on A000079 is: BF 
+Value on A00007A is: 1D 
+Value on A00007B is: FB 
+Value on A00007C is: C3 
+Value on A00007D is: DD 
+Value on A00007E is: ED 
+Value on A00007F is: DF 
+Value on A000080 is: F5 
+Value on A000081 is: E7 
+Value on A000082 is: FB 
+Value on A000083 is: EF 
+Value on A000084 is: F9 
+Value on A000085 is: BD 
+Value on A000086 is: 9F 
+Value on A000087 is: CF 
+Value on A000088 is: EE 
+Value on A000089 is: 77 
+Value on A00008A is: 5B 
+Value on A00008B is: DF 
+Value on A00008C is: BD 
+Value on A00008D is: AB 
+Value on A00008E is: DE 
+Value on A00008F is: EF 
+Value on A000090 is: FD 
+Value on A000091 is: DF 
+Value on A000092 is: EE 
+Value on A000093 is: 27 
+Value on A000094 is: F7 
+Value on A000095 is: EB 
+Value on A000096 is: F9 
+Value on A000097 is: 7F 
+Value on A000098 is: FF 
+Value on A000099 is: FE 
+Value on A00009A is: 91 
+Value on A00009B is: 9F 
+Value on A00009C is: F3 
+Value on A00009D is: FF 
+Value on A00009E is: F7 
+Value on A00009F is: 7C 
+Value on A0000A0 is: 6E 
+Value on A0000A1 is: 73 
+Value on A0000A2 is: A5 
+Value on A0000A3 is: ED 
+Value on A0000A4 is: BF 
+Value on A0000A5 is: FA 
+Value on A0000A6 is: B5 
+Value on A0000A7 is: F6 
+Value on A0000A8 is: CF 
+Value on A0000A9 is: 9E 
+Value on A0000AA is: DF 
+Value on A0000AB is: F3 
+Value on A0000AC is: DE 
+Value on A0000AD is: D7 
+Value on A0000AE is: BF 
+Value on A0000AF is: BF 
+Value on A0000B0 is: F7 
+Value on A0000B1 is: CD 
+Value on A0000B2 is: 4F 
+Value on A0000B3 is: FD 
+Value on A0000B4 is: BF 
+Value on A0000B5 is: 94 
+Value on A0000B6 is: 9E 
+Value on A0000B7 is: 7B 
+Value on A0000B8 is: CE 
+Value on A0000B9 is: E6 
+Value on A0000BA is: BF 
+Value on A0000BB is: E7 
+Value on A0000BC is: DF 
+Value on A0000BD is: FE 
+Value on A0000BE is: D2 
+Value on A0000BF is: FF 
+Value on A0000C0 is: BC 
+Value on A0000C1 is: F7 
+Value on A0000C2 is: 3F 
+Value on A0000C3 is: 72 
+Value on A0000C4 is: FA 
+Value on A0000C5 is: D9 
+Value on A0000C6 is: E4 
+Value on A0000C7 is: DF 
+Value on A0000C8 is: B1 
+Value on A0000C9 is: CC 
+Value on A0000CA is: B3 
+Value on A0000CB is: D9 
+Value on A0000CC is: DF 
+Value on A0000CD is: EE 
+Value on A0000CE is: EF 
+Value on A0000CF is: 5C 
+Value on A0000D0 is: FB 
+Value on A0000D1 is: AF 
+Value on A0000D2 is: E7 
+Value on A0000D3 is: 5F 
+Value on A0000D4 is: FC 
+Value on A0000D5 is: EB 
+Value on A0000D6 is: 9 
+Value on A0000D7 is: AB 
+Value on A0000D8 is: 5D 
+Value on A0000D9 is: FC 
+Value on A0000DA is: 29 
+Value on A0000DB is: EF 
+Value on A0000DC is: A5 
+Value on A0000DD is: F9 
+Value on A0000DE is: F 
+Value on A0000DF is: EB 
+Value on A0000E0 is: DD 
+Value on A0000E1 is: 62 
+Value on A0000E2 is: E7 
+Value on A0000E3 is: E9 
+Value on A0000E4 is: BE 
+Value on A0000E5 is: FD 
+Value on A0000E6 is: FF 
+Value on A0000E7 is: 99 
+Value on A0000E8 is: 39 
+Value on A0000E9 is: BD 
+Value on A0000EA is: EF 
+
+Value in address 0 is :df
+Value in address 1 is :c5
+Value in address 2 is :f4
+Value in address 3 is :17
+Value in address 4 is :d7
+Value in address 5 is :4c
+Value in address 6 is :df
+Value in address 7 is :3d
+Value in address 8 is :f5
+Value in address 9 is :fd
+Value in address 10 is :5e
+Value in address 11 is :7e
+Value in address 12 is :fd
+Value in address 13 is :ff
+Value in address 14 is :ad
+Value in address 15 is :b3
+Value in address 16 is :ba
+Value in address 17 is :fd
+Value in address 18 is :7f
+Value in address 19 is :eb
+Value in address 20 is :5f
+Value in address 21 is :ff
+Value in address 22 is :7f
+Value in address 23 is :21
+Value in address 24 is :94
+Value in address 25 is :9c
+Value in address 26 is :eb
+Value in address 27 is :2c
+Value in address 28 is :fe
+Value in address 29 is :b5
+Value in address 30 is :b7
+Value in address 31 is :fb
+Value in address 32 is :ef
+Value in address 33 is :6b
+Value in address 34 is :b7
+Value in address 35 is :fa
+Value in address 36 is :9b
+Value in address 37 is :6d
+Value in address 38 is :7b
+Value in address 39 is :87
+Value in address 40 is :3d
+Value in address 41 is :e6
+Value in address 42 is :1f
+Value in address 43 is :f4
+Value in address 44 is :ac
+Value in address 45 is :fa
+Value in address 46 is :17
+Value in address 47 is :cf
+Value in address 48 is :74
+Value in address 49 is :94
+Value in address 50 is :27
+Value in address 51 is :3c
+Value in address 52 is :3b
+Value in address 53 is :66
+Value in address 54 is :af
+Value in address 55 is :c2
+Value in address 56 is :f7
+Value in address 57 is :d4
+Value in address 58 is :8
+Value in address 59 is :ed
+Value in address 60 is :a2
+Value in address 61 is :fb
+Value in address 62 is :d7
+Value in address 63 is :cf
+Value in address 64 is :ff
+Value in address 65 is :97
+Value in address 66 is :dc
+Value in address 67 is :66
+Value in address 68 is :8b
+Value in address 69 is :db
+Value in address 70 is :bf
+Value in address 71 is :cd
+Value in address 72 is :f7
+Value in address 73 is :2d
+Value in address 74 is :fb
+Value in address 75 is :8f
+Value in address 76 is :ad
+Value in address 77 is :3f
+Value in address 78 is :9d
+Value in address 79 is :25
+Value in address 80 is :ad
+Value in address 81 is :3d
+Value in address 82 is :97
+Value in address 83 is :5e
+Value in address 84 is :7f
+Value in address 85 is :fb
+Value in address 86 is :99
+Value in address 87 is :ff
+Value in address 88 is :eb
+Value in address 89 is :7f
+Value in address 90 is :6d
+Value in address 91 is :2f
+Value in address 92 is :ed
+Value in address 93 is :fc
+Value in address 94 is :e9
+Value in address 95 is :8b
+Value in address 96 is :b6
+Value in address 97 is :63
+Value in address 98 is :6b
+Value in address 99 is :ae
+Value in address 100 is :fb
+Value in address 101 is :af
+Value in address 102 is :cb
+Value in address 103 is :cd
+Value in address 104 is :bd
+Value in address 105 is :b7
+Value in address 106 is :f5
+Value in address 107 is :69
+Value in address 108 is :d1
+Value in address 109 is :87
+Value in address 110 is :7f
+Value in address 111 is :a6
+Value in address 112 is :fc
+Value in address 113 is :ff
+Value in address 114 is :83
+Value in address 115 is :ee
+Value in address 116 is :eb
+Value in address 117 is :e7
+Value in address 118 is :83
+Value in address 119 is :d7
+Value in address 120 is :1e
+Value in address 121 is :bf
+Value in address 122 is :1d
+Value in address 123 is :fb
+Value in address 124 is :c3
+Value in address 125 is :dd
+Value in address 126 is :ed
+Value in address 127 is :df
+Value in address 128 is :f5
+Value in address 129 is :e7
+Value in address 130 is :fb
+Value in address 131 is :ef
+Value in address 132 is :f9
+Value in address 133 is :bd
+Value in address 134 is :9f
+Value in address 135 is :cf
+Value in address 136 is :ee
+Value in address 137 is :77
+Value in address 138 is :5b
+Value in address 139 is :df
+Value in address 140 is :bd
+Value in address 141 is :ab
+Value in address 142 is :de
+Value in address 143 is :ef
+Value in address 144 is :fd
+Value in address 145 is :df
+Value in address 146 is :ee
+Value in address 147 is :27
+Value in address 148 is :f7
+Value in address 149 is :eb
+Value in address 150 is :f9
+Value in address 151 is :7f
+Value in address 152 is :ff
+Value in address 153 is :fe
+Value in address 154 is :91
+Value in address 155 is :9f
+Value in address 156 is :f3
+Value in address 157 is :ff
+Value in address 158 is :f7
+Value in address 159 is :7c
+Value in address 160 is :6e
+Value in address 161 is :73
+Value in address 162 is :a5
+Value in address 163 is :ed
+Value in address 164 is :bf
+Value in address 165 is :fa
+Value in address 166 is :b5
+Value in address 167 is :f6
+Value in address 168 is :cf
+Value in address 169 is :9e
+Value in address 170 is :df
+Value in address 171 is :f3
+Value in address 172 is :de
+Value in address 173 is :d7
+Value in address 174 is :bf
+Value in address 175 is :bf
+Value in address 176 is :f7
+Value in address 177 is :cd
+Value in address 178 is :4f
+Value in address 179 is :fd
+Value in address 180 is :bf
+Value in address 181 is :94
+Value in address 182 is :9e
+Value in address 183 is :7b
+Value in address 184 is :ce
+Value in address 185 is :e6
+Value in address 186 is :bf
+Value in address 187 is :e7
+Value in address 188 is :df
+Value in address 189 is :fe
+Value in address 190 is :d2
+Value in address 191 is :ff
+Value in address 192 is :bc
+Value in address 193 is :f7
+Value in address 194 is :3f
+Value in address 195 is :72
+Value in address 196 is :fa
+Value in address 197 is :d9
+Value in address 198 is :e4
+Value in address 199 is :df
+Value in address 200 is :b1
+Value in address 201 is :cc
+Value in address 202 is :b3
+Value in address 203 is :d9
+Value in address 204 is :df
+Value in address 205 is :ee
+Value in address 206 is :ef
+Value in address 207 is :5c
+Value in address 208 is :fb
+Value in address 209 is :af
+Value in address 210 is :e7
+Value in address 211 is :5f
+Value in address 212 is :fc
+Value in address 213 is :eb
+Value in address 214 is :9
+Value in address 215 is :ab
+Value in address 216 is :5d
+Value in address 217 is :fc
+Value in address 218 is :29
+Value in address 219 is :ef
+Value in address 220 is :a5
+Value in address 221 is :f9
+Value in address 222 is :f
+Value in address 223 is :eb
+Value in address 224 is :dd
+Value in address 225 is :62
+Value in address 226 is :e7
+Value in address 227 is :e9
+Value in address 228 is :be
+Value in address 229 is :fd
+Value in address 230 is :ff
+Value in address 231 is :99
+Value in address 232 is :39
+Value in address 233 is :bd
+Value in address 234 is :ef
+Value in address 235 is :dd
+Value in address 236 is :db
+Value in address 237 is :9d
+Value in address 238 is :bf
+Value in address 239 is :bd
+Value in address 240 is :19
+Value in address 241 is :8f
+Value in address 242 is :4d
+Value in address 243 is :db
+Value in address 244 is :3d
+Value in address 245 is :cb
+Value in address 246 is :ba
+Value in address 247 is :db
+Value in address 248 is :d1
+Value in address 249 is :6f
+Value in address 250 is :99
+Value in address 251 is :ff
+Value in address 252 is :ff
+Value in address 253 is :e1
+Value in address 254 is :5b

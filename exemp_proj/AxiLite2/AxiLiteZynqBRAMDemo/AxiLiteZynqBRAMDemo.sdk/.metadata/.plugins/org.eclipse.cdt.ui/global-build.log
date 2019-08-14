@@ -1,0 +1,2336 @@
+03:33:11 **** Build of project AXIBramInterface_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/AXILiteToBRAMIntf_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/AXILiteToBRAMIntf_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/AXILiteToBRAMIntf_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/AXILiteToBRAMIntf_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling AXILiteToBRAMIntf..."
+AXILiteToBRAMIntf_selftest.c: In function 'AXILITETOBRAMINTF_Reg_SelfTest':
+AXILiteToBRAMIntf_selftest.c:52:66: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( AXILITETOBRAMINTF_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                  ^~
+AXILiteToBRAMIntf_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+03:33:38 **** Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19384	   1148	  22568	  43100	   a85c	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:34:56 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:35:34 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:35:57 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:44:54 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:45:45 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:46:00 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:46:49 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:46:55 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:52:31 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+03:53:28 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:59:38 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+03:59:49 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+04:00:34 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:01:02 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:01:26 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71672	   2584	  23328	  97584	  17d30	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:26:55 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:74:24: error: 'n' undeclared (first use in this function)
+   *WritePointer = (u32)n;
+                        ^
+../src/helloworld.c:74:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:28:17 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:74:24: error: 'n' undeclared (first use in this function)
+   *WritePointer = (u32)n;
+                        ^
+../src/helloworld.c:74:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:29:57 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:74:24: error: 'n' undeclared (first use in this function)
+   *WritePointer = (u32)n;
+                        ^
+../src/helloworld.c:74:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:30:03 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:74:24: error: 'n' undeclared (first use in this function)
+   *WritePointer = (u32)n;
+                        ^
+../src/helloworld.c:74:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:30:39 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:76:3: error: 'n' undeclared (first use in this function)
+   n = 0;
+   ^
+../src/helloworld.c:76:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:30:45 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:76:25: error: 'n' undeclared (first use in this function)
+   printf (" je :%lu \n",n,*ReadPointer);
+                         ^
+../src/helloworld.c:76:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:30:57 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:72:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:76:19: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+                   ^
+../src/helloworld.c:76:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+../src/helloworld.c:60:16: warning: unused variable 'BramAddress' [-Wunused-variable]
+  unsigned char BramAddress;
+                ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:31:09 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:12: warning: statement with no effect [-Wunused-value]
+   BramData << 8;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:71:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:75:19: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+                   ^
+../src/helloworld.c:75:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:33:00 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:12: warning: statement with no effect [-Wunused-value]
+   BramData << 1;
+   ~~~~~~~~~^~~~
+../src/helloworld.c:75:19: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+                   ^
+../src/helloworld.c:75:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:33:06 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:19: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+                   ^
+../src/helloworld.c:75:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:34:27 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:36:23 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:11: warning: too many arguments for format [-Wformat-extra-args]
+   printf (" je :%lu \n",BramData,*ReadPointer);
+           ^~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71720	   2584	  23328	  97632	  17d60	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:37:08 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:14: error: expected ')' before 'Suma'
+   printf (" "Suma brojeva do %lu je :%lu",BramData,*ReadPointer);
+              ^~~~
+../src/helloworld.c:75:41: warning: missing terminating " character
+   printf (" "Suma brojeva do %lu je :%lu",BramData,*ReadPointer);
+                                         ^
+../src/helloworld.c:75:41: error: missing terminating " character
+   printf (" "Suma brojeva do %lu je :%lu",BramData,*ReadPointer);
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:76:2: error: expected ';' before '}' token
+  }
+  ^
+../src/helloworld.c:59:16: warning: unused variable 'ReadPointer' [-Wunused-variable]
+  volatile u32 *ReadPointer = (u32*)AXI_READ_ADDRESS; // Points to address AXI_READ_ADDRESS
+                ^~~~~~~~~~~
+make: *** [src/helloworld.o] Greška 1
+04:37:20 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:50:01 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:38: warning: format '%lu' expects a matching 'long unsigned int' argument [-Wformat=]
+   printf ("Suma brojeva do %lu je :%lu",*ReadPointer);
+                                      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:51:14 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:51:38 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%ui",i,*ReadPointer);
+                                 ^
+../src/helloworld.c:80:40: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%ui",i,*ReadPointer);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:51:44 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%d",i,*ReadPointer);
+                                 ^
+../src/helloworld.c:80:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%d",i,*ReadPointer);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:51:53 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:39: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %d is :%d",i,*ReadPointer);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:52:45 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:39: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %u is :%u",i,*ReadPointer);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:53:02 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71736	   2584	  23328	  97648	  17d70	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:53:15 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+04:56:41 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+04:58:39 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:59:51 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+04:59:55 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:00:28 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:02:46 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:02:55 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:03:18 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:08:57 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:09:25 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:09:45 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:11:57 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:12:00 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:12:49 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:12:55 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:14:18 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71824	   2584	  23328	  97736	  17dc8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:14:24 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:14:50 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:17:45 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:85:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71888	   2584	  23328	  97800	  17e08	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:19:50 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:85:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71888	   2584	  23328	  97800	  17e08	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:20:10 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:29:42 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:29:45 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:30:17 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:30:20 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:30:59 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+05:31:37 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:31:59 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+05:32:01 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+17:03:36 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71800	   2584	  23328	  97712	  17db0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+17:03:41 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+17:07:04 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+17:08:32 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:06:24 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PrintMemory':
+../src/helloworld.c:60:3: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+   Xil_DCacheFlush();
+   ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:06:28 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:07:42 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PrintMemory':
+../src/helloworld.c:60:3: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+   Xil_DCacheFlush();
+   ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:07:44 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:09:01 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:11:24 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PrintMemory':
+../src/helloworld.c:60:3: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+   Xil_DCacheFlush();
+   ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:12:40 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PrintMemory':
+../src/helloworld.c:60:3: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+   Xil_DCacheFlush();
+   ^~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:14:12 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:14:18 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:16:02 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:16:25 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:24:33 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:25:13 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:28:19 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:28:23 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:52:22 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+18:52:24 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+18:55:34 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:00:44 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:05:33 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:4: error: 'data' undeclared (first use in this function)
+    data = Xil_In8 (0xa000000+i);
+    ^~~~
+../src/helloworld.c:83:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+make: *** [src/helloworld.o] Greška 1
+19:05:47 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:23: error: 'counter' undeclared (first use in this function)
+   BramData = BramData|counter; //Value of variable counter is saved to the BRAM
+                       ^~~~~~~
+../src/helloworld.c:87:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+../src/helloworld.c:75:5: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u8 data = 0;
+     ^~~~
+make: *** [src/helloworld.o] Greška 1
+19:05:54 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:06:42 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:07:17 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,*ReadPointer);
+                                 ^
+../src/helloworld.c:99:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,*ReadPointer);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:07:43 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%lu",i,*ReadPointer);
+                                 ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:09:10 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:99:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,*ReadPointer);
+                                 ^
+../src/helloworld.c:99:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka volatile long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,*ReadPointer);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:10:04 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:10:11 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:10:29 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:12:25 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'PrintMemory':
+../src/helloworld.c:66:19: error: 'startAddress' undeclared (first use in this function)
+    tmp = Xil_In8 (startAddress+i);
+                   ^~~~~~~~~~~~
+../src/helloworld.c:66:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:14:04 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:14:26 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:14:45 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:15:24 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:20: error: 'u32START_DDR_ADDRESS' undeclared (first use in this function)
+    data = Xil_In8 (u32START_DDR_ADDRESS+i);
+                    ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:83:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:15:34 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:37: error: expected ')' before ';' token
+ #define START_DDR_ADDRESS 0x00100000;
+                                     ^
+../src/helloworld.c:83:25: note: in expansion of macro 'START_DDR_ADDRESS'
+    data = Xil_In8 ((u32)START_DDR_ADDRESS+i);
+                         ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:15:43 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:37: error: expected ')' before ';' token
+ #define START_DDR_ADDRESS 0x00100000;
+                                     ^
+../src/helloworld.c:83:24: note: in expansion of macro 'START_DDR_ADDRESS'
+    data = Xil_In8((u32)START_DDR_ADDRESS+i);
+                        ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:17:14 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:18:11 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:18:18 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:19:05 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:37: error: expected ')' before ';' token
+ #define START_DDR_ADDRESS 0x00100000;
+                                     ^
+../src/helloworld.c:83:24: note: in expansion of macro 'START_DDR_ADDRESS'
+    data = Xil_In8((u32)START_DDR_ADDRESS+i);
+                        ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:19:11 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:20:14 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:22:44 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:23:06 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:27:14 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:27:15 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:27:39 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:29:30 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:29:54 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:31:05 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:31:28 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+19:33:05 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:83:19: error: expected expression before 'u32'
+    data = Xil_In8(u32 START_DDR_ADDRESS+i);
+                   ^~~
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+make: *** [src/helloworld.o] Greška 1
+19:33:23 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:33:30 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:33:54 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:34:53 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+../src/helloworld.c: In function 'main':
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:36:04 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:36:26 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:37:53 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Ništa za napraviti za `main-build'.
+19:39:08 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                 ^
+../src/helloworld.c:100:40: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %lu is :%x",i,BramData);
+                                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76148	   2580	  23328	 102056	  18ea8	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '
+19:39:42 **** Auto Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AXIBramInterface_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %u is :%x",i,BramData);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file AXIBramInterface.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [AXIBramInterface.elf] Greška 1
+20:56:05 **** Incremental Build of configuration Debug for project AXIBramInterface ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: AXIBramInterface.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AXIBramInterface_bsp/ps7_cortexa9_0/lib -o "AXIBramInterface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXIBramInterface.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AXIBramInterface.elf  |tee "AXIBramInterface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76140	   2580	  23328	 102048	  18ea0	AXIBramInterface.elf
+'Finished building: AXIBramInterface.elf.size'
+' '

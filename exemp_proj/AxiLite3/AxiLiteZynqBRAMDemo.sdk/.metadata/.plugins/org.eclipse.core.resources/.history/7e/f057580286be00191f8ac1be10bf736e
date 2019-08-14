@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xbasic_types.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+Xuint32 *BRAM_ADDRESS = (Xuint32)(XPAR_AXILITETOBRAMINTF_0_S00_AXI_BASEADDR);				//0x43C00_0000
+
+int main()
+{
+	for (int i=0; i<4096; i+=510)
+	{
+	//write
+	*(BRAM_ADDRESS+i) = i;
+	usleep(1);
+	//read
+	//printf("%d Initial value = 0x%08x\n\r", i, *(BRAM_ADDRESS+i));
+	}
+}

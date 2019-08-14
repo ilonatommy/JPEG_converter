@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Aug 13 14:31:44 2019
+# Process ID: 4252
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5036 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\exemplary_projects\AxiLiteZynqBRAMDemo3\AxiLiteZynqBRAMDemo\AxiLiteZynqBRAMDemo.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}
+file copy -force C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.runs/impl_1/design_1_wrapper.sysdef C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo3/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sdk/design_1_wrapper.hdf
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,469 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Aug  9 10:03:09 2019
+# Process ID: 3660
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3676 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\exemplary_projects\AxiLiteZynqBRAMDemo2\AxiLiteZynqBRAMDemo\AxiLiteZynqBRAMDemo.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo'
+INFO: [Project 1-313] Project file moved from 'F:/VivadoProjects/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/ip_repo/BRAMContrl_1.0', nor could it be found using path 'F:/VivadoProjects/AxiLiteZynqBRAMDemo/ip_repo/BRAMContrl_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/ip_repo/AXILiteToBRAMIntf_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/ip_repo/BRAMContrl_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 823.910 ; gain = 125.867
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:user:AXILiteToBRAMIntf:1.0 - AXILiteToBRAMIntf_0
+Adding cell -- xilinx.com:ip:system_ila:1.0 - system_ila_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 896.563 ; gain = 54.578
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav'
+"xvlog -m64 --relax -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_14 -L xil_common_vip_v1_0_0 -L axi_vip_v1_0_2 -L axi_vip_v1_0_1 -prj design_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_g_inst_0_gigantic_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_g_inst_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_2/sim/bd_f60c_slot_0_aw_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_slot_0_aw_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_3/sim/bd_f60c_slot_0_w_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_slot_0_w_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_4/sim/bd_f60c_slot_0_b_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_slot_0_b_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_5/sim/bd_f60c_slot_0_ar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_slot_0_ar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_6/sim/bd_f60c_slot_0_r_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_f60c_slot_0_r_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj design_1_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6
+INFO: [VRFC 10-307] analyzing entity design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7
+INFO: [VRFC 10-307] analyzing entity design_1_processing_system7_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_rst_ps7_0_50M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/hdl/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_UYSKKA
+INFO: [VRFC 10-307] analyzing entity design_1_ps7_0_axi_periph_0
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ipshared/48a3/hdl/AXILiteToBRAMIntf_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AXILiteToBRAMIntf_v1_0_S00_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ipshared/48a3/hdl/AXILiteToBRAMIntf_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AXILiteToBRAMIntf_v1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_AXILiteToBRAMIntf_0_0/sim/design_1_AXILiteToBRAMIntf_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_AXILiteToBRAMIntf_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/sim/bd_f60c_ila_lib_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bd_f60c_ila_lib_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hdl/bd_f60c.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bd_f60c
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/sim/design_1_system_ila_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_system_ila_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_incr_cmd
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_incr_cmd_2
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_rd_cmd_fsm
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo
+INFO: [VRFC 10-307] analyzing entity \design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized0\
+INFO: [VRFC 10-307] analyzing entity \design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized2\
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wr_cmd_fsm
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wrap_cmd
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wrap_cmd_3
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice_0
+INFO: [VRFC 10-307] analyzing entity \design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice__parameterized1\
+INFO: [VRFC 10-307] analyzing entity \design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice__parameterized2\
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_b_channel
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_cmd_translator
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_cmd_translator_1
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_r_channel
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_register_slice_v2_1_13_axi_register_slice
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_ar_channel
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_aw_channel
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0_axi_protocol_converter_v2_1_13_axi_protocol_converter
+INFO: [VRFC 10-307] analyzing entity design_1_auto_pc_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 981.000 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 455e0f46f4f341a0a7d1120f90da2309 --debug typical --relax --mt 2 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_11 -L gigantic_mux -L xlconcat_v2_1_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_awid [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2238]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_0_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2244]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_bid [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2253]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_arid [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2257]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_0_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2262]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_rid [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2267]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_1_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2288]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_1_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2306]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_2_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2332]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_2_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2350]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_3_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2376]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_3_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2394]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_4_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2420]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_4_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2438]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_5_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2464]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_5_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2482]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_6_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2508]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_6_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2526]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_7_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2552]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_7_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2570]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_8_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2596]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_8_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2614]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_9_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2640]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port slot_9_axi_wstrb [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2645]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_9_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2658]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port slot_9_axis_tstrb [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2672]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port slot_9_axis_tkeep [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2673]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_10_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2684]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_10_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2702]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_11_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2728]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_11_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2746]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_12_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2772]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_12_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2790]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_13_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2816]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_13_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2834]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_14_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2860]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_14_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2878]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_15_axi_awcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2904]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port slot_15_axi_arcache [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:2922]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 1 for port sel [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3822]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_awuser [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3823]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_wuser [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3824]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_buser [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3825]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_aruser [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3826]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_ruser [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:3827]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port slot_0_axi_wid [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v:4004]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture arch_imp of entity xil_defaultlib.AXILiteToBRAMIntf_v1_0_S00_AXI [\AXILiteToBRAMIntf_v1_0_S00_AXI(...]
+Compiling architecture arch_imp of entity xil_defaultlib.AXILiteToBRAMIntf_v1_0 [axilitetobramintf_v1_0_default]
+Compiling architecture design_1_axilitetobramintf_0_0_arch of entity xil_defaultlib.design_1_AXILiteToBRAMIntf_0_0 [design_1_axilitetobramintf_0_0_d...]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,dob_reg=1,re...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_top [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 [design_1_blk_mem_gen_0_0_blk_mem...]
+Compiling architecture structure of entity xil_defaultlib.design_1_blk_mem_gen_0_0 [design_1_blk_mem_gen_0_0_default]
+Compiling architecture bibuf_v of entity unisim.BIBUF [bibuf_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture ps7_v of entity unisim.PS7 [\PS7:design_1_wrapper:design_1_i...]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7 [\design_1_processing_system7_0_0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_processing_system7_0_0 [\design_1_processing_system7_0_0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010111010101010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000111000000010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10001111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111011100001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00100000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101100001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010101110101000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111110011111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00001111110000000000...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000100")(0,7)\]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_rd_cmd_fsm [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010100110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101010001010100010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001010000010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010000000100000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001000100...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111000100011111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111000111110001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010010000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010101010101000101...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10100110")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010100110101010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110111101000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_incr_cmd_2 [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00011101")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000111111111011...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111110110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101111111101101111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10011010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010101010101010101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01000100010001000100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101111111000001110...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wrap_cmd_3 [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_cmd_translator_1 [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_ar_channel [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010011010011010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010011010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01001111")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111111")(0,7)\]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110111011111110111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000010000000...]
+Compiling architecture srlc32e_v of entity unisim.SRLC32E [\SRLC32E(0,31)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010001010100010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01111100000000000000...]
+Compiling architecture structure of entity xil_defaultlib.\design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized1\ [\design_1_auto_pc_0_axi_protocol...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010011010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010010101011010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10000000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111111011101010...]
+Compiling architecture structure of entity xil_defaultlib.\design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized2\ [\design_1_auto_pc_0_axi_protocol...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_r_channel [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111000010000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111011110000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111110100100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101111101000001100...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000011111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111011111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11110100010001001111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010101010001010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10001010100010001000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10100000101000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010000000100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001010100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00101010001000100010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010101010101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11011101110111011101...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1010011010101010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010101011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101110111000100010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00001000111100111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111000000001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice [design_1_auto_pc_0_axi_register_...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000111011101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100010111000101110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111010011111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10001000100010000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000001010101010...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice_0 [design_1_auto_pc_0_axi_register_...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1011")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.\design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice__parameterized1\ [\design_1_auto_pc_0_axi_register...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100111111111111")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111100011111111")(0...]
+Compiling architecture structure of entity xil_defaultlib.\design_1_auto_pc_0_axi_register_slice_v2_1_13_axic_register_slice__parameterized2\ [\design_1_auto_pc_0_axi_register...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_register_slice_v2_1_13_axi_register_slice [design_1_auto_pc_0_axi_register_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000100000000001111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000010011111111")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11001111110011110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000101110111011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111000100010001011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010101010101011101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101110111111100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00101110001000100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00100011000100000110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101001100110011010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101011100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100010001000101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100010111000101110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011000000001111...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wr_cmd_fsm [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001101010101010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000101010011010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000010011010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000001001")(0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_incr_cmd [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_wrap_cmd [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_cmd_translator [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_aw_channel [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000101010")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1110011100011000")(0...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000010000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010000000010010000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111101111...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110101010101010")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101010101010101010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001101010100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010000000000000")(0...]
+Compiling architecture structure of entity xil_defaultlib.\design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_simple_fifo__parameterized0\ [\design_1_auto_pc_0_axi_protocol...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000011101010")(0...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s_b_channel [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_b2s [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0_axi_protocol_converter_v2_1_13_axi_protocol_converter [design_1_auto_pc_0_axi_protocol_...]
+Compiling architecture structure of entity xil_defaultlib.design_1_auto_pc_0 [design_1_auto_pc_0_default]
+Compiling architecture structure of entity xil_defaultlib.s00_couplers_imp_UYSKKA [s00_couplers_imp_uyskka_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_ps7_0_axi_periph_0 [design_1_ps7_0_axi_periph_0_defa...]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_11.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture design_1_rst_ps7_0_50m_0_arch of entity xil_defaultlib.design_1_rst_ps7_0_50M_0 [design_1_rst_ps7_0_50m_0_default]
+Compiling module gigantic_mux.gigantic_mux_v1_0_1_cntr(PROTOCO...
+Compiling module xil_defaultlib.bd_f60c_g_inst_0_gigantic_mux(C_...
+Compiling module xil_defaultlib.bd_f60c_g_inst_0
+Compiling architecture bd_f60c_ila_lib_0_arch of entity xil_defaultlib.bd_f60c_ila_lib_0 [bd_f60c_ila_lib_0_default]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default
+Compiling module xil_defaultlib.bd_f60c_slot_0_ar_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default...
+Compiling module xil_defaultlib.bd_f60c_slot_0_aw_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default...
+Compiling module xil_defaultlib.bd_f60c_slot_0_b_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default...
+Compiling module xil_defaultlib.bd_f60c_slot_0_r_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default...
+Compiling module xil_defaultlib.bd_f60c_slot_0_w_0
+Compiling architecture structure of entity xil_defaultlib.bd_f60c [bd_f60c_default]
+Compiling architecture design_1_system_ila_0_0_arch of entity xil_defaultlib.design_1_system_ila_0_0 [design_1_system_ila_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [\design_1:design_1_wrapper:desig...]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper
+Built simulation snapshot design_1_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav/xsim.dir/design_1_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Aug  9 10:05:41 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug  9 10:05:41 2019...
+run_program: Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1009.453 ; gain = 28.453
+INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_1_wrapper_behav -key {Behavioral:sim_1:Functional:design_1_wrapper} -tclbatch {design_1_wrapper.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source design_1_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Warning on instance :design_1_wrapper:design_1_i:processing_system7_0:inst:PS7_i: The Zynq-7000 All Programmable SoC does not have a simulation model. Behavioral simulation of Zynq-7000 (e.g. Zynq PS7 block) is not supported in any simulator. Please use the AXI BFM simulation model to verify the AXI transactions
+Time: 0 ps  Iteration: 0  Process: /design_1_wrapper/design_1_i/processing_system7_0/inst/PS7_i/line__663  File: C:\Xilinx\Vivado\2017.2\data/vhdl/src/unisims/primitive/PS7.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_1_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1009.453 ; gain = 28.453
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  9 13:34:08 2019...

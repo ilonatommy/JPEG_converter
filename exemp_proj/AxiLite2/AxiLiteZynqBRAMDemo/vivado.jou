@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Aug  9 14:04:02 2019
+# Process ID: 4460
+# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent996 C:\Users\lsneler\Desktop\Repository\JPEG_conversion\exemplary_projects\AxiLiteZynqBRAMDemo2\AxiLiteZynqBRAMDemo\AxiLiteZynqBRAMDemo.xpr
+# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z030_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z030_1] 0]
+set_property PROBES.FILE {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z030_1]
+set_property FULL_PROBES.FILE {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z030_1]
+set_property PROGRAM.FILE {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z030_1]
+program_hw_devices [get_hw_devices xc7z030_1]
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sdk -hwspec C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/lsneler/Desktop/Repository/JPEG_conversion/exemplary_projects/AxiLiteZynqBRAMDemo2/AxiLiteZynqBRAMDemo/AxiLiteZynqBRAMDemo.srcs/sources_1/bd/design_1/design_1.bd}

@@ -1,0 +1,95 @@
+$date
+        2019-Aug-14 11:57:24
+$end
+$version
+        Vivado v2017.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " design_1_i/system_ila_0/U0/probe0_1 [7:0] $end
+$var reg 8 * design_1_i/system_ila_0/U0/probe1_1 [7:0] $end
+$var reg 8 2 design_1_i/system_ila_0/U0/probe2_1 [7:0] $end
+$var reg 1 : design_1_i/system_ila_0/U0/probe3_1 $end
+$var reg 2 ; design_1_i/system_ila_0/U0/net_slot_0_axi_ar_cnt [1:0] $end
+$var reg 4 = design_1_i/system_ila_0/U0/net_slot_0_axi_araddr [3:0] $end
+$var reg 3 A design_1_i/system_ila_0/U0/net_slot_0_axi_arprot [2:0] $end
+$var reg 2 D design_1_i/system_ila_0/U0/net_slot_0_axi_aw_cnt [1:0] $end
+$var reg 4 F design_1_i/system_ila_0/U0/net_slot_0_axi_awaddr [3:0] $end
+$var reg 3 J design_1_i/system_ila_0/U0/net_slot_0_axi_awprot [2:0] $end
+$var reg 2 M design_1_i/system_ila_0/U0/net_slot_0_axi_b_cnt [1:0] $end
+$var reg 2 O design_1_i/system_ila_0/U0/net_slot_0_axi_bresp [1:0] $end
+$var reg 2 Q design_1_i/system_ila_0/U0/net_slot_0_axi_r_cnt [1:0] $end
+$var reg 32 S design_1_i/system_ila_0/U0/net_slot_0_axi_rdata [31:0] $end
+$var reg 2 s design_1_i/system_ila_0/U0/net_slot_0_axi_rresp [1:0] $end
+$var reg 32 u design_1_i/system_ila_0/U0/net_slot_0_axi_wdata [31:0] $end
+$var reg 4 7" design_1_i/system_ila_0/U0/net_slot_0_axi_wstrb [3:0] $end
+$var reg 2 ;" design_1_i/system_ila_0/U0/net_slot_0_axi_aw_ctrl [1:0] $end
+$var reg 1 =" design_1_i/system_ila_0/U0/net_slot_0_axi_awvalid $end
+$var reg 1 >" design_1_i/system_ila_0/U0/net_slot_0_axi_awready $end
+$var reg 2 ?" design_1_i/system_ila_0/U0/net_slot_0_axi_w_ctrl [1:0] $end
+$var reg 1 A" design_1_i/system_ila_0/U0/net_slot_0_axi_wvalid $end
+$var reg 1 B" design_1_i/system_ila_0/U0/net_slot_0_axi_wready $end
+$var reg 2 C" design_1_i/system_ila_0/U0/net_slot_0_axi_b_ctrl [1:0] $end
+$var reg 1 E" design_1_i/system_ila_0/U0/net_slot_0_axi_bvalid $end
+$var reg 1 F" design_1_i/system_ila_0/U0/net_slot_0_axi_bready $end
+$var reg 2 G" design_1_i/system_ila_0/U0/net_slot_0_axi_ar_ctrl [1:0] $end
+$var reg 1 I" design_1_i/system_ila_0/U0/net_slot_0_axi_arvalid $end
+$var reg 1 J" design_1_i/system_ila_0/U0/net_slot_0_axi_arready $end
+$var reg 2 K" design_1_i/system_ila_0/U0/net_slot_0_axi_r_ctrl [1:0] $end
+$var reg 1 M" design_1_i/system_ila_0/U0/net_slot_0_axi_rvalid $end
+$var reg 1 N" design_1_i/system_ila_0/U0/net_slot_0_axi_rready $end
+$var reg 3 O" AR_Channel__i1_s0___ps7_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 R" AW_Channel__i1_s0___ps7_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 U" B_Channel__i1_s0___ps7_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 X" R_Channel__i1_s0___ps7_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 3 [" W_Channel__i1_s0___ps7_0_axi_periph_M00_AXI_ [2:0] $end
+$var reg 1 ^" _TRIGGER $end
+$var reg 1 _" _WINDOW $end
+$var reg 1 `" _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 *
+b0 2
+0:
+b0 ;
+b10 =
+b100 A
+b0 D
+b1011 F
+b100 J
+b0 M
+b0 O
+b0 Q
+b0 S
+b0 s
+b1000001100010111111100111000011 u
+b1111 7"
+b0 ;"
+0="
+0>"
+b0 ?"
+0A"
+0B"
+b10 C"
+0E"
+1F"
+b0 G"
+0I"
+0J"
+b10 K"
+0M"
+1N"
+b11 O"
+b11 R"
+b11 U"
+b100 X"
+b100 ["
+1^"
+1_"
+0`"
+$end

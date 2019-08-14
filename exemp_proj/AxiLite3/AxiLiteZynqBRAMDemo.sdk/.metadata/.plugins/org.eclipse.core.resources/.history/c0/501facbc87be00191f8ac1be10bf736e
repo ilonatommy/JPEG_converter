@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xbasic_types.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+Xuint32 *BRAM_ADDRESS = (Xuint32)(XPAR_AXILITETOBRAMINTF_0_S00_AXI_BASEADDR);				//0x43C00_0000
+
+int main()
+{
+	u32  BramData;
+
+	for (int i=0; i<512*256; i++)
+	{
+	//write
+	BramData = i;
+	BramData = BramData << 8;
+	BramData = BramData|data; //Value of variable counter is saved to the BRAM
+	BramData = BramData<<1;
+	BramData = BramData|(unsigned int)1;//Write to BRAM
+
+	*(BRAM_ADDRESS) = (u32)BramData;
+
+	//*(BRAM_ADDRESS+i) = i;
+	//read
+	//printf("%d Initial value = 0x%08x\n\r", i, *(BRAM_ADDRESS+i));
+	}
+}
