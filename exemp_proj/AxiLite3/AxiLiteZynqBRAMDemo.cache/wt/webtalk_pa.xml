@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Aug 14 13:54:33 2019">
+<application name="pa" timeStamp="Wed Aug 14 14:43:23 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="ae2bafa6f2a347708036862fe5088481" type="ProjectID"/>
 <property name="ProjectIteration" value="12" type="ProjectIteration"/>
@@ -17,22 +17,22 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AutoConnectTarget" value="3" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="4" type="JavaHandler"/>
 <property name="CustomizeRSBBlock" value="15" type="JavaHandler"/>
 <property name="EditProperties" value="2" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="6" type="JavaHandler"/>
 <property name="NewExportHardware" value="3" type="JavaHandler"/>
-<property name="NewLaunchHardware" value="4" type="JavaHandler"/>
-<property name="OpenBlockDesign" value="20" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="5" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="21" type="JavaHandler"/>
 <property name="OpenHardwareDashboard" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="23" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="24" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="4" type="JavaHandler"/>
 <property name="ProgramDevice" value="6" type="JavaHandler"/>
 <property name="RefreshDevice" value="2" type="JavaHandler"/>
 <property name="RunBitgen" value="9" type="JavaHandler"/>
 <property name="RunImplementation" value="2" type="JavaHandler"/>
 <property name="RunSynthesis" value="3" type="JavaHandler"/>
-<property name="RunTrigger" value="146" type="JavaHandler"/>
+<property name="RunTrigger" value="150" type="JavaHandler"/>
 <property name="RunTriggerImmediate" value="1" type="JavaHandler"/>
 <property name="SaveRSBDesign" value="1" type="JavaHandler"/>
 <property name="ShowView" value="2" type="JavaHandler"/>
@@ -43,14 +43,14 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Gui Resources Info">
 <property name="AddressTreeTablePanel_ADDRESS_TREE_TABLE" value="18" type="GuiResourceData"/>
 <property name="BaseDialog_CANCEL" value="2" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="40" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="41" type="GuiResourceData"/>
 <property name="BaseDialog_YES" value="8" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
 <property name="CustomizeCoreDialog_DOCUMENTATION" value="2" type="GuiResourceData"/>
 <property name="CustomizeCoreDialog_IP_LOCATION" value="1" type="GuiResourceData"/>
 <property name="EditProbeValueDialog_CANCEL" value="1" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="17" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="83" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="19" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="88" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_FIT" value="7" type="GuiResourceData"/>
 <property name="HardwareDashboardOptionsPanel_CLOSE_DASHBOARD_OPTIONS" value="1" type="GuiResourceData"/>
 <property name="HardwareDashboardView_SHOW_DASHBOARD_OPTIONS" value="1" type="GuiResourceData"/>
@@ -60,42 +60,43 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="IlaProbeTablePanel_ADD_PROBE" value="21" type="GuiResourceData"/>
 <property name="IlaProbeTablePanel_REMOVE_SELECTED_PROBE" value="14" type="GuiResourceData"/>
 <property name="LaunchPanel_GENERATE_SCRIPTS_ONLY" value="1" type="GuiResourceData"/>
-<property name="MainMenuMgr_EXPORT" value="12" type="GuiResourceData"/>
-<property name="MainMenuMgr_FILE" value="18" type="GuiResourceData"/>
+<property name="MainMenuMgr_EXPORT" value="13" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="20" type="GuiResourceData"/>
 <property name="MainMenuMgr_IMPORT" value="5" type="GuiResourceData"/>
-<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="7" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_FILE" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="8" type="GuiResourceData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="16" type="GuiResourceData"/>
 <property name="MsgView_INFORMATION_MESSAGES" value="1" type="GuiResourceData"/>
 <property name="MsgView_WARNING_MESSAGES" value="1" type="GuiResourceData"/>
 <property name="NewExportHardwareDialog_INCLUDE_BITSTREAM" value="3" type="GuiResourceData"/>
-<property name="PACommandNames_AUTO_CONNECT_TARGET" value="3" type="GuiResourceData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="4" type="GuiResourceData"/>
 <property name="PACommandNames_EXPORT_HARDWARE" value="3" type="GuiResourceData"/>
-<property name="PACommandNames_LAUNCH_HARDWARE" value="4" type="GuiResourceData"/>
+<property name="PACommandNames_LAUNCH_HARDWARE" value="5" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_BITGEN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_TRIGGER_IMMEDIATE" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_VALIDATE_RSB_DESIGN" value="4" type="GuiResourceData"/>
 <property name="PAViews_DASHBOARD" value="1" type="GuiResourceData"/>
 <property name="ProbeValueTablePanel_TEXT_FIELD" value="33" type="GuiResourceData"/>
 <property name="ProbesView_PROBES_TREE" value="16" type="GuiResourceData"/>
-<property name="ProgramDebugTab_OPEN_TARGET" value="1" type="GuiResourceData"/>
+<property name="ProgramDebugTab_OPEN_TARGET" value="2" type="GuiResourceData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="1" type="GuiResourceData"/>
 <property name="ProgramDebugTab_REFRESH_DEVICE" value="2" type="GuiResourceData"/>
 <property name="ProgramFpgaDialog_PROGRAM" value="6" type="GuiResourceData"/>
 <property name="ProgressDialog_BACKGROUND" value="8" type="GuiResourceData"/>
 <property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
 <property name="RDICommands_PROPERTIES" value="1" type="GuiResourceData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="93" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="97" type="GuiResourceData"/>
 <property name="SaveProjectUtils_SAVE" value="3" type="GuiResourceData"/>
 <property name="SystemTreeView_SYSTEM_TREE" value="3" type="GuiResourceData"/>
 <property name="TriggerSetupPanel_TABLE" value="227" type="GuiResourceData"/>
-<property name="TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE" value="130" type="GuiResourceData"/>
+<property name="TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE" value="134" type="GuiResourceData"/>
 <property name="TriggerStatusPanel_STOP_TRIGGER_FOR_THIS_ILA_CORE" value="16" type="GuiResourceData"/>
-<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="87" type="GuiResourceData"/>
+<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="88" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="90" type="GuiMode"/>
+<property name="GuiMode" value="93" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="59" type="TclMode"/>
+<property name="TclMode" value="62" type="TclMode"/>
 </item>
 </section>
 </application>

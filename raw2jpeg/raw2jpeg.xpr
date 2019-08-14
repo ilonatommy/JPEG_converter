@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a5556b44090644648016a6aa246646a4"/>
@@ -30,7 +30,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="38"/>
+    <Option Name="WTXSimLaunchSim" Val="39"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -59,11 +59,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="converter.bd" FileRelPathName="ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="converter_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="converter.bd" FileRelPathName="ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.xci">
           <Proxy FileSetName="converter_DCT_2D_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="converter.bd" FileRelPathName="ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="converter_blk_mem_gen_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="converter.bd" FileRelPathName="ip/converter_quant_0_0/converter_quant_0_0.xci">
           <Proxy FileSetName="converter_quant_0_0"/>
@@ -401,9 +401,7 @@
     </Run>
     <Run Id="DCT_2D_0_synth_1" Type="Ft3:Synth" SrcSet="DCT_2D_0" Part="xc7z010clg400-1" ConstrsSet="DCT_2D_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/DCT_2D_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -412,9 +410,7 @@
     </Run>
     <Run Id="converter_DCT_2D_0_0_synth_1" Type="Ft3:Synth" SrcSet="converter_DCT_2D_0_0" Part="xc7z010clg400-1" ConstrsSet="converter_DCT_2D_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/converter_DCT_2D_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -423,9 +419,7 @@
     </Run>
     <Run Id="converter_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="converter_controller_0_0" Part="xc7z010clg400-1" ConstrsSet="converter_controller_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/converter_controller_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -595,9 +589,7 @@
     </Run>
     <Run Id="DCT_2D_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DCT_2D_0" Description="Default settings for Implementation." SynthRun="DCT_2D_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -613,9 +605,7 @@
     </Run>
     <Run Id="converter_DCT_2D_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="converter_DCT_2D_0_0" Description="Default settings for Implementation." SynthRun="converter_DCT_2D_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -631,9 +621,7 @@
     </Run>
     <Run Id="converter_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="converter_controller_0_0" Description="Default settings for Implementation." SynthRun="converter_controller_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

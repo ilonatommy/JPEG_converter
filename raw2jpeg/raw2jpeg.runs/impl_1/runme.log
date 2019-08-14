@@ -10,1769 +10,46 @@
 
 source converter_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'converter_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/stats.txt'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 345.020 ; gain = 112.164
+WARNING: [IP_Flow 19-3664] IP 'converter_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 347.023 ; gain = 114.160
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.dcp' for cell 'converter_i/AXILiteToBRAMIntf_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.dcp' for cell 'converter_i/DCT_2D_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.dcp' for cell 'converter_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.dcp' for cell 'converter_i/blk_mem_gen_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp' for cell 'converter_i/controller_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.dcp' for cell 'converter_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.dcp' for cell 'converter_i/quant_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.dcp' for cell 'converter_i/rst_ps7_0_50M'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.dcp' for cell 'converter_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.dcp' for cell 'converter_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.dcp' for cell 'converter_i/AXILiteToBRAMIntf_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.dcp' for cell 'converter_i/DCT_2D_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.dcp' for cell 'converter_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.dcp' for cell 'converter_i/blk_mem_gen_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp' for cell 'converter_i/controller_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.dcp' for cell 'converter_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.dcp' for cell 'converter_i/quant_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.dcp' for cell 'converter_i/rst_ps7_0_50M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.dcp' for cell 'converter_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.dcp' for cell 'converter_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 388 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.2
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.999990 which will be rounded to 1.000 to ensure it is an integer multiple of 1 picosecond [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc:21]
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 168 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-
-link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 660.227 ; gain = 315.207
-Command: opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-Command: report_drc (run_mandatory_drcs) for: opt_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Project 1-461] DRC finished with 0 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.619 . Memory (MB): peak = 667.926 ; gain = 7.699
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Starting Logic Optimization Task
-
-Phase 1 Generate And Synthesize Debug Cores
-INFO: [Chipscope 16-318] Generating core instance : dbg_hub
-INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
-INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "7b29c67c0a29971e".
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1136.156 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 1ecf6c577
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 1136.156 ; gain = 20.547
-
-Phase 2 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 1901e016d
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:35 . Memory (MB): peak = 1136.156 ; gain = 20.547
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 69 cells
-
-Phase 3 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 1904803a6
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 1136.156 ; gain = 20.547
-INFO: [Opt 31-389] Phase Constant propagation created 79 cells and removed 111 cells
-
-Phase 4 Sweep
-Phase 4 Sweep | Checksum: 11ef1b7a1
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:36 . Memory (MB): peak = 1136.156 ; gain = 20.547
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 648 cells
-
-Phase 5 BUFG optimization
-Phase 5 BUFG optimization | Checksum: 11ef1b7a1
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 1136.156 ; gain = 20.547
-INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
-
-Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 11ef1b7a1
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 1136.156 ; gain = 20.547
-INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
-
-Starting Connectivity Check Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1136.156 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 11ef1b7a1
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 1136.156 ; gain = 20.547
-
-Starting Power Optimization Task
-INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 11 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 11 newly gated: 4 Total Ports: 22
-Ending PowerOpt Patch Enables Task | Checksum: 12667e407
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 12667e407
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1327.230 ; gain = 191.074
-45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 1327.230 ; gain = 667.004
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_opt.dcp' has been generated.
-Command: report_drc -file converter_wrapper_drc_opted.rpt
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_opted.rpt.
-report_drc completed successfully
-INFO: [Chipscope 16-240] Debug cores have already been implemented
-Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-Running DRC as a precondition to command place_design
-Command: report_drc (run_mandatory_drcs) for: placer_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-Starting Placer Task
-INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
-
-Phase 1 Placer Initialization
-
-Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11f25fe9e
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10a61825e
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1c75dab33
-
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1c75dab33
-
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1c75dab33
-
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1a6b5a856
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3 Detail Placement
-
-Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1a6b5a856
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1e8242e8d
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 23f33801d
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1d0def7a3
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1508685ec
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 13e90e004
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1458b2185
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1458b2185
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1458b2185
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4 Post Placement Optimization and Clean-Up
-
-Phase 4.1 Post Commit Optimization
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: c9544cdd
-
-Phase 4.1.1.1 BUFG Insertion
-INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: c9544cdd
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.511. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 10bcdb45d
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 10bcdb45d
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 10bcdb45d
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 10bcdb45d
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 119304fdd
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 119304fdd
-
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Ending Placer Task | Checksum: aa0dd7ca
-
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-64 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-place_design completed successfully
-place_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.658 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1327.230 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1327.230 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command route_design
-Command: report_drc (run_mandatory_drcs) for: router_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-
-Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 510f9fc6 ConstDB: 0 ShapeSum: 58fe3804 RouteDB: 0
-
-Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1c9469d7b
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 2 Router Initialization
-
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 1c9469d7b
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 1c9469d7b
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 1c9469d7b
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.230 ; gain = 0.000
- Number of Nodes with overlaps = 0
-
-Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 208c81945
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.022  | TNS=0.000  | WHS=-0.188 | THS=-140.341|
-
-Phase 2 Router Initialization | Checksum: 1bb407222
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 13a3fbc28
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4 Rip-up And Reroute
-
-Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 562
- Number of Nodes with overlaps = 44
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.298  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 1de71e812
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 20
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.307  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 1922da9e3
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: 1922da9e3
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 5 Delay and Skew Optimization
-
-Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1922da9e3
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1922da9e3
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: 1922da9e3
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 6 Post Hold Fix
-
-Phase 6.1 Hold Fix Iter
-
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 14dc085b7
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.422  | TNS=0.000  | WHS=0.013  | THS=0.000  |
-
-Phase 6.1 Hold Fix Iter | Checksum: 1dcc66141
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 1dcc66141
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 7 Route finalize
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.02351 %
-  Global Horizontal Routing Utilization  = 4.41613 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 0
-  Number of Unrouted Nets             = 0
-  Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 0
-
-Phase 7 Route finalize | Checksum: 1dcc66141
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 8 Verifying routed nets
-
- Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1dcc66141
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 27eaaf91a
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.422  | TNS=0.000  | WHS=0.013  | THS=0.000  |
-
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 27eaaf91a
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Route 35-16] Router Completed Successfully
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1327.230 ; gain = 0.000
-
-Routing Is Done.
-77 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-route_design completed successfully
-route_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1327.230 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1327.230 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_routed.dcp' has been generated.
-Command: report_drc -file converter_wrapper_drc_routed.rpt -pb converter_wrapper_drc_routed.pb -rpx converter_wrapper_drc_routed.rpx
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_routed.rpt.
-report_drc completed successfully
-Command: report_methodology -file converter_wrapper_methodology_drc_routed.rpt -rpx converter_wrapper_methodology_drc_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_methodology_drc_routed.rpt.
-report_methodology completed successfully
-Command: report_power -file converter_wrapper_power_routed.rpt -pb converter_wrapper_power_summary_routed.pb -rpx converter_wrapper_power_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
-Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-84 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-report_power completed successfully
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-Command: write_bitstream -force converter_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command write_bitstream
-Command: report_drc (run_mandatory_drcs) for: bitstream_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result output converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result output converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./converter_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 10:12:37 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-95 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1702.453 ; gain = 357.324
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 10:12:37 2019...
-
-*** Running vivado
-    with args -log converter_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source converter_wrapper.tcl -notrace
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source converter_wrapper.tcl -notrace
-Command: open_checkpoint converter_wrapper_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 221.445 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 383 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper_early.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper_early.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-7344-rtrkos034/dbg_hub_CV.0/out/xsdbm.xdc:11]
-get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.387 ; gain = 450.379
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-3888-rtrkos034/dcp3/converter_wrapper.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.837 . Memory (MB): peak = 1019.477 ; gain = 13.090
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.838 . Memory (MB): peak = 1019.477 ; gain = 13.090
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 174 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
-open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1023.547 ; gain = 803.867
-Command: write_bitstream -force converter_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command write_bitstream
-Command: report_drc (run_mandatory_drcs) for: bitstream_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result output converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result output converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./converter_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 10:28:09 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-17 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1407.527 ; gain = 383.980
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 10:28:09 2019...
-
-*** Running vivado
-    with args -log converter_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source converter_wrapper.tcl -notrace
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source converter_wrapper.tcl -notrace
-Command: open_checkpoint converter_wrapper_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 221.168 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 383 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper_early.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper_early.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-7344-rtrkos034/dbg_hub_CV.0/out/xsdbm.xdc:11]
-get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1006.566 ; gain = 450.371
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/.Xil/Vivado-6552-rtrkos034/dcp3/converter_wrapper.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.893 . Memory (MB): peak = 1019.656 ; gain = 13.090
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.893 . Memory (MB): peak = 1019.656 ; gain = 13.090
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 174 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 6 instances
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
-open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1023.727 ; gain = 804.320
-Command: write_bitstream -force converter_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command write_bitstream
-Command: report_drc (run_mandatory_drcs) for: bitstream_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result output converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result output converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./converter_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 10:45:05 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-17 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1409.207 ; gain = 385.480
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 10:45:05 2019...
-
-*** Running vivado
-    with args -log converter_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source converter_wrapper.tcl -notrace
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source converter_wrapper.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'converter_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/stats.txt'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 345.777 ; gain = 113.160
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.dcp' for cell 'converter_i/AXILiteToBRAMIntf_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.dcp' for cell 'converter_i/DCT_2D_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.dcp' for cell 'converter_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.dcp' for cell 'converter_i/blk_mem_gen_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp' for cell 'converter_i/controller_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.dcp' for cell 'converter_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.dcp' for cell 'converter_i/quant_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.dcp' for cell 'converter_i/rst_ps7_0_50M'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.dcp' for cell 'converter_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.dcp' for cell 'converter_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.999990 which will be rounded to 1.000 to ensure it is an integer multiple of 1 picosecond [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc:21]
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 168 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-
-link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 660.293 ; gain = 314.516
-Command: opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-Command: report_drc (run_mandatory_drcs) for: opt_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Project 1-461] DRC finished with 0 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.575 . Memory (MB): peak = 665.988 ; gain = 5.695
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Starting Logic Optimization Task
-
-Phase 1 Generate And Synthesize Debug Cores
-INFO: [Chipscope 16-318] Generating core instance : dbg_hub
-INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
-INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "7b29c67c0a29971e".
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1134.164 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 186add330
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:03:21 . Memory (MB): peak = 1134.164 ; gain = 20.488
-
-Phase 2 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 19e335207
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:03:22 . Memory (MB): peak = 1134.164 ; gain = 20.488
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 69 cells
-
-Phase 3 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 172ab971e
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:03:22 . Memory (MB): peak = 1134.164 ; gain = 20.488
-INFO: [Opt 31-389] Phase Constant propagation created 79 cells and removed 111 cells
-
-Phase 4 Sweep
-Phase 4 Sweep | Checksum: 1dbff4a87
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:03:23 . Memory (MB): peak = 1134.164 ; gain = 20.488
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 648 cells
-
-Phase 5 BUFG optimization
-Phase 5 BUFG optimization | Checksum: 1dbff4a87
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:03:23 . Memory (MB): peak = 1134.164 ; gain = 20.488
-INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
-
-Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 1dbff4a87
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:03:23 . Memory (MB): peak = 1134.164 ; gain = 20.488
-INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
-
-Starting Connectivity Check Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1134.164 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1dbff4a87
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:03:23 . Memory (MB): peak = 1134.164 ; gain = 20.488
-
-Starting Power Optimization Task
-INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 11 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 11 newly gated: 4 Total Ports: 22
-Ending PowerOpt Patch Enables Task | Checksum: 1b0daba91
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1b0daba91
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 1325.270 ; gain = 191.105
-45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:04:08 . Memory (MB): peak = 1325.270 ; gain = 664.977
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Command: report_drc -file converter_wrapper_drc_opted.rpt
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_opted.rpt.
-report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Chipscope 16-240] Debug cores have already been implemented
-Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-Running DRC as a precondition to command place_design
-Command: report_drc (run_mandatory_drcs) for: placer_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-Starting Placer Task
-INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
-
-Phase 1 Placer Initialization
-
-Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12f675a13
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e26fe0e2
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: f76179ad
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: f76179ad
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: f76179ad
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: bd89a8d1
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3 Detail Placement
-
-Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: bd89a8d1
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 21468ae04
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1df8c0dc2
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1af366ee3
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 128e53503
-
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 197b6df04
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1d645facc
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1d645facc
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1d645facc
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4 Post Placement Optimization and Clean-Up
-
-Phase 4.1 Post Commit Optimization
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 2408eb094
-
-Phase 4.1.1.1 BUFG Insertion
-INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 2408eb094
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.533. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1cd84e889
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1cd84e889
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1cd84e889
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1cd84e889
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 233a854b3
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 233a854b3
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Ending Placer Task | Checksum: 1639d80e0
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1325.270 ; gain = 0.000
-64 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-place_design completed successfully
-place_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.651 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1325.270 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1325.270 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command route_design
-Command: report_drc (run_mandatory_drcs) for: router_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-
-Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: a3d494c3 ConstDB: 0 ShapeSum: bfc8ec1d RouteDB: 0
-
-Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: dda5a5f3
-
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 2 Router Initialization
-
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: dda5a5f3
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: dda5a5f3
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: dda5a5f3
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1325.270 ; gain = 0.000
- Number of Nodes with overlaps = 0
-
-Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1f1c1811c
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.005  | TNS=0.000  | WHS=-0.188 | THS=-135.141|
-
-Phase 2 Router Initialization | Checksum: 186bf0170
-
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1cc48ca96
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4 Rip-up And Reroute
-
-Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 632
- Number of Nodes with overlaps = 27
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.016  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 18fed364b
-
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.388  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: e01f54a1
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: e01f54a1
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 5 Delay and Skew Optimization
-
-Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: e01f54a1
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: e01f54a1
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: e01f54a1
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 6 Post Hold Fix
-
-Phase 6.1 Hold Fix Iter
-
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1b1c06b23
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.503  | TNS=0.000  | WHS=0.035  | THS=0.000  |
-
-Phase 6.1 Hold Fix Iter | Checksum: 17d3d73aa
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 17d3d73aa
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 7 Route finalize
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.15175 %
-  Global Horizontal Routing Utilization  = 4.42027 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 0
-  Number of Unrouted Nets             = 0
-  Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 0
-
-Phase 7 Route finalize | Checksum: 19c3cf38e
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 8 Verifying routed nets
-
- Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 19c3cf38e
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1fe60bbfa
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.503  | TNS=0.000  | WHS=0.035  | THS=0.000  |
-
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1fe60bbfa
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Route 35-16] Router Completed Successfully
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.270 ; gain = 0.000
-
-Routing Is Done.
-77 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-route_design completed successfully
-route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1325.270 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1325.270 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_routed.dcp' has been generated.
-Command: report_drc -file converter_wrapper_drc_routed.rpt -pb converter_wrapper_drc_routed.pb -rpx converter_wrapper_drc_routed.rpx
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_routed.rpt.
-report_drc completed successfully
-Command: report_methodology -file converter_wrapper_methodology_drc_routed.rpt -rpx converter_wrapper_methodology_drc_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_methodology_drc_routed.rpt.
-report_methodology completed successfully
-Command: report_power -file converter_wrapper_power_routed.rpt -pb converter_wrapper_power_summary_routed.pb -rpx converter_wrapper_power_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
-Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-84 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-report_power completed successfully
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-Command: write_bitstream -force converter_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command write_bitstream
-Command: report_drc (run_mandatory_drcs) for: bitstream_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result output converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result output converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./converter_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 11:44:52 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-95 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1712.664 ; gain = 359.336
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 11:44:52 2019...
-
-*** Running vivado
-    with args -log converter_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source converter_wrapper.tcl -notrace
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source converter_wrapper.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'converter_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/stats.txt'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 345.012 ; gain = 112.160
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.dcp' for cell 'converter_i/AXILiteToBRAMIntf_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.dcp' for cell 'converter_i/DCT_2D_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.dcp' for cell 'converter_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.dcp' for cell 'converter_i/blk_mem_gen_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp' for cell 'converter_i/controller_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.dcp' for cell 'converter_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.dcp' for cell 'converter_i/quant_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.dcp' for cell 'converter_i/rst_ps7_0_50M'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.dcp' for cell 'converter_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.dcp' for cell 'converter_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.999990 which will be rounded to 1.000 to ensure it is an integer multiple of 1 picosecond [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc:21]
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 168 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 168 instances
-
-link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 660.215 ; gain = 315.203
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
-Command: opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-Command: report_drc (run_mandatory_drcs) for: opt_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Project 1-461] DRC finished with 0 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.591 . Memory (MB): peak = 665.844 ; gain = 5.629
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Starting Logic Optimization Task
-
-Phase 1 Generate And Synthesize Debug Cores
-INFO: [Chipscope 16-318] Generating core instance : dbg_hub
-INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
-INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "7b29c67c0a29971e".
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1134.074 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: f900bc31
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:36 . Memory (MB): peak = 1134.074 ; gain = 20.551
-
-Phase 2 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 1855d54e8
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 1134.074 ; gain = 20.551
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 69 cells
-
-Phase 3 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 117362816
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:37 . Memory (MB): peak = 1134.074 ; gain = 20.551
-INFO: [Opt 31-389] Phase Constant propagation created 10 cells and removed 41 cells
-
-Phase 4 Sweep
-Phase 4 Sweep | Checksum: 13d39b70d
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 1134.074 ; gain = 20.551
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 648 cells
-
-Phase 5 BUFG optimization
-Phase 5 BUFG optimization | Checksum: 13d39b70d
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 1134.074 ; gain = 20.551
-INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
-
-Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 13d39b70d
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 1134.074 ; gain = 20.551
-INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
-
-Starting Connectivity Check Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1134.074 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 13d39b70d
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 1134.074 ; gain = 20.551
-
-Starting Power Optimization Task
-INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 11 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 11 newly gated: 0 Total Ports: 22
-Ending PowerOpt Patch Enables Task | Checksum: 2349e3c94
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 2349e3c94
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1326.164 ; gain = 192.090
-46 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:52 . Memory (MB): peak = 1326.164 ; gain = 665.949
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_opt.dcp' has been generated.
-Command: report_drc -file converter_wrapper_drc_opted.rpt
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_opted.rpt.
-report_drc completed successfully
-INFO: [Chipscope 16-240] Debug cores have already been implemented
-Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-Running DRC as a precondition to command place_design
-Command: report_drc (run_mandatory_drcs) for: placer_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-Starting Placer Task
-INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
-
-Phase 1 Placer Initialization
-
-Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17249b44a
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8475ef75
-
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 23ad79a94
-
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 23ad79a94
-
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 23ad79a94
-
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 19a436f11
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3 Detail Placement
-
-Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 19a436f11
-
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23468873f
-
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1cd145777
-
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 23e33c19f
-
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1c2eacdd9
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 18c5c55b3
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 190120b2f
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 190120b2f
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 190120b2f
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4 Post Placement Optimization and Clean-Up
-
-Phase 4.1 Post Commit Optimization
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 806cab3c
-
-Phase 4.1.1.1 BUFG Insertion
-INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 806cab3c
-
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.702. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1346a9462
-
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1346a9462
-
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1346a9462
-
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1346a9462
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 19d2b55de
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19d2b55de
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Ending Placer Task | Checksum: ef5d5ca3
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1326.164 ; gain = 0.000
-66 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-place_design completed successfully
-place_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.740 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1326.164 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1326.164 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command route_design
-Command: report_drc (run_mandatory_drcs) for: router_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-
-Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 797afc4c ConstDB: 0 ShapeSum: 75e26057 RouteDB: 0
-
-Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 157454557
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 2 Router Initialization
-
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 157454557
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 157454557
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 157454557
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1326.164 ; gain = 0.000
- Number of Nodes with overlaps = 0
-
-Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 24b218436
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.139  | TNS=0.000  | WHS=-0.201 | THS=-138.388|
-
-Phase 2 Router Initialization | Checksum: 26edf036f
-
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1f8c251b8
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4 Rip-up And Reroute
-
-Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 618
- Number of Nodes with overlaps = 29
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.003  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 11a0df15c
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.024  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 1d5bd7e5e
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: 1d5bd7e5e
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 5 Delay and Skew Optimization
-
-Phase 5.1 Delay CleanUp
-
-Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1391c4165
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.139  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 5.1 Delay CleanUp | Checksum: 1391c4165
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1391c4165
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: 1391c4165
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 6 Post Hold Fix
-
-Phase 6.1 Hold Fix Iter
-
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 18d4ba24b
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.139  | TNS=0.000  | WHS=0.033  | THS=0.000  |
-
-Phase 6.1 Hold Fix Iter | Checksum: 1eb660a9e
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 1eb660a9e
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 7 Route finalize
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.07461 %
-  Global Horizontal Routing Utilization  = 4.46324 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 0
-  Number of Unrouted Nets             = 0
-  Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 0
-
-Phase 7 Route finalize | Checksum: 143786e32
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 8 Verifying routed nets
-
- Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 143786e32
-
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1db3c5179
-
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.139  | TNS=0.000  | WHS=0.033  | THS=0.000  |
-
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1db3c5179
-
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Route 35-16] Router Completed Successfully
-
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1326.164 ; gain = 0.000
-
-Routing Is Done.
-80 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-route_design completed successfully
-route_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.164 ; gain = 0.000
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.976 . Memory (MB): peak = 1326.164 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_routed.dcp' has been generated.
-Command: report_drc -file converter_wrapper_drc_routed.rpt -pb converter_wrapper_drc_routed.pb -rpx converter_wrapper_drc_routed.rpx
-INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_routed.rpt.
-report_drc completed successfully
-Command: report_methodology -file converter_wrapper_methodology_drc_routed.rpt -rpx converter_wrapper_methodology_drc_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_methodology_drc_routed.rpt.
-report_methodology completed successfully
-Command: report_power -file converter_wrapper_power_routed.rpt -pb converter_wrapper_power_summary_routed.pb -rpx converter_wrapper_power_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
-Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-87 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
-report_power completed successfully
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-Command: write_bitstream -force converter_wrapper.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
-Running DRC as a precondition to command write_bitstream
-Command: report_drc (run_mandatory_drcs) for: bitstream_checks
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result input converter_i/DCT_2D_0/inst/mod_1/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result input converter_i/DCT_2D_0/inst/mod_2/m/mult_result/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result output converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result output converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_1/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_1/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP converter_i/DCT_2D_0/inst/mod_2/m/mult_result multiplier stage converter_i/DCT_2D_0/inst/mod_2/m/mult_result/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], converter_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
-report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./converter_wrapper.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 12:21:14 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-98 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
-write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1715.348 ; gain = 364.340
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 12:21:15 2019...
-
-*** Running vivado
-    with args -log converter_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source converter_wrapper.tcl -notrace
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source converter_wrapper.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'converter_auto_pc_0' generated file not found 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/stats.txt'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 345.746 ; gain = 113.168
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.dcp' for cell 'converter_i/AXILiteToBRAMIntf_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.dcp' for cell 'converter_i/DCT_2D_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0.dcp' for cell 'converter_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.dcp' for cell 'converter_i/blk_mem_gen_1'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp' for cell 'converter_i/controller_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.dcp' for cell 'converter_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.dcp' for cell 'converter_i/quant_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.dcp' for cell 'converter_i/rst_ps7_0_50M'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.dcp' for cell 'converter_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.dcp' for cell 'converter_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 372 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-WARNING: [Vivado 12-2489] -input_jitter contains time 0.999990 which will be rounded to 1.000 to ensure it is an integer multiple of 1 picosecond [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc:21]
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
-Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.999990 which will be rounded to 1.000 to ensure it is an integer multiple of 1 picosecond [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc:21]
+Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xdc] for cell 'converter_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0_board.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xdc] for cell 'converter_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'converter_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/imports/AxiLiteZynqBRAMDemo2/ZYBO_Master.xdc]
+Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 148 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 148 instances
 
-link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 658.809 ; gain = 313.063
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 660.605 ; gain = 313.582
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
@@ -1785,7 +62,7 @@ report_drc (run_mandatory_drcs) completed successfully
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.620 . Memory (MB): peak = 664.508 ; gain = 5.699
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.572 . Memory (MB): peak = 665.793 ; gain = 5.188
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
@@ -1794,85 +71,83 @@ Phase 1 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-318] Generating core instance : dbg_hub
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
 INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "7b29c67c0a29971e".
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1133.746 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 1b6e27240
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1134.098 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1bc53efca
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 1133.746 ; gain = 25.930
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:33 . Memory (MB): peak = 1134.098 ; gain = 19.613
 
 Phase 2 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 134dbfbde
+Phase 2 Retarget | Checksum: 10643c721
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:39 . Memory (MB): peak = 1133.746 ; gain = 25.930
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 68 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:34 . Memory (MB): peak = 1134.098 ; gain = 19.613
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 102 cells
 
 Phase 3 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 1aedd611c
+Phase 3 Constant propagation | Checksum: 19670bf12
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:39 . Memory (MB): peak = 1133.746 ; gain = 25.930
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:34 . Memory (MB): peak = 1134.098 ; gain = 19.613
 INFO: [Opt 31-389] Phase Constant propagation created 10 cells and removed 41 cells
 
 Phase 4 Sweep
-Phase 4 Sweep | Checksum: 1fb1de808
+Phase 4 Sweep | Checksum: 12d086b82
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 1133.746 ; gain = 25.930
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 638 cells
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 1134.098 ; gain = 19.613
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 636 cells
 
 Phase 5 BUFG optimization
-Phase 5 BUFG optimization | Checksum: 1fb1de808
+Phase 5 BUFG optimization | Checksum: 12d086b82
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 1133.746 ; gain = 25.930
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 1134.098 ; gain = 19.613
 INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
 
 Phase 6 Shift Register Optimization
-Phase 6 Shift Register Optimization | Checksum: 1fb1de808
+Phase 6 Shift Register Optimization | Checksum: 12d086b82
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 1133.746 ; gain = 25.930
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 1134.098 ; gain = 19.613
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1133.746 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1fb1de808
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1134.098 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 12d086b82
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 1133.746 ; gain = 25.930
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:35 . Memory (MB): peak = 1134.098 ; gain = 19.613
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 10 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 17 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 13 newly gated: 0 Total Ports: 20
-Ending PowerOpt Patch Enables Task | Checksum: 1f3808932
+Number of BRAM Ports augmented: 23 newly gated: 0 Total Ports: 34
+Ending PowerOpt Patch Enables Task | Checksum: 184de5804
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1f3808932
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 184de5804
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1319.656 ; gain = 185.910
-46 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.125 ; gain = 196.027
+45 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:54 . Memory (MB): peak = 1319.656 ; gain = 660.848
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:49 . Memory (MB): peak = 1330.125 ; gain = 669.520
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_opt.dcp' has been generated.
 Command: report_drc -file converter_wrapper_drc_opted.rpt
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
@@ -1896,82 +171,82 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1022e975a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17cddb675
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1330.125 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e8119a69
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15a474dfb
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 9baa7d63
+Phase 1.3 Build Placer Netlist Model | Checksum: efdd9ca7
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 9baa7d63
+Phase 1.4 Constrain Clocks/Macros | Checksum: efdd9ca7
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 9baa7d63
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: efdd9ca7
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 13581b2fe
+Phase 2 Global Placement | Checksum: ac27a799
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 13581b2fe
+Phase 3.1 Commit Multi Column Macros | Checksum: ac27a799
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f764ca24
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11fbcd666
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1bde75f7e
+Phase 3.3 Area Swap Optimization | Checksum: 2049c6cf1
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 14241c48a
+Phase 3.4 Pipeline Register Optimization | Checksum: 14466cdc7
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1abf1a454
+Phase 3.5 Timing Path Optimizer | Checksum: 1c8d68a56
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 10209060d
+Phase 3.6 Small Shape Detail Placement | Checksum: 1912c35a1
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 16b8d9f34
+Phase 3.7 Re-assign LUT pins | Checksum: 1ee8c3949
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 16b8d9f34
+Phase 3.8 Pipeline Register Optimization | Checksum: 1ee8c3949
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 16b8d9f34
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1ee8c3949
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -1979,54 +254,54 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1e67c04a4
+Post Placement Optimization Initialization | Checksum: 1723b9fb3
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
 INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1e67c04a4
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1723b9fb3
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.562. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 2254008d3
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.541. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: fbfe6ffb
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 2254008d3
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: fbfe6ffb
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 2254008d3
+Phase 4.2 Post Placement Cleanup | Checksum: fbfe6ffb
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 2254008d3
+Phase 4.3 Placer Reporting | Checksum: fbfe6ffb
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 1bddd1cb9
+Phase 4.4 Final Placement Cleanup | Checksum: 1e3ccb630
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1bddd1cb9
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e3ccb630
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Ending Placer Task | Checksum: c3c7d9a9
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Ending Placer Task | Checksum: 174add4e5
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
-66 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
+64 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1330.125 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1319.656 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1319.656 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.700 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1330.125 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1330.125 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1330.125 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
@@ -2040,107 +315,108 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: a055112e ConstDB: 0 ShapeSum: 2372c87b RouteDB: 0
+Checksum: PlaceDB: 778fad1a ConstDB: 0 ShapeSum: fd1e27cb RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: f799510a
+Phase 1 Build RT Design | Checksum: fec66637
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: f799510a
+Phase 2.1 Create Timer | Checksum: fec66637
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: f799510a
+Phase 2.2 Fix Topology Constraints | Checksum: fec66637
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: f799510a
+Phase 2.3 Pre Route Cleanup | Checksum: fec66637
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.125 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 160c3de3b
+Phase 2.4 Update Timing | Checksum: a3e4f1b2
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.073  | TNS=0.000  | WHS=-0.193 | THS=-124.490|
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.012  | TNS=0.000  | WHS=-0.188 | THS=-129.447|
 
-Phase 2 Router Initialization | Checksum: 183a45824
+Phase 2 Router Initialization | Checksum: 719f17ad
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 199043b96
+Phase 3 Initial Routing | Checksum: 95adceca
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 541
- Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 627
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.361  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.030  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 114b61f95
+Phase 4.1 Global Iteration 0 | Checksum: 19b0ca2b0
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 35
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.324  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.064  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1a09fe14a
+Phase 4.2 Global Iteration 1 | Checksum: 207f30d91
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: 1a09fe14a
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 207f30d91
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1a09fe14a
+Phase 5.1 Delay CleanUp | Checksum: 207f30d91
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1a09fe14a
+Phase 5.2 Clock Skew Optimization | Checksum: 207f30d91
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: 1a09fe14a
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 207f30d91
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 23b4d3c11
+Phase 6.1.1 Update Timing | Checksum: 1a77d2ef1
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.439  | TNS=0.000  | WHS=0.027  | THS=0.000  |
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.179  | TNS=0.000  | WHS=0.040  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1923c632e
+Phase 6.1 Hold Fix Iter | Checksum: 1fa7f7104
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 1923c632e
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1fa7f7104
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 2.98677 %
-  Global Horizontal Routing Utilization  = 4.16912 %
+  Global Vertical Routing Utilization    = 3.15203 %
+  Global Horizontal Routing Utilization  = 4.43773 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -2149,51 +425,51 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 17719eec5
+Phase 7 Route finalize | Checksum: 1ee8d9c43
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 17719eec5
+Phase 8 Verifying routed nets | Checksum: 1ee8d9c43
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1f9cb26b4
+Phase 9 Depositing Routes | Checksum: 1bc31fbc8
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.439  | TNS=0.000  | WHS=0.027  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.179  | TNS=0.000  | WHS=0.040  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1f9cb26b4
+Phase 10 Post Router Timing | Checksum: 1bc31fbc8
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1330.125 ; gain = 0.000
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1319.656 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1330.125 ; gain = 0.000
 
 Routing Is Done.
-79 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+77 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1319.656 ; gain = 0.000
+route_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1330.125 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.997 . Memory (MB): peak = 1319.656 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.910 . Memory (MB): peak = 1330.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_routed.dcp' has been generated.
 Command: report_drc -file converter_wrapper_drc_routed.rpt -pb converter_wrapper_drc_routed.pb -rpx converter_wrapper_drc_routed.rpx
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_drc_routed.rpt.
 report_drc completed successfully
 Command: report_methodology -file converter_wrapper_methodology_drc_routed.rpt -rpx converter_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
 Command: report_power -file converter_wrapper_power_routed.rpt -pb converter_wrapper_power_summary_routed.pb -rpx converter_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -2202,7 +478,7 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-86 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
@@ -2235,8 +511,8 @@ Creating bitstream...
 Writing bitstream ./converter_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 13 12:55:11 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-97 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Aug 14 14:51:03 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+95 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.836 ; gain = 357.332
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 12:55:11 2019...
+write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1716.457 ; gain = 366.313
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 14:51:04 2019...

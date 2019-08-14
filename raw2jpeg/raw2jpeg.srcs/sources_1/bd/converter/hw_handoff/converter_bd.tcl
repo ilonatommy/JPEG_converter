@@ -360,8 +360,8 @@ CONFIG.NUM_MI {1} \
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila_0 ]
   set_property -dict [ list \
-CONFIG.C_BRAM_CNT {13.5} \
-CONFIG.C_DATA_DEPTH {2048} \
+CONFIG.C_BRAM_CNT {17} \
+CONFIG.C_DATA_DEPTH {4096} \
 CONFIG.C_MON_TYPE {MIX} \
 CONFIG.C_NUM_OF_PROBES {4} \
 CONFIG.C_PROBE0_WIDTH {8} \

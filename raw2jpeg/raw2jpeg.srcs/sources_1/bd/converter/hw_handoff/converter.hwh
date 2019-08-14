@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 13 12:48:55 2019" VIVADOVERSION="2017.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug 14 14:45:10 2019" VIVADOVERSION="2017.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="converter" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -1877,11 +1877,11 @@
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
             <CONNECTION INSTANCE="AXILiteToBRAMIntf_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="slowest_sync_clk"/>
+            <CONNECTION INSTANCE="DCT_2D_0" PORT="clk"/>
+            <CONNECTION INSTANCE="controller_0" PORT="clk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
-            <CONNECTION INSTANCE="DCT_2D_0" PORT="clk"/>
-            <CONNECTION INSTANCE="controller_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -2940,7 +2940,7 @@
         <PARAMETER NAME="C_SLOT_13_APC_EN" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_14_APC_EN" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_15_APC_EN" VALUE="0"/>
-        <PARAMETER NAME="C_BRAM_CNT" VALUE="13.5"/>
+        <PARAMETER NAME="C_BRAM_CNT" VALUE="17"/>
         <PARAMETER NAME="C_SLOT_0_AXI_AW_SEL_DATA" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_W_SEL_DATA" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_B_SEL_DATA" VALUE="1"/>
@@ -5260,7 +5260,7 @@
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="2048"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="4096"/>
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="4"/>
         <PARAMETER NAME="C_XLNX_HW_PROBE_INFO" VALUE="DEFAULT"/>
         <PARAMETER NAME="Component_Name" VALUE="converter_system_ila_0_0"/>

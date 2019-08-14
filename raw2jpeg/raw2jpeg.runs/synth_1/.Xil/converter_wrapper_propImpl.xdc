@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc rfile:../../../raw2jpeg.srcs/constrs_1/new/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc rfile:../../../raw2jpeg.srcs/constrs_1/new/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property MARK_DEBUG true [get_nets {converter_i/DCT_2D_0/inst/rc_37_reg_n_0_[0]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
