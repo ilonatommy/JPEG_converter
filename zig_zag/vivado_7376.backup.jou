@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug 14 13:56:07 2019
+# Process ID: 7376
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3436 C:\Users\lsneler\Desktop\Repo\JPEG_conv\zig_zag\zig_zag.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/zig_zag.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/zig_zag.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/zig_zag.srcs/sim_1/new/tb_zig_zag.v w ]
+add_files -fileset sim_1 C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/zig_zag.srcs/sim_1/new/tb_zig_zag.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_zig_zag [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/combinatoryDCT/clk_gen.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source tb_zig_zag.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/tb_zig_zag_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/tb_zig_zag_behav.wcfg
+set_property xsim.view C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag/tb_zig_zag_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+close_sim
