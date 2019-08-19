@@ -1,3 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module chrominance_quant
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib

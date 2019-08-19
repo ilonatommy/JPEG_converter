@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Aug 13 12:17:27 2019
+| Date         : Mon Aug 19 15:41:30 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file converter_DCT_2D_0_0_utilization_synth.rpt -pb converter_DCT_2D_0_0_utilization_synth.pb
 | Design       : converter_DCT_2D_0_0

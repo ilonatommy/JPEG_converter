@@ -990,3 +990,145 @@ arm-none-eabi-size AxiLiteZynqBRAMDemo.elf  |tee "AxiLiteZynqBRAMDemo.elf.size"
   75804	   2580	  23328	 101712	  18d50	AxiLiteZynqBRAMDemo.elf
 'Finished building: AxiLiteZynqBRAMDemo.elf.size'
 ' '
+11:31:12 **** Auto Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:100:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %u is :%x",i,BramData);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AxiLiteZynqBRAMDemo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/lib -o "AxiLiteZynqBRAMDemo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AxiLiteZynqBRAMDemo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AxiLiteZynqBRAMDemo.elf  |tee "AxiLiteZynqBRAMDemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76140	   2580	  23328	 102048	  18ea0	AxiLiteZynqBRAMDemo.elf
+'Finished building: AxiLiteZynqBRAMDemo.elf.size'
+' '
+11:31:22 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:33:14 **** Auto Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %u is :%x",i,BramData);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AxiLiteZynqBRAMDemo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/lib -o "AxiLiteZynqBRAMDemo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AxiLiteZynqBRAMDemo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AxiLiteZynqBRAMDemo.elf  |tee "AxiLiteZynqBRAMDemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76124	   2580	  23328	 102032	  18e90	AxiLiteZynqBRAMDemo.elf
+'Finished building: AxiLiteZynqBRAMDemo.elf.size'
+' '
+11:33:17 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:33:53 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:37:08 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:37:19 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:37:49 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:38:40 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:39:35 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:39:39 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:39:51 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:40:09 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:53:31 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:56:06 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:28:58 **** Auto Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:39: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf ("\nValue in address %u is :%x",i,BramData);
+                                       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: AxiLiteZynqBRAMDemo.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/lib -o "AxiLiteZynqBRAMDemo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AxiLiteZynqBRAMDemo.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size AxiLiteZynqBRAMDemo.elf  |tee "AxiLiteZynqBRAMDemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76124	   2580	  23328	 102032	  18e90	AxiLiteZynqBRAMDemo.elf
+'Finished building: AxiLiteZynqBRAMDemo.elf.size'
+' '
+14:29:38 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

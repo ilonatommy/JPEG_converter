@@ -1,36 +1,8 @@
-15:06:38 **** Auto Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
+14:29:38 **** Incremental Build of configuration Debug for project AxiLiteZynqBRAMDemo ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:76:7: warning: unused variable 'BramData' [-Wunused-variable]
-  u32  BramData;
-       ^~~~~~~~
-../src/helloworld.c:75:5: warning: unused variable 'data' [-Wunused-variable]
-  u8 data;
-     ^~~~
-../src/helloworld.c:74:16: warning: unused variable 'ReadPointer' [-Wunused-variable]
-  volatile u32 *ReadPointer = (u32*)AXI_READ_ADDRESS; // Points to address AXI_READ_ADDRESS
-                ^~~~~~~~~~~
-../src/helloworld.c:73:16: warning: unused variable 'WritePointer' [-Wunused-variable]
-  volatile u32 *WritePointer = (u32*)AXI_BASE_ADDRESS; // Points to address AXI_WRITE_ADDRESS
-                ^~~~~~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: AxiLiteZynqBRAMDemo.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../AxiLiteZynqBRAMDemo_bsp/ps7_cortexa9_0/lib -o "AxiLiteZynqBRAMDemo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: AxiLiteZynqBRAMDemo.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size AxiLiteZynqBRAMDemo.elf  |tee "AxiLiteZynqBRAMDemo.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  75804	   2580	  23328	 101712	  18d50	AxiLiteZynqBRAMDemo.elf
-'Finished building: AxiLiteZynqBRAMDemo.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-15:06:39 Build Finished (took 577ms)
+14:29:38 Build Finished (took 199ms)
 

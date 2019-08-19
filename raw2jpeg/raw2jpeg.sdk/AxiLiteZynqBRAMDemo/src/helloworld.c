@@ -53,8 +53,8 @@
 #include "xscugic.h"
 #include "xtime_l.h"
 
-#define AXI_BASE_ADDRESS 0x43c10000;
-#define AXI_READ_ADDRESS 0x43c10008;
+#define AXI_BASE_ADDRESS 0x43c00000;
+#define AXI_READ_ADDRESS 0x43c00000;
 #define START_DDR_ADDRESS 0xa000000
 
 	void PrintMemory(u32 startAddress)
@@ -64,7 +64,8 @@
 		for (i = 0;i<235;i++)
 		{
 			tmp = Xil_In8 (startAddress+i);
-			xil_printf("Value on %x is: %x \n",(i + startAddress),tmp);
+			//xil_printf("Value on %x is: %x \n",(i + startAddress),tmp);
+			xil_printf("%x \n",tmp);
 		}
 	}
 
@@ -76,12 +77,11 @@ int main()
 	u32  BramData;
 
 	init_platform();
-	//PrintMemory((u32)START_DDR_ADDRESS);
-	/*
-	for (unsigned int i = 0 ; i <= 255 ; ++i) //255
-	{
-		data = Xil_In8(((u32) START_DDR_ADDRESS+i));
+	PrintMemory((u32)START_DDR_ADDRESS);
 
+	for (unsigned int i = 0 ; i <= 255 ; ++i)
+	{
+			data = Xil_In8(((u32) START_DDR_ADDRESS+i));
 //---------Write Operation----------------------
 		BramData = i; // BRAM Address
 		BramData = BramData<<8;
@@ -100,9 +100,6 @@ int main()
 		BramData = *ReadPointer;
 		printf ("\nValue in address %u is :%x",i,BramData);
 	}
-		*/
-
-		printf ("\nEND");
 		cleanup_platform();
     return 0;
 }

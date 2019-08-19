@@ -20,25 +20,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_quant
 # IP: bd/converter/ip/converter_controller_0_0/converter_controller_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_controller_0_0 || ORIG_REF_NAME==converter_controller_0_0}]
 
-# IP: bd/converter/ip/converter_AXILiteToBRAMIntf_0_0/converter_AXILiteToBRAMIntf_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_AXILiteToBRAMIntf_0_0 || ORIG_REF_NAME==converter_AXILiteToBRAMIntf_0_0}]
-
 # IP: bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_blk_mem_gen_1_1 || ORIG_REF_NAME==converter_blk_mem_gen_1_1}]
 
-# IP: bd/converter/ip/converter_processing_system7_0_0/converter_processing_system7_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_processing_system7_0_0 || ORIG_REF_NAME==converter_processing_system7_0_0}]
+# IP: bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_val_holder_0_1 || ORIG_REF_NAME==converter_val_holder_0_1}]
 
-# IP: bd/converter/ip/converter_ps7_0_axi_periph_0/converter_ps7_0_axi_periph_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_ps7_0_axi_periph_0 || ORIG_REF_NAME==converter_ps7_0_axi_periph_0}]
-
-# IP: bd/converter/ip/converter_rst_ps7_0_50M_0/converter_rst_ps7_0_50M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_rst_ps7_0_50M_0 || ORIG_REF_NAME==converter_rst_ps7_0_50M_0}]
-
-# IP: bd/converter/ip/converter_system_ila_0_0/converter_system_ila_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_system_ila_0_0 || ORIG_REF_NAME==converter_system_ila_0_0}]
-
-# IP: bd/converter/ip/converter_auto_pc_0/converter_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_auto_pc_0 || ORIG_REF_NAME==converter_auto_pc_0}]
+# IP: bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_clk_wiz_0_0 || ORIG_REF_NAME==converter_clk_wiz_0_0}]
 
 # XDC: bd/converter/converter_ooc.xdc

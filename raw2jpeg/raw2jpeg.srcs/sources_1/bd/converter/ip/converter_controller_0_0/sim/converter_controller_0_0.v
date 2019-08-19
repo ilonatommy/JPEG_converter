@@ -57,8 +57,11 @@ module converter_controller_0_0 (
   clk,
   ce,
   rst,
+  ce_zig_zag,
+  ce_BRAM_write,
   addr_input,
-  addr_quant
+  addr_quant,
+  addr_BRAM_write
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
@@ -66,14 +69,20 @@ input wire clk;
 output wire ce;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
 output wire rst;
+output wire ce_zig_zag;
+output wire ce_BRAM_write;
 output wire [5 : 0] addr_input;
 output wire [5 : 0] addr_quant;
+output wire [7 : 0] addr_BRAM_write;
 
   controller inst (
     .clk(clk),
     .ce(ce),
     .rst(rst),
+    .ce_zig_zag(ce_zig_zag),
+    .ce_BRAM_write(ce_BRAM_write),
     .addr_input(addr_input),
-    .addr_quant(addr_quant)
+    .addr_quant(addr_quant),
+    .addr_BRAM_write(addr_BRAM_write)
   );
 endmodule

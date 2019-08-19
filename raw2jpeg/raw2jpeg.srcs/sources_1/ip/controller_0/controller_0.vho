@@ -57,8 +57,11 @@ COMPONENT controller_0
     clk : IN STD_LOGIC;
     ce : OUT STD_LOGIC;
     rst : OUT STD_LOGIC;
+    ce_zig_zag : OUT STD_LOGIC;
+    ce_BRAM_write : OUT STD_LOGIC;
     addr_input : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
-    addr_quant : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
+    addr_quant : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+    addr_BRAM_write : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -72,8 +75,11 @@ your_instance_name : controller_0
     clk => clk,
     ce => ce,
     rst => rst,
+    ce_zig_zag => ce_zig_zag,
+    ce_BRAM_write => ce_BRAM_write,
     addr_input => addr_input,
-    addr_quant => addr_quant
+    addr_quant => addr_quant,
+    addr_BRAM_write => addr_BRAM_write
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
 

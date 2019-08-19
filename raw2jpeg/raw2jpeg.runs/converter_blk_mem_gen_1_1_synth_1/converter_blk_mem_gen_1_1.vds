@@ -2,41 +2,12 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Aug  9 10:42:55 2019
-# Process ID: 1280
-# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1
+# Start of session at: Mon Aug 19 15:40:33 2019
+# Process ID: 5536
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1
 # Command line: vivado.exe -log converter_blk_mem_gen_1_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source converter_blk_mem_gen_1_1.tcl
-# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1/converter_blk_mem_gen_1_1.vds
-# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1\vivado.jou
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1/converter_blk_mem_gen_1_1.vds
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1\vivado.jou
 #-----------------------------------------------------------
 source converter_blk_mem_gen_1_1.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 324.688 ; gain = 81.117
-INFO: [Synth 8-638] synthesizing module 'converter_blk_mem_gen_1_1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/synth/converter_blk_mem_gen_1_1.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'converter_blk_mem_gen_1_1' (9#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/synth/converter_blk_mem_gen_1_1.vhd:69]
-Finished RTL Elaboration : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 530.656 ; gain = 287.086
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 530.656 ; gain = 287.086
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 589.824 ; gain = 0.000
-Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 589.824 ; gain = 346.254
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 589.824 ; gain = 346.254
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 589.824 ; gain = 346.254
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:01 . Memory (MB): peak = 589.824 ; gain = 346.254
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 589.824 ; gain = 346.254
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 619.199 ; gain = 375.629
-Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 619.199 ; gain = 375.629
-Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-
-Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |RAMB18E1 |     1|
-+------+---------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 629.344 ; gain = 385.773
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 641.867 ; gain = 403.934
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP converter_blk_mem_gen_1_1, cache-ID = 5b76ddbc60e1233e.

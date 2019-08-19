@@ -55,11 +55,14 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 controller_0 your_instance_name (
-  .clk(clk),                // input wire clk
-  .ce(ce),                  // output wire ce
-  .rst(rst),                // output wire rst
-  .addr_input(addr_input),  // output wire [5 : 0] addr_input
-  .addr_quant(addr_quant)  // output wire [5 : 0] addr_quant
+  .clk(clk),                          // input wire clk
+  .ce(ce),                            // output wire ce
+  .rst(rst),                          // output wire rst
+  .ce_zig_zag(ce_zig_zag),            // output wire ce_zig_zag
+  .ce_BRAM_write(ce_BRAM_write),      // output wire ce_BRAM_write
+  .addr_input(addr_input),            // output wire [5 : 0] addr_input
+  .addr_quant(addr_quant),            // output wire [5 : 0] addr_quant
+  .addr_BRAM_write(addr_BRAM_write)  // output wire [7 : 0] addr_BRAM_write
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

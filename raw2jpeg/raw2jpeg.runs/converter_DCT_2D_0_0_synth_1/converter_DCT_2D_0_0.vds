@@ -2,12 +2,12 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Aug 13 12:16:38 2019
-# Process ID: 3424
-# Current directory: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1
+# Start of session at: Mon Aug 19 15:40:33 2019
+# Process ID: 5904
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1
 # Command line: vivado.exe -log converter_DCT_2D_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source converter_DCT_2D_0_0.tcl
-# Log file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.vds
-# Journal file: C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1\vivado.jou
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.vds
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source converter_DCT_2D_0_0.tcl -notrace
 Command: synth_design -top converter_DCT_2D_0_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,156 +15,156 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4808 
+INFO: Helper process launched with PID 3464 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 328.438 ; gain = 80.938
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 329.344 ; gain = 80.832
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'converter_DCT_2D_0_0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/synth/converter_DCT_2D_0_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'DCT_2D' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:23]
-INFO: [Synth 8-638] synthesizing module 'DCT' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:23]
+INFO: [Synth 8-638] synthesizing module 'converter_DCT_2D_0_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/synth/converter_DCT_2D_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'DCT_2D' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:23]
+INFO: [Synth 8-638] synthesizing module 'DCT' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:23]
 	Parameter IDLE bound to: 4'b1000 
-INFO: [Synth 8-638] synthesizing module 'RAM' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'RAM' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/RAM.v:23]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'RAM' (1#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/RAM.v:23]
-INFO: [Synth 8-638] synthesizing module 'register' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (1#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'register' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 12 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 12 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
 	Parameter reg_width bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 13 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
 	Parameter reg_width bound to: 13 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized2' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 13 - type: integer 
 	Parameter DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized3' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 14 - type: integer 
 	Parameter DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
 	Parameter reg_width bound to: 14 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized3' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized4' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized3' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized4' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 14 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized4' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized5' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized4' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized5' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 15 - type: integer 
 	Parameter DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
 	Parameter reg_width bound to: 15 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized5' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized6' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized5' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized6' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 12 - type: integer 
 	Parameter DELAY bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized6' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized7' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized6' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized7' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 15 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized7' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'register__parameterized8' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized7' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized8' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
 	Parameter WIDTH bound to: 14 - type: integer 
 	Parameter DELAY bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'register__parameterized8' (3#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_3i' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized8' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
 	Parameter WIDTH_I0 bound to: 12 - type: integer 
 	Parameter WIDTH_I1 bound to: 12 - type: integer 
 	Parameter WIDTH_I2 bound to: 13 - type: integer 
 	Parameter WIDTH_OUT bound to: 13 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_3i' (4#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_3i' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
 	Parameter WIDTH_I0 bound to: 16 - type: integer 
 	Parameter WIDTH_I1 bound to: 13 - type: integer 
 	Parameter WIDTH_I2 bound to: 14 - type: integer 
 	Parameter WIDTH_OUT bound to: 14 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized0' (4#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
-WARNING: [Synth 8-689] width (14) of port connection 'i0' does not match port width (16) of module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:65]
-INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized0' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'i0' does not match port width (16) of module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:65]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
 	Parameter WIDTH_I0 bound to: 13 - type: integer 
 	Parameter WIDTH_I1 bound to: 13 - type: integer 
 	Parameter WIDTH_I2 bound to: 13 - type: integer 
 	Parameter WIDTH_OUT bound to: 13 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized1' (4#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized2' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized1' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
 	Parameter WIDTH_I0 bound to: 13 - type: integer 
 	Parameter WIDTH_I1 bound to: 14 - type: integer 
 	Parameter WIDTH_I2 bound to: 15 - type: integer 
 	Parameter WIDTH_OUT bound to: 15 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized2' (4#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
-INFO: [Synth 8-638] synthesizing module 'full_adder' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized2' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder' (5#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
-INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
 	Parameter WIDTH bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized0' (5#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
-INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized0' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
 	Parameter WIDTH bound to: 13 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized1' (5#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
-WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:71]
-INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized2' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized1' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:71]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
 	Parameter WIDTH bound to: 14 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized2' (5#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
-INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized2' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
 	Parameter WIDTH bound to: 15 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized3' (5#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
-WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:74]
-INFO: [Synth 8-638] synthesizing module 'full_subtractor' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized3' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_adder.v:23]
+WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:74]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
 	Parameter WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_subtractor' (6#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
-INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
 	Parameter WIDTH bound to: 13 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized0' (6#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
-WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:77]
-INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized0' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:77]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
 	Parameter WIDTH bound to: 15 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized1' (6#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
-WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:79]
-INFO: [Synth 8-638] synthesizing module 'reg_mult' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg_mult.v:23]
-INFO: [Synth 8-256] done synthesizing module 'reg_mult' (7#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg_mult.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_2i' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized1' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/full_subtractor.v:23]
+WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:79]
+INFO: [Synth 8-638] synthesizing module 'reg_mult' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg_mult.v:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_mult' (7#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/reg_mult.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
 	Parameter WIDTH_I0 bound to: 12 - type: integer 
 	Parameter WIDTH_I1 bound to: 12 - type: integer 
 	Parameter WIDTH_OUT bound to: 12 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_2i' (8#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized0' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_2i' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
 	Parameter WIDTH_I0 bound to: 14 - type: integer 
 	Parameter WIDTH_I1 bound to: 14 - type: integer 
 	Parameter WIDTH_OUT bound to: 14 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized0' (8#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized1' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized0' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
 	Parameter WIDTH_I0 bound to: 13 - type: integer 
 	Parameter WIDTH_I1 bound to: 13 - type: integer 
 	Parameter WIDTH_OUT bound to: 13 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized1' (8#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
-INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized2' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized1' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
 	Parameter WIDTH_I0 bound to: 15 - type: integer 
 	Parameter WIDTH_I1 bound to: 15 - type: integer 
 	Parameter WIDTH_OUT bound to: 15 - type: integer 
 	Parameter DELAY bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized2' (8#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:100]
-INFO: [Synth 8-256] done synthesizing module 'DCT' (9#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:23]
-INFO: [Synth 8-256] done synthesizing module 'DCT_2D' (10#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:23]
-INFO: [Synth 8-256] done synthesizing module 'converter_DCT_2D_0_0' (11#1) [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/synth/converter_DCT_2D_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized2' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:100]
+INFO: [Synth 8-256] done synthesizing module 'DCT' (9#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DCT_2D' (10#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:23]
+INFO: [Synth 8-256] done synthesizing module 'converter_DCT_2D_0_0' (11#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/synth/converter_DCT_2D_0_0.v:56]
 WARNING: [Synth 8-3331] design mux_3i__parameterized0 has unconnected port i0[15]
 WARNING: [Synth 8-3331] design mux_3i__parameterized0 has unconnected port i0[14]
 WARNING: [Synth 8-3331] design register__parameterized4 has unconnected port clk
@@ -174,7 +174,7 @@ WARNING: [Synth 8-3331] design register has unconnected port clk
 WARNING: [Synth 8-3331] design register has unconnected port rst
 WARNING: [Synth 8-3331] design register has unconnected port ce
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 372.523 ; gain = 125.023
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 374.434 ; gain = 125.922
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -184,7 +184,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 372.523 ; gain = 125.023
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 374.434 ; gain = 125.922
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -196,29 +196,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 671.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 673.859 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 671.871 ; gain = 424.371
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 673.859 ; gain = 425.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 671.871 ; gain = 424.371
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 673.859 ; gain = 425.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 671.871 ; gain = 424.371
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 673.859 ; gain = 425.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'code_mo7_reg[1:0]' into 'code_mo6_reg[1:0]' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:67]
-WARNING: [Synth 8-6014] Unused sequential element code_mo7_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:67]
+INFO: [Synth 8-4471] merging register 'code_mo7_reg[1:0]' into 'code_mo6_reg[1:0]' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:67]
+WARNING: [Synth 8-6014] Unused sequential element code_mo7_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:67]
 INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'DCT'
 INFO: [Synth 8-5544] ROM "code_mo1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "code_mo3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -226,9 +226,9 @@ INFO: [Synth 8-5544] ROM "code_mo6" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "code_even_odd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "code_mo4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "ce_mod2" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:56]
-WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
-WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:56]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -243,9 +243,9 @@ WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Us
                  iSTATE6 |                             1000 |                             0111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'DCT'
-WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT.v:42]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 671.871 ; gain = 424.371
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 673.859 ; gain = 425.348
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,14 +438,14 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'r9/(null)[0].del/tmp_reg[13:0]' into 'r21/(null)[0].del/tmp_reg[13:0]' [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:40]
-WARNING: [Synth 8-6014] Unused sequential element r9/(null)[0].del/tmp_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:40]
+INFO: [Synth 8-4471] merging register 'r9/(null)[0].del/tmp_reg[13:0]' into 'r21/(null)[0].del/tmp_reg[13:0]' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:40]
+WARNING: [Synth 8-6014] Unused sequential element r9/(null)[0].del/tmp_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/delay.v:40]
 DSP Report: Generating DSP m/mult_result, operation Mode is: A*B.
 DSP Report: operator m/mult_result is absorbed into DSP m/mult_result.
 DSP Report: Generating DSP m/mult_result, operation Mode is: A*B.
 DSP Report: operator m/mult_result is absorbed into DSP m/mult_result.
 INFO: [Synth 8-5546] ROM "ce_mod2" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:56]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/e598/src/DCT_2D.v:56]
 INFO: [Synth 8-3886] merging instance 'inst/mod_1/r21/(null)[0].del/tmp_reg[11]' (FDRE) to 'inst/mod_1/r21/(null)[0].del/tmp_reg[12]'
 INFO: [Synth 8-3886] merging instance 'inst/mod_1/r21/(null)[0].del/tmp_reg[13]' (FDRE) to 'inst/mod_1/r21/(null)[0].del/tmp_reg[12]'
 INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[1][10]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[1][7]'
@@ -499,7 +499,7 @@ INFO: [Synth 8-3332] Sequential element (inst/mod_2/r11/(null)[0].del/tmp_reg[14
 INFO: [Synth 8-3332] Sequential element (inst/mod_2/r11/(null)[1].del/tmp_reg[14]) is unused and will be removed from module converter_DCT_2D_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/mod_2/r20/(null)[0].del/tmp_reg[14]) is unused and will be removed from module converter_DCT_2D_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 671.871 ; gain = 424.371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 673.859 ; gain = 425.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -527,13 +527,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 695.500 ; gain = 448.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 699.484 ; gain = 450.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 697.504 ; gain = 450.004
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 699.484 ; gain = 450.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -547,7 +547,7 @@ Start Technology Mapping
 INFO: [Synth 8-3886] merging instance 'inst/mod_1/code_mo5_reg' (FDE) to 'inst/mod_1/code_mo3_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/mod_2/code_mo5_reg' (FDE) to 'inst/mod_2/code_mo3_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -571,7 +571,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -584,7 +584,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -596,25 +596,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -762,11 +762,11 @@ Report Instance Areas:
 |112   |      s4                |full_subtractor__parameterized1    |     4|
 +------+------------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 720.859 ; gain = 174.012
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 720.859 ; gain = 473.359
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 722.840 ; gain = 174.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 722.840 ; gain = 474.328
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -777,10 +777,10 @@ No Unisim elements were transformed.
 
 150 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 720.859 ; gain = 481.125
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.xci
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 722.840 ; gain = 481.090
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 111 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 720.859 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 13 12:17:27 2019...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/converter_DCT_2D_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 722.840 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 15:41:30 2019...
