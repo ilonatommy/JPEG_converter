@@ -1,0 +1,1 @@
+-wto "ff80ab8ae0184614b30f48339db3f965" --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_3_6" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_val_holder_behav" "xil_defaultlib.tb_val_holder" "xil_defaultlib.glbl" -log "elaborate.log" 
