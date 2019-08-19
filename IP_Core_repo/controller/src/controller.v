@@ -25,19 +25,24 @@ module controller(
     output ce, //change to input after connecting to switch
     output rst,  //change to input after connecting to button
     output ce_zig_zag,
+    output ce_BRAM_write,
     output [5:0] addr_input,
-    output [5:0] addr_quant
+    output [5:0] addr_quant,
+    output [7:0] addr_BRAM_write
     );
     
     reg _rst = 0;
     reg _ce = 0;
     reg _ce_zig_zag = 0;
+    reg _ce_BRAM_write = 0;
     reg [5:0] addr_in = 0;
     reg [5:0] addr_qu = 6'd47;
+    reg [7:0] addr_BRAM_wr = 0;
+    reg del_addr_BRAM_wr_incr = 0;
     
     reg [2:0] rst_trigger = 0;
     reg [2:0] ce_trigger = 0;
-    reg [6:0] ce_zz_trigger = 0;
+    reg [6:0] ce_zz_bram_trigger = 0;    
     
     always @(posedge(clk))
     begin
@@ -62,25 +67,42 @@ module controller(
         begin
             addr_in <= addr_in + 1;
             addr_qu <= addr_qu + 1;
-            ce_zz_trigger <= ce_zz_trigger + 1;
+            del_addr_BRAM_wr_incr <= del_addr_BRAM_wr_incr + 1;
+            
+            if(ce_zz_bram_trigger == 7'd85)
+                addr_BRAM_wr <= 0;
+            else
+            begin
+                if(del_addr_BRAM_wr_incr == 1'b1)
+                    addr_BRAM_wr <= addr_BRAM_wr + 1;
+            end
+                
+            ce_zz_bram_trigger <= ce_zz_bram_trigger + 1;
         end
         
-        if(ce_zz_trigger == 7'd105)//so that ce would be 1 on 106
+        if(ce_zz_bram_trigger == 7'd105)//so that ce would be 1 on 106
         begin
             _ce_zig_zag <= 1'b1;
+        end
+        
+        if(ce_zz_bram_trigger == 7'd83)
+        begin
+            _ce_BRAM_write <= 1'b1;
         end
         
         if(_rst == 1'b1)
         begin
             addr_in <= 0;
             addr_qu <= 6'd47;
-            ce_zz_trigger <= 0;
+            ce_zz_bram_trigger <= 0;
         end
     end
     
     assign rst = _rst;
     assign ce = _ce;
     assign ce_zig_zag = _ce_zig_zag;
+    assign ce_BRAM_write = _ce_BRAM_write;
     assign addr_input = addr_in;
     assign addr_quant = addr_qu;    
+    assign addr_BRAM_write = addr_BRAM_wr;
 endmodule
