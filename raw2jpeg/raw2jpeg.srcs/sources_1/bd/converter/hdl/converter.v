@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-//Date        : Mon Aug 19 15:48:28 2019
+//Date        : Mon Aug 19 16:20:45 2019
 //Host        : rtrkos034 running 64-bit major release  (build 9200)
 //Command     : generate_target converter.bd
 //Design      : converter
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "converter,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=converter,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=4,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=4,da_clkrst_cnt=21,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "converter.hwdef" *) 
+(* CORE_GENERATION_INFO = "converter,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=converter,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=4,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=4,da_clkrst_cnt=21,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "converter.hwdef" *) 
 module converter
    (reset_rtl,
     sys_clock);
@@ -61,6 +61,52 @@ module converter
         .ce_BRAM_write(controller_0_ce_BRAM_write),
         .clk(clk_wiz_0_clk_out1),
         .rst(Net1));
+  converter_ila_0_0 ila_0
+       (.clk(clk_wiz_0_clk_out1),
+        .probe0(1'b0),
+        .probe1({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe10({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe11(1'b0),
+        .probe12(1'b0),
+        .probe13({1'b0,1'b0}),
+        .probe14({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe15({1'b0,1'b0,1'b0,1'b0}),
+        .probe16(1'b0),
+        .probe17({1'b0,1'b0,1'b0}),
+        .probe18({1'b0,1'b0,1'b0}),
+        .probe19(1'b0),
+        .probe2({1'b0,1'b0}),
+        .probe20(1'b0),
+        .probe21({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe22(1'b0),
+        .probe23({1'b0,1'b0,1'b0}),
+        .probe24({1'b0,1'b0}),
+        .probe25(1'b0),
+        .probe26(1'b0),
+        .probe27({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe28({1'b0,1'b0,1'b0}),
+        .probe29({1'b0,1'b0}),
+        .probe3(1'b0),
+        .probe30(1'b0),
+        .probe31({1'b0,1'b0,1'b0,1'b0}),
+        .probe32({1'b0,1'b0,1'b0,1'b0}),
+        .probe33({1'b0,1'b0,1'b0,1'b0}),
+        .probe34({1'b0,1'b0,1'b0,1'b0}),
+        .probe35(1'b0),
+        .probe36({1'b0,1'b0,1'b0,1'b0}),
+        .probe37({1'b0,1'b0,1'b0,1'b0}),
+        .probe38(1'b0),
+        .probe39(1'b0),
+        .probe4(1'b0),
+        .probe40(1'b0),
+        .probe41(1'b0),
+        .probe42(1'b0),
+        .probe43(1'b0),
+        .probe5({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .probe6(1'b0),
+        .probe7(1'b0),
+        .probe8(1'b0),
+        .probe9(1'b0));
   converter_quant_0_0 quant_0
        (.addr(controller_0_addr_quant),
         .ce(controller_0_ce),

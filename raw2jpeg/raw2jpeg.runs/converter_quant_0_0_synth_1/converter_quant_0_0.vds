@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Aug 19 15:40:33 2019
-# Process ID: 4360
+# Start of session at: Mon Aug 19 16:21:03 2019
+# Process ID: 796
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1
 # Command line: vivado.exe -log converter_quant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source converter_quant_0_0.tcl
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1/converter_quant_0_0.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3704 
+INFO: Helper process launched with PID 7420 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 333.168 ; gain = 81.516
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 333.414 ; gain = 82.137
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'converter_quant_0_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/synth/converter_quant_0_0.v:56]
 INFO: [Synth 8-638] synthesizing module 'quant' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/3d36/src/quant.v:23]
@@ -139,7 +139,7 @@ WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconne
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SINIT
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 584.445 ; gain = 332.793
+Finished RTL Elaboration : Time (s): cpu = 00:01:22 ; elapsed = 00:01:22 . Memory (MB): peak = 583.973 ; gain = 332.695
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -151,7 +151,7 @@ Report Check Netlist:
 WARNING: [Synth 8-3295] tying undriven pin divider:s_axis_divisor_tvalid to constant 0 [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/3d36/src/quant.v:41]
 WARNING: [Synth 8-3295] tying undriven pin divider:s_axis_dividend_tvalid to constant 0 [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ipshared/3d36/src/quant.v:41]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 584.445 ; gain = 332.793
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:22 ; elapsed = 00:01:22 . Memory (MB): peak = 583.973 ; gain = 332.695
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 258 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -167,16 +167,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 641.770 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 641.426 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:35 ; elapsed = 00:01:46 . Memory (MB): peak = 641.770 ; gain = 390.117
+Finished Constraint Validation : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 641.426 ; gain = 390.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:35 ; elapsed = 00:01:46 . Memory (MB): peak = 641.770 ; gain = 390.117
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 641.426 ; gain = 390.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -185,10 +185,10 @@ Applied set_property DONT_TOUCH = true for inst/cbcr. (constraint file  auto gen
 Applied set_property DONT_TOUCH = true for inst/divider. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/y. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:46 . Memory (MB): peak = 641.770 ; gain = 390.117
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 641.426 ; gain = 390.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 641.770 ; gain = 390.117
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:41 . Memory (MB): peak = 641.426 ; gain = 390.148
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs'
 INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs'
@@ -237,7 +237,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:48 . Memory (MB): peak = 641.770 ; gain = 390.117
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:42 . Memory (MB): peak = 641.426 ; gain = 390.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -249,13 +249,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 643.992 ; gain = 392.340
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 644.414 ; gain = 393.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 643.992 ; gain = 392.340
+Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 644.414 ; gain = 393.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,7 +267,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,7 +293,7 @@ Finished Final Netlist Cleanup
 INFO: [Synth 8-3295] tying undriven pin inst/divider:s_axis_divisor_tvalid to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst/divider:s_axis_dividend_tvalid to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -306,7 +306,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,25 +318,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -366,14 +366,14 @@ Report Cell Usage:
 |12    |FDRE       |   184|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 308 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:42 . Memory (MB): peak = 664.277 ; gain = 355.301
-Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:58 . Memory (MB): peak = 664.277 ; gain = 412.625
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:01:37 . Memory (MB): peak = 663.699 ; gain = 354.969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:52 . Memory (MB): peak = 663.699 ; gain = 412.422
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -382,10 +382,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 44 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:00 . Memory (MB): peak = 669.699 ; gain = 425.809
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 669.117 ; gain = 425.605
 INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1/converter_quant_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/converter_quant_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 125 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1/converter_quant_0_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 669.699 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 15:42:40 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 669.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 16:23:03 2019...

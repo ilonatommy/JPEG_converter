@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Tue Aug 13 12:17:27 2019
+// Date        : Mon Aug 19 15:41:29 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top converter_DCT_2D_0_0 -prefix
+//               converter_DCT_2D_0_0_ converter_DCT_2D_0_0_sim_netlist.v
 // Design      : converter_DCT_2D_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,35 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "converter_DCT_2D_0_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
-(* NotValidForBitStream *)
-module converter_DCT_2D_0_0
-   (pixel_in,
-    pixel_out,
-    clk,
-    ce,
-    rst);
-  input [7:0]pixel_in;
-  output [13:0]pixel_out;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
-  input ce;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
-
-  wire ce;
-  wire clk;
-  wire [7:0]pixel_in;
-  wire [13:0]pixel_out;
-  wire rst;
-
-  converter_DCT_2D_0_0_DCT_2D inst
-       (.ce(ce),
-        .clk(clk),
-        .pixel_in(pixel_in),
-        .pixel_out(pixel_out),
-        .rst(rst));
-endmodule
-
-(* ORIG_REF_NAME = "DCT" *) 
 module converter_DCT_2D_0_0_DCT
    (D,
     clk,
@@ -2819,7 +2790,6 @@ module converter_DCT_2D_0_0_DCT_0
         .\tmp_reg[7]_0 ({r21_n_16,r21_n_17,r21_n_18,r21_n_19}));
 endmodule
 
-(* ORIG_REF_NAME = "DCT_2D" *) 
 module converter_DCT_2D_0_0_DCT_2D
    (pixel_out,
     rst,
@@ -9093,7 +9063,6 @@ module converter_DCT_2D_0_0_DCT_2D
         .R(\trigger_mod2_ce[6]_i_1_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "RAM" *) 
 module converter_DCT_2D_0_0_RAM
    (S,
     p_0_out,
@@ -13774,7 +13743,34 @@ module converter_DCT_2D_0_0_RAM_38
         .O(D));
 endmodule
 
-(* ORIG_REF_NAME = "delay" *) 
+(* CHECK_LICENSE_TYPE = "converter_DCT_2D_0_0,DCT_2D,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "DCT_2D,Vivado 2017.2" *) 
+(* NotValidForBitStream *)
+module converter_DCT_2D_0_0
+   (pixel_in,
+    pixel_out,
+    clk,
+    ce,
+    rst);
+  input [7:0]pixel_in;
+  output [13:0]pixel_out;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
+  input ce;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *) input rst;
+
+  wire ce;
+  wire clk;
+  wire [7:0]pixel_in;
+  wire [13:0]pixel_out;
+  wire rst;
+
+  converter_DCT_2D_0_0_DCT_2D inst
+       (.ce(ce),
+        .clk(clk),
+        .pixel_in(pixel_in),
+        .pixel_out(pixel_out),
+        .rst(rst));
+endmodule
+
 module converter_DCT_2D_0_0_delay
    (\tmp_reg[11]_0 ,
     Q,
@@ -21419,7 +21415,6 @@ module converter_DCT_2D_0_0_delay__parameterized2_83
         .R(rst));
 endmodule
 
-(* ORIG_REF_NAME = "full_adder" *) 
 module converter_DCT_2D_0_0_full_adder
    (O,
     \tmp_reg[7] ,
@@ -22523,7 +22518,6 @@ module converter_DCT_2D_0_0_full_adder__parameterized3_37
         .S({1'b0,\tmp_reg[10] }));
 endmodule
 
-(* ORIG_REF_NAME = "full_subtractor" *) 
 module converter_DCT_2D_0_0_full_subtractor
    (D,
     CO,
@@ -23625,7 +23619,6 @@ module converter_DCT_2D_0_0_mux_3i__parameterized0_40
         .O(B[5]));
 endmodule
 
-(* ORIG_REF_NAME = "reg_mult" *) 
 module converter_DCT_2D_0_0_reg_mult
    (P,
     \tmp_reg[13] ,

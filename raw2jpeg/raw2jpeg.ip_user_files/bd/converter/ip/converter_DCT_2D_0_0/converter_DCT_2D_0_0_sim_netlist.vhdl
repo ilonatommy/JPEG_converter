@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Tue Aug 13 12:17:27 2019
+-- Date        : Mon Aug 19 15:41:29 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/converter_DCT_2D_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top converter_DCT_2D_0_0 -prefix
+--               converter_DCT_2D_0_0_ converter_DCT_2D_0_0_sim_netlist.vhdl
 -- Design      : converter_DCT_2D_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -159,8 +159,6 @@ entity converter_DCT_2D_0_0_RAM is
     rst_mod2 : in STD_LOGIC;
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_RAM : entity is "RAM";
 end converter_DCT_2D_0_0_RAM;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_RAM is
@@ -5775,8 +5773,6 @@ entity converter_DCT_2D_0_0_delay is
     ce_mod2_reg : in STD_LOGIC;
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_delay : entity is "delay";
 end converter_DCT_2D_0_0_delay;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_delay is
@@ -15044,8 +15040,6 @@ entity converter_DCT_2D_0_0_full_adder is
     \tmp_reg[10]\ : in STD_LOGIC;
     \tmp_reg[11]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_full_adder : entity is "full_adder";
 end converter_DCT_2D_0_0_full_adder;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_full_adder is
@@ -16304,8 +16298,6 @@ entity converter_DCT_2D_0_0_full_subtractor is
     DI : in STD_LOGIC_VECTOR ( 0 to 0 );
     \cnt_reg[4]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_full_subtractor : entity is "full_subtractor";
 end converter_DCT_2D_0_0_full_subtractor;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_full_subtractor is
@@ -17644,8 +17636,6 @@ entity converter_DCT_2D_0_0_reg_mult is
     \tmp_reg[13]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 );
     \tmp_reg[13]_1\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_reg_mult : entity is "reg_mult";
 end converter_DCT_2D_0_0_reg_mult;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_reg_mult is
@@ -20351,8 +20341,6 @@ entity converter_DCT_2D_0_0_DCT is
     rst : in STD_LOGIC;
     ce : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_DCT : entity is "DCT";
 end converter_DCT_2D_0_0_DCT;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_DCT is
@@ -25244,8 +25232,6 @@ entity converter_DCT_2D_0_0_DCT_2D is
     ce : in STD_LOGIC;
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_DCT_2D_0_0_DCT_2D : entity is "DCT_2D";
 end converter_DCT_2D_0_0_DCT_2D;
 
 architecture STRUCTURE of converter_DCT_2D_0_0_DCT_2D is

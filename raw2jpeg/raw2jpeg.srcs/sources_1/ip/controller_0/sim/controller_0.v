@@ -73,7 +73,7 @@ output wire ce_zig_zag;
 output wire ce_BRAM_write;
 output wire [5 : 0] addr_input;
 output wire [5 : 0] addr_quant;
-output wire [5 : 0] addr_BRAM_write;
+output wire [7 : 0] addr_BRAM_write;
 
   controller inst (
     .clk(clk),

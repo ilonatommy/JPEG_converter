@@ -1,6 +1,0 @@
-div_gen_0.vhd,vhdl,xil_defaultlib,../../../../raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd,
-chrominance_quant.v,verilog,xil_defaultlib,../../../../raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v,
-luminance_quant.v,verilog,xil_defaultlib,../../../../raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v,
-quant.v,verilog,xil_defaultlib,../../../../raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v,
-quant_0.v,verilog,xil_defaultlib,../../../../raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

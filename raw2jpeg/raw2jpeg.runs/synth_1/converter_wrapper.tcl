@@ -31,6 +31,8 @@ set_property used_in_implementation false [get_files -all c:/Users/lsneler/Deskt
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter_ooc.xdc]
 set_property is_locked true [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
 

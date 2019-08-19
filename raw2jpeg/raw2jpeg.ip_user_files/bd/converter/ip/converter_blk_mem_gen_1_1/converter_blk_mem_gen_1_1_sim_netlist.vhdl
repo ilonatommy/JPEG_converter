@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 -- Date        : Fri Aug  9 10:44:12 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top converter_blk_mem_gen_1_1 -prefix
+--               converter_blk_mem_gen_1_1_ converter_blk_mem_gen_1_1_sim_netlist.vhdl
 -- Design      : converter_blk_mem_gen_1_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_prim_wrapper is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end converter_blk_mem_gen_1_1_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of converter_blk_mem_gen_1_1_blk_mem_gen_prim_wrapper is
@@ -238,8 +236,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end converter_blk_mem_gen_1_1_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of converter_blk_mem_gen_1_1_blk_mem_gen_prim_width is
@@ -265,8 +261,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end converter_blk_mem_gen_1_1_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of converter_blk_mem_gen_1_1_blk_mem_gen_generic_cstr is
@@ -292,8 +286,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end converter_blk_mem_gen_1_1_blk_mem_gen_top;
 
 architecture STRUCTURE of converter_blk_mem_gen_1_1_blk_mem_gen_top is
@@ -319,8 +311,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6_synth is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6_synth : entity is "blk_mem_gen_v8_3_6_synth";
 end converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6_synth;
 
 architecture STRUCTURE of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6_synth is
@@ -550,8 +540,6 @@ entity converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6 is
   attribute C_WRITE_WIDTH_B of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6 : entity is 8;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6 : entity is "zynq";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6 : entity is "blk_mem_gen_v8_3_6";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6 : entity is "yes";
 end converter_blk_mem_gen_1_1_blk_mem_gen_v8_3_6;

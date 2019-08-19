@@ -4,6 +4,7 @@ Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto a5556b4409
 Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_dividend_tdata [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v:41]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port addr_BRAM_write [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/new/tb_raw2jpeg.v:31]
 WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:65]
 WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:71]
 WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:74]

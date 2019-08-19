@@ -392,9 +392,9 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-07T10:41:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-19T14:20:08Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="domain.local:user:quant:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repository/JPEG_conversion/IP_Core_repo/QUANT</xilinx:tag>
+        <xilinx:tag xilinx:name="domain.local:user:quant:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/QUANT</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

@@ -1,7 +1,7 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Fri Aug  9 11:07:54 2019
+-- Date        : Mon Aug 19 15:49:09 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top converter_clk_wiz_0_0 -prefix
 --               converter_clk_wiz_0_0_ converter_clk_wiz_0_0_sim_netlist.vhdl
@@ -18,7 +18,6 @@ entity converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
     reset : in STD_LOGIC;
-    locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
 end converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz;
@@ -34,6 +33,7 @@ architecture STRUCTURE of converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz is
   signal NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_DRDY_UNCONNECTED : STD_LOGIC;
+  signal NLW_plle2_adv_inst_LOCKED_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_DO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute BOX_TYPE : string;
   attribute BOX_TYPE of clkf_buf : label is "PRIMITIVE";
@@ -118,7 +118,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       DO(15 downto 0) => NLW_plle2_adv_inst_DO_UNCONNECTED(15 downto 0),
       DRDY => NLW_plle2_adv_inst_DRDY_UNCONNECTED,
       DWE => '0',
-      LOCKED => locked,
+      LOCKED => NLW_plle2_adv_inst_LOCKED_UNCONNECTED,
       PWRDWN => '0',
       RST => reset
     );
@@ -131,7 +131,6 @@ entity converter_clk_wiz_0_0 is
   port (
     clk_out1 : out STD_LOGIC;
     reset : in STD_LOGIC;
-    locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -144,7 +143,6 @@ inst: entity work.converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz
      port map (
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,
-      locked => locked,
       reset => reset
     );
 end STRUCTURE;

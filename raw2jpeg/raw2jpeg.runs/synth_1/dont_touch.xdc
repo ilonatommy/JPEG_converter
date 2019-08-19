@@ -29,4 +29,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_val_h
 # IP: bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_clk_wiz_0_0 || ORIG_REF_NAME==converter_clk_wiz_0_0}]
 
+# IP: bd/converter/ip/converter_ila_0_0/converter_ila_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==converter_ila_0_0 || ORIG_REF_NAME==converter_ila_0_0}]
+
 # XDC: bd/converter/converter_ooc.xdc

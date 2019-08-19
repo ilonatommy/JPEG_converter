@@ -233,6 +233,9 @@ CONFIG.USE_LOCKED {false} \
   # Create instance: controller_0, and set properties
   set controller_0 [ create_bd_cell -type ip -vlnv domain.local:user:controller:1.0 controller_0 ]
 
+  # Create instance: ila_0, and set properties
+  set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
+
   # Create instance: quant_0, and set properties
   set quant_0 [ create_bd_cell -type ip -vlnv domain.local:user:quant:1.0 quant_0 ]
 
@@ -243,7 +246,7 @@ CONFIG.USE_LOCKED {false} \
   connect_bd_net -net DCT_2D_0_pixel_out [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in]
   connect_bd_net -net Net1 [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins val_holder_0/rst]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk]
   connect_bd_net -net controller_0_addr_BRAM_write [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins controller_0/addr_BRAM_write]
   connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
   connect_bd_net -net controller_0_addr_quant [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]

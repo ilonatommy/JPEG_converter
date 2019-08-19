@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 -- Date        : Mon Aug 19 15:49:09 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top converter_clk_wiz_0_0 -prefix
+--               converter_clk_wiz_0_0_ converter_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : converter_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz is
     reset : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz : entity is "converter_clk_wiz_0_0_clk_wiz";
 end converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz;
 
 architecture STRUCTURE of converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz is
