@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1566222032">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1566222512">
   <File Type="PWROPT-DRC" Name="converter_wrapper_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="converter_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="converter_wrapper_timing_summary_init.rpt"/>
@@ -154,6 +154,7 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="converter_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="converter_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="converter_quant_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="converter_controller_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="converter_DCT_2D_0_0"/>

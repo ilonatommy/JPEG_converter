@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Aug 19 15:50:33 2019
+| Host         : rtrkos034 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file converter_wrapper_control_sets_placed.rpt
+| Design       : converter_wrapper
+| Device       : xc7z010
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               5 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             281 |           64 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+---------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|             Clock Signal             |                         Enable Signal                         |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------------+---------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/rc_37                               |                                          |                1 |              1 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/code_m_RAM[1]_i_1_n_0         |                                          |                1 |              4 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/fabric_RAM/data               | converter_i/controller_0/inst/rst        |                3 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[0][9]_i_1_n_0 | converter_i/controller_0/inst/rst        |                2 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[1][9]_i_1_n_0 | converter_i/controller_0/inst/rst        |                2 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[2][9]_i_1_n_0 | converter_i/controller_0/inst/rst        |                1 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/DCT_2D_0/inst/mod_1/STATE__0                      | converter_i/controller_0/inst/rst        |                2 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/controller_0/inst/ce                              | converter_i/DCT_2D_0/inst/cnt[5]_i_1_n_0 |                2 |              8 |
+|  converter_i/clk_wiz_0/inst/clk_out1 |                                                               |                                          |                5 |             15 |
+|  converter_i/clk_wiz_0/inst/clk_out1 | converter_i/controller_0/inst/ce                              | converter_i/controller_0/inst/rst        |               52 |            233 |
++--------------------------------------+---------------------------------------------------------------+------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 4      |                     1 |
+| 8      |                     6 |
+| 15     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

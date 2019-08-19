@@ -10,20 +10,20 @@ preplace inst quant_0 -pg 1 -lvl 4 -y 260 -defaultsOSRD -resize 202 170
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 450 -defaultsOSRD
 preplace inst controller_0 -pg 1 -lvl 2 -y 560 -defaultsOSRD
 preplace inst DCT_2D_0 -pg 1 -lvl 3 -y 450 -defaultsOSRD
-preplace netloc val_holder_0_pixel_out 1 5 1 1290
-preplace netloc controller_0_addr_BRAM_write 1 2 4 450J 70 NJ 70 NJ 70 N
+preplace netloc val_holder_0_pixel_out 1 5 1 1350
+preplace netloc controller_0_addr_BRAM_write 1 2 4 460J 80 NJ 80 NJ 80 N
 preplace netloc quant_0_pixel_out 1 4 1 N
-preplace netloc controller_0_ce_BRAM_write 1 2 4 440 140 NJ 140 1040 150 N
+preplace netloc controller_0_ce_BRAM_write 1 2 4 450 140 NJ 140 1090 140 N
 preplace netloc sys_clock_1 1 0 1 NJ
-preplace netloc controller_0_ce 1 2 4 470 360 770 370 NJ 370 1290J
-preplace netloc controller_0_addr_input 1 2 4 500J 370 750J 380 NJ 380 1310
-preplace netloc clk_wiz_0_clk_out1 1 1 5 200 440 490 260 750 130 1050 130 1320
-preplace netloc blk_mem_gen_0_douta 1 2 4 510 530 NJ 530 NJ 530 NJ
-preplace netloc Net1 1 2 4 460 290 770 150 1030 310 1300J
-preplace netloc DCT_2D_0_pixel_out 1 3 1 760
+preplace netloc controller_0_ce 1 2 4 480 360 800 370 NJ 370 1350J
+preplace netloc controller_0_addr_input 1 2 4 510J 370 780J 380 NJ 380 1370
+preplace netloc clk_wiz_0_clk_out1 1 1 5 200 440 500 260 780 130 1100 130 1380
+preplace netloc blk_mem_gen_0_douta 1 2 4 520 530 NJ 530 NJ 530 NJ
+preplace netloc Net1 1 2 4 470 290 800 150 1080 310 1360J
+preplace netloc DCT_2D_0_pixel_out 1 3 1 790
 preplace netloc reset_rtl_1 1 0 1 NJ
-preplace netloc controller_0_addr_quant 1 2 2 480 230 NJ
-levelinfo -pg 1 0 110 320 630 900 1170 1420 1530 -top 0 -bot 670
+preplace netloc controller_0_addr_quant 1 2 2 490 230 NJ
+levelinfo -pg 1 -10 110 330 660 950 1230 1490 1600 -top 0 -bot 670
 ",
 }
 {

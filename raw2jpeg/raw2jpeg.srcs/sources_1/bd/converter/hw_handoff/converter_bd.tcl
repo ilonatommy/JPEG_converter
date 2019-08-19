@@ -227,6 +227,7 @@ CONFIG.MMCM_COMPENSATION {ZHOLD} \
 CONFIG.MMCM_DIVCLK_DIVIDE {5} \
 CONFIG.PRIMITIVE {PLL} \
 CONFIG.USE_BOARD_FLOW {true} \
+CONFIG.USE_LOCKED {false} \
  ] $clk_wiz_0
 
   # Create instance: controller_0, and set properties

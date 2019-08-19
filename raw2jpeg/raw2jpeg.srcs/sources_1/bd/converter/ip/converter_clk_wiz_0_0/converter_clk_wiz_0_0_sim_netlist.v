@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Fri Aug  9 11:07:54 2019
+// Date        : Mon Aug 19 15:49:09 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top converter_clk_wiz_0_0 -prefix
-//               converter_clk_wiz_0_0_ converter_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0_sim_netlist.v
 // Design      : converter_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -16,33 +16,28 @@
 module converter_clk_wiz_0_0
    (clk_out1,
     reset,
-    locked,
     clk_in1);
   output clk_out1;
   input reset;
-  output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
-  wire locked;
   wire reset;
 
   converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
-        .locked(locked),
         .reset(reset));
 endmodule
 
+(* ORIG_REF_NAME = "converter_clk_wiz_0_0_clk_wiz" *) 
 module converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz
    (clk_out1,
     reset,
-    locked,
     clk_in1);
   output clk_out1;
   input reset;
-  output locked;
   input clk_in1;
 
   wire clk_in1;
@@ -51,7 +46,6 @@ module converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz
   wire clk_out1_converter_clk_wiz_0_0;
   wire clkfbout_buf_converter_clk_wiz_0_0;
   wire clkfbout_converter_clk_wiz_0_0;
-  wire locked;
   wire reset;
   wire NLW_plle2_adv_inst_CLKOUT1_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED;
@@ -59,6 +53,7 @@ module converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz
   wire NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED;
   wire NLW_plle2_adv_inst_DRDY_UNCONNECTED;
+  wire NLW_plle2_adv_inst_LOCKED_UNCONNECTED;
   wire [15:0]NLW_plle2_adv_inst_DO_UNCONNECTED;
 
   (* BOX_TYPE = "PRIMITIVE" *) 
@@ -130,7 +125,7 @@ module converter_clk_wiz_0_0_converter_clk_wiz_0_0_clk_wiz
         .DO(NLW_plle2_adv_inst_DO_UNCONNECTED[15:0]),
         .DRDY(NLW_plle2_adv_inst_DRDY_UNCONNECTED),
         .DWE(1'b0),
-        .LOCKED(locked),
+        .LOCKED(NLW_plle2_adv_inst_LOCKED_UNCONNECTED),
         .PWRDWN(1'b0),
         .RST(reset));
 endmodule
