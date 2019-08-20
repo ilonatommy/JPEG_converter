@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Aug 19 15:39:56 2019
-# Process ID: 6508
+# Start of session at: Tue Aug 20 10:18:42 2019
+# Process ID: 3940
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7596 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5092 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg\vivado.jou
 #-----------------------------------------------------------
@@ -13,891 +13,75 @@ start_gui
 open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.xpr
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'quant_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'blk_mem_gen_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_blk_mem_gen_0_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_quant_0_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_blk_mem_gen_1_1_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'DCT_2D_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_DCT_2D_0_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'val_holder_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'blk_mem_gen_1_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_val_holder_0_1_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'converter_controller_0_0_synth_1' not found
-WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] impl_1 strategy "Vivado Implementation Defaults," step write_bitstream, attribute : Could not find the file 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper.tcl'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/converter_controller_0_0_sim_netlist.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/converter_val_holder_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_blk_mem_gen_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_DCT_2D_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_DCT_2D_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_controller_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_controller_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_blk_mem_gen_1_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_val_holder_0_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_val_holder_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'converter_clk_wiz_0_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 836.609 ; gain = 150.027
 update_compile_order -fileset sources_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Aug 19 15:40:32 2019] Launched converter_blk_mem_gen_0_0_synth_1, converter_quant_0_0_synth_1, converter_blk_mem_gen_1_1_synth_1, converter_DCT_2D_0_0_synth_1, converter_val_holder_0_1_synth_1, converter_controller_0_0_synth_1, synth_1...
-Run output will be captured here:
-converter_blk_mem_gen_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_0_0_synth_1/runme.log
-converter_quant_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1/runme.log
-converter_blk_mem_gen_1_1_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1/runme.log
-converter_DCT_2D_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1/runme.log
-converter_val_holder_0_1_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_val_holder_0_1_synth_1/runme.log
-converter_controller_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_controller_0_0_synth_1/runme.log
-synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
-[Mon Aug 19 15:40:32 2019] Launched impl_1...
+[Tue Aug 20 10:20:11 2019] Launched impl_1...
 Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
 open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
 Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
-Adding cell -- domain.local:user:quant:1.0 - quant_0
 Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_1
 Adding cell -- domain.local:user:DCT_2D:1.0 - DCT_2D_0
 Adding cell -- domain.local:user:val_holder:1.0 - val_holder_0
 Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
 Adding cell -- domain.local:user:controller:1.0 - controller_0
-Successfully read diagram <converter> from BD file <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd>
-validate_bd_design -force
-save_bd_design
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui> 
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2017.2
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper_board.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper_early.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1663.113 ; gain = 421.379
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper_early.xdc]
-Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper.xdc]
-Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/.Xil/Vivado-6508-rtrkos034/dcp3/converter_wrapper.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1663.113 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1663.113 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1773.289 ; gain = 744.855
-open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
-startgroup
-set_property -dict [list CONFIG.USE_LOCKED {false}] [get_bd_cells clk_wiz_0]
-endgroup
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-save_bd_design
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block quant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
-Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
-Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-[Mon Aug 19 15:48:32 2019] Launched converter_clk_wiz_0_0_synth_1, synth_1...
-Run output will be captured here:
-converter_clk_wiz_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_clk_wiz_0_0_synth_1/runme.log
-synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
-[Mon Aug 19 15:48:32 2019] Launched impl_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1827.012 ; gain = 19.063
-close_design
-set_property STEPS.WRITE_BITSTREAM.TCL.PRE C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/converter_wrapper.tcl [get_runs impl_1]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Aug 19 15:55:41 2019] Launched impl_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
-regenerate_bd_layout
-reset_run impl_1 -prev_step 
-save_bd_design
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui> 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Mon Aug 19 16:02:47 2019] Launched synth_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
-[Mon Aug 19 16:02:47 2019] Launched impl_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
-WARNING: [Common 17-9] Error reading message records.
-WARNING: [Common 17-9] Error reading message records.
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
 INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
-create_bd_cell: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1827.012 ; gain = 0.000
-endgroup
+Adding cell -- domain.local:user:quant:1.0 - quant_0
+Successfully read diagram <converter> from BD file <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 919.719 ; gain = 0.000
+WARNING: [Common 17-9] Error reading message records.
+reset_run impl_1 -prev_step 
+INFO: [Device 21-403] Loading part xc7z010clg400-1
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_1]
+endgroup
+connect_bd_net [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/clkb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+delete_bd_objs [get_bd_nets blk_mem_gen_1_douta]
+connect_bd_net [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins ila_0/probe0]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/doutb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+create_bd_port -dir I GND
+set_property location {1293 708} [get_bd_ports GND]
+delete_bd_objs [get_bd_ports GND]
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:zig_zag:1.0 zig_zag_0
+endgroup
+connect_bd_net [get_bd_pins zig_zag_0/addr_BRAM] [get_bd_pins blk_mem_gen_1/addrb]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/addrb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+regenerate_bd_layout
+connect_bd_net [get_bd_pins zig_zag_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins zig_zag_0/rst] [get_bd_pins controller_0/rst]
+connect_bd_net [get_bd_pins zig_zag_0/ce] [get_bd_pins controller_0/ce_zig_zag]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/ce_zig_zag]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/enb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+regenerate_bd_layout
 save_bd_design
 Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
 Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui> 
-open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block quant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
-Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
-Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
-Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-[Mon Aug 19 16:10:29 2019] Launched converter_ila_0_0_synth_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_ila_0_0_synth_1/runme.log
-[Mon Aug 19 16:10:29 2019] Launched synth_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1893.266 ; gain = 32.078
-reset_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-export_ip_user_files -of_objects  [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -sync -no_script -force -quiet
-delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_0_0_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_DCT_2D_0_0_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_controller_0_0_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_val_holder_0_1_synth_1
-
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_clk_wiz_0_0_synth_1
-
-generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-INFO: [BD 41-1662] The design 'converter.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 .
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
-ERROR: [BD 41-1030] Generation failed for the IP Integrator block quant_0 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
-Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
-Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
-Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1952.133 ; gain = 10.465
-ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
-make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -top
-reset_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-export_ip_user_files -of_objects  [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -sync -no_script -force -quiet
-generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-INFO: [BD 41-1662] The design 'converter.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 .
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
-ERROR: [BD 41-1030] Generation failed for the IP Integrator block quant_0 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
-Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
-Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
-Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
-reset_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-export_ip_user_files -of_objects  [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -sync -no_script -force -quiet
-generate_target all [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'controller_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'controller_0'...
-export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci] -no_script -force -quiet
-create_fileset -blockset controller_0
-set_property top controller_0 [get_fileset controller_0]
-move_files -fileset [get_fileset controller_0] [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci]
-launch_run controller_0_synth_1
-[Mon Aug 19 16:14:41 2019] Launched controller_0_synth_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/controller_0_synth_1/runme.log
-wait_on_run controller_0_synth_1
-
-[Mon Aug 19 16:14:41 2019] Waiting for controller_0_synth_1 to finish...
-[Mon Aug 19 16:14:46 2019] Waiting for controller_0_synth_1 to finish...
-[Mon Aug 19 16:14:51 2019] Waiting for controller_0_synth_1 to finish...
-[Mon Aug 19 16:14:56 2019] Waiting for controller_0_synth_1 to finish...
-[Mon Aug 19 16:15:06 2019] Waiting for controller_0_synth_1 to finish...
-[Mon Aug 19 16:15:16 2019] Waiting for controller_0_synth_1 to finish...
-
-*** Running vivado
-    with args -log controller_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source controller_0.tcl
-
-
-****** Vivado v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source controller_0.tcl -notrace
-Command: synth_design -top controller_0 -part xc7z010clg400-1 -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8128 
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 329.402 ; gain = 80.996
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'controller_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/synth/controller_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'controller' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:23]
-INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:23]
-INFO: [Synth 8-256] done synthesizing module 'controller_0' (2#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/synth/controller_0.v:56]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 369.730 ; gain = 121.324
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 369.730 ; gain = 121.324
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 653.457 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7z010clg400-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "_rst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_rst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rst_trigger" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_ce" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ce_trigger" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "addr_BRAM_wr" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "_ce_zig_zag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "_ce_BRAM_write" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:68]
-WARNING: [Synth 8-6014] Unused sequential element addr_qu_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:69]
-WARNING: [Synth 8-6014] Unused sequential element addr_BRAM_wr_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:73]
-WARNING: [Synth 8-6014] Unused sequential element ce_zz_bram_trigger_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:72]
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 5     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 8     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module controller 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
-	   2 Input      1 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 5     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 8     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 80 (col length:40)
-BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "inst/_ce_zig_zag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/_ce_BRAM_write" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/addr_BRAM_wr" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element inst/ce_zz_bram_trigger_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:72]
-WARNING: [Synth 8-6014] Unused sequential element inst/addr_in_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:68]
-WARNING: [Synth 8-6014] Unused sequential element inst/addr_qu_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:69]
-WARNING: [Synth 8-6014] Unused sequential element inst/addr_BRAM_wr_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v:73]
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     4|
-|2     |LUT2 |    10|
-|3     |LUT3 |    11|
-|4     |LUT4 |     7|
-|5     |LUT5 |     5|
-|6     |LUT6 |     8|
-|7     |FDRE |    33|
-|8     |FDSE |     5|
-+------+-----+------+
-
-Report Instance Areas: 
-+------+---------+-----------+------+
-|      |Instance |Module     |Cells |
-+------+---------+-----------+------+
-|1     |top      |           |    83|
-|2     |  inst   |controller |    83|
-+------+---------+-----------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 653.457 ; gain = 121.324
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 653.457 ; gain = 405.051
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-23 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 655.984 ; gain = 414.340
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/controller_0_synth_1/controller_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/controller_0.xci
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/controller_0_synth_1/controller_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 655.984 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 16:15:17 2019...
-[Mon Aug 19 16:15:21 2019] controller_0_synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:40 . Memory (MB): peak = 1978.230 ; gain = 2.492
-launch_simulation
-INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-7] Finding pre-compiled libraries...
-INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
-INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
-"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module val_holder
-INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module val_holder_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module chrominance_quant
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module luminance_quant
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module quant
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module quant_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DCT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RAM
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module delay
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module full_adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module full_subtractor
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux_2i
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux_3i
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module register
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module reg_mult
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DCT_2D
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DCT_2D_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module controller
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module controller_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module clk_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/new/tb_raw2jpeg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity div_gen_0
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
-Vivado Simulator 2017.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto a5556b44090644648016a6aa246646a4 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_dividend_tdata [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v:41]
-WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port addr_BRAM_write [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/new/tb_raw2jpeg.v:31]
-WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:65]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:71]
-WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:74]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:77]
-WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:79]
-WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
-WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
-Compiling package div_gen_v5_1_11.div_gen_v5_1_11_viv_comp
-Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
-Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
-Compiling package ieee.math_real
-Compiling package axi_utils_v2_0_3.global_util_pkg
-Compiling package axi_utils_v2_0_3.axi_utils_comps
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package xbip_bram18k_v3_0_3.xbip_bram18k_v3_0_3_pkg
-Compiling package div_gen_v5_1_11.div_gen_pkg
-Compiling package ieee.std_logic_signed
-Compiling package unisim.vcomponents
-Compiling package div_gen_v5_1_11.pkg_addsub
-Compiling module xil_defaultlib.clk_gen
-Compiling module xil_defaultlib.controller
-Compiling module xil_defaultlib.controller_0
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling module xil_defaultlib.RAM(WIDTH=11)
-Compiling module xil_defaultlib.register(WIDTH=12)
-Compiling module xil_defaultlib.delay(reg_width=12)
-Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
-Compiling module xil_defaultlib.delay(reg_width=13)
-Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
-Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
-Compiling module xil_defaultlib.delay(reg_width=14)
-Compiling module xil_defaultlib.register(WIDTH=14,DELAY=2)
-Compiling module xil_defaultlib.register(WIDTH=14)
-Compiling module xil_defaultlib.delay(reg_width=15)
-Compiling module xil_defaultlib.register(WIDTH=15,DELAY=2)
-Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
-Compiling module xil_defaultlib.register(WIDTH=15,DELAY=1)
-Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=12,WIDTH_I1=12,W...
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=16,WIDTH_I1=13,W...
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
-Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=14,W...
-Compiling module xil_defaultlib.full_adder(WIDTH=11)
-Compiling module xil_defaultlib.full_adder(WIDTH=12)
-Compiling module xil_defaultlib.full_adder(WIDTH=13)
-Compiling module xil_defaultlib.full_adder(WIDTH=14)
-Compiling module xil_defaultlib.full_adder(WIDTH=15)
-Compiling module xil_defaultlib.full_subtractor(WIDTH=11)
-Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
-Compiling module xil_defaultlib.full_subtractor(WIDTH=15)
-Compiling module xil_defaultlib.reg_mult
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
-Compiling module xil_defaultlib.mux_2i(WIDTH_I0=15,WIDTH_I1=15,W...
-Compiling module xil_defaultlib.DCT
-Compiling module xil_defaultlib.DCT_2D
-Compiling module xil_defaultlib.DCT_2D_0
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
-Compiling module xil_defaultlib.chrominance_quant
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
-Compiling module xil_defaultlib.luminance_quant
-Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=14,c_ai...]
-Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=14,c_regist...]
-Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=7,c_ain...]
-Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=7,c_ainit_v...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=14...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
-Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
-Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
-Compiling architecture rtl of entity div_gen_v5_1_11.c_addsub_lut6 [\c_addsub_lut6(c_width=8,c_add_m...]
-Compiling architecture synth of entity div_gen_v5_1_11.c_addsub_viv [\c_addsub_viv(c_a_width=8,c_b_wi...]
-Compiling architecture virtex of entity div_gen_v5_1_11.addsubreg_v [\addsubreg_v(c_bus_width=8,c_ain...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=13...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=12...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=11...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=10...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=9)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=8)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=7)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=6)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=5)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=4)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=3)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=2)...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(1,1,1,1)\]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=16...]
-Compiling architecture virtex of entity div_gen_v5_1_11.dividervdc_v [\dividervdc_v(bus_num=14,bus_div...]
-Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=2,c_ain...]
-Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=2)(1,0,1,0)...]
-Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=15,c_ai...]
-Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=15)(1,0,1,0...]
-Compiling architecture synth of entity div_gen_v5_1_11.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
-Compiling architecture synth of entity div_gen_v5_1_11.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
-Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
-Compiling architecture synth of entity div_gen_v5_1_11.div_gen_v5_1_11_viv [\div_gen_v5_1_11_viv(c_xdevicefa...]
-Compiling architecture xilinx of entity div_gen_v5_1_11.div_gen_v5_1_11 [\div_gen_v5_1_11(c_xdevicefamily...]
-Compiling architecture div_gen_0_arch of entity xil_defaultlib.div_gen_0 [div_gen_0_default]
-Compiling module xil_defaultlib.quant
-Compiling module xil_defaultlib.quant_0
-Compiling module xil_defaultlib.val_holder
-Compiling module xil_defaultlib.val_holder_0
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
-Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
-Compiling module xil_defaultlib.blk_mem_gen_1
-Compiling module xil_defaultlib.tb_raw2jpeg
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_raw2jpeg_behav
-
-****** Webtalk v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/xsim.dir/tb_raw2jpeg_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/xsim.dir/tb_raw2jpeg_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Aug 19 16:15:37 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Aug 19 16:15:37 2019...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1978.230 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_raw2jpeg_behav -key {Behavioral:sim_1:Functional:tb_raw2jpeg} -tclbatch {tb_raw2jpeg.tcl} -view {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/tb_raw2jpeg_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.2
-Time resolution is 1 ps
-open_wave_config C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/tb_raw2jpeg_behav.wcfg
-source tb_raw2jpeg.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module tb_raw2jpeg.ROM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module tb_raw2jpeg.quant.inst.cbcr.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module tb_raw2jpeg.quant.inst.y.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module tb_raw2jpeg.RAM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_raw2jpeg_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 2015.578 ; gain = 37.348
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-INFO: [BD 41-1662] The design 'converter.bd' is already validated. Therefore parameter propagation will not be re-run.
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
-Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block DCT_2D_0 .
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
-ERROR: [BD 41-1030] Generation failed for the IP Integrator block quant_0 
-INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
-Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
-Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
-Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_blk_mem_gen_0_0, cache-ID = 26dfb71592fbb197; cache size = 92.935 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_DCT_2D_0_0, cache-ID = b1e4ef1cb44b8b15; cache size = 92.935 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_quant_0_0, cache-ID = 5cb18eaa39f45386; cache size = 92.935 MB.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-CRITICAL WARNING: [IP_Flow 19-193] Failed to save BOM file 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/div_gen_0/div_gen_0.xml'.
-CRITICAL WARNING: [IP_Flow 19-194] Failed to save IP instance 'div_gen_0'.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_controller_0_0, cache-ID = 9761c3ef52c1f4b1; cache size = 92.935 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_blk_mem_gen_1_1, cache-ID = 5b76ddbc60e1233e; cache size = 92.936 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_val_holder_0_1, cache-ID = 179511df405bfda8; cache size = 92.936 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP converter_clk_wiz_0_0, cache-ID = 5b6b9995ba7d720c; cache size = 92.936 MB.
-ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
-open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
-validate_bd_design -force
-update_ip_catalog -rebuild -scan_changes
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo'.
-report_ip_status -name ip_status
-upgrade_ip -srcset quant_0 [get_ips  {quant_0 converter_quant_0_0}] -log ip_upgrade.log
-Upgrading 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd'
-INFO: [IP_Flow 19-1972] Upgraded converter_quant_0_0 from quant 1.0 to quant 1.0
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Enable_A {Use_ENA_Pin} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Register_PortB_Output_of_Memory_Primitives {true}] [get_bd_cells blk_mem_gen_1]
+endgroup
+save_bd_design
 Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
 Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ui/bd_2a3e06a0.ui> 
-Upgrading 'quant_0'
-INFO: [Project 1-386] Moving file 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.xci' from fileset 'quant_0' to fileset 'sources_1'.
-INFO: [IP_Flow 19-1972] Upgraded quant_0 from quant 1.0 to quant 1.0
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'quant_0'...
-INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips {quant_0 converter_quant_0_0}] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-launch_runs synth_1 -jobs 4
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd> 
 Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.v
 Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
@@ -909,14 +93,16 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_
 INFO: [BD 41-1029] Generation completed for the IP Integrator block val_holder_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zig_zag_0 .
 Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter.hwh
 Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hw_handoff/converter_bd.tcl
 Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter.hwdef
-[Mon Aug 19 16:21:02 2019] Launched converter_ila_0_0_synth_1, converter_quant_0_0_synth_1...
+[Tue Aug 20 10:45:28 2019] Launched converter_blk_mem_gen_1_1_synth_1, converter_zig_zag_0_0_synth_1, synth_1...
 Run output will be captured here:
-converter_ila_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_ila_0_0_synth_1/runme.log
-converter_quant_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_quant_0_0_synth_1/runme.log
-[Mon Aug 19 16:21:02 2019] Launched synth_1...
-Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2071.043 ; gain = 38.758
-make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -top
+converter_blk_mem_gen_1_1_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_blk_mem_gen_1_1_synth_1/runme.log
+converter_zig_zag_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/converter_zig_zag_0_0_synth_1/runme.log
+synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
+[Tue Aug 20 10:45:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1227.754 ; gain = 73.801
+WARNING: [Common 17-9] Error reading message records.

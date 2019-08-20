@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="converter" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1566224457"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1566224457"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1566224457"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1566290724"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1566290724"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1566290724"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\converter_blk_mem_gen_0_0\converter_blk_mem_gen_0_0.xci" Type="IP">
         <Instance HierarchyPath="blk_mem_gen_0"/>
@@ -72,6 +72,14 @@
       </File>
       <File Name="hdl\converter.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\converter_zig_zag_0_0\converter_zig_zag_0_0.xci" Type="IP">
+        <Instance HierarchyPath="zig_zag_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

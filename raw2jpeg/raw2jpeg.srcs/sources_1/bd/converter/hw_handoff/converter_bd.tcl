@@ -195,10 +195,16 @@ CONFIG.use_bram_block {Stand_Alone} \
   set_property -dict [ list \
 CONFIG.Byte_Size {9} \
 CONFIG.Enable_32bit_Address {false} \
-CONFIG.Enable_A {Always_Enabled} \
+CONFIG.Enable_A {Use_ENA_Pin} \
+CONFIG.Enable_B {Use_ENB_Pin} \
+CONFIG.Memory_Type {True_Dual_Port_RAM} \
+CONFIG.Port_B_Clock {100} \
+CONFIG.Port_B_Enable_Rate {100} \
+CONFIG.Port_B_Write_Rate {50} \
 CONFIG.Read_Width_A {8} \
 CONFIG.Read_Width_B {8} \
 CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
 CONFIG.Use_RSTA_Pin {false} \
 CONFIG.Write_Depth_A {256} \
@@ -235,6 +241,12 @@ CONFIG.USE_LOCKED {false} \
 
   # Create instance: ila_0, and set properties
   set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
+  set_property -dict [ list \
+CONFIG.C_ENABLE_ILA_AXI_MON {false} \
+CONFIG.C_MONITOR_TYPE {Native} \
+CONFIG.C_NUM_OF_PROBES {1} \
+CONFIG.C_PROBE0_WIDTH {8} \
+ ] $ila_0
 
   # Create instance: quant_0, and set properties
   set quant_0 [ create_bd_cell -type ip -vlnv domain.local:user:quant:1.0 quant_0 ]
@@ -242,20 +254,26 @@ CONFIG.USE_LOCKED {false} \
   # Create instance: val_holder_0, and set properties
   set val_holder_0 [ create_bd_cell -type ip -vlnv domain.local:user:val_holder:1.0 val_holder_0 ]
 
+  # Create instance: zig_zag_0, and set properties
+  set zig_zag_0 [ create_bd_cell -type ip -vlnv domain.local:user:zig_zag:1.0 zig_zag_0 ]
+
   # Create port connections
   connect_bd_net -net DCT_2D_0_pixel_out [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in]
-  connect_bd_net -net Net1 [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins val_holder_0/rst]
+  connect_bd_net -net Net1 [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins val_holder_0/rst] [get_bd_pins zig_zag_0/rst]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk]
+  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins ila_0/probe0]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk] [get_bd_pins zig_zag_0/clk]
   connect_bd_net -net controller_0_addr_BRAM_write [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins controller_0/addr_BRAM_write]
   connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
   connect_bd_net -net controller_0_addr_quant [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]
   connect_bd_net -net controller_0_ce [get_bd_pins DCT_2D_0/ce] [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins controller_0/ce] [get_bd_pins quant_0/ce]
   connect_bd_net -net controller_0_ce_BRAM_write [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins controller_0/ce_BRAM_write] [get_bd_pins val_holder_0/ce]
+  connect_bd_net -net controller_0_ce_zig_zag [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
   connect_bd_net -net quant_0_pixel_out [get_bd_pins quant_0/pixel_out] [get_bd_pins val_holder_0/pixel_in]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net val_holder_0_pixel_out [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins val_holder_0/pixel_out]
+  connect_bd_net -net zig_zag_0_addr_BRAM [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins zig_zag_0/addr_BRAM]
 
   # Create address segments
 

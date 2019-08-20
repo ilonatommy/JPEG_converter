@@ -2,3 +2,6 @@ Running: xsim.dir/tb_raw2jpeg_behav/xsimk.exe -simmode gui -wdb tb_raw2jpeg_beha
 Design successfully loaded
 Design Loading Memory Usage: 6772 KB (Peak: 6772 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 8964 KB (Peak: 8964 KB)
+Simulation CPU Usage: 421 ms

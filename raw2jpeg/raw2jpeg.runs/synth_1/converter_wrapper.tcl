@@ -18,10 +18,11 @@ set_property ip_repo_paths c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo 
 set_property ip_output_repo c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/inputData.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_table.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_table.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/chrominance_table.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/luminance_table.coe
+add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator/quantizator.ip_user_files/chrominance_table.coe
+add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator/quantizator.ip_user_files/luminance_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/chrominance_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_quant_0_0/src/luminance_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_zig_zag_0_0/src/zig_zag_addr_table.coe
 read_verilog -library xil_defaultlib C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/hdl/converter_wrapper.v
 add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_0_0/converter_blk_mem_gen_0_0_ooc.xdc]
@@ -33,6 +34,7 @@ set_property used_in_implementation false [get_files -all c:/Users/lsneler/Deskt
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_clk_wiz_0_0/converter_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_ila_0_0/converter_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_zig_zag_0_0/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter_ooc.xdc]
 set_property is_locked true [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
 

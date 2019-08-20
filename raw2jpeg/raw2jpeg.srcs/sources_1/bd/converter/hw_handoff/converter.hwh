@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Aug 19 16:20:57 2019" VIVADOVERSION="2017.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug 20 10:45:24 2019" VIVADOVERSION="2017.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="converter" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -264,7 +264,7 @@
         <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
         <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
         <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="2"/>
         <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
         <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
         <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
@@ -277,7 +277,7 @@
         <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
         <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
         <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="1"/>
         <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
         <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
         <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
@@ -291,7 +291,7 @@
         <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
         <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
         <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="1"/>
         <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
         <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
         <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
@@ -302,7 +302,7 @@
         <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
         <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
-        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="1"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
         <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
@@ -325,14 +325,14 @@
         <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
         <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="0"/>
         <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="1"/>
-        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     2.54005 mW"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     2.7033 mW"/>
         <PARAMETER NAME="Component_Name" VALUE="converter_blk_mem_gen_1_1"/>
         <PARAMETER NAME="Interface_Type" VALUE="Native"/>
         <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
         <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
         <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
         <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
-        <PARAMETER NAME="Memory_Type" VALUE="Single_Port_RAM"/>
+        <PARAMETER NAME="Memory_Type" VALUE="True_Dual_Port_RAM"/>
         <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
         <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
         <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
@@ -355,15 +355,15 @@
         <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
         <PARAMETER NAME="Read_Width_A" VALUE="8"/>
         <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Enable_A" VALUE="Use_ENA_Pin"/>
         <PARAMETER NAME="Write_Width_B" VALUE="8"/>
         <PARAMETER NAME="Read_Width_B" VALUE="8"/>
         <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
-        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Enable_B" VALUE="Use_ENB_Pin"/>
         <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
         <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
         <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
-        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="true"/>
         <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
         <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
         <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
@@ -385,10 +385,10 @@
         <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
         <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
         <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
-        <PARAMETER NAME="Port_B_Clock" VALUE="0"/>
-        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="50"/>
         <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
-        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
         <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
         <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
         <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
@@ -404,6 +404,7 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="ena" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_ce_BRAM_write">
           <CONNECTIONS>
             <CONNECTION INSTANCE="controller_0" PORT="ce_BRAM_write"/>
@@ -420,6 +421,28 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="7" NAME="douta" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enb" SIGIS="undef" SIGNAME="controller_0_ce_zig_zag">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="ce_zig_zag"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="web" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="zig_zag_0_addr_BRAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zig_zag_0" PORT="addr_BRAM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="dinb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
@@ -433,7 +456,23 @@
             <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
             <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
             <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="EN" PHYSICAL="ena"/>
             <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dinb"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="doutb"/>
+            <PORTMAP LOGICAL="EN" PHYSICAL="enb"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="web"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -1027,6 +1066,8 @@
             <CONNECTION INSTANCE="controller_0" PORT="clk"/>
             <CONNECTION INSTANCE="ila_0" PORT="clk"/>
             <CONNECTION INSTANCE="quant_0" PORT="clk"/>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
+            <CONNECTION INSTANCE="zig_zag_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1057,9 +1098,15 @@
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="rsta"/>
             <CONNECTION INSTANCE="val_holder_0" PORT="rst"/>
             <CONNECTION INSTANCE="quant_0" PORT="rst"/>
+            <CONNECTION INSTANCE="zig_zag_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="ce_zig_zag" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ce_zig_zag" SIGIS="undef" SIGNAME="controller_0_ce_zig_zag">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zig_zag_0" PORT="ce"/>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="enb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="ce_BRAM_write" SIGIS="undef" SIGNAME="controller_0_ce_BRAM_write">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="wea"/>
@@ -1084,7 +1131,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/ila_0" HWVERSION="6.2" INSTANCE="ila_0" IPTYPE="MONITOR" IS_ENABLE="1" MODCLASS="MONITOR" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
+    <MODULE FULLNAME="/ila_0" HWVERSION="6.2" INSTANCE="ila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ila;v=v6_2;d=pg172-ila.pdf"/>
       </DOCUMENTS>
@@ -1103,8 +1150,8 @@
         <PARAMETER NAME="C_TC_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="44"/>
+        <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="1"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2017"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
@@ -1119,7 +1166,7 @@
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_TRIGOUT_EN" VALUE="0"/>
         <PARAMETER NAME="C_TRIGIN_EN" VALUE="0"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ID_WIDTH" VALUE="1"/>
@@ -1128,44 +1175,44 @@
         <PARAMETER NAME="C_SLOT_0_AXI_AWUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_WUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_BUSER_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE7_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE8_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE10_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE10_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE11_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE12_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE13_WIDTH" VALUE="2"/>
-        <PARAMETER NAME="C_PROBE14_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_PROBE15_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_PROBE13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE15_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE16_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE17_WIDTH" VALUE="3"/>
-        <PARAMETER NAME="C_PROBE18_WIDTH" VALUE="3"/>
+        <PARAMETER NAME="C_PROBE17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE18_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE19_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE20_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE21_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_PROBE21_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE22_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE23_WIDTH" VALUE="3"/>
-        <PARAMETER NAME="C_PROBE24_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="C_PROBE23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE24_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE25_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE26_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE27_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="C_PROBE28_WIDTH" VALUE="3"/>
-        <PARAMETER NAME="C_PROBE29_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="C_PROBE27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE29_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE30_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE31_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_PROBE32_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_PROBE33_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_PROBE34_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_PROBE31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE34_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE35_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE36_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_PROBE37_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_PROBE36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE37_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE38_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE39_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE40_WIDTH" VALUE="1"/>
@@ -4220,9 +4267,8 @@
         <PARAMETER NAME="C_SLOT_0_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ADDR_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_MONITOR_TYPE" VALUE="AXI"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="MONITOR"/>
-        <PARAMETER NAME="EDK_SPECIAL" VALUE="MONITOR"/>
+        <PARAMETER NAME="C_MONITOR_TYPE" VALUE="Native"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
@@ -4230,131 +4276,13 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe0" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="probe1" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="probe2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe4" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="probe5" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe6" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe7" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe8" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe9" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="probe10" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe11" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe12" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="probe13" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="31" NAME="probe14" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe15" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe16" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="probe17" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="probe18" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe19" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe20" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="probe21" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe22" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="probe23" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="probe24" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe25" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe26" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="probe27" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="probe28" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="probe29" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe30" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe31" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe32" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe33" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe34" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe35" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe36" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="probe37" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe38" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe39" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe40" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe41" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe42" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="probe43" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" DATAWIDTH="32" NAME="SLOT_0_AXI" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
-          <PARAMETER NAME="ID_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="AWUSER_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="ARUSER_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="WUSER_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="RUSER_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="BUSER_WIDTH" VALUE="1"/>
-          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
-          <PARAMETER NAME="HAS_BURST" VALUE="1"/>
-          <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
-          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
-          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
-          <PARAMETER NAME="HAS_QOS" VALUE="1"/>
-          <PARAMETER NAME="HAS_REGION" VALUE="1"/>
-          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
-          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
-          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
-          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="1"/>
-          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
-          <PARAMETER NAME="PHASE" VALUE="0.0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_0_clk_out1"/>
-          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
-          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
-          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
-          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="probe5"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="probe29"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="probe31"/>
-            <PORTMAP LOGICAL="ARID" PHYSICAL="probe25"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="probe27"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="probe30"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="probe17"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="probe34"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="probe9"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="probe33"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="probe28"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="probe35"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="probe8"/>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="probe1"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="probe24"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="probe32"/>
-            <PORTMAP LOGICAL="AWID" PHYSICAL="probe19"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="probe21"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="probe26"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="probe18"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="probe37"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="probe12"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="probe36"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="probe23"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="probe39"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="probe11"/>
-            <PORTMAP LOGICAL="BID" PHYSICAL="probe20"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="probe4"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="probe2"/>
-            <PORTMAP LOGICAL="BUSER" PHYSICAL="probe22"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="probe3"/>
-            <PORTMAP LOGICAL="RDATA" PHYSICAL="probe10"/>
-            <PORTMAP LOGICAL="RID" PHYSICAL="probe38"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="probe40"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="probe6"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="probe13"/>
-            <PORTMAP LOGICAL="RUSER" PHYSICAL="probe41"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="probe16"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="probe14"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="probe42"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="probe0"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="probe15"/>
-            <PORTMAP LOGICAL="WUSER" PHYSICAL="probe43"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="probe7"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE FULLNAME="/quant_0" HWVERSION="1.0" INSTANCE="quant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="quant" VLNV="domain.local:user:quant:1.0">
       <DOCUMENTS/>
@@ -4427,6 +4355,36 @@
         <PORT DIR="O" LEFT="7" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="val_holder_0_pixel_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/zig_zag_0" HWVERSION="1.0" INSTANCE="zig_zag_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="zig_zag" VLNV="domain.local:user:zig_zag:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="converter_zig_zag_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="controller_0_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="controller_0_ce_zig_zag">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="ce_zig_zag"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="addr_BRAM" RIGHT="0" SIGIS="undef" SIGNAME="zig_zag_0_addr_BRAM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

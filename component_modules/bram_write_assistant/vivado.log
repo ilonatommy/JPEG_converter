@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Aug 19 16:39:47 2019
+# Process ID: 3124
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/bram_write_assistant
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6604 C:\Users\lsneler\Desktop\Repo\JPEG_conv\bram_write_assistant\bram_write_assistant.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/bram_write_assistant/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/bram_write_assistant\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/bram_write_assistant/bram_write_assistant.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 16:41:33 2019...

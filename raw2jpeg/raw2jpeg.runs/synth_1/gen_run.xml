@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1566224462">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1566290727">
   <File Type="RDS-PROPCONSTRS" Name="converter_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="converter_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="converter_wrapper.vds"/>
@@ -30,15 +30,23 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/quant_0/src/chrominance_table.coe">
+    <File Path="$PPRDIR/../quantizator/quantizator.ip_user_files/chrominance_table.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/quant_0/src/luminance_table.coe">
+    <File Path="$PPRDIR/../quantizator/quantizator.ip_user_files/luminance_table.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/quant_0/quant_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -54,11 +62,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/quant_0/quant_0.xci">
+    <File Path="$PSRCDIR/sources_1/bd/converter/ip/converter_zig_zag_0_0/src/zig_zag_addr_table.coe">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -94,5 +100,6 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="converter_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="converter_quant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="converter_blk_mem_gen_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="converter_zig_zag_0_0"/>
 </GenRun>
