@@ -203,24 +203,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>controller_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="controller" spirit:vendor="domain.local" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_controller_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>ila_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="ila" spirit:vendor="xilinx.com" spirit:version="6.2"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_ila_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_PROBE0_WIDTH">8</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_NUM_OF_PROBES">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_ENABLE_ILA_AXI_MON">false</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_MONITOR_TYPE">Native</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>quant_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="quant" spirit:vendor="domain.local" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -232,6 +214,27 @@
         <spirit:componentRef spirit:library="user" spirit:name="zig_zag" spirit:vendor="domain.local" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_zig_zag_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>RLE_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="RLE" spirit:vendor="domain.local" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_RLE_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>DPCM_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="DPCM" spirit:vendor="domain.local" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_DPCM_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>controller_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="controller" spirit:vendor="domain.local" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">converter_controller_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -248,11 +251,12 @@
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clka"/>
         <spirit:internalPortReference spirit:componentRef="DCT_2D_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="val_holder_0" spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clkb"/>
         <spirit:internalPortReference spirit:componentRef="zig_zag_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="RLE_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="DPCM_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>DCT_2D_0_pixel_out</spirit:name>
@@ -267,6 +271,8 @@
         <spirit:internalPortReference spirit:componentRef="val_holder_0" spirit:portRef="rst"/>
         <spirit:internalPortReference spirit:componentRef="quant_0" spirit:portRef="rst"/>
         <spirit:internalPortReference spirit:componentRef="zig_zag_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="RLE_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="DPCM_0" spirit:portRef="rst"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>controller_0_addr_input</spirit:name>
@@ -317,11 +323,6 @@
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>blk_mem_gen_1_doutb</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="doutb"/>
-        <spirit:internalPortReference spirit:componentRef="ila_0" spirit:portRef="probe0"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>zig_zag_0_addr_BRAM</spirit:name>
         <spirit:internalPortReference spirit:componentRef="zig_zag_0" spirit:portRef="addr_BRAM"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addrb"/>
@@ -331,6 +332,24 @@
         <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="ce_zig_zag"/>
         <spirit:internalPortReference spirit:componentRef="zig_zag_0" spirit:portRef="ce"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="enb"/>
+        <spirit:internalPortReference spirit:componentRef="RLE_0" spirit:portRef="ce"/>
+        <spirit:internalPortReference spirit:componentRef="DPCM_0" spirit:portRef="ce"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>blk_mem_gen_1_doutb</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="doutb"/>
+        <spirit:internalPortReference spirit:componentRef="RLE_0" spirit:portRef="pixel_in"/>
+        <spirit:internalPortReference spirit:componentRef="DPCM_0" spirit:portRef="pixel_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_ce_BRAM_read</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="ce_BRAM_read"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="web"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_v_sync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="v_sync"/>
+        <spirit:internalPortReference spirit:componentRef="DPCM_0" spirit:portRef="v_sync"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 // Date        : Tue Aug 20 10:46:48 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/ip/converter_blk_mem_gen_1_1/converter_blk_mem_gen_1_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top converter_blk_mem_gen_1_1 -prefix
+//               converter_blk_mem_gen_1_1_ converter_blk_mem_gen_1_1_stub.v
 // Design      : converter_blk_mem_gen_1_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

@@ -169,6 +169,12 @@ CONFIG.PHASE {0.000} \
   # Create instance: DCT_2D_0, and set properties
   set DCT_2D_0 [ create_bd_cell -type ip -vlnv domain.local:user:DCT_2D:1.0 DCT_2D_0 ]
 
+  # Create instance: DPCM_0, and set properties
+  set DPCM_0 [ create_bd_cell -type ip -vlnv domain.local:user:DPCM:1.0 DPCM_0 ]
+
+  # Create instance: RLE_0, and set properties
+  set RLE_0 [ create_bd_cell -type ip -vlnv domain.local:user:RLE:1.0 RLE_0 ]
+
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
   set_property -dict [ list \
@@ -239,15 +245,6 @@ CONFIG.USE_LOCKED {false} \
   # Create instance: controller_0, and set properties
   set controller_0 [ create_bd_cell -type ip -vlnv domain.local:user:controller:1.0 controller_0 ]
 
-  # Create instance: ila_0, and set properties
-  set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
-  set_property -dict [ list \
-CONFIG.C_ENABLE_ILA_AXI_MON {false} \
-CONFIG.C_MONITOR_TYPE {Native} \
-CONFIG.C_NUM_OF_PROBES {1} \
-CONFIG.C_PROBE0_WIDTH {8} \
- ] $ila_0
-
   # Create instance: quant_0, and set properties
   set quant_0 [ create_bd_cell -type ip -vlnv domain.local:user:quant:1.0 quant_0 ]
 
@@ -259,16 +256,18 @@ CONFIG.C_PROBE0_WIDTH {8} \
 
   # Create port connections
   connect_bd_net -net DCT_2D_0_pixel_out [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in]
-  connect_bd_net -net Net1 [get_bd_pins DCT_2D_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins val_holder_0/rst] [get_bd_pins zig_zag_0/rst]
+  connect_bd_net -net Net1 [get_bd_pins DCT_2D_0/rst] [get_bd_pins DPCM_0/rst] [get_bd_pins RLE_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins val_holder_0/rst] [get_bd_pins zig_zag_0/rst]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins ila_0/probe0]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk] [get_bd_pins zig_zag_0/clk]
+  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins DPCM_0/pixel_in] [get_bd_pins RLE_0/pixel_in] [get_bd_pins blk_mem_gen_1/doutb]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins DPCM_0/clk] [get_bd_pins RLE_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins val_holder_0/clk] [get_bd_pins zig_zag_0/clk]
   connect_bd_net -net controller_0_addr_BRAM_write [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins controller_0/addr_BRAM_write]
   connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
   connect_bd_net -net controller_0_addr_quant [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]
   connect_bd_net -net controller_0_ce [get_bd_pins DCT_2D_0/ce] [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins controller_0/ce] [get_bd_pins quant_0/ce]
+  connect_bd_net -net controller_0_ce_BRAM_read [get_bd_pins blk_mem_gen_1/web] [get_bd_pins controller_0/ce_BRAM_read]
   connect_bd_net -net controller_0_ce_BRAM_write [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins controller_0/ce_BRAM_write] [get_bd_pins val_holder_0/ce]
-  connect_bd_net -net controller_0_ce_zig_zag [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
+  connect_bd_net -net controller_0_ce_zig_zag [get_bd_pins DPCM_0/ce] [get_bd_pins RLE_0/ce] [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
+  connect_bd_net -net controller_0_v_sync [get_bd_pins DPCM_0/v_sync] [get_bd_pins controller_0/v_sync]
   connect_bd_net -net quant_0_pixel_out [get_bd_pins quant_0/pixel_out] [get_bd_pins val_holder_0/pixel_in]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]

@@ -1,6 +1,74 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Tue Aug 20 13:03:45 2019
+| Host         : rtrkos034 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'converter_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of converter_controller_0_0 (domain.local:user:controller:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'converter_controller_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ce_BRAM_read'
+
+-Upgrade has added port 'v_sync'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Tue Aug 20 13:03:45 2019
+| Host         : rtrkos034 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'controller_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of controller_0 (domain.local:user:controller:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'controller_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ce_BRAM_read'
+
+-Upgrade has added port 'v_sync'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
 | Date         : Mon Aug 19 16:20:35 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

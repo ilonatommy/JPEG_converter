@@ -60,9 +60,11 @@ controller_0 your_instance_name (
   .rst(rst),                          // output wire rst
   .ce_zig_zag(ce_zig_zag),            // output wire ce_zig_zag
   .ce_BRAM_write(ce_BRAM_write),      // output wire ce_BRAM_write
+  .ce_BRAM_read(ce_BRAM_read),        // output wire ce_BRAM_read
   .addr_input(addr_input),            // output wire [5 : 0] addr_input
   .addr_quant(addr_quant),            // output wire [5 : 0] addr_quant
-  .addr_BRAM_write(addr_BRAM_write)  // output wire [7 : 0] addr_BRAM_write
+  .addr_BRAM_write(addr_BRAM_write),  // output wire [7 : 0] addr_BRAM_write
+  .v_sync(v_sync)                    // output wire v_sync
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Aug 20 10:47:32 2019
+| Date         : Tue Aug 20 13:15:58 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file converter_wrapper_utilization_synth.rpt -pb converter_wrapper_utilization_synth.pb
 | Design       : converter_wrapper
@@ -178,11 +178,12 @@ Table of Contents
 | converter_zig_zag_0_0     |    1 |
 | converter_val_holder_0_1  |    1 |
 | converter_quant_0_0       |    1 |
-| converter_ila_0_0         |    1 |
 | converter_controller_0_0  |    1 |
 | converter_clk_wiz_0_0     |    1 |
 | converter_blk_mem_gen_1_1 |    1 |
 | converter_blk_mem_gen_0_0 |    1 |
+| converter_RLE_0_0         |    1 |
+| converter_DPCM_0_0        |    1 |
 | converter_DCT_2D_0_0      |    1 |
 +---------------------------+------+
 
