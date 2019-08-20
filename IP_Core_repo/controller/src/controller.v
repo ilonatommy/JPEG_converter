@@ -26,11 +26,14 @@ module controller(
     output rst,  //change to input after connecting to button
     output ce_zig_zag,
     output ce_BRAM_write,
+    output ce_BRAM_read,
     output [5:0] addr_input,
     output [5:0] addr_quant,
-    output [7:0] addr_BRAM_write
+    output [7:0] addr_BRAM_write,
+    output v_sync //simulate the end of frame
     );
     
+    reg [7:0] cnt_sim_eof = 0;
     reg _rst = 0;
     reg _ce = 0;
     reg _ce_zig_zag = 0;
@@ -78,6 +81,7 @@ module controller(
             end
                 
             ce_zz_bram_trigger <= ce_zz_bram_trigger + 1;
+            cnt_sim_eof <= cnt_sim_eof + 1;
         end
         
         if(ce_zz_bram_trigger == 7'd105)//so that ce would be 1 on 106
@@ -95,14 +99,18 @@ module controller(
             addr_in <= 0;
             addr_qu <= 6'd47;
             ce_zz_bram_trigger <= 0;
+            cnt_sim_eof <= 0;
         end
+        
     end
     
     assign rst = _rst;
     assign ce = _ce;
     assign ce_zig_zag = _ce_zig_zag;
     assign ce_BRAM_write = _ce_BRAM_write;
+    assign ce_BRAM_read = 0;
     assign addr_input = addr_in;
-    assign addr_quant = addr_qu;    
+    assign addr_quant = addr_qu;
     assign addr_BRAM_write = addr_BRAM_wr;
+    assign v_sync = cnt_sim_eof == 8'd255 ? 1'b1 : 1'b0;
 endmodule
