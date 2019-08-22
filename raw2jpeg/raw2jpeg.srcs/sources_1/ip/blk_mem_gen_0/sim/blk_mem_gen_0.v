@@ -145,7 +145,7 @@ output wire [7 : 0] douta;
     .C_DISABLE_WARN_BHV_RANGE(0),
     .C_COUNT_36K_BRAM("0"),
     .C_COUNT_18K_BRAM("1"),
-    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     2.3767999999999998 mW")
+    .C_EST_POWER_SUMMARY("Estimated Power for IP     :     2.3768 mW")
   ) inst (
     .clka(clka),
     .rsta(rsta),

@@ -55,7 +55,6 @@
 COMPONENT blk_mem_gen_1
   PORT (
     clka : IN STD_LOGIC;
-    rsta : IN STD_LOGIC;
     ena : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -72,7 +71,6 @@ END COMPONENT;
 your_instance_name : blk_mem_gen_1
   PORT MAP (
     clka => clka,
-    rsta => rsta,
     ena => ena,
     wea => wea,
     addra => addra,

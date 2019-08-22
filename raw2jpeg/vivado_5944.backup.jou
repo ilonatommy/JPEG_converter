@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug 21 12:47:38 2019
+# Process ID: 5944
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7524 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+startgroup
+create_bd_port -dir O -type rst rst
+connect_bd_net [get_bd_pins /controller_0/rst] [get_bd_ports rst]
+endgroup
+startgroup
+create_bd_port -dir O ce_input_DCT_quant
+connect_bd_net [get_bd_pins /controller_0/ce_input_DCT_quant] [get_bd_ports ce_input_DCT_quant]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins controller_0/addr_zzBRAM_in] [get_bd_pins controller_0/addr_quant] [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins controller_0/addr_input] [get_bd_pins controller_0/we_zzBRAM_out] [get_bd_pins controller_0/we_zzBRAM_in] [get_bd_pins controller_0/v_sync]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1
+file mkdir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new
+close [ open C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc w ]
+add_files -fileset constrs_1 C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/constrs_1/new/top.xdc
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:DCT_2D:1.0 DCT_2D_0
+endgroup
+set_property location {3.5 1129 -265} [get_bd_cells DCT_2D_0]
+delete_bd_objs [get_bd_nets controller_0_rst]
+connect_bd_net [get_bd_pins controller_0/rst] [get_bd_pins DCT_2D_0/rst]
+delete_bd_objs [get_bd_nets controller_0_ce_input_DCT_quant]
+connect_bd_net [get_bd_pins controller_0/ce_input_DCT_quant] [get_bd_pins DCT_2D_0/ce]
+connect_bd_net [get_bd_pins DCT_2D_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/inputData.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]
+endgroup
+set_property location {3 1057 -426} [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins controller_0/ce_input_DCT_quant] [get_bd_pins blk_mem_gen_0/ena]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
+delete_bd_objs [get_bd_nets controller_0_addr_input]
+connect_bd_net [get_bd_pins controller_0/addr_input] [get_bd_pins blk_mem_gen_0/addra]
+save_bd_design
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins DCT_2D_0/pixel_in]
+delete_bd_objs [get_bd_ports rst]
+startgroup
+make_bd_pins_external  [get_bd_pins DCT_2D_0/pixel_out]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:quant:1.0 quant_0
+endgroup
+set_property location {3.5 895 162} [get_bd_cells quant_0]
+delete_bd_objs [get_bd_nets DCT_2D_0_pixel_out]
+delete_bd_objs [get_bd_ports pixel_out]
+connect_bd_net [get_bd_pins DCT_2D_0/pixel_out] [get_bd_pins quant_0/pixel_in]
+delete_bd_objs [get_bd_nets controller_0_addr_quant]
+connect_bd_net [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]
+connect_bd_net [get_bd_pins quant_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins quant_0/rst] [get_bd_pins controller_0/rst]
+connect_bd_net [get_bd_pins quant_0/ce] [get_bd_pins controller_0/ce_input_DCT_quant]
+delete_bd_objs [get_bd_ports addr_input]
+delete_bd_objs [get_bd_ports ce_input_DCT_quant]
+delete_bd_objs [get_bd_ports addr_quant]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:zig_zag:1.0 zig_zag_0
+endgroup
+set_property location {3.5 785 340} [get_bd_cells zig_zag_0]
+set_property location {4 719 341} [get_bd_cells zig_zag_0]
+delete_bd_objs [get_bd_cells zig_zag_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 pixel_out
+connect_bd_net [get_bd_pins /quant_0/pixel_out] [get_bd_ports pixel_out]
+endgroup
+save_bd_design
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:zig_zag:1.0 zig_zag_0
+endgroup
+set_property location {4.5 1198 314} [get_bd_cells zig_zag_0]
+set_property location {4 1156 322} [get_bd_cells zig_zag_0]
+connect_bd_net [get_bd_pins zig_zag_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins zig_zag_0/rst] [get_bd_pins controller_0/rst]
+delete_bd_objs [get_bd_nets controller_0_ce_zig_zag]
+delete_bd_objs [get_bd_ports ce_zig_zag]
+connect_bd_net [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
+save_bd_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv domain.local:user:zig_zag:1.0 [get_ips  design_1_zig_zag_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_zig_zag_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_zig_zag_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_zig_zag_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+endgroup
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {255} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Use_RSTA_Pin {false} CONFIG.Use_RSTB_Pin {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {0} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property location {5.5 1675 285} [get_bd_cells blk_mem_gen_1]
+connect_bd_net [get_bd_pins zig_zag_0/addr_BRAM_in] [get_bd_pins blk_mem_gen_1/addra]
+connect_bd_net [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_0/clk_out1]
+delete_bd_objs [get_bd_nets quant_0_pixel_out] [get_bd_ports pixel_out]
+connect_bd_net [get_bd_pins quant_0/pixel_out] [get_bd_pins blk_mem_gen_1/dina]
+connect_bd_net [get_bd_pins blk_mem_gen_1/ena] [get_bd_pins controller_0/ce_zig_zag]
+connect_bd_net [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins controller_0/ce_zig_zag]
+save_bd_design
+connect_bd_net [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/we_zzBRAM_out]
+delete_bd_objs [get_bd_ports we_zzBRAM_out]
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -srcset controller_0 [get_ips  {controller_0 design_1_controller_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {controller_0 design_1_controller_0_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins controller_0/re_zzBRAM_out] [get_bd_pins blk_mem_gen_1/enb]
+save_bd_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {controller_0 design_1_controller_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {controller_0 design_1_controller_0_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins controller_0/we_zzBRAM_out] [get_bd_pins blk_mem_gen_1/enb]
+save_bd_design
+regenerate_bd_layout
+validate_bd_design
+delete_bd_objs [get_bd_nets controller_0_addr_zzBRAM_in] [get_bd_ports addr_zzBRAM_in]
+connect_bd_net [get_bd_pins controller_0/addr_zzBRAM_in] [get_bd_pins blk_mem_gen_1/addrb]
+save_bd_design
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets controller_0_ce_zig_zag]
+connect_bd_net [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
+save_bd_design
+delete_bd_objs [get_bd_nets controller_0_we_zzBRAM_in] [get_bd_ports we_zzBRAM_in]
+connect_bd_net [get_bd_pins controller_0/we_zzBRAM_in] [get_bd_pins blk_mem_gen_1/wea]
+connect_bd_net [get_bd_pins blk_mem_gen_1/ena] [get_bd_pins controller_0/we_zzBRAM_in]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:RLE:1.0 RLE_0
+endgroup
+report_ip_status -name ip_status 
+set_property location {5.5 1331 418} [get_bd_cells RLE_0]
+connect_bd_net [get_bd_pins RLE_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins RLE_0/pixel_in]
+connect_bd_net [get_bd_pins RLE_0/rst] [get_bd_pins controller_0/rst]
+save_bd_design
+connect_bd_net [get_bd_pins RLE_0/ce] [get_bd_pins controller_0/we_zzBRAM_in]
+save_bd_design
+startgroup
+make_bd_pins_external  [get_bd_pins RLE_0/num_0s] [get_bd_pins RLE_0/next_value] [get_bd_pins RLE_0/data_valid]
+endgroup
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv domain.local:user:RLE:1.0 [get_ips  design_1_RLE_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_RLE_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_RLE_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_RLE_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:DPCM:1.0 DPCM_0
+endgroup
+delete_bd_objs [get_bd_cells DPCM_0]
+save_bd_design

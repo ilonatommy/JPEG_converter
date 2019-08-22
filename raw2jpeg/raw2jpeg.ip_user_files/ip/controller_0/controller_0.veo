@@ -55,16 +55,16 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 controller_0 your_instance_name (
-  .clk(clk),                          // input wire clk
-  .ce(ce),                            // output wire ce
-  .rst(rst),                          // output wire rst
-  .ce_zig_zag(ce_zig_zag),            // output wire ce_zig_zag
-  .ce_BRAM_write(ce_BRAM_write),      // output wire ce_BRAM_write
-  .ce_BRAM_read(ce_BRAM_read),        // output wire ce_BRAM_read
-  .addr_input(addr_input),            // output wire [5 : 0] addr_input
-  .addr_quant(addr_quant),            // output wire [5 : 0] addr_quant
-  .addr_BRAM_write(addr_BRAM_write),  // output wire [7 : 0] addr_BRAM_write
-  .v_sync(v_sync)                    // output wire v_sync
+  .clk(clk),                                // input wire clk
+  .rst(rst),                                // output wire rst
+  .ce_input_DCT_quant(ce_input_DCT_quant),  // output wire ce_input_DCT_quant
+  .addr_input(addr_input),                  // output wire [5 : 0] addr_input
+  .addr_quant(addr_quant),                  // output wire [5 : 0] addr_quant
+  .ce_zig_zag(ce_zig_zag),                  // output wire ce_zig_zag
+  .we_zzBRAM_in(we_zzBRAM_in),              // output wire we_zzBRAM_in
+  .we_zzBRAM_out(we_zzBRAM_out),            // output wire we_zzBRAM_out
+  .addr_zzBRAM_in(addr_zzBRAM_in),          // output wire [7 : 0] addr_zzBRAM_in
+  .v_sync(v_sync)                          // output wire v_sync
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

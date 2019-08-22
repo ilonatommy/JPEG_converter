@@ -55,14 +55,14 @@
 COMPONENT controller_0
   PORT (
     clk : IN STD_LOGIC;
-    ce : OUT STD_LOGIC;
     rst : OUT STD_LOGIC;
-    ce_zig_zag : OUT STD_LOGIC;
-    ce_BRAM_write : OUT STD_LOGIC;
-    ce_BRAM_read : OUT STD_LOGIC;
+    ce_input_DCT_quant : OUT STD_LOGIC;
     addr_input : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
     addr_quant : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
-    addr_BRAM_write : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    ce_zig_zag : OUT STD_LOGIC;
+    we_zzBRAM_in : OUT STD_LOGIC;
+    we_zzBRAM_out : OUT STD_LOGIC;
+    addr_zzBRAM_in : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     v_sync : OUT STD_LOGIC
   );
 END COMPONENT;
@@ -75,14 +75,14 @@ END COMPONENT;
 your_instance_name : controller_0
   PORT MAP (
     clk => clk,
-    ce => ce,
     rst => rst,
-    ce_zig_zag => ce_zig_zag,
-    ce_BRAM_write => ce_BRAM_write,
-    ce_BRAM_read => ce_BRAM_read,
+    ce_input_DCT_quant => ce_input_DCT_quant,
     addr_input => addr_input,
     addr_quant => addr_quant,
-    addr_BRAM_write => addr_BRAM_write,
+    ce_zig_zag => ce_zig_zag,
+    we_zzBRAM_in => we_zzBRAM_in,
+    we_zzBRAM_out => we_zzBRAM_out,
+    addr_zzBRAM_in => addr_zzBRAM_in,
     v_sync => v_sync
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

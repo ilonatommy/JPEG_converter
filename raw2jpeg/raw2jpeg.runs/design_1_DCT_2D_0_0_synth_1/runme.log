@@ -1,0 +1,785 @@
+
+*** Running vivado
+    with args -log design_1_DCT_2D_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_DCT_2D_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_DCT_2D_0_0.tcl -notrace
+Command: synth_design -top design_1_DCT_2D_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6856 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 320.402 ; gain = 80.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_DCT_2D_0_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_DCT_2D_0_0/synth/design_1_DCT_2D_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'DCT_2D' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT_2D.v:23]
+INFO: [Synth 8-638] synthesizing module 'DCT' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:23]
+	Parameter IDLE bound to: 4'b1000 
+INFO: [Synth 8-638] synthesizing module 'RAM' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/RAM.v:23]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM' (1#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/RAM.v:23]
+INFO: [Synth 8-638] synthesizing module 'register' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+	Parameter reg_width bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 13 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+	Parameter reg_width bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 13 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+	Parameter reg_width bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized3' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized4' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized4' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized5' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 15 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+	Parameter reg_width bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized5' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized6' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter DELAY bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized6' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized7' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 15 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized7' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'register__parameterized8' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register__parameterized8' (3#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+	Parameter WIDTH_I0 bound to: 12 - type: integer 
+	Parameter WIDTH_I1 bound to: 12 - type: integer 
+	Parameter WIDTH_I2 bound to: 13 - type: integer 
+	Parameter WIDTH_OUT bound to: 13 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_3i' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+	Parameter WIDTH_I0 bound to: 16 - type: integer 
+	Parameter WIDTH_I1 bound to: 13 - type: integer 
+	Parameter WIDTH_I2 bound to: 14 - type: integer 
+	Parameter WIDTH_OUT bound to: 14 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized0' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+WARNING: [Synth 8-689] width (14) of port connection 'i0' does not match port width (16) of module 'mux_3i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:65]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+	Parameter WIDTH_I0 bound to: 13 - type: integer 
+	Parameter WIDTH_I1 bound to: 13 - type: integer 
+	Parameter WIDTH_I2 bound to: 13 - type: integer 
+	Parameter WIDTH_OUT bound to: 13 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized1' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_3i__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+	Parameter WIDTH_I0 bound to: 13 - type: integer 
+	Parameter WIDTH_I1 bound to: 14 - type: integer 
+	Parameter WIDTH_I2 bound to: 15 - type: integer 
+	Parameter WIDTH_OUT bound to: 15 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_3i__parameterized2' (4#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_3i.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized0' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+	Parameter WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized1' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_adder__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:71]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+	Parameter WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized2' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+	Parameter WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder__parameterized3' (5#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_adder.v:23]
+WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_adder__parameterized3' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:74]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+	Parameter WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized0' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'S' does not match port width (14) of module 'full_subtractor__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:77]
+INFO: [Synth 8-638] synthesizing module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+	Parameter WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_subtractor__parameterized1' (6#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/full_subtractor.v:23]
+WARNING: [Synth 8-689] width (15) of port connection 'S' does not match port width (16) of module 'full_subtractor__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:79]
+INFO: [Synth 8-638] synthesizing module 'reg_mult' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg_mult.v:23]
+INFO: [Synth 8-256] done synthesizing module 'reg_mult' (7#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/reg_mult.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+	Parameter WIDTH_I0 bound to: 12 - type: integer 
+	Parameter WIDTH_I1 bound to: 12 - type: integer 
+	Parameter WIDTH_OUT bound to: 12 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2i' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+	Parameter WIDTH_I0 bound to: 14 - type: integer 
+	Parameter WIDTH_I1 bound to: 14 - type: integer 
+	Parameter WIDTH_OUT bound to: 14 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized0' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized1' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+	Parameter WIDTH_I0 bound to: 13 - type: integer 
+	Parameter WIDTH_I1 bound to: 13 - type: integer 
+	Parameter WIDTH_OUT bound to: 13 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized1' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux_2i__parameterized2' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+	Parameter WIDTH_I0 bound to: 15 - type: integer 
+	Parameter WIDTH_I1 bound to: 15 - type: integer 
+	Parameter WIDTH_OUT bound to: 15 - type: integer 
+	Parameter DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2i__parameterized2' (8#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/mux_2i.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:100]
+INFO: [Synth 8-256] done synthesizing module 'DCT' (9#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DCT_2D' (10#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT_2D.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_DCT_2D_0_0' (11#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_DCT_2D_0_0/synth/design_1_DCT_2D_0_0.v:56]
+WARNING: [Synth 8-3331] design mux_3i__parameterized0 has unconnected port i0[15]
+WARNING: [Synth 8-3331] design mux_3i__parameterized0 has unconnected port i0[14]
+WARNING: [Synth 8-3331] design register__parameterized4 has unconnected port clk
+WARNING: [Synth 8-3331] design register__parameterized4 has unconnected port rst
+WARNING: [Synth 8-3331] design register__parameterized4 has unconnected port ce
+WARNING: [Synth 8-3331] design register has unconnected port clk
+WARNING: [Synth 8-3331] design register has unconnected port rst
+WARNING: [Synth 8-3331] design register has unconnected port ce
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 364.488 ; gain = 124.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 364.488 ; gain = 124.852
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 664.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 664.895 ; gain = 425.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 664.895 ; gain = 425.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 664.895 ; gain = 425.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'code_mo7_reg[1:0]' into 'code_mo6_reg[1:0]' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:67]
+WARNING: [Synth 8-6014] Unused sequential element code_mo7_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:67]
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'DCT'
+INFO: [Synth 8-5544] ROM "code_mo1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_mo3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_mo6" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_even_odd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "code_mo4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ce_mod2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT_2D.v:56]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:42]
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:42]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             1000
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0011 |                             0010
+                 iSTATE2 |                             0100 |                             0011
+                 iSTATE3 |                             0101 |                             0100
+                 iSTATE4 |                             0110 |                             0101
+                 iSTATE5 |                             0111 |                             0110
+                 iSTATE6 |                             1000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'DCT'
+WARNING: [Synth 8-6014] Unused sequential element STATE_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 664.895 ; gain = 425.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 4     
+	   3 Input     14 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 6     
+	               14 Bit    Registers := 18    
+	               13 Bit    Registers := 18    
+	               12 Bit    Registers := 8     
+	               11 Bit    Registers := 72    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 4     
+	   4 Input     15 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 4     
+	   3 Input     15 Bit        Muxes := 2     
+	   4 Input     14 Bit        Muxes := 2     
+	   3 Input     14 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 4     
+	   3 Input     13 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 11    
+	   9 Input      1 Bit        Muxes := 20    
+	  64 Input      1 Bit        Muxes := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module delay__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+Module delay__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module delay__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module mux_3i 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+Module mux_3i__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     14 Bit        Muxes := 1     
+Module mux_3i__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+Module mux_3i__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     15 Bit        Muxes := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+Module full_adder__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+Module full_adder__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+Module full_adder__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+Module full_adder__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module full_subtractor 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+Module full_subtractor__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+Module full_subtractor__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module reg_mult 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+Module mux_2i 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+Module mux_2i__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     14 Bit        Muxes := 1     
+Module mux_2i__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     13 Bit        Muxes := 1     
+Module mux_2i__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     15 Bit        Muxes := 1     
+Module DCT 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 10    
+Module DCT_2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 64    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	  64 Input      1 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'r9/(null)[0].del/tmp_reg[13:0]' into 'r21/(null)[0].del/tmp_reg[13:0]' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:40]
+WARNING: [Synth 8-6014] Unused sequential element r9/(null)[0].del/tmp_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/delay.v:40]
+DSP Report: Generating DSP m/mult_result, operation Mode is: A*B.
+DSP Report: operator m/mult_result is absorbed into DSP m/mult_result.
+DSP Report: Generating DSP m/mult_result, operation Mode is: A*B.
+DSP Report: operator m/mult_result is absorbed into DSP m/mult_result.
+INFO: [Synth 8-5546] ROM "ce_mod2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/e598/src/DCT_2D.v:56]
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/r21/(null)[0].del/tmp_reg[11]' (FDRE) to 'inst/mod_1/r21/(null)[0].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/r21/(null)[0].del/tmp_reg[13]' (FDRE) to 'inst/mod_1/r21/(null)[0].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[1][10]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[2][10]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[3][10]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[0][10]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[1][7]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[2][7]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[3][7]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[0][7]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[1][8]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[2][8]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[3][8]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/fabric_RAM/data_reg[0][8]' (FDRE) to 'inst/mod_1/fabric_RAM/data_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r21/(null)[0].del/tmp_reg[11]' (FDRE) to 'inst/mod_2/r21/(null)[0].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r21/(null)[0].del/tmp_reg[12]' (FDRE) to 'inst/mod_2/r21/(null)[0].del/tmp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r9/(null)[1].del/tmp_reg[11]' (FDRE) to 'inst/mod_2/r9/(null)[1].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r9/(null)[1].del/tmp_reg[12]' (FDRE) to 'inst/mod_2/r9/(null)[1].del/tmp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r10/(null)[0].del/tmp_reg[11]' (FDRE) to 'inst/mod_2/r10/(null)[0].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r10/(null)[0].del/tmp_reg[12]' (FDRE) to 'inst/mod_2/r10/(null)[0].del/tmp_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r10/(null)[1].del/tmp_reg[11]' (FDRE) to 'inst/mod_2/r10/(null)[1].del/tmp_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/r10/(null)[1].del/tmp_reg[12]' (FDRE) to 'inst/mod_2/r10/(null)[1].del/tmp_reg[13]'
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r9/(null)[1].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r9/(null)[1].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r9/(null)[1].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[0].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[0].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[0].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[1].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[1].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r10/(null)[1].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[0].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[0].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[0].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[0].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[1].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[1].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[1].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r11/(null)[1].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r17/(null)[0].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r17/(null)[0].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r17/(null)[1].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r17/(null)[1].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r18/(null)[0].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r18/(null)[0].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r20/(null)[0].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r20/(null)[0].del/tmp_reg[13]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r20/(null)[0].del/tmp_reg[12]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_1/r20/(null)[0].del/tmp_reg[11]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_2/r11/(null)[0].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_2/r11/(null)[1].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mod_2/r20/(null)[0].del/tmp_reg[14]) is unused and will be removed from module design_1_DCT_2D_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 664.895 ; gain = 425.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|reg_mult    | A*B         | 15     | 14     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_mult    | A*B         | 15     | 14     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 689.520 ; gain = 449.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 690.523 ; gain = 450.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/mod_1/code_mo5_reg' (FDE) to 'inst/mod_1/code_mo3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_2/code_mo5_reg' (FDE) to 'inst/mod_2/code_mo3_reg[1]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    73|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |     8|
+|4     |LUT2    |    83|
+|5     |LUT3    |   115|
+|6     |LUT4    |   125|
+|7     |LUT5    |   107|
+|8     |LUT6    |   395|
+|9     |MUXF7   |    88|
+|10    |MUXF8   |    44|
+|11    |FDRE    |  1438|
+|12    |FDSE    |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------------------------+------+
+|      |Instance                |Module                             |Cells |
++------+------------------------+-----------------------------------+------+
+|1     |top                     |                                   |  2480|
+|2     |  inst                  |DCT_2D                             |  2480|
+|3     |    mod_1               |DCT                                |   633|
+|4     |      mo3               |mux_3i__parameterized0_40          |    14|
+|5     |      s3                |full_subtractor__parameterized0_60 |     4|
+|6     |      a5                |full_adder__parameterized2_36      |     3|
+|7     |      a1                |full_adder_32                      |    16|
+|8     |      a2                |full_adder__parameterized0_33      |     4|
+|9     |      a3_r13            |full_adder__parameterized1_34      |     4|
+|10    |      a4                |full_adder__parameterized1_35      |     4|
+|11    |      a6                |full_adder__parameterized3_37      |     3|
+|12    |      fabric_RAM        |RAM_38                             |    76|
+|13    |      m                 |reg_mult_39                        |    18|
+|14    |      r10               |register__parameterized3_41        |    22|
+|15    |        \(null)[0].del  |delay__parameterized1_84           |    11|
+|16    |        \(null)[1].del  |delay__parameterized1_85           |    11|
+|17    |      r11               |register__parameterized5_42        |    22|
+|18    |        \(null)[0].del  |delay__parameterized2_82           |    11|
+|19    |        \(null)[1].del  |delay__parameterized2_83           |    11|
+|20    |      r12               |register__parameterized6_43        |    49|
+|21    |        \(null)[0].del  |delay_80                           |    12|
+|22    |        \(null)[1].del  |delay_81                           |    37|
+|23    |      r14               |register__parameterized1_44        |    14|
+|24    |        \(null)[0].del  |delay__parameterized0_79           |    14|
+|25    |      r16               |register__parameterized1_45        |    13|
+|26    |        \(null)[0].del  |delay__parameterized0_78           |    13|
+|27    |      r17               |register__parameterized2_46        |    42|
+|28    |        \(null)[0].del  |delay__parameterized0_76           |    11|
+|29    |        \(null)[1].del  |delay__parameterized0_77           |    31|
+|30    |      r18               |register__parameterized1_47        |    11|
+|31    |        \(null)[0].del  |delay__parameterized0_75           |    11|
+|32    |      r19               |register__parameterized3_48        |    28|
+|33    |        \(null)[0].del  |delay__parameterized1_73           |    14|
+|34    |        \(null)[1].del  |delay__parameterized1_74           |    14|
+|35    |      r20               |register__parameterized7_49        |    22|
+|36    |        \(null)[0].del  |delay__parameterized2_72           |    22|
+|37    |      r21               |register__parameterized8_50        |    24|
+|38    |        \(null)[0].del  |delay__parameterized1_71           |    24|
+|39    |      r22               |register__parameterized1_51        |    26|
+|40    |        \(null)[0].del  |delay__parameterized0_70           |    26|
+|41    |      r3                |register__parameterized0_52        |    12|
+|42    |        \(null)[0].del  |delay_69                           |    12|
+|43    |      r4                |register__parameterized0_53        |    49|
+|44    |        \(null)[0].del  |delay_68                           |    49|
+|45    |      r5                |register__parameterized1_54        |    13|
+|46    |        \(null)[0].del  |delay__parameterized0_67           |    13|
+|47    |      r6                |register__parameterized2_55        |    39|
+|48    |        \(null)[0].del  |delay__parameterized0_65           |    13|
+|49    |        \(null)[1].del  |delay__parameterized0_66           |    26|
+|50    |      r7                |register__parameterized3_56        |    28|
+|51    |        \(null)[0].del  |delay__parameterized1_63           |    14|
+|52    |        \(null)[1].del  |delay__parameterized1_64           |    14|
+|53    |      r9                |register__parameterized3_57        |    11|
+|54    |        \(null)[1].del  |delay__parameterized1_62           |    11|
+|55    |      s1                |full_subtractor_58                 |     3|
+|56    |      s2                |full_subtractor__parameterized0_59 |    17|
+|57    |      s4                |full_subtractor__parameterized1_61 |     3|
+|58    |    mod_2               |DCT_0                              |  1016|
+|59    |      mo3               |mux_3i__parameterized0             |    14|
+|60    |      s3                |full_subtractor__parameterized0_11 |     4|
+|61    |      a5                |full_adder__parameterized2         |     4|
+|62    |      a1                |full_adder                         |    15|
+|63    |      a2                |full_adder__parameterized0         |     4|
+|64    |      a3_r13            |full_adder__parameterized1         |     4|
+|65    |      a4                |full_adder__parameterized1_1       |     4|
+|66    |      a6                |full_adder__parameterized3         |     4|
+|67    |      fabric_RAM        |RAM                                |   414|
+|68    |      m                 |reg_mult                           |    21|
+|69    |      r10               |register__parameterized3           |    24|
+|70    |        \(null)[0].del  |delay__parameterized1_30           |    12|
+|71    |        \(null)[1].del  |delay__parameterized1_31           |    12|
+|72    |      r11               |register__parameterized5           |    28|
+|73    |        \(null)[0].del  |delay__parameterized2_28           |    14|
+|74    |        \(null)[1].del  |delay__parameterized2_29           |    14|
+|75    |      r12               |register__parameterized6           |    49|
+|76    |        \(null)[0].del  |delay_26                           |    12|
+|77    |        \(null)[1].del  |delay_27                           |    37|
+|78    |      r14               |register__parameterized1           |    13|
+|79    |        \(null)[0].del  |delay__parameterized0_25           |    13|
+|80    |      r16               |register__parameterized1_2         |    13|
+|81    |        \(null)[0].del  |delay__parameterized0_24           |    13|
+|82    |      r17               |register__parameterized2           |    53|
+|83    |        \(null)[0].del  |delay__parameterized0_22           |    13|
+|84    |        \(null)[1].del  |delay__parameterized0_23           |    40|
+|85    |      r18               |register__parameterized1_3         |    13|
+|86    |        \(null)[0].del  |delay__parameterized0_21           |    13|
+|87    |      r19               |register__parameterized3_4         |    28|
+|88    |        \(null)[0].del  |delay__parameterized1_19           |    14|
+|89    |        \(null)[1].del  |delay__parameterized1_20           |    14|
+|90    |      r20               |register__parameterized7           |    28|
+|91    |        \(null)[0].del  |delay__parameterized2              |    28|
+|92    |      r21               |register__parameterized8           |    26|
+|93    |        \(null)[0].del  |delay__parameterized1_18           |    26|
+|94    |      r22               |register__parameterized1_5         |    26|
+|95    |        \(null)[0].del  |delay__parameterized0_17           |    26|
+|96    |      r3                |register__parameterized0           |    23|
+|97    |        \(null)[0].del  |delay_16                           |    23|
+|98    |      r4                |register__parameterized0_6         |    49|
+|99    |        \(null)[0].del  |delay                              |    49|
+|100   |      r5                |register__parameterized1_7         |    13|
+|101   |        \(null)[0].del  |delay__parameterized0_15           |    13|
+|102   |      r6                |register__parameterized2_8         |    39|
+|103   |        \(null)[0].del  |delay__parameterized0              |    13|
+|104   |        \(null)[1].del  |delay__parameterized0_14           |    26|
+|105   |      r7                |register__parameterized3_9         |    28|
+|106   |        \(null)[0].del  |delay__parameterized1_12           |    14|
+|107   |        \(null)[1].del  |delay__parameterized1_13           |    14|
+|108   |      r9                |register__parameterized3_10        |    12|
+|109   |        \(null)[1].del  |delay__parameterized1              |    12|
+|110   |      s1                |full_subtractor                    |     3|
+|111   |      s2                |full_subtractor__parameterized0    |    17|
+|112   |      s4                |full_subtractor__parameterized1    |     4|
++------+------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 713.879 ; gain = 173.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 713.879 ; gain = 474.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+150 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 713.879 ; gain = 475.871
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_DCT_2D_0_0_synth_1/design_1_DCT_2D_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_DCT_2D_0_0/design_1_DCT_2D_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 111 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_DCT_2D_0_0_synth_1/design_1_DCT_2D_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 713.879 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:13:30 2019...

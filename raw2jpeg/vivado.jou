@@ -2,36 +2,14 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Aug 20 13:14:21 2019
-# Process ID: 3084
+# Start of session at: Thu Aug 22 10:51:15 2019
+# Process ID: 4480
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3900 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4756 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.xpr
 update_compile_order -fileset sources_1
-generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-catch { config_ip_cache -export [get_ips -all converter_blk_mem_gen_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_DCT_2D_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_quant_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_controller_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_blk_mem_gen_1_1] }
-catch { config_ip_cache -export [get_ips -all converter_val_holder_0_1] }
-catch { config_ip_cache -export [get_ips -all converter_clk_wiz_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_zig_zag_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_RLE_0_0] }
-catch { config_ip_cache -export [get_ips -all converter_DPCM_0_0] }
-export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd]
-export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd] -top
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/converter/converter.bd}
+open_bd_design {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd}

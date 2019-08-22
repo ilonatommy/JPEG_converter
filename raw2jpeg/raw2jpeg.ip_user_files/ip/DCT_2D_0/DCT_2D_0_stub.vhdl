@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Tue Aug 13 12:11:18 2019
+-- Date        : Wed Aug 21 12:22:45 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0_stub.vhdl
+--               c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/DCT_2D_0_stub.vhdl
 -- Design      : DCT_2D_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

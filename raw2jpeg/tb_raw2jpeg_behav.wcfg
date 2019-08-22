@@ -11,34 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="159910000fs"></ZoomStartTime>
-      <ZoomEndTime time="209060001fs"></ZoomEndTime>
-      <Cursor1Time time="971930000fs"></Cursor1Time>
+      <ZoomStartTime time="108916666fs"></ZoomStartTime>
+      <ZoomEndTime time="212216667fs"></ZoomEndTime>
+      <Cursor1Time time="134000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wvobject fp_name="/tb_raw2jpeg/in_dct" type="array">
       <obj_property name="ElementShortName">in_dct[7:0]</obj_property>
       <obj_property name="ObjectShortName">in_dct[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/addr_input" type="array">
-      <obj_property name="ElementShortName">addr_input[5:0]</obj_property>
-      <obj_property name="ObjectShortName">addr_input[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/addr_quant" type="array">
-      <obj_property name="ElementShortName">addr_quant[5:0]</obj_property>
-      <obj_property name="ObjectShortName">addr_quant[5:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/out_dct_in_quant" type="array">
-      <obj_property name="ElementShortName">out_dct_in_quant[13:0]</obj_property>
-      <obj_property name="ObjectShortName">out_dct_in_quant[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_raw2jpeg/out_quant" type="array">
       <obj_property name="ElementShortName">out_quant[7:0]</obj_property>
@@ -48,12 +32,27 @@
    <wvobject fp_name="/tb_raw2jpeg/BRAM_input" type="array">
       <obj_property name="ElementShortName">BRAM_input[7:0]</obj_property>
       <obj_property name="ObjectShortName">BRAM_input[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/addr_BRAM_write" type="array">
-      <obj_property name="ElementShortName">addr_BRAM_write[5:0]</obj_property>
-      <obj_property name="ObjectShortName">addr_BRAM_write[5:0]</obj_property>
+   <wvobject fp_name="/tb_raw2jpeg/BRAM_output" type="array">
+      <obj_property name="ElementShortName">BRAM_output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_output[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/out_dct_in_quant" type="array">
+      <obj_property name="ElementShortName">out_dct_in_quant[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out_dct_in_quant[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_input" type="array">
+      <obj_property name="ElementShortName">addr_input[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_input[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_quant" type="array">
+      <obj_property name="ElementShortName">addr_quant[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_quant[5:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_raw2jpeg/addr_zzBRAM_in" type="array">
+      <obj_property name="ElementShortName">addr_zzBRAM_in[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_zzBRAM_in[5:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_raw2jpeg/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -67,13 +66,8 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/ce_BRAM_write" type="logic">
-      <obj_property name="ElementShortName">ce_BRAM_write</obj_property>
-      <obj_property name="ObjectShortName">ce_BRAM_write</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_raw2jpeg/BRAM_output" type="array">
-      <obj_property name="ElementShortName">BRAM_output[7:0]</obj_property>
-      <obj_property name="ObjectShortName">BRAM_output[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_raw2jpeg/we_zzBRAM_in" type="logic">
+      <obj_property name="ElementShortName">we_zzBRAM_in</obj_property>
+      <obj_property name="ObjectShortName">we_zzBRAM_in</obj_property>
    </wvobject>
 </wave_config>

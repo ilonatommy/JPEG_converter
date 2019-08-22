@@ -1,0 +1,997 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug 21 12:24:59 2019
+# Process ID: 908
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent704 C:\Users\lsneler\Desktop\Repo\JPEG_conv\raw2jpeg\raw2jpeg.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/lsneler/Desktop/Repo/JPEG_conv' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/IP_Core_repo'; using path 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'quant_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'quant_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'quant_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'quant_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'quant_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/quant_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_0' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'blk_mem_gen_1' generated file not found 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.vhdl'. Please regenerate to continue.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chrominance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module luminance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_gen_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3f5ab95061bb40ab889bdc547222c146 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port addr_BRAM_write on this module [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+ERROR: [VRFC 10-2063] Module <controller> not found while processing module instance <inst> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v:82]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_0> not found while processing module instance <ROM> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:32]
+ERROR: [VRFC 10-2063] Module <DCT_2D_0> not found while processing module instance <dct> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:33]
+ERROR: [VRFC 10-2063] Module <quant_0> not found while processing module instance <quant> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:34]
+ERROR: [VRFC 10-2063] Module <val_holder_0> not found while processing module instance <hold_val> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:35]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_1> not found while processing module instance <RAM> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chrominance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module luminance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
+INFO: [VRFC 10-2458] undeclared symbol ce_BRAM_write, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:36]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_gen_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3f5ab95061bb40ab889bdc547222c146 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port ce_zzBRAM_in on this module [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+ERROR: [VRFC 10-2063] Module <controller> not found while processing module instance <inst> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v:82]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_0> not found while processing module instance <ROM> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:32]
+ERROR: [VRFC 10-2063] Module <DCT_2D_0> not found while processing module instance <dct> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:33]
+ERROR: [VRFC 10-2063] Module <quant_0> not found while processing module instance <quant> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:34]
+ERROR: [VRFC 10-2063] Module <val_holder_0> not found while processing module instance <hold_val> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:35]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_1> not found while processing module instance <RAM> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chrominance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module luminance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
+INFO: [VRFC 10-2458] undeclared symbol we_zzBRAM_in, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_gen_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3f5ab95061bb40ab889bdc547222c146 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port rsta on this module [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:32]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_v8_3_6> not found while processing module instance <inst> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v:72]
+ERROR: [VRFC 10-2063] Module <DCT_2D_0> not found while processing module instance <dct> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:33]
+ERROR: [VRFC 10-2063] Module <quant_0> not found while processing module instance <quant> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:34]
+ERROR: [VRFC 10-2063] Module <val_holder_0> not found while processing module instance <hold_val> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:35]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_1> not found while processing module instance <RAM> [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Use_RSTA_Pin {true}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+[Wed Aug 21 12:30:10 2019] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/xelab.pb
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chrominance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module luminance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
+INFO: [VRFC 10-2458] undeclared symbol we_zzBRAM_in, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_gen_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3f5ab95061bb40ab889bdc547222c146 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_dividend_tdata [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v:41]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port addr_zzBRAM_in [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:77]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:79]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package div_gen_v5_1_11.div_gen_v5_1_11_viv_comp
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_bram18k_v3_0_3.xbip_bram18k_v3_0_3_pkg
+Compiling package div_gen_v5_1_11.div_gen_pkg
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package div_gen_v5_1_11.pkg_addsub
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.controller_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.RAM(WIDTH=11)
+Compiling module xil_defaultlib.register(WIDTH=12)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=13)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=14)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=14)
+Compiling module xil_defaultlib.delay(reg_width=15)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=16,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_adder(WIDTH=13)
+Compiling module xil_defaultlib.full_adder(WIDTH=14)
+Compiling module xil_defaultlib.full_adder(WIDTH=15)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=11)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=15)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=15,WIDTH_I1=15,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.DCT_2D
+Compiling module xil_defaultlib.DCT_2D_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.chrominance_quant
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.luminance_quant
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=14,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=14,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=7,c_ain...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=7,c_ainit_v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=14...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_11.c_addsub_lut6 [\c_addsub_lut6(c_width=8,c_add_m...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_addsub_viv [\c_addsub_viv(c_a_width=8,c_b_wi...]
+Compiling architecture virtex of entity div_gen_v5_1_11.addsubreg_v [\addsubreg_v(c_bus_width=8,c_ain...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=13...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=12...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=11...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=10...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=9)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=8)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=7)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=6)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=5)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=4)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=3)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=2)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(1,1,1,1)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=16...]
+Compiling architecture virtex of entity div_gen_v5_1_11.dividervdc_v [\dividervdc_v(bus_num=14,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=2,c_ain...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=2)(1,0,1,0)...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=15,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=15)(1,0,1,0...]
+Compiling architecture synth of entity div_gen_v5_1_11.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_11.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_11.div_gen_v5_1_11_viv [\div_gen_v5_1_11_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_11.div_gen_v5_1_11 [\div_gen_v5_1_11(c_xdevicefamily...]
+Compiling architecture div_gen_0_arch of entity xil_defaultlib.div_gen_0 [div_gen_0_default]
+Compiling module xil_defaultlib.quant
+Compiling module xil_defaultlib.quant_0
+Compiling module xil_defaultlib.val_holder
+Compiling module xil_defaultlib.val_holder_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.tb_raw2jpeg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_raw2jpeg_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/xsim.dir/tb_raw2jpeg_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/xsim.dir/tb_raw2jpeg_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Aug 21 12:30:30 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug 21 12:30:30 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1020.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_raw2jpeg_behav -key {Behavioral:sim_1:Functional:tb_raw2jpeg} -tclbatch {tb_raw2jpeg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source tb_raw2jpeg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.ROM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.quant.inst.cbcr.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.quant.inst.y.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_raw2jpeg.RAM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_raw2jpeg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1020.258 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.2/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_raw2jpeg' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/DCT_out_quant_in.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/chrominance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_quant.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/luminance_table.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/inputData.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_raw2jpeg_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder
+INFO: [VRFC 10-2458] undeclared symbol test_cnt_out, assumed default net type wire [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/src/val_holder.v:64]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/val_holder_0/sim/val_holder_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module val_holder_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_quant/sim/chrominance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chrominance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_quant/sim/luminance_quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module luminance_quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/sim/quant_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quant_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/full_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_2i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/mux_3i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3i
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/reg_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/sim/DCT_2D_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCT_2D_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/src/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_raw2jpeg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/div_gen_0/sim/div_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_gen_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3f5ab95061bb40ab889bdc547222c146 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_0_13 -L xbip_dsp48_mult_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L div_gen_v5_1_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_raw2jpeg_behav xil_defaultlib.tb_raw2jpeg xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port s_axis_dividend_tdata [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/quant.v:41]
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port addr_zzBRAM_in [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v:31]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:77]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/DCT_2D_0/src/DCT.v:79]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package div_gen_v5_1_11.div_gen_v5_1_11_viv_comp
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_3.global_util_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_comps
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_bram18k_v3_0_3.xbip_bram18k_v3_0_3_pkg
+Compiling package div_gen_v5_1_11.div_gen_pkg
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package div_gen_v5_1_11.pkg_addsub
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.controller_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.RAM(WIDTH=11)
+Compiling module xil_defaultlib.register(WIDTH=12)
+Compiling module xil_defaultlib.delay(reg_width=12)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=1)
+Compiling module xil_defaultlib.delay(reg_width=13)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=13,DELAY=2)
+Compiling module xil_defaultlib.delay(reg_width=14)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=14)
+Compiling module xil_defaultlib.delay(reg_width=15)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=12,DELAY=2)
+Compiling module xil_defaultlib.register(WIDTH=15,DELAY=1)
+Compiling module xil_defaultlib.register(WIDTH=14,DELAY=1)
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=16,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_3i(WIDTH_I0=13,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.full_adder(WIDTH=11)
+Compiling module xil_defaultlib.full_adder(WIDTH=12)
+Compiling module xil_defaultlib.full_adder(WIDTH=13)
+Compiling module xil_defaultlib.full_adder(WIDTH=14)
+Compiling module xil_defaultlib.full_adder(WIDTH=15)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=11)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=13)
+Compiling module xil_defaultlib.full_subtractor(WIDTH=15)
+Compiling module xil_defaultlib.reg_mult
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=12,WIDTH_I1=12,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=14,WIDTH_I1=14,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=13,WIDTH_I1=13,W...
+Compiling module xil_defaultlib.mux_2i(WIDTH_I0=15,WIDTH_I1=15,W...
+Compiling module xil_defaultlib.DCT
+Compiling module xil_defaultlib.DCT_2D
+Compiling module xil_defaultlib.DCT_2D_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.chrominance_quant
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.luminance_quant
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=14,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=14,c_regist...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=7,c_ain...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=7,c_ainit_v...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=14...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity div_gen_v5_1_11.c_addsub_lut6 [\c_addsub_lut6(c_width=8,c_add_m...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_addsub_viv [\c_addsub_viv(c_a_width=8,c_b_wi...]
+Compiling architecture virtex of entity div_gen_v5_1_11.addsubreg_v [\addsubreg_v(c_bus_width=8,c_ain...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=13...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=12...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=11...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=10...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=9)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=8)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=7)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=6)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=5)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=4)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=3)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=2)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(1,1,1,1)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_sinit_va...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_width=16...]
+Compiling architecture virtex of entity div_gen_v5_1_11.dividervdc_v [\dividervdc_v(bus_num=14,bus_div...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=2,c_ain...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=2)(1,0,1,0)...]
+Compiling architecture synth of entity div_gen_v5_1_11.c_twos_comp_viv [\c_twos_comp_viv(c_width=15,c_ai...]
+Compiling architecture virtex of entity div_gen_v5_1_11.cmp2s_v [\cmp2s_v(c_bus_width=15)(1,0,1,0...]
+Compiling architecture synth of entity div_gen_v5_1_11.bip_sdivider_synth [\bip_sdivider_synth(c_xdevicefam...]
+Compiling architecture synth of entity div_gen_v5_1_11.div_gen_synth [\div_gen_synth(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity div_gen_v5_1_11.div_gen_v5_1_11_viv [\div_gen_v5_1_11_viv(c_xdevicefa...]
+Compiling architecture xilinx of entity div_gen_v5_1_11.div_gen_v5_1_11 [\div_gen_v5_1_11(c_xdevicefamily...]
+Compiling architecture div_gen_0_arch of entity xil_defaultlib.div_gen_0 [div_gen_0_default]
+Compiling module xil_defaultlib.quant
+Compiling module xil_defaultlib.quant_0
+Compiling module xil_defaultlib.val_holder
+Compiling module xil_defaultlib.val_holder_0
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling module xil_defaultlib.tb_raw2jpeg
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_raw2jpeg_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.258 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.ROM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.quant.inst.cbcr.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_raw2jpeg.quant.inst.y.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_raw2jpeg.RAM.inst.native_mem_module.blk_mem_gen_v8_3_6_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1021.285 ; gain = 1.027
+save_wave_config {C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/tb_raw2jpeg_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/tb_raw2jpeg_behav.wcfg
+set_property xsim.view C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/tb_raw2jpeg_behav.wcfg [get_filesets sim_1]
+create_bd_design "design_1"
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.USE_LOCKED {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} CONFIG.CLKOUT1_JITTER {137.681} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {rst_polarity "ACTIVE_HIGH" }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz_0/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System Clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+endgroup
+save_bd_design
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd> 
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+CRITICAL WARNING: [filemgmt 20-730] Could not find a top module in the fileset sources_1.
+Resolution: With the gui up, review the source files in the Sources window. Use Add Sources to add any needed sources. If the files are disabled, enable them. You can also select the file and choose Set Used In from the pop-up menu. Review if they are being used at the proper points of the flow.
+ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).
+reset_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_clk_wiz_0_0_synth_1
+[Wed Aug 21 12:34:39 2019] Launched design_1_clk_wiz_0_0_synth_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Aug 21 12:35:01 2019] Launched design_1_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
+[Wed Aug 21 12:35:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv domain.local:user:controller:1.0 controller_0
+endgroup
+set_property location {2.5 575 -188} [get_bd_cells controller_0]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk]
+set_property location {2 571 -177} [get_bd_cells controller_0]
+save_bd_design
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Wrote  : <C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd> 
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+[Wed Aug 21 12:37:46 2019] Launched design_1_controller_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_controller_0_0_synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_controller_0_0_synth_1/runme.log
+synth_1: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
+[Wed Aug 21 12:37:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+Exporting to file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_clk_wiz_0_0, cache-ID = 5b6b9995ba7d720c; cache size = 2.492 MB.
+catch { config_ip_cache -export [get_ips -all design_1_controller_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_controller_0_0, cache-ID = 82fa1322d22a5d24; cache size = 2.492 MB.
+export_ip_user_files -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files -ipstatic_source_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/modelsim} {questa=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/questa} {riviera=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/riviera} {activehdl=C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed Aug 21 12:40:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/synth_1/runme.log
+[Wed Aug 21 12:40:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
+set_property USED_IN_IMPLEMENTATION 0 [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v]
+set_property USED_IN_SIMULATION 0 [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v]
+update_compile_order -fileset sim_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Wed Aug 21 12:44:16 2019] Launched impl_1...
+Run output will be captured here: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/impl_1/runme.log
+update_compile_order -fileset sim_1
+reset_run impl_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 12:44:34 2019...

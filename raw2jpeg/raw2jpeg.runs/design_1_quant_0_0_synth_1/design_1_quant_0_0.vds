@@ -1,0 +1,391 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug 21 13:12:38 2019
+# Process ID: 7160
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1
+# Command line: vivado.exe -log design_1_quant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_quant_0_0.tcl
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1/design_1_quant_0_0.vds
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_quant_0_0.tcl -notrace
+Command: synth_design -top design_1_quant_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4496 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 323.746 ; gain = 81.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_quant_0_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/synth/design_1_quant_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'quant' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:23]
+INFO: [Synth 8-638] synthesizing module 'chrominance_quant' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/synth/chrominance_quant.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/synth/chrominance_quant.vhd:230]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'chrominance_quant' (9#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/synth/chrominance_quant.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'luminance_quant' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/luminance_quant/synth/luminance_quant.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_6' declared at 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195260' bound to instance 'U0' of component 'blk_mem_gen_v8_3_6' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/luminance_quant/synth/luminance_quant.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'luminance_quant' (10#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/luminance_quant/synth/luminance_quant.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/div_gen_0/synth/div_gen_0.vhd:71]
+INFO: [Synth 8-3491] module 'div_gen_v5_1_11' declared at 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/div_gen_0/hdl/div_gen_v5_1_vh_rfs.vhd:13849' bound to instance 'U0' of component 'div_gen_v5_1_11' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/div_gen_0/synth/div_gen_0.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (22#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/div_gen_0/synth/div_gen_0.vhd:71]
+WARNING: [Synth 8-689] width (14) of port connection 's_axis_dividend_tdata' does not match port width (16) of module 'div_gen_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:41]
+WARNING: [Synth 8-689] width (7) of port connection 's_axis_divisor_tdata' does not match port width (8) of module 'div_gen_0' [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:41]
+WARNING: [Synth 8-350] instance 'divider' of module 'div_gen_0' requires 7 connections, but only 4 given [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:41]
+INFO: [Synth 8-256] done synthesizing module 'quant' (23#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_quant_0_0' (24#1) [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/synth/design_1_quant_0_0.v:56]
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port clk
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port ce
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port aset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port sset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized2 has unconnected port sinit
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port clk
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ce
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_twos_comp_viv__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized59 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized59 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized59 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized59 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized59 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized65 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized65 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized65 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized65 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized65 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized63 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized61 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized57 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized57 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized57 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized57 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized57 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized45 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized41 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized41 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized41 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized41 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized41 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized37 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized37 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized37 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized37 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized37 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized21 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 575.063 ; gain = 332.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin divider:s_axis_divisor_tvalid to constant 0 [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:41]
+WARNING: [Synth 8-3295] tying undriven pin divider:s_axis_dividend_tvalid to constant 0 [c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ipshared/3d36/src/quant.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 575.063 ; gain = 332.785
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 258 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 632.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:35 ; elapsed = 00:01:45 . Memory (MB): peak = 632.457 ; gain = 390.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:35 ; elapsed = 00:01:45 . Memory (MB): peak = 632.457 ; gain = 390.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/cbcr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/y. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:45 . Memory (MB): peak = 632.457 ; gain = 390.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:35 ; elapsed = 00:01:46 . Memory (MB): peak = 632.457 ; gain = 390.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs'
+INFO: [Synth 8-223] decloning instance 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/final_div.del_end_divisor' (xbip_pipe_v3_0_3_viv__parameterized5) to 'inst/divider/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 632.457 ; gain = 390.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:56 . Memory (MB): peak = 635.746 ; gain = 393.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:01:56 . Memory (MB): peak = 635.746 ; gain = 393.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin inst/divider:s_axis_divisor_tvalid to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst/divider:s_axis_dividend_tvalid to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |     8|
+|2     |LUT1       |    24|
+|3     |LUT2       |    47|
+|4     |LUT3       |   121|
+|5     |LUT4       |     1|
+|6     |LUT5       |     1|
+|7     |LUT6       |     2|
+|8     |MUXCY      |   128|
+|9     |RAMB18E1   |     1|
+|10    |RAMB18E1_1 |     1|
+|11    |XORCY      |   128|
+|12    |FDRE       |   184|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 308 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:01:41 . Memory (MB): peak = 655.031 ; gain = 355.359
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:57 . Memory (MB): peak = 655.031 ; gain = 412.754
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 32 instances
+
+44 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:59 . Memory (MB): peak = 660.453 ; gain = 421.813
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1/design_1_quant_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/design_1_quant_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 125 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_quant_0_0_synth_1/design_1_quant_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 660.453 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:14:43 2019...

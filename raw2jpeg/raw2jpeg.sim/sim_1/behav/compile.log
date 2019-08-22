@@ -41,9 +41,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_
 INFO: [VRFC 10-311] analyzing module controller
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/controller_0/sim/controller_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module controller_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/combinatoryDCT/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/clk_gen.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clk_gen
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/new/tb_raw2jpeg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sim_1/imports/JPEG_conv/tb_raw2jpeg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_raw2jpeg
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

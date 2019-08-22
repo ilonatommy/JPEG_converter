@@ -1,2 +1,0 @@
-NumberHits:2
-Timestamp: Mon Aug 19 14:35:54 UTC 2019
