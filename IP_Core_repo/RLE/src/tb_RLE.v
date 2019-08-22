@@ -29,9 +29,9 @@ module tb_RLE();
     reg ce = 0;
     reg ce_BRAM = 0;
     
-    wire signed [7:0] pixel_in;//values from -128 to 127
+    wire signed [7:0] pixel_in; //values from -128 to 127
     wire signed [7:0] next_value;
-    wire [5:0] num_0s;
+    wire [3:0] num_0s;
     wire data_valid;
     
     reg [2:0] rst_trigger = 0;

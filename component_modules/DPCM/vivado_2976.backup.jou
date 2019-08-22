@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Aug 20 14:19:21 2019
+# Process ID: 2976
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DPCM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5728 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\DPCM\DPCM.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DPCM/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DPCM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DPCM/DPCM.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

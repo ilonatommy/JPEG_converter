@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Aug 20 11:51:18 2019
-# Process ID: 2072
+# Start of session at: Wed Aug 21 13:57:53 2019
+# Process ID: 6724
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent336 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\RLE\RLE.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2924 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\RLE\RLE.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE\vivado.jou
 #-----------------------------------------------------------
@@ -17,5 +17,29 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+ipx::unload_core c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+set_property description RLE [ipx::current_core]
+set_property display_name RLE [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE'
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 20 12:46:31 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:58:43 2019...

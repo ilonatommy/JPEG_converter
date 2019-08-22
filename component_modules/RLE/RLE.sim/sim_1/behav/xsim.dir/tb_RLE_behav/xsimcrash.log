@@ -1,3 +1,5 @@
-Exception at PC 0x00007FFAD1D9BB93
+Unable to capture context for thread 3516 in process 200, can not generate back trace
+Unable to capture context for thread 4104 in process 200, can not generate back trace
+Exception at PC 0x00007FFAD263BB93
 Printing stacktrace...
 

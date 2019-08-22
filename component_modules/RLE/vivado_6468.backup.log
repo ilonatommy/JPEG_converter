@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Aug 21 13:33:43 2019
+# Process ID: 6468
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6912 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\RLE\RLE.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/RLE/RLE.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:41:39 2019...

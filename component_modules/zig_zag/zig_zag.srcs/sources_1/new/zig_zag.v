@@ -24,11 +24,11 @@ module zig_zag(
     input clk,
     input rst,
     input ce,
-    output [7:0] addr_BRAM
+    output [7:0] addr_BRAM_in
     );
     
     reg [5:0] selector_in = 0;
-    blk_mem_gen_0 addr_source(.clka(clk), .addra(selector_in), .douta(addr_BRAM), .ena(ce), .rsta(rst));
+    blk_mem_gen_0 addr_source(.clka(clk), .addra(selector_in), .douta(addr_BRAM_in), .ena(ce), .rsta(rst));
     
     always @(posedge(clk))
     begin

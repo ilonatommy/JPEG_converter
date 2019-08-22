@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a593db19</spirit:value>
+            <spirit:value>7c8b54a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a593db19</spirit:value>
+            <spirit:value>7c8b54a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -89,7 +89,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0bb3e598</spirit:value>
+            <spirit:value>2edd58de</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -170,7 +170,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:left spirit:format="long">3</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -225,7 +225,7 @@
       <spirit:file>
         <spirit:name>src/RLE.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_392c597e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6e38e358</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -288,7 +288,7 @@
       <xilinx:displayName>RLE</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-20T09:49:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-21T11:58:37Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="domain.local:user:RLE:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/RLE</xilinx:tag>
       </xilinx:tags>
@@ -296,8 +296,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c75a2138"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="17c6dff7"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="0a9d2668"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c6971aef"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="5d1d5106"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3199bdfb"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

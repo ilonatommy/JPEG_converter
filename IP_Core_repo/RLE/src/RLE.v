@@ -25,11 +25,13 @@ module RLE(
     input ce,
     input rst,
     input [7:0] pixel_in,
-    output [5:0] num_0s,
+    output [3:0] num_0s, //max num of 0s is 15
     output [7:0] next_value,
     output data_valid
     );
     
+    reg [5:0] prev_num_0 = 0;
+    reg [7:0] prev_next_value = 0;
     reg [5:0] cnt_0 = 0;
     reg [7:0] next_val = 0;
     reg send_output = 0;
@@ -46,7 +48,10 @@ module RLE(
         
         if(ce == 1'b1)
         begin
-            if(init_rom_read_del == 2'd2)
+            prev_num_0 <= num_0s;
+            prev_next_value <= next_value;
+            
+            if(init_rom_read_del == 2'd3) //2 tics for BRAM latency and 1 tic to skip DC part (first pixel is DC)
             begin
                 if(send_output == 1'b1)
                 begin
@@ -54,7 +59,7 @@ module RLE(
                     cnt_0 <= 0;
                 end
                 
-                if(pixel_in == 0)
+                if(pixel_in == 0 && cnt_0 < 4'd15)
                 begin
                     cnt_0 <= cnt_0 + 1;
                 end
@@ -69,6 +74,6 @@ module RLE(
     end
     
     assign data_valid = send_output;
-    assign next_value = send_output == 1'b1 ? next_val : next_value;
-    assign num_0s = send_output == 1'b1 ? cnt_0 : num_0s;
+    assign next_value = send_output == 1'b1 ? next_val : prev_next_value;
+    assign num_0s = send_output == 1'b1 ? cnt_0 : prev_num_0;
 endmodule

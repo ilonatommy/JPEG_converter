@@ -61,7 +61,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>32b6d7f7</spirit:value>
+            <spirit:value>7fc8c5fb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -80,7 +80,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>32b6d7f7</spirit:value>
+            <spirit:value>7fc8c5fb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -155,7 +155,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>addr_BRAM</spirit:name>
+        <spirit:name>addr_BRAM_in</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -189,7 +189,7 @@
       <spirit:file>
         <spirit:name>src/zig_zag.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6454cb36</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_142ba9d8</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -280,7 +280,7 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-14T12:26:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-21T11:21:22Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="domain.local:user:zig_zag:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag</xilinx:tag>
       </xilinx:tags>
@@ -288,8 +288,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c75a2138"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c1660724"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="21f6957a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ff37489"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="e14cbfec"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ef693b46"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

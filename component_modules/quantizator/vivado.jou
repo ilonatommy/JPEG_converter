@@ -2,29 +2,13 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Aug 19 16:17:16 2019
-# Process ID: 7344
-# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3188 C:\Users\lsneler\Desktop\Repo\JPEG_conv\quantizator\quantizator.xpr
-# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator/vivado.log
-# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator\vivado.jou
+# Start of session at: Thu Aug 22 10:58:52 2019
+# Process ID: 1372
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/quantizator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4756 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\quantizator\quantizator.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/quantizator/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/quantizator\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/quantizator/quantizator.xpr
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/quantizator/quantizator.xpr
 update_compile_order -fileset sources_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/QUANT -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false -force
-ipx::unload_core c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/QUANT/component.xml
-ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/QUANT c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/QUANT/component.xml
-update_compile_order -fileset sources_1
-set_property display_name quant [ipx::current_core]
-set_property description quant [ipx::current_core]
-set_property core_revision 2 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo
-upgrade_ip -srcset DCT_2D_0 -vlnv domain.local:user:DCT_2D:1.0 [get_ips  DCT_2D_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips DCT_2D_0] -no_script -sync -force -quiet
