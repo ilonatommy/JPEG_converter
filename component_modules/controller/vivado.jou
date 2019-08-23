@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Aug 21 13:28:17 2019
-# Process ID: 664
+# Start of session at: Fri Aug 23 14:50:23 2019
+# Process ID: 3744
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6608 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\controller\controller.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3352 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\controller\controller.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller\vivado.jou
 #-----------------------------------------------------------
@@ -15,6 +15,7 @@ update_compile_order -fileset sources_1
 ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false -force
 ipx::unload_core c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller/component.xml
 ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller/component.xml
+set_property display_name controller [ipx::current_core]
 update_compile_order -fileset sources_1
 set_property core_revision 2 [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]

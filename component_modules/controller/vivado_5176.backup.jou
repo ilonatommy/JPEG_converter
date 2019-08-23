@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Aug 22 13:45:23 2019
+# Process ID: 5176
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5344 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\controller\controller.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller/controller.xpr
+update_compile_order -fileset sources_1

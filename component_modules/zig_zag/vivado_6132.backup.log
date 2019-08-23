@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Aug 23 13:26:49 2019
+# Process ID: 6132
+# Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7504 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\zig_zag\zig_zag.xpr
+# Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/vivado.log
+# Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/zig_zag.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/IP_Core_repo/zig_zag'; using path 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 23 13:27:21 2019...

@@ -1,7 +1,7 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Wed Aug 21 13:14:00 2019
+-- Date        : Fri Aug 23 15:14:57 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.vhdl
@@ -19,6 +19,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -210,8 +211,8 @@ begin
       REGCEB => ena,
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
+      RSTREGARSTREG => rsta,
+      RSTREGB => rsta,
       WEA(1 downto 0) => B"00",
       WEBWE(3 downto 0) => B"0000"
     );
@@ -225,6 +226,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -238,7 +240,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -250,6 +253,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -263,7 +267,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -275,6 +280,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_top is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -288,7 +294,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -300,6 +307,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -313,7 +321,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -433,7 +442,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 is
   attribute C_EN_SLEEP_PIN : integer;
   attribute C_EN_SLEEP_PIN of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_EST_POWER_SUMMARY : string;
-  attribute C_EST_POWER_SUMMARY of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is "Estimated Power for IP     :     2.3768 mW";
+  attribute C_EST_POWER_SUMMARY of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is "Estimated Power for IP     :     2.3767999999999998 mW";
   attribute C_FAMILY : string;
   attribute C_FAMILY of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is "zynq";
   attribute C_HAS_AXI_ID : integer;
@@ -457,7 +466,7 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 is
   attribute C_HAS_REGCEB : integer;
   attribute C_HAS_REGCEB of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_RSTA : integer;
-  attribute C_HAS_RSTA of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is 0;
+  attribute C_HAS_RSTA of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is 1;
   attribute C_HAS_RSTB : integer;
   attribute C_HAS_RSTB of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
@@ -602,7 +611,8 @@ inst_blk_mem_gen: entity work.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -612,6 +622,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_blk_mem_gen_0_0 is
   port (
     clka : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 );
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 )
@@ -694,7 +705,7 @@ architecture STRUCTURE of design_1_blk_mem_gen_0_0 is
   attribute C_EN_SLEEP_PIN : integer;
   attribute C_EN_SLEEP_PIN of U0 : label is 0;
   attribute C_EST_POWER_SUMMARY : string;
-  attribute C_EST_POWER_SUMMARY of U0 : label is "Estimated Power for IP     :     2.3768 mW";
+  attribute C_EST_POWER_SUMMARY of U0 : label is "Estimated Power for IP     :     2.3767999999999998 mW";
   attribute C_FAMILY : string;
   attribute C_FAMILY of U0 : label is "zynq";
   attribute C_HAS_AXI_ID : integer;
@@ -718,7 +729,7 @@ architecture STRUCTURE of design_1_blk_mem_gen_0_0 is
   attribute C_HAS_REGCEB : integer;
   attribute C_HAS_REGCEB of U0 : label is 0;
   attribute C_HAS_RSTA : integer;
-  attribute C_HAS_RSTA of U0 : label is 0;
+  attribute C_HAS_RSTA of U0 : label is 1;
   attribute C_HAS_RSTB : integer;
   attribute C_HAS_RSTB of U0 : label is 0;
   attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
@@ -815,7 +826,7 @@ U0: entity work.design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6
       rdaddrecc(5 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(5 downto 0),
       regcea => '0',
       regceb => '0',
-      rsta => '0',
+      rsta => rsta,
       rsta_busy => NLW_U0_rsta_busy_UNCONNECTED,
       rstb => '0',
       rstb_busy => NLW_U0_rstb_busy_UNCONNECTED,

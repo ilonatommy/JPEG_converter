@@ -70,7 +70,10 @@ module tb_DCT_2D_BRAM();
         end
     end
     
-    blk_mem_gen_0 BRAM_in(.clka(clk), .addra(addr_in), .douta(pixel_in), .ena(ce_BRAM));
-    DCT_2D mod(.pixel_in(pixel_in), .clk(clk), .rst(rst), .ce(ce), .pixel_out(pixel_out));
+    wire [5:0] addr_input;
+    wire _ce, _rst;
+    controller_0 contr(.clk(clk), .ce_input_DCT_quant(_ce), .rst(_rst), .addr_input(addr_input));
+    blk_mem_gen_0 BRAM_in(.clka(clk), .addra(addr_input), .douta(pixel_in), .ena(_ce), .rsta(_rst));
+    DCT_2D mod(.pixel_in(pixel_in), .clk(clk), .rst(_rst), .ce(_ce), .pixel_out(pixel_out));
     blk_mem_gen_1 BRAM_out(.clka(clk), .addra(addr_out), .dina(pixel_out));
 endmodule

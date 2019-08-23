@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/
+webtalk_init -webtalk_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Aug 13 12:08:27 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Aug 23 11:54:29 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "1909853" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "058c5538-d980-4fb4-9623-afa7c709c6cc" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "315fc604a1a84fd78716f145404ef2f4" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "4" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz" -context "user_environment"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6860_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1607573976 -regid "174110479_206666196_206649563_746" -xml C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6748_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 485228196 -regid "174110479_206666196_206649563_746" -xml C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.sim/sim_1/behav/xsim.dir/tb_DCT_2D_BRAM_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

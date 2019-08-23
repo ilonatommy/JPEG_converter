@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Aug 21 13:28:17 2019
-# Process ID: 664
+# Start of session at: Fri Aug 23 14:50:23 2019
+# Process ID: 3744
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6608 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\controller\controller.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3352 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\controller\controller.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/controller\vivado.jou
 #-----------------------------------------------------------
@@ -35,6 +35,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo
 INFO: [IP_Flow 19-795] Syncing license key meta-data
 INFO: [IP_Flow 19-793] Syncing display name meta-data
 INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property display_name controller [ipx::current_core]
 update_compile_order -fileset sources_1
 set_property core_revision 2 [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
@@ -44,4 +45,4 @@ close_project -delete
 update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller
 INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller'
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:29:14 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 23 14:52:29 2019...

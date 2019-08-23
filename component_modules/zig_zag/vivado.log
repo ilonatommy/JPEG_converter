@@ -2,25 +2,22 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Aug 21 13:19:19 2019
-# Process ID: 7424
+# Start of session at: Fri Aug 23 15:14:37 2019
+# Process ID: 4756
 # Current directory: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5092 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\zig_zag\zig_zag.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7124 C:\Users\lsneler\Desktop\Repo\JPEG_conv\component_modules\zig_zag\zig_zag.xpr
 # Log file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/vivado.log
 # Journal file: C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/zig_zag.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/zig_zag' since last save.
 Scanning sources...
 Finished scanning sources
-INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/IP_Core_repo/zig_zag'; using path 'C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag' instead.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
 update_compile_order -fileset sources_1
 ipx::package_project -root_dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag -vendor domain.local -library user -taxonomy /UserIP -import_files -set_current false -force
-WARNING: [IP_Flow 19-4963] blk_mem_gen_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zybo:part0:1.0'
 INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
 INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
 INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
@@ -35,8 +32,8 @@ INFO: [IP_Flow 19-795] Syncing license key meta-data
 INFO: [IP_Flow 19-793] Syncing display name meta-data
 INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
 update_compile_order -fileset sources_1
-set_property display_name zig_zag [ipx::current_core]
 set_property description zig_zag [ipx::current_core]
+set_property display_name zig_zag [ipx::current_core]
 set_property core_revision 2 [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
@@ -45,4 +42,4 @@ close_project -delete
 update_ip_catalog -rebuild -repo_path c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag
 INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/zig_zag'
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 13:23:38 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 23 15:15:42 2019...

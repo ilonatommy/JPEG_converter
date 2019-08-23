@@ -13,6 +13,8 @@ set_property src_info {type:XDC file:1 line:177 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN L14 [get_ports {num_0s[3]}]
 set_property src_info {type:XDC file:1 line:181 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J16 [get_ports {v_sync}]
+set_property src_info {type:XDC file:1 line:182 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports {v_sync}]
 set_property src_info {type:XDC file:1 line:185 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K16 [get_ports {data_valid}]
 set_property src_info {type:XDC file:1 line:198 export:INPUT save:INPUT read:READ} [current_design]

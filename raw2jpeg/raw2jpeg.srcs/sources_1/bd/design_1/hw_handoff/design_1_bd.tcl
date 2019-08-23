@@ -168,7 +168,6 @@ CONFIG.POLARITY {ACTIVE_HIGH} \
 CONFIG.FREQ_HZ {125000000} \
 CONFIG.PHASE {0.000} \
  ] $sys_clock
-  set v_sync [ create_bd_port -dir O v_sync ]
 
   # Create instance: DCT_2D_0, and set properties
   set DCT_2D_0 [ create_bd_cell -type ip -vlnv domain.local:user:DCT_2D:1.0 DCT_2D_0 ]
@@ -180,7 +179,7 @@ CONFIG.PHASE {0.000} \
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0 ]
   set_property -dict [ list \
 CONFIG.Byte_Size {9} \
-CONFIG.Coe_File {../../../../../../inputData.coe} \
+CONFIG.Coe_File {../../../../../../../component_modules/DCT/DCT.ip_user_files/inputData.coe} \
 CONFIG.Enable_32bit_Address {false} \
 CONFIG.Load_Init_File {true} \
 CONFIG.Memory_Type {Single_Port_ROM} \
@@ -189,7 +188,7 @@ CONFIG.Read_Width_A {8} \
 CONFIG.Read_Width_B {8} \
 CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
-CONFIG.Use_RSTA_Pin {false} \
+CONFIG.Use_RSTA_Pin {true} \
 CONFIG.Write_Depth_A {64} \
 CONFIG.Write_Width_A {8} \
 CONFIG.Write_Width_B {8} \
@@ -200,32 +199,52 @@ CONFIG.use_bram_block {Stand_Alone} \
   set blk_mem_gen_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1 ]
   set_property -dict [ list \
 CONFIG.Byte_Size {9} \
+CONFIG.Coe_File {../../../../../../../component_modules/zig_zag/zig_zag_addr_tableT.coe} \
+CONFIG.Enable_32bit_Address {false} \
+CONFIG.Load_Init_File {true} \
+CONFIG.Memory_Type {Single_Port_ROM} \
+CONFIG.Port_A_Write_Rate {0} \
+CONFIG.Read_Width_A {8} \
+CONFIG.Read_Width_B {8} \
+CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+CONFIG.Use_Byte_Write_Enable {false} \
+CONFIG.Use_RSTA_Pin {true} \
+CONFIG.Write_Depth_A {64} \
+CONFIG.Write_Width_A {8} \
+CONFIG.Write_Width_B {8} \
+CONFIG.use_bram_block {Stand_Alone} \
+ ] $blk_mem_gen_1
+
+  # Create instance: blk_mem_gen_2, and set properties
+  set blk_mem_gen_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_2 ]
+  set_property -dict [ list \
+CONFIG.Byte_Size {9} \
 CONFIG.Enable_32bit_Address {false} \
 CONFIG.Enable_B {Use_ENB_Pin} \
 CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
 CONFIG.Operating_Mode_A {NO_CHANGE} \
 CONFIG.Port_B_Clock {100} \
 CONFIG.Port_B_Enable_Rate {100} \
-CONFIG.Port_B_Write_Rate {0} \
 CONFIG.Read_Width_A {8} \
 CONFIG.Read_Width_B {8} \
 CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
 CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
 CONFIG.Use_Byte_Write_Enable {false} \
 CONFIG.Use_RSTA_Pin {false} \
-CONFIG.Use_RSTB_Pin {false} \
+CONFIG.Use_RSTB_Pin {true} \
 CONFIG.Write_Depth_A {255} \
 CONFIG.Write_Width_A {8} \
 CONFIG.Write_Width_B {8} \
 CONFIG.use_bram_block {Stand_Alone} \
- ] $blk_mem_gen_1
+ ] $blk_mem_gen_2
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_0 ]
   set_property -dict [ list \
 CONFIG.CLKOUT1_DRIVES {BUFG} \
-CONFIG.CLKOUT1_JITTER {237.312} \
-CONFIG.CLKOUT1_PHASE_ERROR {249.865} \
+CONFIG.CLKOUT1_JITTER {155.040} \
+CONFIG.CLKOUT1_PHASE_ERROR {225.564} \
+CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {31.000} \
 CONFIG.CLKOUT2_DRIVES {BUFG} \
 CONFIG.CLKOUT3_DRIVES {BUFG} \
 CONFIG.CLKOUT4_DRIVES {BUFG} \
@@ -233,8 +252,8 @@ CONFIG.CLKOUT5_DRIVES {BUFG} \
 CONFIG.CLKOUT6_DRIVES {BUFG} \
 CONFIG.CLKOUT7_DRIVES {BUFG} \
 CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
-CONFIG.MMCM_CLKFBOUT_MULT_F {36} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F {9} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {62} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {50} \
 CONFIG.MMCM_COMPENSATION {ZHOLD} \
 CONFIG.MMCM_DIVCLK_DIVIDE {5} \
 CONFIG.PRIMITIVE {PLL} \
@@ -257,21 +276,20 @@ CONFIG.USE_LOCKED {false} \
   connect_bd_net -net RLE_0_next_value [get_bd_ports next_value] [get_bd_pins RLE_0/next_value]
   connect_bd_net -net RLE_0_num_0s [get_bd_ports num_0s] [get_bd_pins RLE_0/num_0s]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins DCT_2D_0/pixel_in] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins RLE_0/pixel_in] [get_bd_pins blk_mem_gen_1/doutb]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins RLE_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins zig_zag_0/clk]
+  connect_bd_net -net blk_mem_gen_1_douta [get_bd_pins blk_mem_gen_1/douta] [get_bd_pins blk_mem_gen_2/addra]
+  connect_bd_net -net blk_mem_gen_2_doutb [get_bd_pins RLE_0/pixel_in] [get_bd_pins blk_mem_gen_2/doutb]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins DCT_2D_0/clk] [get_bd_pins RLE_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins blk_mem_gen_2/clka] [get_bd_pins blk_mem_gen_2/clkb] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins controller_0/clk] [get_bd_pins quant_0/clk] [get_bd_pins zig_zag_0/clk]
   connect_bd_net -net controller_0_addr_input [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins controller_0/addr_input]
   connect_bd_net -net controller_0_addr_quant [get_bd_pins controller_0/addr_quant] [get_bd_pins quant_0/addr]
-  connect_bd_net -net controller_0_addr_zzBRAM_in [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins controller_0/addr_zzBRAM_in]
+  connect_bd_net -net controller_0_addr_zzBRAM_out [get_bd_pins blk_mem_gen_2/addrb] [get_bd_pins controller_0/addr_zzBRAM_out]
   connect_bd_net -net controller_0_ce_input_DCT_quant [get_bd_pins DCT_2D_0/ce] [get_bd_pins blk_mem_gen_0/ena] [get_bd_pins controller_0/ce_input_DCT_quant] [get_bd_pins quant_0/ce]
-  connect_bd_net -net controller_0_ce_zig_zag [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
-  connect_bd_net -net controller_0_rst [get_bd_pins DCT_2D_0/rst] [get_bd_pins RLE_0/rst] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins zig_zag_0/rst]
-  connect_bd_net -net controller_0_v_sync [get_bd_ports v_sync] [get_bd_pins controller_0/v_sync]
-  connect_bd_net -net controller_0_we_zzBRAM_in [get_bd_pins RLE_0/ce] [get_bd_pins blk_mem_gen_1/ena] [get_bd_pins blk_mem_gen_1/wea] [get_bd_pins controller_0/we_zzBRAM_in]
-  connect_bd_net -net controller_0_we_zzBRAM_out [get_bd_pins blk_mem_gen_1/enb] [get_bd_pins controller_0/we_zzBRAM_out]
-  connect_bd_net -net quant_0_pixel_out [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins quant_0/pixel_out]
+  connect_bd_net -net controller_0_ce_zig_zag [get_bd_pins blk_mem_gen_1/ena] [get_bd_pins controller_0/ce_zig_zag] [get_bd_pins zig_zag_0/ce]
+  connect_bd_net -net controller_0_rst [get_bd_pins DCT_2D_0/rst] [get_bd_pins RLE_0/rst] [get_bd_pins blk_mem_gen_0/rsta] [get_bd_pins blk_mem_gen_1/rsta] [get_bd_pins blk_mem_gen_2/rstb] [get_bd_pins controller_0/rst] [get_bd_pins quant_0/rst] [get_bd_pins zig_zag_0/rst]
+  connect_bd_net -net controller_0_we_zzBRAM_in [get_bd_pins RLE_0/ce] [get_bd_pins blk_mem_gen_2/ena] [get_bd_pins blk_mem_gen_2/enb] [get_bd_pins blk_mem_gen_2/wea] [get_bd_pins controller_0/we_zzBRAM_in]
+  connect_bd_net -net quant_0_pixel_out [get_bd_pins blk_mem_gen_2/dina] [get_bd_pins quant_0/pixel_out]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net zig_zag_0_addr_BRAM_in [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins zig_zag_0/addr_BRAM_in]
+  connect_bd_net -net zig_zag_0_zz_addr_cnt [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins zig_zag_0/zz_addr_cnt]
 
   # Create address segments
 
