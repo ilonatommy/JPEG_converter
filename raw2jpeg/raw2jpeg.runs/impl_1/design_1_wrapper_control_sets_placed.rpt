@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Aug 21 14:01:26 2019
+| Date         : Fri Aug 23 15:18:55 2019
 | Host         : rtrkos034 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    86 |
-| Unused register locations in slices containing registers |   370 |
+| Number of unique control sets                            |    87 |
+| Unused register locations in slices containing registers |   379 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,114 +33,116 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              53 |           27 |
+| No           | No                    | No                     |              53 |           21 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             724 |          236 |
+| No           | Yes                   | No                     |              13 |            7 |
+| Yes          | No                    | No                     |             724 |          219 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             765 |          186 |
+| Yes          | Yes                   | No                     |             743 |          172 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+---------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
-|             Clock Signal            |                         Enable Signal                         |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
-+-------------------------------------+---------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/code_m_RAM[1]_i_1_n_0          |                                                         |                2 |              4 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/RLE_0/inst/cnt_0[3]_i_2_n_0                        | design_1_i/RLE_0/inst/cnt_0                             |                2 |              4 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/code_m_RAM[1]_i_1__0_n_0       |                                                         |                1 |              4 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_zig_zag                       | design_1_i/controller_0/inst/rst                        |                1 |              6 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/trigger_mod2_ce[6]_i_2_n_0           | design_1_i/DCT_2D_0/inst/trigger_mod2_ce[6]_i_1_n_0     |                3 |              7 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[2][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                        |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/STATE__0                       | design_1_i/DCT_2D_0/inst/rst_mod2                       |                5 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/STATE__0                       | design_1_i/controller_0/inst/rst                        |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/RLE_0/inst/next_val[7]_i_2_n_0                     | design_1_i/RLE_0/inst/next_val[7]_i_1_n_0               |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data                | design_1_i/controller_0/inst/rst                        |                3 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[0][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                        |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[1][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                        |                1 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/_addr_zzBRAM_in[7]_i_2_n_0       | design_1_i/controller_0/inst/_addr_zzBRAM_in[7]_i_1_n_0 |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_input_DCT_quant               | design_1_i/DCT_2D_0/inst/cnt[5]_i_1_n_0                 |                3 |              9 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_00                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_03                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_04                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_05                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_06                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_07                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_10                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_12                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_13                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_14                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_15                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_16                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_17                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_20                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_21                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_22                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_23                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_24                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_25                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_26                                |                                                         |                6 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_27                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_30                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_31                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_32                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_33                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_34                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_35                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_36                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_37                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_11                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_41                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_42                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_43                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_44                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_45                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_46                                |                                                         |                6 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_47                                |                                                         |                6 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_50                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_51                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_52                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_53                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_54                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_55                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_56                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_57                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_60                                |                                                         |                7 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_61                                |                                                         |                6 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_62                                |                                                         |                5 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_63                                |                                                         |                3 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_71                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_67                                |                                                         |                5 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_66                                |                                                         |                5 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_65                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_64                                |                                                         |                7 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_01                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_02                                |                                                         |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_72                                |                                                         |                7 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_73                                |                                                         |                5 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[2][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                       |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_40                                |                                                         |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[1][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                       |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[0][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                       |                4 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data                | design_1_i/DCT_2D_0/inst/rst_mod2                       |                5 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_74                                |                                                         |                8 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_75                                |                                                         |                6 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_76                                |                                                         |                8 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_77                                |                                                         |                8 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_70                                |                                                         |                8 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/we_zzBRAM_in                     |                                                         |                3 |             12 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 |                                                               |                                                         |               27 |             53 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/ce_mod2_reg_n_0                      | design_1_i/DCT_2D_0/inst/rst_mod2                       |               74 |            311 |
-|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_input_DCT_quant               | design_1_i/controller_0/inst/rst                        |               71 |            320 |
-+-------------------------------------+---------------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
++-------------------------------------+---------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|             Clock Signal            |                         Enable Signal                         |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------------------+---------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/RLE_0/inst/cnt_0[3]_i_2_n_0                        | design_1_i/RLE_0/inst/cnt_0                         |                2 |              4 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/code_m_RAM[1]_i_1_n_0          |                                                     |                2 |              4 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/code_m_RAM[1]_i_1__0_n_0       |                                                     |                2 |              4 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 |                                                               | design_1_i/controller_0/inst/rst                    |                5 |              5 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_zig_zag                       | design_1_i/controller_0/inst/rst                    |                1 |              6 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/trigger_mod2_ce[6]_i_2_n_0           | design_1_i/DCT_2D_0/inst/trigger_mod2_ce[6]_i_1_n_0 |                3 |              7 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[0][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                    |                1 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 |                                                               | design_1_i/controller_0/inst/_addr_zzBRAM_out0      |                2 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/STATE__0                       | design_1_i/DCT_2D_0/inst/rst_mod2                   |                2 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/RLE_0/inst/next_val[7]_i_2_n_0                     | design_1_i/RLE_0/inst/next_val[7]_i_1_n_0           |                1 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data                | design_1_i/controller_0/inst/rst                    |                3 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[1][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                    |                1 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/fabric_RAM/data[2][9]_i_1_n_0  | design_1_i/controller_0/inst/rst                    |                1 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_1/STATE__0                       | design_1_i/controller_0/inst/rst                    |                4 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_input_DCT_quant               | design_1_i/DCT_2D_0/inst/cnt[5]_i_1_n_0             |                2 |              9 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_57                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_56                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_55                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_54                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_53                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_52                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_50                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_47                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_46                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_45                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_44                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_43                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_42                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_41                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_40                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_37                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_36                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_35                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_34                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_33                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_32                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_31                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_30                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_27                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_26                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_25                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_24                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_23                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_51                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_21                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_20                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_17                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_16                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_15                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_14                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_13                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_12                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_11                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_10                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_07                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_06                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_05                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_04                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_03                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_00                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_01                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_02                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_72                                |                                                     |                6 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_73                                |                                                     |                8 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_74                                |                                                     |                6 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_75                                |                                                     |               10 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_77                                |                                                     |                8 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[2][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                   |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[1][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                   |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data[0][10]_i_1_n_0 | design_1_i/DCT_2D_0/inst/rst_mod2                   |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/mod_2/fabric_RAM/data                | design_1_i/DCT_2D_0/inst/rst_mod2                   |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_63                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_64                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_65                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_22                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_66                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_67                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_70                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_71                                |                                                     |                4 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_62                                |                                                     |                2 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_61                                |                                                     |                5 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_60                                |                                                     |                3 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/rc_76                                |                                                     |                7 |             11 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/we_zzBRAM_in                     |                                                     |                3 |             12 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 |                                                               |                                                     |               21 |             53 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/controller_0/inst/ce_input_DCT_quant               | design_1_i/controller_0/inst/rst                    |               74 |            306 |
+|  design_1_i/clk_wiz_0/inst/clk_out1 | design_1_i/DCT_2D_0/inst/ce_mod2_reg_n_0                      | design_1_i/DCT_2D_0/inst/rst_mod2                   |               63 |            311 |
++-------------------------------------+---------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 4      |                     3 |
+| 5      |                     1 |
 | 6      |                     1 |
 | 7      |                     1 |
 | 8      |                     8 |

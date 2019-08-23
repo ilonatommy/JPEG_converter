@@ -27,6 +27,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_zig_za
 # IP: bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_blk_mem_gen_1_0 || ORIG_REF_NAME==design_1_blk_mem_gen_1_0}]
 
+# IP: bd/design_1/ip/design_1_blk_mem_gen_2_0/design_1_blk_mem_gen_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_blk_mem_gen_2_0 || ORIG_REF_NAME==design_1_blk_mem_gen_2_0}]
+
 # IP: bd/design_1/ip/design_1_RLE_0_0/design_1_RLE_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design_1_RLE_0_0 || ORIG_REF_NAME==design_1_RLE_0_0}]
 

@@ -17,12 +17,13 @@ set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo [current_project]
 set_property ip_output_repo c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_table.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_table.coe
-add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/inputData.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/chrominance_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/ip/quant_0/src/luminance_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.ip_user_files/inputData.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/zig_zag_addr_table.coe
+add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/zig_zag/zig_zag_addr_tableT.coe
 add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_table.coe
 add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/luminance_table.coe
-add_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/src/zig_zag_addr_table.coe
 read_verilog -library xil_defaultlib C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
@@ -31,8 +32,8 @@ set_property used_in_implementation false [get_files -all c:/Users/lsneler/Deskt
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/chrominance_quant/chrominance_quant_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_quant_0_0/src/luminance_quant/luminance_quant_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_2_0/design_1_blk_mem_gen_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property is_locked true [get_files C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/design_1.bd]
 

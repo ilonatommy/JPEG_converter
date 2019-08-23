@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Wed Aug 21 13:41:19 2019
+// Date        : Fri Aug 23 15:15:52 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_1_0/design_1_blk_mem_gen_1_0_stub.v
@@ -14,15 +14,11 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_3_6,Vivado 2017.2" *)
-module design_1_blk_mem_gen_1_0(clka, ena, wea, addra, dina, clkb, enb, addrb, doutb)
-/* synthesis syn_black_box black_box_pad_pin="clka,ena,wea[0:0],addra[7:0],dina[7:0],clkb,enb,addrb[7:0],doutb[7:0]" */;
+module design_1_blk_mem_gen_1_0(clka, rsta, ena, addra, douta)
+/* synthesis syn_black_box black_box_pad_pin="clka,rsta,ena,addra[5:0],douta[7:0]" */;
   input clka;
+  input rsta;
   input ena;
-  input [0:0]wea;
-  input [7:0]addra;
-  input [7:0]dina;
-  input clkb;
-  input enb;
-  input [7:0]addrb;
-  output [7:0]doutb;
+  input [5:0]addra;
+  output [7:0]douta;
 endmodule

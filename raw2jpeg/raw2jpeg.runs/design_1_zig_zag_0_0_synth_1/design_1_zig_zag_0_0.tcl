@@ -19,7 +19,6 @@ set_property ip_repo_paths c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo 
 set_property ip_output_repo c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/design_1_zig_zag_0_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 set_property is_locked true [get_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/design_1_zig_zag_0_0.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -30,8 +29,6 @@ set_property is_locked true [get_files c:/Users/lsneler/Desktop/Repo/JPEG_conv/r
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 
 set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.runs/design_1_zig_zag_0_0_synth_1 -new_name design_1_zig_zag_0_0 -ip [get_ips design_1_zig_zag_0_0]]
 

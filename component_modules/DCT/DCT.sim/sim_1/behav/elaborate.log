@@ -3,12 +3,12 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 315fc604a1a84fd78716f145404ef2f4 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_DCT_2D_BRAM_behav xil_defaultlib.tb_DCT_2D_BRAM xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:65]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
-WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:74]
-WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:77]
-WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port addra [C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:75]
+WARNING: [VRFC 10-278] actual bit length 14 differs from formal bit length 16 for port i0 [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:65]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:71]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:74]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 14 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:77]
+WARNING: [VRFC 10-278] actual bit length 15 differs from formal bit length 16 for port S [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/imports/combinatoryDCT/DCT.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port addra [C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sim_1/new/tb_DCT_2D_BRAM.v:78]
 WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.2/nightly/2017_06_15_1909853/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
 Completed static elaboration
@@ -16,6 +16,8 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.controller_0
 Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
 Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_output_stage(...
 Compiling module blk_mem_gen_v8_3_6.blk_mem_gen_v8_3_6_softecc_outpu...

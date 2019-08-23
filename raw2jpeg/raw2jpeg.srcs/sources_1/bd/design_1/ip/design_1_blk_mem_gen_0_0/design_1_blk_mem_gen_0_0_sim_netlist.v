@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Wed Aug 21 13:14:00 2019
+// Date        : Fri Aug 23 15:14:57 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.v
@@ -16,10 +16,12 @@
 (* NotValidForBitStream *)
 module design_1_blk_mem_gen_0_0
    (clka,
+    rsta,
     ena,
     addra,
     douta);
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *) input clka;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA RST" *) input rsta;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *) input ena;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) input [5:0]addra;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *) output [7:0]douta;
@@ -28,6 +30,7 @@ module design_1_blk_mem_gen_0_0
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
   wire NLW_U0_dbiterr_UNCONNECTED;
   wire NLW_U0_rsta_busy_UNCONNECTED;
   wire NLW_U0_rstb_busy_UNCONNECTED;
@@ -72,7 +75,7 @@ module design_1_blk_mem_gen_0_0
   (* C_EN_SAFETY_CKT = "0" *) 
   (* C_EN_SHUTDOWN_PIN = "0" *) 
   (* C_EN_SLEEP_PIN = "0" *) 
-  (* C_EST_POWER_SUMMARY = "Estimated Power for IP     :     2.3768 mW" *) 
+  (* C_EST_POWER_SUMMARY = "Estimated Power for IP     :     2.3767999999999998 mW" *) 
   (* C_FAMILY = "zynq" *) 
   (* C_HAS_AXI_ID = "0" *) 
   (* C_HAS_ENA = "1" *) 
@@ -84,7 +87,7 @@ module design_1_blk_mem_gen_0_0
   (* C_HAS_MUX_OUTPUT_REGS_B = "0" *) 
   (* C_HAS_REGCEA = "0" *) 
   (* C_HAS_REGCEB = "0" *) 
-  (* C_HAS_RSTA = "0" *) 
+  (* C_HAS_RSTA = "1" *) 
   (* C_HAS_RSTB = "0" *) 
   (* C_HAS_SOFTECC_INPUT_REGS_A = "0" *) 
   (* C_HAS_SOFTECC_OUTPUT_REGS_B = "0" *) 
@@ -142,7 +145,7 @@ module design_1_blk_mem_gen_0_0
         .rdaddrecc(NLW_U0_rdaddrecc_UNCONNECTED[5:0]),
         .regcea(1'b0),
         .regceb(1'b0),
-        .rsta(1'b0),
+        .rsta(rsta),
         .rsta_busy(NLW_U0_rsta_busy_UNCONNECTED),
         .rstb(1'b0),
         .rstb_busy(NLW_U0_rstb_busy_UNCONNECTED),
@@ -194,22 +197,26 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr
    (douta,
     clka,
     ena,
+    rsta,
     addra);
   output [7:0]douta;
   input clka;
   input ena;
+  input rsta;
   input [5:0]addra;
 
   wire [5:0]addra;
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width \ramloop[0].ram.r 
        (.addra(addra),
         .clka(clka),
         .douta(douta),
-        .ena(ena));
+        .ena(ena),
+        .rsta(rsta));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
@@ -217,22 +224,26 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width
    (douta,
     clka,
     ena,
+    rsta,
     addra);
   output [7:0]douta;
   input clka;
   input ena;
+  input rsta;
   input [5:0]addra;
 
   wire [5:0]addra;
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init \prim_init.ram 
        (.addra(addra),
         .clka(clka),
         .douta(douta),
-        .ena(ena));
+        .ena(ena),
+        .rsta(rsta));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
@@ -240,10 +251,12 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
     ena,
+    rsta,
     addra);
   output [7:0]douta;
   input clka;
   input ena;
+  input rsta;
   input [5:0]addra;
 
   wire \DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram_n_0 ;
@@ -278,6 +291,7 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   (* box_type = "PRIMITIVE" *) 
   RAMB18E1 #(
@@ -399,8 +413,8 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init
         .REGCEB(ena),
         .RSTRAMARSTRAM(1'b0),
         .RSTRAMB(1'b0),
-        .RSTREGARSTREG(1'b0),
-        .RSTREGB(1'b0),
+        .RSTREGARSTREG(rsta),
+        .RSTREGB(rsta),
         .WEA({1'b0,1'b0}),
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
@@ -410,22 +424,26 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_top
    (douta,
     clka,
     ena,
+    rsta,
     addra);
   output [7:0]douta;
   input clka;
   input ena;
+  input rsta;
   input [5:0]addra;
 
   wire [5:0]addra;
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr \valid.cstr 
        (.addra(addra),
         .clka(clka),
         .douta(douta),
-        .ena(ena));
+        .ena(ena),
+        .rsta(rsta));
 endmodule
 
 (* C_ADDRA_WIDTH = "6" *) (* C_ADDRB_WIDTH = "6" *) (* C_ALGORITHM = "1" *) 
@@ -435,11 +453,11 @@ endmodule
 (* C_DISABLE_WARN_BHV_COLL = "0" *) (* C_DISABLE_WARN_BHV_RANGE = "0" *) (* C_ELABORATION_DIR = "./" *) 
 (* C_ENABLE_32BIT_ADDRESS = "0" *) (* C_EN_DEEPSLEEP_PIN = "0" *) (* C_EN_ECC_PIPE = "0" *) 
 (* C_EN_RDADDRA_CHG = "0" *) (* C_EN_RDADDRB_CHG = "0" *) (* C_EN_SAFETY_CKT = "0" *) 
-(* C_EN_SHUTDOWN_PIN = "0" *) (* C_EN_SLEEP_PIN = "0" *) (* C_EST_POWER_SUMMARY = "Estimated Power for IP     :     2.3768 mW" *) 
+(* C_EN_SHUTDOWN_PIN = "0" *) (* C_EN_SLEEP_PIN = "0" *) (* C_EST_POWER_SUMMARY = "Estimated Power for IP     :     2.3767999999999998 mW" *) 
 (* C_FAMILY = "zynq" *) (* C_HAS_AXI_ID = "0" *) (* C_HAS_ENA = "1" *) 
 (* C_HAS_ENB = "0" *) (* C_HAS_INJECTERR = "0" *) (* C_HAS_MEM_OUTPUT_REGS_A = "1" *) 
 (* C_HAS_MEM_OUTPUT_REGS_B = "0" *) (* C_HAS_MUX_OUTPUT_REGS_A = "0" *) (* C_HAS_MUX_OUTPUT_REGS_B = "0" *) 
-(* C_HAS_REGCEA = "0" *) (* C_HAS_REGCEB = "0" *) (* C_HAS_RSTA = "0" *) 
+(* C_HAS_REGCEA = "0" *) (* C_HAS_REGCEB = "0" *) (* C_HAS_RSTA = "1" *) 
 (* C_HAS_RSTB = "0" *) (* C_HAS_SOFTECC_INPUT_REGS_A = "0" *) (* C_HAS_SOFTECC_OUTPUT_REGS_B = "0" *) 
 (* C_INITA_VAL = "0" *) (* C_INITB_VAL = "0" *) (* C_INIT_FILE = "NONE" *) 
 (* C_INIT_FILE_NAME = "design_1_blk_mem_gen_0_0.mif" *) (* C_INTERFACE_TYPE = "0" *) (* C_LOAD_INIT_FILE = "1" *) 
@@ -586,6 +604,7 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   assign dbiterr = \<const0> ;
   assign doutb[7] = \<const0> ;
@@ -645,7 +664,8 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6
        (.addra(addra),
         .clka(clka),
         .douta(douta),
-        .ena(ena));
+        .ena(ena),
+        .rsta(rsta));
 endmodule
 
 (* ORIG_REF_NAME = "blk_mem_gen_v8_3_6_synth" *) 
@@ -653,22 +673,26 @@ module design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_6_synth
    (douta,
     clka,
     ena,
+    rsta,
     addra);
   output [7:0]douta;
   input clka;
   input ena;
+  input rsta;
   input [5:0]addra;
 
   wire [5:0]addra;
   wire clka;
   wire [7:0]douta;
   wire ena;
+  wire rsta;
 
   design_1_blk_mem_gen_0_0_blk_mem_gen_top \gnbram.gnativebmg.native_blk_mem_gen 
        (.addra(addra),
         .clka(clka),
         .douta(douta),
-        .ena(ena));
+        .ena(ena),
+        .rsta(rsta));
 endmodule
 `ifndef GLBL
 `define GLBL

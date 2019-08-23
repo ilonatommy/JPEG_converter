@@ -62,7 +62,7 @@ module design_1_controller_0_0 (
   ce_zig_zag,
   we_zzBRAM_in,
   we_zzBRAM_out,
-  addr_zzBRAM_in,
+  addr_zzBRAM_out,
   v_sync
 );
 
@@ -76,7 +76,7 @@ output wire [5 : 0] addr_quant;
 output wire ce_zig_zag;
 output wire we_zzBRAM_in;
 output wire we_zzBRAM_out;
-output wire [7 : 0] addr_zzBRAM_in;
+output wire [7 : 0] addr_zzBRAM_out;
 output wire v_sync;
 
   controller inst (
@@ -88,7 +88,7 @@ output wire v_sync;
     .ce_zig_zag(ce_zig_zag),
     .we_zzBRAM_in(we_zzBRAM_in),
     .we_zzBRAM_out(we_zzBRAM_out),
-    .addr_zzBRAM_in(addr_zzBRAM_in),
+    .addr_zzBRAM_out(addr_zzBRAM_out),
     .v_sync(v_sync)
   );
 endmodule

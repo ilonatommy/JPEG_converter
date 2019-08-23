@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="48950001fs"></ZoomEndTime>
-      <Cursor1Time time="2540000fs"></Cursor1Time>
+      <ZoomStartTime time="2525000fs"></ZoomStartTime>
+      <ZoomEndTime time="53975001fs"></ZoomEndTime>
+      <Cursor1Time time="16975000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="180"></NameColumnWidth>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
@@ -27,6 +27,12 @@
    <wvobject fp_name="/tb_DCT_2D_BRAM/addr_in" type="array">
       <obj_property name="ElementShortName">addr_in[5:0]</obj_property>
       <obj_property name="ObjectShortName">addr_in[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_in" type="array">
+      <obj_property name="ElementShortName">pixel_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_2D_BRAM/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
@@ -39,11 +45,6 @@
    <wvobject fp_name="/tb_DCT_2D_BRAM/ce_BRAM" type="logic">
       <obj_property name="ElementShortName">ce_BRAM</obj_property>
       <obj_property name="ObjectShortName">ce_BRAM</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_in" type="array">
-      <obj_property name="ElementShortName">pixel_in[7:0]</obj_property>
-      <obj_property name="ObjectShortName">pixel_in[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_DCT_2D_BRAM/pixel_out" type="array">
       <obj_property name="ElementShortName">pixel_out[13:0]</obj_property>

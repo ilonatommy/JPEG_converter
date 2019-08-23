@@ -62,7 +62,7 @@ COMPONENT controller_0
     ce_zig_zag : OUT STD_LOGIC;
     we_zzBRAM_in : OUT STD_LOGIC;
     we_zzBRAM_out : OUT STD_LOGIC;
-    addr_zzBRAM_in : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    addr_zzBRAM_out : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     v_sync : OUT STD_LOGIC
   );
 END COMPONENT;
@@ -82,7 +82,7 @@ your_instance_name : controller_0
     ce_zig_zag => ce_zig_zag,
     we_zzBRAM_in => we_zzBRAM_in,
     we_zzBRAM_out => we_zzBRAM_out,
-    addr_zzBRAM_in => addr_zzBRAM_in,
+    addr_zzBRAM_out => addr_zzBRAM_out,
     v_sync => v_sync
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

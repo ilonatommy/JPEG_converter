@@ -57,7 +57,7 @@ module design_1_zig_zag_0_0 (
   clk,
   rst,
   ce,
-  addr_BRAM_in
+  zz_addr_cnt
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
@@ -65,12 +65,12 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
 input wire rst;
 input wire ce;
-output wire [7 : 0] addr_BRAM_in;
+output wire [5 : 0] zz_addr_cnt;
 
   zig_zag inst (
     .clk(clk),
     .rst(rst),
     .ce(ce),
-    .addr_BRAM_in(addr_BRAM_in)
+    .zz_addr_cnt(zz_addr_cnt)
   );
 endmodule

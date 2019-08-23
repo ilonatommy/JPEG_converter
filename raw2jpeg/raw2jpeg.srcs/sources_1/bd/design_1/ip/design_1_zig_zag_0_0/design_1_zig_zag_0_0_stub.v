@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-// Date        : Wed Aug 21 13:25:12 2019
+// Date        : Fri Aug 23 15:17:20 2019
 // Host        : rtrkos034 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/lsneler/Desktop/Repo/JPEG_conv/raw2jpeg/raw2jpeg.srcs/sources_1/bd/design_1/ip/design_1_zig_zag_0_0/design_1_zig_zag_0_0_stub.v
@@ -14,10 +14,10 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "zig_zag,Vivado 2017.2" *)
-module design_1_zig_zag_0_0(clk, rst, ce, addr_BRAM_in)
-/* synthesis syn_black_box black_box_pad_pin="clk,rst,ce,addr_BRAM_in[7:0]" */;
+module design_1_zig_zag_0_0(clk, rst, ce, zz_addr_cnt)
+/* synthesis syn_black_box black_box_pad_pin="clk,rst,ce,zz_addr_cnt[5:0]" */;
   input clk;
   input rst;
   input ce;
-  output [7:0]addr_BRAM_in;
+  output [5:0]zz_addr_cnt;
 endmodule

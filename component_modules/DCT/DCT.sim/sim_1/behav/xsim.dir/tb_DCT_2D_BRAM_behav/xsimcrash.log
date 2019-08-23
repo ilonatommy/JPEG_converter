@@ -1,4 +1,4 @@
-Unable to capture context for thread 376 in process 3568, can not generate back trace
-Exception at PC 0x00007FFBEDF0BB93
+Unable to capture context for thread 7860 in process 4060, can not generate back trace
+Exception at PC 0x00007FFBDB4ABB93
 Printing stacktrace...
 

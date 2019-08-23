@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e582b5d1</spirit:value>
+            <spirit:value>706b29f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e582b5d1</spirit:value>
+            <spirit:value>706b29f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -207,7 +207,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>addr_zzBRAM_in</spirit:name>
+        <spirit:name>addr_zzBRAM_out</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -244,7 +244,7 @@
       <spirit:file>
         <spirit:name>src/controller.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e582b5d1</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_706b29f4</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -291,10 +291,10 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>controller_v1_0</xilinx:displayName>
+      <xilinx:displayName>controller</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-08-21T11:29:08Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-08-23T12:52:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="domain.local:user:controller:1.0_ARCHIVE_LOCATION">c:/Users/lsneler/Desktop/Repo/JPEG_conv/IP_Core_repo/controller</xilinx:tag>
       </xilinx:tags>
@@ -302,8 +302,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8b15223a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2addfd06"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="9952d428"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="74649ad4"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="3c9cec2d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="aeb8473a"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

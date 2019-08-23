@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
--- Date        : Fri Aug  2 11:02:15 2019
+-- Date        : Fri Aug 23 11:05:48 2019
 -- Host        : rtrkos034 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/Users/lsneler/Desktop/Repository/JPEG_conversion/combinatoryDCT/DCT.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl
+--               C:/Users/lsneler/Desktop/Repo/JPEG_conv/component_modules/DCT/DCT.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl
 -- Design      : blk_mem_gen_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,6 +19,7 @@ entity blk_mem_gen_0_blk_mem_gen_prim_wrapper_init is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -210,8 +211,8 @@ begin
       REGCEB => ena,
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
-      RSTREGARSTREG => '0',
-      RSTREGB => '0',
+      RSTREGARSTREG => rsta,
+      RSTREGB => rsta,
       WEA(1 downto 0) => B"00",
       WEBWE(3 downto 0) => B"0000"
     );
@@ -225,6 +226,7 @@ entity blk_mem_gen_0_blk_mem_gen_prim_width is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -238,7 +240,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -250,6 +253,7 @@ entity blk_mem_gen_0_blk_mem_gen_generic_cstr is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -263,7 +267,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -275,6 +280,7 @@ entity blk_mem_gen_0_blk_mem_gen_top is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -288,7 +294,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -300,6 +307,7 @@ entity blk_mem_gen_0_blk_mem_gen_v8_3_6_synth is
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 );
     clka : in STD_LOGIC;
     ena : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -313,7 +321,8 @@ begin
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -457,7 +466,7 @@ entity blk_mem_gen_0_blk_mem_gen_v8_3_6 is
   attribute C_HAS_REGCEB : integer;
   attribute C_HAS_REGCEB of blk_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_RSTA : integer;
-  attribute C_HAS_RSTA of blk_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
+  attribute C_HAS_RSTA of blk_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 1;
   attribute C_HAS_RSTB : integer;
   attribute C_HAS_RSTB of blk_mem_gen_0_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
@@ -602,7 +611,8 @@ inst_blk_mem_gen: entity work.blk_mem_gen_0_blk_mem_gen_v8_3_6_synth
       addra(5 downto 0) => addra(5 downto 0),
       clka => clka,
       douta(7 downto 0) => douta(7 downto 0),
-      ena => ena
+      ena => ena,
+      rsta => rsta
     );
 end STRUCTURE;
 library IEEE;
@@ -612,6 +622,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity blk_mem_gen_0 is
   port (
     clka : in STD_LOGIC;
+    rsta : in STD_LOGIC;
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 5 downto 0 );
     douta : out STD_LOGIC_VECTOR ( 7 downto 0 )
@@ -718,7 +729,7 @@ architecture STRUCTURE of blk_mem_gen_0 is
   attribute C_HAS_REGCEB : integer;
   attribute C_HAS_REGCEB of U0 : label is 0;
   attribute C_HAS_RSTA : integer;
-  attribute C_HAS_RSTA of U0 : label is 0;
+  attribute C_HAS_RSTA of U0 : label is 1;
   attribute C_HAS_RSTB : integer;
   attribute C_HAS_RSTB of U0 : label is 0;
   attribute C_HAS_SOFTECC_INPUT_REGS_A : integer;
@@ -815,7 +826,7 @@ U0: entity work.blk_mem_gen_0_blk_mem_gen_v8_3_6
       rdaddrecc(5 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(5 downto 0),
       regcea => '0',
       regceb => '0',
-      rsta => '0',
+      rsta => rsta,
       rsta_busy => NLW_U0_rsta_busy_UNCONNECTED,
       rstb => '0',
       rstb_busy => NLW_U0_rstb_busy_UNCONNECTED,

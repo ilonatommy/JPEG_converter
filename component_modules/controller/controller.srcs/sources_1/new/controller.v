@@ -29,7 +29,7 @@ module controller(
     output ce_zig_zag,
     output we_zzBRAM_in,
     output we_zzBRAM_out,
-    output [7:0] addr_zzBRAM_in,
+    output [7:0] addr_zzBRAM_out, //TODO!!!!!!!!!!!!!!!!!!!!
     output v_sync //simulate the end of frame
     );
     
@@ -40,8 +40,7 @@ module controller(
     reg _we_zzBRAM_in = 0;
     reg [5:0] _addr_input = 0;
     reg [5:0] _addr_quant = 6'd47;
-    reg [7:0] _addr_zzBRAM_in = 0;
-    reg del_addr_BRAM_wr_incr = 0;
+    reg [7:0] _addr_zzBRAM_out = 0;
     
     reg [2:0] rst_trigger = 0;
     reg [2:0] ce_trigger = 0;
@@ -69,16 +68,7 @@ module controller(
         if(_ce_input_DCT_quant == 1'b1)
         begin
             _addr_input <= _addr_input + 1;
-            _addr_quant <= _addr_quant + 1;
-            del_addr_BRAM_wr_incr <= del_addr_BRAM_wr_incr + 1;
-            
-            if(ce_zz_bram_trigger == 7'd85)
-                _addr_zzBRAM_in <= 0;
-            else
-            begin
-                if(del_addr_BRAM_wr_incr == 1'b1)
-                    _addr_zzBRAM_in <= _addr_zzBRAM_in + 1;
-            end
+            _addr_quant <= _addr_quant + 1;            
                 
             ce_zz_bram_trigger <= ce_zz_bram_trigger + 1;
             cnt_sim_eof <= cnt_sim_eof + 1;
@@ -88,6 +78,12 @@ module controller(
         begin
             _ce_zig_zag <= 1'b1;
         end
+        
+        if(ce_zz_bram_trigger == 7'd109)
+        begin
+            _addr_zzBRAM_out <= 0;
+        end
+        else _addr_zzBRAM_out <= _addr_zzBRAM_out + 1;
         
         if(ce_zz_bram_trigger == 7'd83)
         begin
@@ -100,6 +96,10 @@ module controller(
             _addr_quant <= 6'd47;
             ce_zz_bram_trigger <= 0;
             cnt_sim_eof <= 0;
+            _addr_zzBRAM_out <= 0;
+            _ce_input_DCT_quant <= 0;
+            _ce_zig_zag <= 0;
+            _we_zzBRAM_in <= 0;
         end        
     end
     
@@ -110,6 +110,6 @@ module controller(
     assign we_zzBRAM_out = 0;
     assign addr_input = _addr_input;
     assign addr_quant = _addr_quant;
-    assign addr_zzBRAM_in = _addr_zzBRAM_in;
+    assign addr_zzBRAM_out = _addr_zzBRAM_out;
     assign v_sync = cnt_sim_eof == 8'd255 ? 1'b1 : 1'b0;
 endmodule
